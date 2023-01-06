@@ -48,8 +48,20 @@ def row_string_dynamic_list(df, column):
 	list_dynamic = []
 	
 	for string in df[column]:
-			if string not in list_dynamic:
-				list_dynamic.append(string)
+		if string not in list_dynamic:
+			list_dynamic.append(string)
+	
+	# list_dynamic.sort()
+
+	return list_dynamic
+
+def textinput_row_string_dynamic_list(df, column, textinput):
+	
+	list_dynamic = []
+	
+	for string in df[column]:		
+		if any(x in string for x in textinput.split(','))
+			list_dynamic.append(string)
 	
 	# list_dynamic.sort()
 
@@ -178,11 +190,13 @@ def filter_dataframe(df):
 				
 				# else:
 					user_text_input = st.text_input(
-													f"Key letters in {column}",
+													f"Key letters in {column} (if multiple genera, use only 1 comma to separate)",
 													)
 					if user_text_input:
-						df = df[df[column].str.contains(user_text_input)]
-		
+						# df = df[df[column].str.contains(user_text_input)]
+						list_dynamic = textinput_row_string_dynamic_list(df, column, user_text_input)
+						df = df.loc[df_row_index_list_cond(df, column, list_dynamic)]
+							
 	return df
 
 # ---------------------------------------------------- FILTER DATAFRAME ----------------------------------------------------
