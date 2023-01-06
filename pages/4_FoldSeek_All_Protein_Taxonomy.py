@@ -141,18 +141,18 @@ def filter_dataframe(df):
 												   )
 					df = df[df[column].between(*user_num_input)]
 					
-				elif all(type(k) == float for k in df[column]):
-					_min = float(df[column].min())
-					_max = float(df[column].max())
-					step = (_max - _min) // 100
-					user_num_input = st.slider(
-											   f"Values for {column}",
-											   min_value=_min,
-											   max_value=_max,
-											   value=(_min, _max),
-											   step=step,
-											   )
-					df = df[df[column].between(*user_num_input)]			
+				# elif all(type(k) == float for k in df[column]):
+					# _min = float(df[column].min())
+					# _max = float(df[column].max())
+					# step = (_max - _min) // 100
+					# user_num_input = st.slider(
+											   # f"Values for {column}",
+											   # min_value=_min,
+											   # max_value=_max,
+											   # value=(_min, _max),
+											   # step=step,
+											   # )
+					# df = df[df[column].between(*user_num_input)]			
 				
 				elif all(type(k) == str for k in df[column]):
 					# select_all = st.checkbox(f"Select all {column}")#, value=True)
