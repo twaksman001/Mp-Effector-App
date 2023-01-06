@@ -169,19 +169,19 @@ def filter_dataframe(df):
 														# default=df[column].head(21),
 														# )
 				
-					user_cat_input = st.multiselect(
-													 f"Values for {column}",
-													 row_string_dynamic_list(df, column),
-													 default=row_string_dynamic_list(df, column)
-													 )
-					df = df[df[column].isin(user_cat_input)]
+					# user_cat_input = st.multiselect(
+													 # f"Values for {column}",
+													 # row_string_dynamic_list(df, column),
+													 # default=row_string_dynamic_list(df, column)
+													 # )
+					# df = df[df[column].isin(user_cat_input)]
 				
 				# else:
-					# user_text_input = st.text_input(
-													# f"Key letters in {column}",
-													# )
-					# if user_text_input:
-						# df = df[df[column].astype(str).str.contains(user_text_input)]
+					user_text_input = st.text_input(
+													f"Key letters in {column}",
+													)
+					if user_text_input:
+						df = df[df[column].astype(str).str.contains(user_text_input)]
 		
 	return df
 
