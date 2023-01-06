@@ -394,16 +394,13 @@ def update_plotly_hover_dict(variables):
 
 with tab1:
 	
-	tab1_1, tab1_2 = st.tabs(['Scatter', None])
-			
-	with tab1_1:	
-		col1, col2 = st.columns(2)
+	col1, col2 = st.columns(2)
 								  
-		if scatter1_display:
-			col1.plotly_chart(scatter1)
-					
-		if scatter2_display:
-			col2.plotly_chart(scatter2)
+	if scatter1_display:
+		col1.plotly_chart(scatter1)
+				
+	if scatter2_display:
+		col2.plotly_chart(scatter2)
 
 with tab2:
 	
