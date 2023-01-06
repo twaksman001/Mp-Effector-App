@@ -6,6 +6,8 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # ---- LAYOUT ----
 
+st.set_page_config(layout="wide")
+
 st.write("This page creates useful graphs or figures from the summary spreadsheet data. Interactive Plotly scatter charts, "
 		 "structure prediction per-residue confidence graphs, or all-against-all charts of multiple variables from summary spreadsheet")
 
