@@ -7,20 +7,23 @@ import pandas as pd  # pip install pandas openpyxl
 
 st.set_page_config(layout="wide")
 
-st.write("This page loads an interactive spreadsheet of key information for all effectors")
+st.write('This page loads an interactive spreadsheet of key information for all effectors. '
+		 'Information is from XTALPRED (columns to the left), '
+		 'ColabFold AlphaFold 2 (AF2), or ColabFold OmegaFold (OF). OF was only used in comparison to AF2 protein structures'.)
+st.write('Please see specific column definitions below.')
 
 with st.expander('Column definitions'):
 	st.write('Longest_Disorder_Region_percent: longest contiguous region of primary sequence'
 			 'predicted to be disordered, as percentage of total sequence length')
-	st.write('MSA_Depth_Mean: approximate average (over all amino acids) depth of ColabFold AlphaFold 2 sequence alignment')
-	st.write('pLDDT_mean: approximate average (over all amino acids) ColabFold AlphaFold 2 pLDDT')
+	st.write('MSA_Depth_Mean: approximate average (over all amino acids) depth of AlphaFold 2 sequence alignment')
+	st.write('pLDDT_mean: approximate average (over all amino acids) AlphaFold 2 pLDDT')
 	st.write('PDBeFold_Q: Q score of PDBeFold top match')
 	st.write('Beta_Sheet: protein contains beta-sheet secondary structure yes/no')
 	st.write('Foldedness_Rating: rating from 1-5 of how compact/folded the protein structure looks (1 - disordered, 5 - very compact)')
 	st.write('Multi_Module: protein contains multiple domains/modules yes/no')
-	st.write('AF2_OF_pLDDT_Pearson: Pearson correlation coefficient (r) between ColabFold AlphaFold 2'
+	st.write('AF2_OF_pLDDT_Pearson: Pearson correlation coefficient (r) between AlphaFold 2 '
 			 'and OmegaFold per-residue confidence estimates')
-	st.write('AF2_OF_DALI_Z: DALI Z score comparing ColabFold AlphaFold 2 and OmegaFold structures')
+	st.write('AF2_OF_DALI_Z: DALI Z score comparing AlphaFold 2 and OmegaFold structures')
 
 # ---- READ EXCEL ----
 

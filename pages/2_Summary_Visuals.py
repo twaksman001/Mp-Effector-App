@@ -128,7 +128,7 @@ def figure_PAE_proteins(proteins, tick_no=5):
 	if len(proteins) > 30:
 		spacing=len(proteins)/160
 	else:
-		spacing=len(proteins)/80
+		spacing=len(proteins)/60
 		
 	fig = plt.figure(figsize=(25,25))
 	plt.subplots_adjust(hspace=spacing, wspace=spacing)
