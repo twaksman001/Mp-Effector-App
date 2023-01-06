@@ -394,6 +394,8 @@ def update_plotly_hover_dict(variables):
 
 with tab1:
 	
+	st.write('Use sidebar to make graphs')
+	
 	col1, col2 = st.columns(2)
 								  
 	if scatter1_display:
