@@ -9,7 +9,7 @@ st.set_page_config(layout="wide")
 
 st.write('This page loads an interactive spreadsheet of key information for all effectors. '
 		 'Information is from XTALPRED (columns to the left), '
-		 'ColabFold AlphaFold 2 (AF2), or ColabFold OmegaFold (OF). OF was only used in comparison to AF2 protein structures'.)
+		 'ColabFold AlphaFold 2 (AF2), or ColabFold OmegaFold (OF). OF was only used in comparison to AF2 protein structures.')
 st.write('Please see specific column definitions below.')
 
 with st.expander('Column definitions'):
