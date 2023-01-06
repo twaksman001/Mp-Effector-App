@@ -58,6 +58,7 @@ def row_string_dynamic_list(df, column):
 def textinput_row_string_dynamic_list(df, column, textinput):
 	
 	list_dynamic = []
+	st.write(textinput.split(','))
 	
 	for string in df[column]:		
 		if any(x in string for x in textinput.split(',')):
@@ -195,7 +196,7 @@ def filter_dataframe(df):
 					if user_text_input:
 						# df = df[df[column].str.contains(user_text_input)]
 						list_dynamic = textinput_row_string_dynamic_list(df, column, user_text_input)
-						st.write(list_dynamic)
+						# user_text_input.s]
 						df = df.loc[df_row_index_list_cond(df, column, list_dynamic)]
 							
 	return df
