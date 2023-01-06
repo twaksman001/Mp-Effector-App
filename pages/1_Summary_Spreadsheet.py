@@ -12,8 +12,6 @@ st.write("This page loads an interactive spreadsheet of key information for all 
 with st.expander('Column definitions'):
 	st.write('Longest_Disorder_Region_percent: longest contiguous region of primary sequence'
 			 'predicted to be disordered, as percentage of total sequence length')
-	st.write('effector_count: total number of effectors with at least 1 FoldSeek hit belonging to genus')
-	st.write('effectors: list of effectors with at least 1 FoldSeek hit belonging to genus')
 	st.write('MSA_Depth_Mean: approximate average (over all amino acids) depth of ColabFold AlphaFold 2 sequence alignment')
 	st.write('pLDDT_mean: approximate average (over all amino acids) ColabFold AlphaFold 2 pLDDT')
 	st.write('PDBeFold_Q: Q score of PDBeFold top match')
