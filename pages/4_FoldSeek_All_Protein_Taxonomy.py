@@ -58,10 +58,9 @@ def row_string_dynamic_list(df, column):
 def textinput_row_string_dynamic_list(df, column, textinput):
 	
 	list_dynamic = []
-	textinput_list = textinput.split(',')
 	
 	for string in df[column]:		
-		if any(x in string for x in textinput_list)
+		if any(x in string for x in textinput.split(',')):
 			list_dynamic.append(string)
 	
 	# list_dynamic.sort()
