@@ -394,7 +394,7 @@ def update_plotly_hover_dict(variables):
 
 with tab1:
 	
-	tab1_1, tab1_2 = st.tabs(['Scatter', 'Bar'])
+	tab1_1, tab1_2 = st.tabs(['Scatter', None])
 			
 	with tab1_1:	
 		col1, col2 = st.columns(2)
