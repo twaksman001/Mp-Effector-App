@@ -58,14 +58,11 @@ def row_string_dynamic_list(df, column):
 def textinput_row_string_dynamic_list(df, column, textinput):
 	
 	list_dynamic = []
-	st.write(textinput.split(','))
 	
 	for string in df[column]:		
 		if any(x in string for x in textinput.split(',')):
 			list_dynamic.append(string)
 	
-	# list_dynamic.sort()
-
 	return list_dynamic
 
 effector_ID_list = [0, 1, 2, 4, 5, 6, 7, 10, 11, 12, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 28, 29, 30, 31, 32, 33, 35, 36, 37, 38, 39, 
@@ -134,7 +131,7 @@ def filter_dataframe(df):
 				elif all(type(k) == int for k in df[column]):
 					_min = int(df[column].min())
 					_max = int(df[column].max())
-					step = (_max - _min) // 100
+					step = (_max - _min)/100 # not integer
 					reset = st.checkbox(f"Reset {column}", value=True)
 					if reset:
 						user_num_input = st.slider(
@@ -149,7 +146,7 @@ def filter_dataframe(df):
 												   f"Values for {column}",
 												   min_value=_min,
 												   max_value=_max,
-												   value=(_min + 10*step, _max - 10*step),
+												   value=(int(_min + 10*step), int(_max - 10*step)),
 												   step=1, # not working!
 												   )
 					df = df[df[column].between(*user_num_input)]
@@ -194,9 +191,7 @@ def filter_dataframe(df):
 													f"Key letters in {column} (if multiple genera, use only 1 comma to separate)",
 													)
 					if user_text_input:
-						# df = df[df[column].str.contains(user_text_input)]
 						list_dynamic = textinput_row_string_dynamic_list(df, column, user_text_input)
-						# user_text_input.s]
 						df = df.loc[df_row_index_list_cond(df, column, list_dynamic)]
 							
 	return df
