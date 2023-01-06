@@ -181,7 +181,7 @@ def filter_dataframe(df):
 													f"Key letters in {column}",
 													)
 					if user_text_input:
-						df = df[df[column].astype(str).str.contains(user_text_input)]
+						df = df[df[column].str.contains(user_text_input)]
 		
 	return df
 
