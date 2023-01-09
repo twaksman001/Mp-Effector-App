@@ -162,9 +162,9 @@ def FoldSeek_df(protein):
 			
 			return df
 			
-		else:
-			
-			print('No FoldSeek hits for' + protein)
+	else:
+		
+		print('No FoldSeek hits for' + protein)
 
 def df_present_streamlit(protein):
 	
