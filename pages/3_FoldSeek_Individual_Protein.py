@@ -187,14 +187,17 @@ def df_present_streamlit(protein):
 		df = df.sort_values(by='bits', axis=0, ascending=False)
 		
 		return df
-		
-	else:
-		
-		st.write('No FoldSeek hits for' + protein)
-
+	
 ID_Number = st.selectbox("Select Effector:", df["ID_No"].unique())
 
-df_FoldSeek = df_present_streamlit(ID_Number)
+if df_present_streamlit(ID_Number):
+
+	df_FoldSeek = df_present_streamlit(ID_Number)
+	
+else:
+	
+	st.write('No FoldSeek hits for' + protein)
+
 
 # st.dataframe(df_FoldSeek.style.format({'fident': '{:.1f}'}))
 
