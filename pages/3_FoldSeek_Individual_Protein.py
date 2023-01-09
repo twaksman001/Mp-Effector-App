@@ -186,8 +186,8 @@ def df_present_streamlit(protein):
 	
 ID_Number = st.selectbox("Select Effector:", df["ID_No"].unique())
 
-if df_present_streamlit(ID_Number) != None:
-
+if 'DataFrame' in str(type(df_present_streamlit(ID_Number))):
+	
 	df_FoldSeek = df_present_streamlit(ID_Number)
 	
 else:
