@@ -111,82 +111,78 @@ def FoldSeek_df(protein):
 	
 	column_titles = ['query','target','fident','alnlen','mismatch','gapopen','qstart','qend','tstart',
 					 'tend','evalue','bits','qlen','tlen','qaln','taln','tca','tseq','taxid','genus','species']	
-
-	if get_file_of_interest_FoldSeek(protein):
 		
-		file = open(get_file_of_interest_FoldSeek(protein))
-		
-		lines = file.read().split('\n')
+	file = open(get_file_of_interest_FoldSeek(protein))
 	
-		columns_dict = {}
+	lines = file.read().split('\n')
 
-		for i in range(len(column_titles)):
+	columns_dict = {}
 
-			columns_dict[column_titles[i]] = []
+	for i in range(len(column_titles)):
 
-		columns_dict['extra'] = []
+		columns_dict[column_titles[i]] = []
 
-		for j in range(len(lines)):
+	columns_dict['extra'] = []
 
-			line_split = re.split('\s{1,}', lines[j][lines[j].find('job.pdb'):])
+	for j in range(len(lines)):
 
-			if len(line_split) <= len(column_titles):
+		line_split = re.split('\s{1,}', lines[j][lines[j].find('job.pdb'):])
 
-				for i in range(len(column_titles)):
+		if len(line_split) <= len(column_titles):
 
-					if i < len(line_split):
+			for i in range(len(column_titles)):
 
-						columns_dict[column_titles[i]].append(line_split[i])
+				if i < len(line_split):
 
-					else:
+					columns_dict[column_titles[i]].append(line_split[i])
 
-						columns_dict[column_titles[i]].append('N/A')
+				else:
 
-				columns_dict['extra'].append('0')
+					columns_dict[column_titles[i]].append('N/A')
 
-			else:
+			columns_dict['extra'].append('0')
 
-				for i in range(len(line_split)):
+		else:
 
-					if i < len(column_titles):
+			for i in range(len(line_split)):
 
-						columns_dict[column_titles[i]].append(line_split[i])
+				if i < len(column_titles):
 
-					else:
+					columns_dict[column_titles[i]].append(line_split[i])
 
-						columns_dict['extra'].append(line_split[i:])
+				else:
 
-						break
+					columns_dict['extra'].append(line_split[i:])
 
-		df = pd.DataFrame.from_dict(columns_dict)
-		
-		return df
+					break
+
+	df = pd.DataFrame.from_dict(columns_dict)
+	
+	return df
 	
 def df_present_streamlit(protein):
 	
-	if FoldSeek_df(protein):
+	df = FoldSeek_df(protein)
+
+	df = df.drop(index = df.index[-1], columns = 'query')
 	
-		df = FoldSeek_df(protein)
+	import numpy as np
 	
-		df = df.drop(index = df.index[-1], columns = 'query')
+	for column in column_list_strint:
 		
-		import numpy as np
-		
-		for column in column_list_strint:
-			
-			df[column] = df[column].astype(np.int64)
-		
-		for column in column_list_strfloat:
-			
-			df[column] = df[column].astype(float)
+		df[column] = df[column].astype(np.int64)
 	
-		df['genus'] = df['genus'] + ' (' + df['genus'].map(df['genus'].value_counts().to_dict()).astype(str) + ')'
-		df['species'] = df['species'] + ' (' + df['species'].map(df['species'].value_counts().to_dict()).astype(str) + ')'
-		df.insert(19, 'genuscount', df['genus'].map(df['genus'].value_counts().to_dict()))
-		df.insert(21, 'speciescount', df['species'].map(df['species'].value_counts().to_dict()))
-		df = df.sort_values(by='bits', axis=0, ascending=False)
+	for column in column_list_strfloat:
 		
-		return df
+		df[column] = df[column].astype(float)
+
+	df['genus'] = df['genus'] + ' (' + df['genus'].map(df['genus'].value_counts().to_dict()).astype(str) + ')'
+	df['species'] = df['species'] + ' (' + df['species'].map(df['species'].value_counts().to_dict()).astype(str) + ')'
+	df.insert(19, 'genuscount', df['genus'].map(df['genus'].value_counts().to_dict()))
+	df.insert(21, 'speciescount', df['species'].map(df['species'].value_counts().to_dict()))
+	df = df.sort_values(by='bits', axis=0, ascending=False)
+	
+	return df
 	
 ID_Number = st.selectbox("Select Effector:", df["ID_No"].unique())
 
