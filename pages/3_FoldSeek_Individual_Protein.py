@@ -35,6 +35,68 @@ def get_file_of_interest_FoldSeek(protein):
 						
 			return file_path.replace('\\', '/')
 			
+# def FoldSeek_df(protein):
+	
+	# import re
+	# import pandas as pd
+	
+	# if protein == 0:
+		# protein = 'MpC002'
+	# elif protein == 100:
+		# protein = 'MIF1'
+	# else:
+		# protein = 'Mp' + str(protein)
+	
+	# column_titles = ['query','target','fident','alnlen','mismatch','gapopen','qstart','qend','tstart',
+					 # 'tend','evalue','bits','qlen','tlen','qaln','taln','tca','tseq','taxid','genus','species']		
+	
+	# file = open(get_file_of_interest_FoldSeek(protein))
+	# lines = file.read().split('\n')
+	
+	# columns_dict = {}
+
+	# for i in range(len(column_titles)):
+
+		# columns_dict[column_titles[i]] = []
+
+	# columns_dict['extra'] = []
+
+	# for j in range(len(lines)):
+
+		# line_split = re.split('\s{1,}', lines[j][lines[j].find('job.pdb'):])
+
+		# if len(line_split) <= len(column_titles):
+
+			# for i in range(len(column_titles)):
+
+				# if i < len(line_split):
+
+					# columns_dict[column_titles[i]].append(line_split[i])
+
+				# else:
+
+					# columns_dict[column_titles[i]].append('N/A')
+
+			# columns_dict['extra'].append('0')
+
+		# else:
+
+			# for i in range(len(line_split)):
+
+				# if i < len(column_titles):
+
+					# columns_dict[column_titles[i]].append(line_split[i])
+
+				# else:
+
+					# columns_dict['extra'].append(line_split[i:])
+
+					# break
+
+	# df = pd.DataFrame.from_dict(columns_dict)
+	
+	# return df
+
 def FoldSeek_df(protein):
 	
 	import re
@@ -48,54 +110,61 @@ def FoldSeek_df(protein):
 		protein = 'Mp' + str(protein)
 	
 	column_titles = ['query','target','fident','alnlen','mismatch','gapopen','qstart','qend','tstart',
-					 'tend','evalue','bits','qlen','tlen','qaln','taln','tca','tseq','taxid','genus','species']		
-	
-	file = open(get_file_of_interest_FoldSeek(protein))
-	lines = file.read().split('\n')
-	
-	columns_dict = {}
+					 'tend','evalue','bits','qlen','tlen','qaln','taln','tca','tseq','taxid','genus','species']	
 
-	for i in range(len(column_titles)):
-
-		columns_dict[column_titles[i]] = []
-
-	columns_dict['extra'] = []
-
-	for j in range(len(lines)):
-
-		line_split = re.split('\s{1,}', lines[j][lines[j].find('job.pdb'):])
-
-		if len(line_split) <= len(column_titles):
+	if get_file_of_interest_FoldSeek(protein):
+		
+			file = open(get_file_of_interest_FoldSeek(protein))
+			
+			lines = file.read().split('\n')
+		
+			columns_dict = {}
 
 			for i in range(len(column_titles)):
 
-				if i < len(line_split):
+				columns_dict[column_titles[i]] = []
 
-					columns_dict[column_titles[i]].append(line_split[i])
+			columns_dict['extra'] = []
+
+			for j in range(len(lines)):
+
+				line_split = re.split('\s{1,}', lines[j][lines[j].find('job.pdb'):])
+
+				if len(line_split) <= len(column_titles):
+
+					for i in range(len(column_titles)):
+
+						if i < len(line_split):
+
+							columns_dict[column_titles[i]].append(line_split[i])
+
+						else:
+
+							columns_dict[column_titles[i]].append('N/A')
+
+					columns_dict['extra'].append('0')
 
 				else:
 
-					columns_dict[column_titles[i]].append('N/A')
+					for i in range(len(line_split)):
 
-			columns_dict['extra'].append('0')
+						if i < len(column_titles):
 
+							columns_dict[column_titles[i]].append(line_split[i])
+
+						else:
+
+							columns_dict['extra'].append(line_split[i:])
+
+							break
+
+			df = pd.DataFrame.from_dict(columns_dict)
+			
+			return df
+			
 		else:
-
-			for i in range(len(line_split)):
-
-				if i < len(column_titles):
-
-					columns_dict[column_titles[i]].append(line_split[i])
-
-				else:
-
-					columns_dict['extra'].append(line_split[i:])
-
-					break
-
-	df = pd.DataFrame.from_dict(columns_dict)
-	
-	return df
+			
+			print('No FoldSeek hits for' + protein)
 
 def df_present_streamlit(protein):
 	
