@@ -117,7 +117,7 @@ def df_present_streamlit(protein):
 	df['species'] = df['species'] + ' (' + df['species'].map(df['species'].value_counts().to_dict()).astype(str) + ')'
 	df.insert(19, 'genuscount', df['genus'].map(df['genus'].value_counts().to_dict()))
 	df.insert(21, 'speciescount', df['species'].map(df['species'].value_counts().to_dict()))
-	df.sort_values(by='bits', axis=0, ascending=False)
+	df = df.sort_values(by='bits', axis=0, ascending=False)
 	
 	return df
 
