@@ -114,57 +114,57 @@ def FoldSeek_df(protein):
 
 	if get_file_of_interest_FoldSeek(protein):
 		
-			file = open(get_file_of_interest_FoldSeek(protein))
-			
-			lines = file.read().split('\n')
+		file = open(get_file_of_interest_FoldSeek(protein))
 		
-			columns_dict = {}
+		lines = file.read().split('\n')
+	
+		columns_dict = {}
 
-			for i in range(len(column_titles)):
+		for i in range(len(column_titles)):
 
-				columns_dict[column_titles[i]] = []
+			columns_dict[column_titles[i]] = []
 
-			columns_dict['extra'] = []
+		columns_dict['extra'] = []
 
-			for j in range(len(lines)):
+		for j in range(len(lines)):
 
-				line_split = re.split('\s{1,}', lines[j][lines[j].find('job.pdb'):])
+			line_split = re.split('\s{1,}', lines[j][lines[j].find('job.pdb'):])
 
-				if len(line_split) <= len(column_titles):
+			if len(line_split) <= len(column_titles):
 
-					for i in range(len(column_titles)):
+				for i in range(len(column_titles)):
 
-						if i < len(line_split):
+					if i < len(line_split):
 
-							columns_dict[column_titles[i]].append(line_split[i])
+						columns_dict[column_titles[i]].append(line_split[i])
 
-						else:
+					else:
 
-							columns_dict[column_titles[i]].append('N/A')
+						columns_dict[column_titles[i]].append('N/A')
 
-					columns_dict['extra'].append('0')
+				columns_dict['extra'].append('0')
 
-				else:
+			else:
 
-					for i in range(len(line_split)):
+				for i in range(len(line_split)):
 
-						if i < len(column_titles):
+					if i < len(column_titles):
 
-							columns_dict[column_titles[i]].append(line_split[i])
+						columns_dict[column_titles[i]].append(line_split[i])
 
-						else:
+					else:
 
-							columns_dict['extra'].append(line_split[i:])
+						columns_dict['extra'].append(line_split[i:])
 
-							break
+						break
 
-			df = pd.DataFrame.from_dict(columns_dict)
-			
-			return df
+		df = pd.DataFrame.from_dict(columns_dict)
+		
+		return df
 			
 	else:
 		
-		print('No FoldSeek hits for' + protein)
+		st.write('No FoldSeek hits for' + protein)
 
 def df_present_streamlit(protein):
 	
