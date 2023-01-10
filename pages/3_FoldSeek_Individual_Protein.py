@@ -124,7 +124,7 @@ def df_present_streamlit(protein):
 		df.insert(21, 'speciescount', df['species'].map(df['species'].value_counts().to_dict()))
 		df = df.sort_values(by='bits', axis=0, ascending=False)
 	
-	return df
+		return df
 	
 ID_Number = st.selectbox("Select Effector:", df["ID_No"].unique())
 
