@@ -50,55 +50,55 @@ def FoldSeek_df(protein):
 	
 	column_titles = ['query','target','fident','alnlen','mismatch','gapopen','qstart','qend','tstart','tend','evalue','bits','qlen','tlen','qaln','taln','tca','tseq','taxid','genus','species']
 	
-	if get_file_of_interest_FoldSeek(protein):
+	# if get_file_of_interest_FoldSeek(protein):
+
+	file = open(get_file_of_interest_FoldSeek(protein))
 	
-		file = open(get_file_of_interest_FoldSeek(protein))
-		
-		lines = file.read().split('\n')
+	lines = file.read().split('\n')
+
+	columns_dict = {}
+
+	for i in range(len(column_titles)):
+
+		columns_dict[column_titles[i]] = []
+
+	columns_dict['extra'] = []
+
+	for j in range(len(lines)):
+
+		line_split = re.split('\s{1,}', lines[j][lines[j].find('job.pdb'):])
+
+		if len(line_split) <= len(column_titles):
+
+			for i in range(len(column_titles)):
+
+				if i < len(line_split):
+
+					columns_dict[column_titles[i]].append(line_split[i])
+
+				else:
+
+					columns_dict[column_titles[i]].append('N/A')
+
+			columns_dict['extra'].append('0')
+
+		else:
+
+			for i in range(len(line_split)):
+
+				if i < len(column_titles):
+
+					columns_dict[column_titles[i]].append(line_split[i])
+
+				else:
+
+					columns_dict['extra'].append(line_split[i:])
+
+					break
+
+	df = pd.DataFrame.from_dict(columns_dict)
 	
-		columns_dict = {}
-
-		for i in range(len(column_titles)):
-
-			columns_dict[column_titles[i]] = []
-
-		columns_dict['extra'] = []
-
-		for j in range(len(lines)):
-
-			line_split = re.split('\s{1,}', lines[j][lines[j].find('job.pdb'):])
-
-			if len(line_split) <= len(column_titles):
-
-				for i in range(len(column_titles)):
-
-					if i < len(line_split):
-
-						columns_dict[column_titles[i]].append(line_split[i])
-
-					else:
-
-						columns_dict[column_titles[i]].append('N/A')
-
-				columns_dict['extra'].append('0')
-
-			else:
-
-				for i in range(len(line_split)):
-
-					if i < len(column_titles):
-
-						columns_dict[column_titles[i]].append(line_split[i])
-
-					else:
-
-						columns_dict['extra'].append(line_split[i:])
-
-						break
-
-		df = pd.DataFrame.from_dict(columns_dict)
-		
-		return df
+	return df
 
 def df_present_streamlit(protein):
 	
