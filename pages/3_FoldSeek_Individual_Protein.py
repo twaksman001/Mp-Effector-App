@@ -104,27 +104,27 @@ def df_present_streamlit(protein):
 	
 	df = FoldSeek_df(protein)
 
-	if str(df) != 'None':
+	# if str(df) != 'None':
 	
-		df = df.drop(index = df.index[-1], columns = 'query')
+	df = df.drop(index = df.index[-1], columns = 'query')
+	
+	import numpy as np
+	
+	for column in column_list_strint:
 		
-		import numpy as np
+		df[column] = df[column].astype(np.int64)
+	
+	for column in column_list_strfloat:
 		
-		for column in column_list_strint:
-			
-			df[column] = df[column].astype(np.int64)
-		
-		for column in column_list_strfloat:
-			
-			df[column] = df[column].astype(float)
+		df[column] = df[column].astype(float)
 
-		df['genus'] = df['genus'] + ' (' + df['genus'].map(df['genus'].value_counts().to_dict()).astype(str) + ')'
-		df['species'] = df['species'] + ' (' + df['species'].map(df['species'].value_counts().to_dict()).astype(str) + ')'
-		df.insert(19, 'genuscount', df['genus'].map(df['genus'].value_counts().to_dict()))
-		df.insert(21, 'speciescount', df['species'].map(df['species'].value_counts().to_dict()))
-		df = df.sort_values(by='bits', axis=0, ascending=False)
-	
-		return df
+	df['genus'] = df['genus'] + ' (' + df['genus'].map(df['genus'].value_counts().to_dict()).astype(str) + ')'
+	df['species'] = df['species'] + ' (' + df['species'].map(df['species'].value_counts().to_dict()).astype(str) + ')'
+	df.insert(19, 'genuscount', df['genus'].map(df['genus'].value_counts().to_dict()))
+	df.insert(21, 'speciescount', df['species'].map(df['species'].value_counts().to_dict()))
+	df = df.sort_values(by='bits', axis=0, ascending=False)
+
+	return df
 	
 ID_Number = st.selectbox("Select Effector:", df["ID_No"].unique())
 
