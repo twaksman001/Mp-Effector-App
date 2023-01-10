@@ -3,7 +3,6 @@
 import pandas as pd  # pip install pandas openpyxl
 import plotly.express as px  # pip install plotly-express
 import streamlit as st  # pip install streamlit
-# import sys
 
 # ------------------------------------------------------------ LAYOUT ------------------------------------------------------------
 
@@ -14,12 +13,12 @@ with st.expander('Column definitions'):
 
 # ------------------------------------------------------------ READ EXCEL ------------------------------------------------------------
 
-df = pd.read_csv('C:/Users/TW43969/OneDrive - University of Dundee/Current/Research/Tom W Research Record/Bioinformatics/Structure/MpEffectorsBioinfo_Structural_KeyInfo_2.csv')
-df_taxonomy = pd.read_csv('C:/Users/TW43969/OneDrive - University of Dundee/Current/Research/Tom W Research Record/Bioinformatics/Structure/Structure Similarity/FoldSeek/FoldSeek_Taxonomy.csv')
+df = pd.read_csv('Data Files/MpEffectorsBioinfo_Structural_KeyInfo.csv')
+df_taxonomy = pd.read_csv('Data Files/FoldSeek/FoldSeek_Taxonomy.csv')
 
 # ------------------------------------------------------------ VARIABLES ------------------------------------------------------------
 
-desired_file_path_FoldSeek = 'C:/Users/TW43969/OneDrive - University of Dundee/Current/Research/Tom W Research Record/Bioinformatics/Structure/Structure Similarity/FoldSeek/*.txt'
+desired_file_path_FoldSeek = 'Data Files/FoldSeek/*.txt'
 column_list_strint = ['alnlen','mismatch','gapopen','qstart','qend','tstart','tend','qlen','tlen', 'bits']
 column_list_strfloat = ['fident', 'evalue']
 
