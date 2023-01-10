@@ -3,6 +3,7 @@
 import pandas as pd  # pip install pandas openpyxl
 import plotly.express as px  # pip install plotly-express
 import streamlit as st  # pip install streamlit
+#import sys
 
 # ------------------------------------------------------------ LAYOUT ------------------------------------------------------------
 
@@ -31,13 +32,9 @@ def get_file_of_interest_FoldSeek(protein):
 	
 	for file_path in glob.glob(desired_file_path_FoldSeek):
 
-		if re.search(protein + '_', file_path) != None:
+		if re.search(protein + '_', file_path):
 						
 			return file_path.replace('\\', '/')
-		
-		# else:
-			
-			# return None
 
 def FoldSeek_df(protein):
 	
@@ -135,17 +132,8 @@ def df_present_streamlit(protein):
 	
 ID_Number = st.selectbox("Select Effector:", df["ID_No"].unique())
 
-# st.write(type(df_present_streamlit(ID_Number)))
-
-# if 'DataFrame' in str(type(df_present_streamlit(ID_Number))):
-	
-	# df_FoldSeek = df_present_streamlit(ID_Number)
-
-if str(df_present_streamlit(ID_Number)) != 'None':
-	
-	df_FoldSeek = df_present_streamlit(ID_Number)
-	
-	# exit()
+if str(df_present_streamlit(ID_Number)) != 'None':	
+	df_FoldSeek = df_present_streamlit(ID_Number)	
 
 # ------------------------------------------------------------ SIDEBAR ------------------------------------------------------------
 
@@ -289,7 +277,9 @@ if str(df_present_streamlit(ID_Number)) != 'None':
 		)
 
 	st.dataframe(df_FoldSeek_selection)
-	
-else:
-	
+
+
+# if no data
+else:	
 	st.write('There no FoldSeek hits for Mp' + str(ID_Number))
+	# exit()
