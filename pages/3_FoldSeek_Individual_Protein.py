@@ -99,11 +99,7 @@ def FoldSeek_df(protein):
 		df = pd.DataFrame.from_dict(columns_dict)
 		
 		return df
-		
-	else:
-		
-		return None
-	
+
 def df_present_streamlit(protein):
 	
 	df = FoldSeek_df(protein)
