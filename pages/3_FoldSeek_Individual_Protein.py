@@ -15,7 +15,6 @@ with st.expander('Column definitions'):
 # ------------------------------------------------------------ READ EXCEL ------------------------------------------------------------
 
 df = pd.read_csv('Data Files/MpEffectorsBioinfo_Structural_KeyInfo.csv')
-df_taxonomy = pd.read_csv('Data Files/FoldSeek/FoldSeek_Taxonomy.csv')
 
 # ------------------------------------------------------------ VARIABLES ------------------------------------------------------------
 
@@ -394,19 +393,6 @@ def filter_dataframe(df):
 								user_num_input = (_min, _max)
 								st.write(f'Value range for {column} is maximal until this box is unchecked')
 						df_filter_dict[column] = user_num_input
-		
-	df_filter_dict
-	# threshold_checkbox
-	# if threshold_checkbox:
-		# set
-		# option
-	# reset_all
-	# st.write(locals()['reset_all'])
-	# locals()['reset_all'] == True
-	# set(locals()['reset_all'] = True)
-	# st.write(locals())
-	# st.write(locals()['reset_all'])
-	# st.write(globals())
 	
 	for column in columns_all_filter:
 		if str(df_filter_dict[column]) == 'None':
