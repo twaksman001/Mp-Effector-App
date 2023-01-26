@@ -20,10 +20,60 @@ df_taxonomy = pd.read_csv('Data Files/FoldSeek/FoldSeek_Taxonomy.csv')
 # ------------------------------------------------------------ VARIABLES ------------------------------------------------------------
 
 desired_file_path_FoldSeek = 'Data Files/FoldSeek/*.txt'
-column_list_strint = ['alnlen','mismatch','gapopen','qstart','qend','tstart','tend','qlen','tlen', 'bits']
-column_list_strfloat = ['fident', 'evalue']
 
-# ------------------------------------------------------------ FUNCTIONS ------------------------------------------------------------
+def list_unique(lists):
+	
+	list_unique = []
+	
+	for list in lists:
+		for i in list:
+			if i not in list_unique:
+				list_unique.append(i)
+	
+	return list_unique
+
+def df_row_index_list_cond(df, column, list_):
+	
+	index_list = []
+	
+	for j in list_:
+   
+		for i in df.index:
+		# for i in range(len(df[column])):
+					
+			# if any(k == j for k in df[column][i]):
+			# if any(k == j for k in df.loc[i, column]):
+			if j in df.loc[i, column]:
+			
+				if i not in index_list:
+					
+					index_list.append(i)
+	
+	index_list.sort()
+	
+	return index_list
+
+def row_string_dynamic_list(df, column):
+	
+	list_dynamic = []
+	
+	for string in df[column]:
+		if string not in list_dynamic:
+			list_dynamic.append(string)
+	
+	# list_dynamic.sort()
+
+	return list_dynamic
+
+def textinput_row_string_dynamic_list(df, column, textinput):
+	
+	list_dynamic = []
+	
+	for string in df[column]:		
+		if any(x in string for x in textinput.split(',')):
+			list_dynamic.append(string)
+	
+	return list_dynamic
 
 def get_file_of_interest_FoldSeek(protein):
 	
@@ -32,7 +82,7 @@ def get_file_of_interest_FoldSeek(protein):
 	
 	for file_path in glob.glob(desired_file_path_FoldSeek):
 
-		if re.search(protein + '_', file_path):
+		if re.search(protein + '_', file_path) != None:
 						
 			return file_path.replace('\\', '/')
 
@@ -41,75 +91,81 @@ def FoldSeek_df(protein):
 	import re
 	import pandas as pd
 	
-	if protein == 0:
-		protein = 'MpC002'
-	elif protein == 100:
-		protein = 'MIF1'
+	dict_proteinname = {0: 'MpC002', 100: 'MIF1', 92: 'Mp92a'}
+	if protein in [0, 100, 92]:
+		protein = dict_proteinname[protein]
 	else:
 		protein = 'Mp' + str(protein)
 	
-	column_titles = ['query','target','fident','alnlen','mismatch','gapopen','qstart','qend','tstart','tend','evalue','bits','qlen','tlen','qaln','taln','tca','tseq','taxid','genus','species']
+	column_titles = ['query','target','fident','alnlen','mismatch','gapopen','qstart','qend','tstart','tend',
+					 'evalue','bits','qlen','tlen','qaln','taln','tca','tseq','taxid','taxon']
 	
 	if get_file_of_interest_FoldSeek(protein):
 	
 		file = open(get_file_of_interest_FoldSeek(protein))
-		
 		lines = file.read().split('\n')
-	
+
 		columns_dict = {}
+		columns_dict['database'] = []
 
 		for i in range(len(column_titles)):
 
 			columns_dict[column_titles[i]] = []
-
-		columns_dict['extra'] = []
-
+				
 		for j in range(len(lines)):
 
-			line_split = re.split('\s{1,}', lines[j][lines[j].find('job.pdb'):])
+			if 'job' not in lines[j]:
 
-			if len(line_split) <= len(column_titles):
+				continue
 
-				for i in range(len(column_titles)):
+			line_split = re.split('\t', lines[j][lines[j].find('job.pdb'):])
+						
+			del line_split[10]
 
-					if i < len(line_split):
+			for i in range(len(column_titles)):
 
-						columns_dict[column_titles[i]].append(line_split[i])
+				if i < len(line_split):
+				
+					columns_dict[column_titles[i]].append(line_split[i])
+				
+				else:
+					
+					columns_dict[column_titles[i]].append('N/A')
 
-					else:
+		database_dict = {'AF-':'AlphaFold', '\d[\da-zA-Z]{3}_':'PDB', 'MGY':'MGnify', 'GMGC':'GMGC'}
 
-						columns_dict[column_titles[i]].append('N/A')
+		for i in range(len(columns_dict['target'])):
 
-				columns_dict['extra'].append('0')
+			columns_dict['database'].append('N/A')
 
-			else:
+			target = columns_dict['target'][i]
 
-				for i in range(len(line_split)):
+			for key in database_dict:
 
-					if i < len(column_titles):
+				if re.search(key, target):
 
-						columns_dict[column_titles[i]].append(line_split[i])
-
-					else:
-
-						columns_dict['extra'].append(line_split[i:])
-
-						break
+					columns_dict['database'][i] = database_dict[key]
 
 		df = pd.DataFrame.from_dict(columns_dict)
-		
-		return df
 
-def df_present_streamlit(protein):
+		return df
+	
+	else:
+		
+		return None
+	
+def FoldSeek_df_present(protein):
+	
+	import pandas as pd
+	import numpy as np
 	
 	df = FoldSeek_df(protein)
-
-	if str(df) != 'None':
 	
-		df = df.drop(index = df.index[-1], columns = 'query')
-		
-		import numpy as np
-		
+	column_list_strint = ['alnlen','mismatch','gapopen','qstart','qend','tstart','tend','qlen','tlen','bits']
+	column_list_strfloat = ['fident','evalue']
+	
+	if str(df) != 'None':
+					
 		for column in column_list_strint:
 			
 			df[column] = df[column].astype(np.int64)
@@ -117,165 +173,278 @@ def df_present_streamlit(protein):
 		for column in column_list_strfloat:
 			
 			df[column] = df[column].astype(float)
+		
+		targetID_list, targetname_list, genus_list, species_list, extra_list = [], [], [], [], []
+		
+		for target in df['target']:
 
+			target = target + ' '
+			
+			targetID_list.append(target[:target.find(' ')])
+			targetname_list.append(target[target.find(' '):])
+		
+		for taxon in df['taxon']:
+			
+			taxon_list = taxon.split(' ')
+			
+			if len(taxon_list) > 2:
+				
+				taxon_list[2] = ' '.join(taxon_list[2:])
+				del taxon_list[3:]
+					   
+			while len(taxon_list) < 3:
+				
+				taxon_list.append('N/A')
+			
+			genus_list.append(taxon_list[0])
+			species_list.append(taxon_list[1])
+			extra_list.append(taxon_list[2])
+ 
+		df.insert(3, 'targetID', targetID_list)
+		df.insert(4, 'targetname', targetname_list)
+		df['genus'], df['species'], df['extra'] = genus_list, species_list, extra_list
+		
 		df['genus'] = df['genus'] + ' (' + df['genus'].map(df['genus'].value_counts().to_dict()).astype(str) + ')'
 		df['species'] = df['species'] + ' (' + df['species'].map(df['species'].value_counts().to_dict()).astype(str) + ')'
-		df.insert(19, 'genuscount', df['genus'].map(df['genus'].value_counts().to_dict()))
-		df.insert(21, 'speciescount', df['species'].map(df['species'].value_counts().to_dict()))
+		df.insert(24, 'genuscount', df['genus'].map(df['genus'].value_counts().to_dict()))
+		df.insert(26, 'speciescount', df['species'].map(df['species'].value_counts().to_dict()))
+		
+		del (df['query'], df['target'], df['taxon'])
+		
 		df = df.sort_values(by='bits', axis=0, ascending=False)
-	
+		
 		return df
 	
 ID_Number = st.selectbox("Select Effector:", df["ID_No"].unique())
 
-if str(df_present_streamlit(ID_Number)) != 'None':	
-	df_FoldSeek = df_present_streamlit(ID_Number)	
-
+if str(FoldSeek_df_present(ID_Number)) != 'None':
+	
+	df_FoldSeek = FoldSeek_df_present(ID_Number)
+	
 # ------------------------------------------------------------ SIDEBAR ------------------------------------------------------------
-
+		
+def filter_dataframe(df):
+	
+	# df = df_FoldSeek
+	df_filter_dict = {}
+	
+	columns_stringsearch = ['targetID', 'targetname', 'qaln', 'taln', 'tseq', 'genus', 'species']
+	columns_checkbox = ['evalue']
+	columns_multiselect = ['database']
+	columns_selectslider = ['gapopen', 'qstart', 'qend', 'tstart', 'tend']
+	columns_slider_int = ['alnlen', 'mismatch', 'bits', 'genuscount', 'speciescount']
+	columns_slider_float = ['fident', 'evalue']
+	columns_all_filter = list_unique([columns_stringsearch, columns_checkbox, columns_multiselect, 
+									 columns_selectslider, columns_slider_int, columns_slider_float])
+	
+	# df.isnull().values.any() == False
+	# st.write(len(df))
+	
+	for column in columns_all_filter:
+		df_filter_dict[column] = None
+	
 	with st.sidebar:
-		
 		st.header('Filters')
+		reset_all = st.button('Reset all filters')
+		for column in columns_all_filter:
+			with st.expander(column):
+				
+				if column in columns_stringsearch:
+					user_text_input = st.text_input(f"Text string in {column} (case-sensitive ; if multiple, use only 1 comma to separate)")
+					if user_text_input:# and reset_all == False:
+						list_dynamic = textinput_row_string_dynamic_list(df, column, user_text_input)
+						df_filter_dict[column] = df_row_index_list_cond(df, column, list_dynamic)
+					# else:
+						# df_filter_dict[column] = None
+				
+				if column in columns_checkbox:
+					df_filter_dict[f'{column}2'] = None
+					threshold_checkbox = st.checkbox(f'Use threshold for {column}')
+					if threshold_checkbox:
+						user_text_input = st.text_input(f"Threshold for {column}")
+						option = st.selectbox("Select threshold type:", [f'{column} above', f'{column} below'])
+						set = st.checkbox(f'Activate threshold for {column}')
+						df_filter_dict[f'{column}2'] = user_text_input
+					# set == True
+						# if set == True and reset_all == False:						
+							# if option == 'Above':
+								# df = df[df[column] >= float(user_text_input)]
+							# elif option == 'Below':
+								# df = df[df[column] <= float(user_text_input)]					
+					# else:
+						# user_text_input = None
+				
+				# if column in columns_multiselect:
+					# select_all = st.checkbox(f"Select all {column}", value=True)
+					# if select_all == True or reset_all == True:				
+						# user_cat_input = st.multiselect(
+														# f"Values for {column}",
+														# df[column].unique(),
+														# default=list(df[column].unique()),
+														# )
+					# else:
+						# user_cat_input = st.multiselect(
+														# f"Values for {column}",
+														# df[column].unique(),
+														# )
+					
+					# df = df[df[column].isin(user_cat_input)]
+				
+				if column in columns_multiselect:
+					# cat_values = df[column].unique()
+					user_cat_input = st.multiselect(
+													f"Values for {column}",
+													df[column].unique(),
+													default=list(df[column].unique()),
+													)
+					# st.write(len(user_cat_input), len(cat_values))
+					if len(user_cat_input) != df_FoldSeek[column].nunique():
+						select_all = st.checkbox(f"Select all {column}", value=False)
+						if select_all == True:# or reset_all == True:				
+							st.write(f'All {column} values selected until this box is unchecked')
+							user_cat_input = df_FoldSeek[column].unique()
+											 # st.multiselect(
+															# f"Values for {column}",
+															# df[column].unique(),
+															# )					
+					df_filter_dict[column] = user_cat_input
+				
+				if column in columns_selectslider:	
+					# if len(df) != 0:
+					if df[column].nunique() > 10:
+						_min = df[column].sort_values().min()
+						_max = df[column].sort_values().max()
+						user_num_cat_input = st.select_slider(
+															  f"Values for {column}",
+															  df_FoldSeek[column].sort_values(),
+															  (_min, _max)
+															  )
+						if user_num_cat_input != (_min, _max):
+							reset = st.checkbox(f"Reset {column}", value=False)
+							if reset == True:# or reset_all == True:
+								user_num_cat_input = (_min, _max)
+								st.write(f'Value range for {column} is maximal until this box is unchecked')
+						df_filter_dict[column] = user_num_cat_input
+					else:
+						user_num_cat_input = st.multiselect(
+														f"Values for {column}",
+														df[column].unique(),
+														default=list(df[column].unique()),
+														)
+						# st.write(len(user_cat_input), len(df[column].unique()))
+						if len(user_num_cat_input) != df_FoldSeek[column].nunique():
+							select_all = st.checkbox(f"Select all {column}", value=False)
+							if select_all == True:# or reset_all == True:				
+								user_num_cat_input = df_FoldSeek[column].unique()
+								st.write(f'All {column} values selected until this box is unchecked')
+												 # st.multiselect(
+																# f"Values for {column}",
+																# df[column].unique(),
+																# )					
+					df_filter_dict[column] = user_num_cat_input
 
-		# Select fraction of identical matches
-		with st.expander('Fraction of identical matches'):
-			reset_fident = st.checkbox("Reset fident", value=True)
-			if reset_fident:
-				min_fident, max_fident = st.slider("fident", float(df_FoldSeek["fident"].min()), float(df_FoldSeek["fident"].max()), (float(df_FoldSeek["fident"].min()), float(df_FoldSeek["fident"].max())), step=0.1)
-			else:
-				min_fident, max_fident = st.slider("fident", float(df_FoldSeek["fident"].min()), float(df_FoldSeek["fident"].max()), (5.0, 10.0), step=0.1)
-
-		# Select alignment length
-		with st.expander('Alignment length'):
-			reset_alnlen = st.checkbox("Reset alnlen", value=True)
-			if reset_alnlen:
-				min_alnlen, max_alnlen = st.slider("alnlen", int(df_FoldSeek["alnlen"].min()), int(df_FoldSeek["alnlen"].max()), (int(df_FoldSeek["alnlen"].min()), int(df_FoldSeek["alnlen"].max())), step=1)
-			else:
-				min_alnlen, max_alnlen = st.slider("alnlen", int(df_FoldSeek["alnlen"].min()), int(df_FoldSeek["alnlen"].max()), (int(df_FoldSeek["alnlen"].min())+10, int(df_FoldSeek["alnlen"].max())-10), step=1)
+				if column in columns_slider_int:
+					# st.write(len(df))
+					# df.isnull().values.any() == False
+					# if df.isnull().values.any() == False:
+					# if len(df) != 0:
+					_min = int(df[column].min())
+					_max = int(df[column].max())
+					step = math.ceil((_max - _min)/100)
+					if step != 0:
+						user_num_input = st.slider(
+												   f"Values for {column}",
+												   min_value=_min,
+												   max_value=_max,
+												   value=(_min, _max),
+												   step=step
+												   )
+						# st.write(user_num_input)
+						if user_num_input != (_min, _max):
+							reset = st.checkbox(f"Reset {column}", value=False)
+							# reset == False
+							if reset == True:# or reset_all == True:
+								# st.experimental_rerun()
+								# break
+								# continue
+								user_num_input = (_min, _max)
+								st.write(f'Value range for {column} is maximal until this box is unchecked')
+						df_filter_dict[column] = user_num_input
+						
+				if column in columns_slider_float:
+					# if len(df) != 0:
+					_min = float(df[column].min())
+					_max = float(df[column].max())
+					step = (_max - _min)/100
+					if step != 0:
+						user_num_input = st.slider(
+												   f"Values for {column}",
+												   min_value=_min,
+												   max_value=_max,
+												   value=(_min, _max),
+												   step=step
+												   )
+						if user_num_input != (_min, _max):
+							reset = st.checkbox(f"Reset {column}", value=False)
+							# reset == False
+							if reset == True:# or reset_all == True:
+								# st.experimental_rerun()
+								# break
+								# continue
+								user_num_input = (_min, _max)
+								st.write(f'Value range for {column} is maximal until this box is unchecked')
+						df_filter_dict[column] = user_num_input
 		
-		# Select number of mismatches
-		with st.expander('Number of mismatches'):
-			reset_mismatch = st.checkbox("Reset mismatch", value=True)
-			if reset_mismatch:
-				min_mismatch, max_mismatch = st.slider("mismatch", int(df_FoldSeek["mismatch"].min()), int(df_FoldSeek["mismatch"].max()), (int(df_FoldSeek["mismatch"].min()), int(df_FoldSeek["mismatch"].max())), step=1)
-			else:
-				min_mismatch, max_mismatch = st.slider("mismatch", int(df_FoldSeek["mismatch"].min()), int(df_FoldSeek["mismatch"].max()), (int(df_FoldSeek["mismatch"].min())+10, int(df_FoldSeek["mismatch"].max())-10), step=1)
-		
-		# Number of gap open events
-		with st.expander('Number of gap open events'):
-			reset_gapopen = st.checkbox("Reset gapopen", value=True)
-			if reset_gapopen:
-				min_gapopen, max_gapopen = st.slider("gapopen", int(df_FoldSeek["gapopen"].min()), int(df_FoldSeek["gapopen"].max()), (int(df_FoldSeek["gapopen"].min()), int(df_FoldSeek["gapopen"].max())), step=1)
-			else:
-				min_gapopen, max_gapopen = st.slider("gapopen", int(df_FoldSeek["gapopen"].min()), int(df_FoldSeek["gapopen"].max()), (int(df_FoldSeek["gapopen"].min())+1, int(df_FoldSeek["gapopen"].max())-1), step=1)
-		
-		# Select alignment start position in query sequence
-		with st.expander('Alignment start position in query sequence'):
-			reset_qstart = st.checkbox("Reset qstart", value=True)
-			if reset_qstart:
-				min_qstart, max_qstart = st.slider("qstart", int(df_FoldSeek["qstart"].min()), int(df_FoldSeek["qstart"].max()), (int(df_FoldSeek["qstart"].min()), int(df_FoldSeek["qstart"].max())), step=1)
-			else:
-				min_qstart, max_qstart = st.slider("qstart", int(df_FoldSeek["qstart"].min()), int(df_FoldSeek["qstart"].max()), (int(df_FoldSeek["qstart"].min())+10, int(df_FoldSeek["qstart"].max())-10), step=1)
+	df_filter_dict
+	# threshold_checkbox
+	# if threshold_checkbox:
+		# set
+		# option
+	# reset_all
+	# st.write(locals()['reset_all'])
+	# locals()['reset_all'] == True
+	# set(locals()['reset_all'] = True)
+	# st.write(locals())
+	# st.write(locals()['reset_all'])
+	# st.write(globals())
+	
+	for column in columns_all_filter:
+		if str(df_filter_dict[column]) == 'None':
+			continue
+		if column in columns_stringsearch:			
+			df = df.loc[df_filter_dict[column]]
+		if column in columns_checkbox:
+			if threshold_checkbox:
+				if set == True:# and reset_all == False:						
+					if option == f'{column} above':
+						df = df[df[column] >= float(df_filter_dict[f'{column}2'])]
+					elif option == f'{column} below':
+						df = df[df[column] <= float(df_filter_dict[f'{column}2'])]
+		if column in columns_multiselect:
+			df = df[df[column].isin(df_filter_dict[column])]
+		if column in columns_selectslider:
+			st.write(column, df[column].nunique())
+			if 'tuple' in str(type(df_filter_dict[column])):
+				df = df[df[column].between(*df_filter_dict[column])]
+			if 'list' in str(type(df_filter_dict[column])):
+				# st.write(map(int, df_filter_dict[column]))
+				# df_filter_dict[column] = list(map(int, df_filter_dict[column]))
+				df = df[df[column].isin(df_filter_dict[column])]
+		if column in columns_slider_int:
+			df = df[df[column].between(*df_filter_dict[column])]
+		if column in columns_slider_float:
+			df = df[df[column].between(*df_filter_dict[column])]
 
-		# Select alignment end position in query sequence
-		with st.expander('Alignment end position in query sequence'):
-			reset_qend = st.checkbox("Reset qend", value=True)
-			if reset_qend:
-				min_qend, max_qend = st.slider("qend", int(df_FoldSeek["qend"].min()), int(df_FoldSeek["qend"].max()), (int(df_FoldSeek["qend"].min()), int(df_FoldSeek["qend"].max())), step=1)
-			else:
-				min_qend, max_qend = st.slider("qend", int(df_FoldSeek["qend"].min()), int(df_FoldSeek["qend"].max()), (int(df_FoldSeek["qend"].min())+10, int(df_FoldSeek["qend"].max())-10), step=1)
+	if reset_all:
+		df = df_FoldSeek
+	
+	if len(df) == 0:
+		st.write('No rows match the given column filters')
+		# exit()
+	
+	return df
 
-		# Select alignment start position in target sequence
-		with st.expander('Alignment start position in target sequence'):
-			reset_tstart = st.checkbox("Reset tstart", value=True)
-			if reset_tstart:
-				min_tstart, max_tstart = st.slider("tstart", int(df_FoldSeek["tstart"].min()), int(df_FoldSeek["tstart"].max()), (int(df_FoldSeek["tstart"].min()), int(df_FoldSeek["tstart"].max())), step=1)
-			else:
-				min_tstart, max_tstart = st.slider("tstart", int(df_FoldSeek["tstart"].min()), int(df_FoldSeek["tstart"].max()), (int(df_FoldSeek["tstart"].min())+10, int(df_FoldSeek["tstart"].max())-10), step=1)
+# ---------------------------------------------------- FILTER DATAFRAME ----------------------------------------------------
 
-		# Select alignment end position in target sequence
-		with st.expander('Alignment end position in target sequence'):
-			reset_tend = st.checkbox("Reset tend", value=True)
-			if reset_tend:
-				min_tend, max_tend = st.slider("tend", int(df_FoldSeek["tend"].min()), int(df_FoldSeek["tend"].max()), (int(df_FoldSeek["tend"].min()), int(df_FoldSeek["tend"].max())), step=1)
-			else:
-				min_tend, max_tend = st.slider("tend", int(df_FoldSeek["tend"].min()), int(df_FoldSeek["tend"].max()), (int(df_FoldSeek["tend"].min())+10, int(df_FoldSeek["tend"].max())-10), step=1)
-
-		# Select E value
-		with st.expander('E value'):
-			reset_evalue = st.checkbox("Reset evalue", value=True)
-			if reset_evalue:
-				min_evalue, max_evalue = st.select_slider("evalue", df_FoldSeek["evalue"].sort_values(), (df_FoldSeek["evalue"].sort_values().min(), df_FoldSeek["evalue"].sort_values().max()))
-			else:
-				min_evalue, max_evalue = st.select_slider("evalue", df_FoldSeek["evalue"].sort_values(), (list(df_FoldSeek["evalue"].sort_values())[3], list(df_FoldSeek["evalue"].sort_values())[-3]))
-
-		# Select bit score
-		with st.expander('Bit score'):
-			reset_bits = st.checkbox("Reset bits", value=True)
-			if reset_bits:
-				min_bits, max_bits = st.select_slider("bits", df_FoldSeek["bits"].sort_values(), (df_FoldSeek["bits"].sort_values().min(), df_FoldSeek["bits"].sort_values().max()))
-			else:
-				min_bits, max_bits = st.select_slider("bits", df_FoldSeek["bits"].sort_values(), (list(df_FoldSeek["bits"].sort_values())[3], list(df_FoldSeek["bits"].sort_values())[-3]))
-		
-		# Select target length
-		with st.expander('Target length'):
-			reset_tlen = st.checkbox("Reset tlen", value=True)
-			if reset_tlen:
-				min_tlen, max_tlen = st.slider("tlen", int(df_FoldSeek["tlen"].min()), int(df_FoldSeek["tlen"].max()), (int(df_FoldSeek["tlen"].min()), int(df_FoldSeek["tlen"].max())), step=1)
-			else:
-				min_tlen, max_tlen = st.slider("tlen", int(df_FoldSeek["tlen"].min()), int(df_FoldSeek["tlen"].max()), (int(df_FoldSeek["tlen"].min())+10, int(df_FoldSeek["tlen"].max())-10), step=1)
-		
-		# Select genus
-		with st.expander('Select genus'):
-			all_genus = st.checkbox("Select all genus", value=True)
-			if all_genus:
-				genus = st.multiselect("genus:",
-				df_FoldSeek["genus"].unique(),df_FoldSeek["genus"].unique())
-			else:
-				genus = st.multiselect("genus:",
-				df_FoldSeek["genus"].unique())
-		
-		# Select genus count
-		with st.expander('Select genus count'):
-			reset_genuscount = st.checkbox("Reset genus count", value=True)
-			if reset_genuscount:
-				min_genuscount, max_genuscount = st.select_slider("genuscount", df_FoldSeek["genuscount"].sort_values(), (df_FoldSeek["genuscount"].sort_values().min(), df_FoldSeek["genuscount"].sort_values().max()))
-			else:
-				min_genuscount, max_genuscount = st.select_slider("genuscount", df_FoldSeek["genuscount"].sort_values(), (list(df_FoldSeek["genuscount"].sort_values())[3], list(df_FoldSeek["genuscount"].sort_values())[-3]))
-
-		# Select species
-		with st.expander('Select species'):
-			all_species = st.checkbox("Select all species", value=True)
-			if all_species:
-				species = st.multiselect("species:",
-				df_FoldSeek["species"].unique(),df_FoldSeek["species"].unique())
-			else:
-				species = st.multiselect("species:",
-				df_FoldSeek["species"].unique())
-
-# -------------------------------------------------------- FILTER DATAFRAME ---------------------------------------------------------
-
-	df_FoldSeek_selection = df_FoldSeek.query(
-		"@min_fident <= fident <= @max_fident"
-		"& @min_alnlen <= alnlen <= @max_alnlen"
-		"& @min_mismatch <= mismatch <= @max_mismatch"
-		"& @min_gapopen <= gapopen <= @max_gapopen"
-		"& @min_qstart <= qstart <= @max_qstart"
-		"& @min_qend <= qend <= @max_qend"
-		"& @min_tstart <= tstart <= @max_tstart"
-		"& @min_tend <= tend <= @max_tend"
-		"& @min_evalue <= evalue <= @max_evalue"
-		"& @min_bits <= bits <= @max_bits"
-		"& @min_tlen <= tlen <= @max_tlen"
-		"& genus == @genus"
-		"& @min_genuscount <= genuscount <= @max_genuscount"
-		"& species == @species"
-		)
-
-	st.dataframe(df_FoldSeek_selection)
-
-
-# if no data
-else:	
-	st.write('There no FoldSeek hits for Mp' + str(ID_Number))
-	# exit()
+df = filter_dataframe(df_FoldSeek)
+st.dataframe(df)
