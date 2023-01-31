@@ -134,7 +134,6 @@ if str(GrAfSS_df(ID_Number)) != 'None':
 	df_GrAfSS = GrAfSS_df(ID_Number)
 
 df_GrAfSS['RMSD'] = df_GrAfSS['RMSD'].astype(float)
-df_GrAfSS['substructure_name'] = df_GrAfSS['substructure_name'] + ' (' + df_GrAfSS['substructure_name'].map(df_GrAfSS['substructure_name'].value_counts().to_dict()).astype(str) + ')'
 df_GrAfSS.insert(2, 'substructure_name_count', df_GrAfSS['substructure_name'].map(df_GrAfSS['substructure_name'].value_counts().to_dict()))
 
 columns_stringsearch = ['substructure_name']
