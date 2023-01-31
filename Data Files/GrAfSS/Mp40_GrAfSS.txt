@@ -1,0 +1,25 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM   -0.8764 -0.2287 -0.4238  0.3493  0.3039 -0.8864  0.3315 -0.9248 -0.1865    26.947    32.165     2.673  
+ 
+ Match found in 1tde_c00     THIOREDOXIN REDUCTASE (E.C.1.6.4.5) 
+   Pattern 1tde_c00               Query structure     RMSD=  1.22 A  No. of residues =   3
+   ------- -------                --------------- 
+      135    CYH       matches     A  85    CYH  
+      138    CYH       matches     A  74    CYH  
+      139    ASP       matches     A  75    ASP  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM   -0.3228 -0.6818  0.6565 -0.9390  0.1438 -0.3124 -0.1186  0.7173  0.6866    84.495    46.952    40.059  
+ 
+ Match found in 1eo7_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE    
+   Pattern 1eo7_c00               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 229    ALA       matches     A  26    ALA  
+    A 257    ALA       matches     A  25    ALA  
+    A 328    ASP       matches     A  21    ASP  
+
+************************************************* user.SUMS ********************************************************
+   1tde_c00     THIOREDOXIN REDUCTASE (E.C.1.6.4.5)     :        1.22  <
+
+************************************************* user.SUML ********************************************************
+   1eo7_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE        :        1.45  <

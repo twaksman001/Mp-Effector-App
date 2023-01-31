@@ -1,0 +1,97 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM   -0.0551 -0.9599 -0.2747 -0.4084  0.2727 -0.8711  0.9111  0.0642 -0.4071    23.780    23.122    56.807  
+ 
+ Match found in 1lio_c01     ADENOSINE KINASE                    
+   Pattern 1lio_c01               Query structure     RMSD=  1.07 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A  59    ALA  
+    A 317    GLY       matches     A  62    GLY  
+    A 318    ASP       matches     A  61    ASP  
+  TRANSFORM   -0.4527  0.5533  0.6993 -0.7239 -0.6859  0.0741  0.5207 -0.4726  0.7110   136.648     4.585    -2.318  
+ 
+ Match found in 1lij_c01     ADENOSINE KINASE                    
+   Pattern 1lij_c01               Query structure     RMSD=  1.24 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A  59    ALA  
+    A 317    GLY       matches     A  62    GLY  
+    A 318    ASP       matches     A  61    ASP  
+  TRANSFORM    0.9360 -0.2533  0.2444 -0.3258 -0.8863  0.3291  0.1333 -0.3877 -0.9121    27.297   -32.678   -43.495  
+ 
+ Match found in 1tz3_c03     PUTATIVE SUGAR KINASE               
+   Pattern 1tz3_c03               Query structure     RMSD=  1.28 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 250    ALA       matches     A  59    ALA  
+    B 251    GLY       matches     A  62    GLY  
+    B 252    ASP       matches     A  61    ASP  
+  TRANSFORM    0.4580  0.8874  0.0527 -0.8451  0.4530 -0.2838 -0.2757  0.0854  0.9574    36.811   -24.888   -12.311  
+ 
+ Match found in 1tz3_c02     PUTATIVE SUGAR KINASE               
+   Pattern 1tz3_c02               Query structure     RMSD=  1.30 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 250    ALA       matches     A  59    ALA  
+    A 251    GLY       matches     A  62    GLY  
+    A 252    ASP       matches     A  61    ASP  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM   -0.1092 -0.9374 -0.3307  0.8595 -0.2561  0.4423  0.4993  0.2360 -0.8337    23.357    33.053    53.582  
+ 
+ Match found in 1lio_c01     ADENOSINE KINASE                    
+   Pattern 1lio_c01               Query structure     RMSD=  1.18 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A  59    ALA  
+    A 317    GLY       matches     A  62    GLY  
+    A 318    ASP       matches     A  61    ASP  
+  TRANSFORM   -0.4925  0.5696  0.6580 -0.3985 -0.8197  0.4114 -0.7737  0.0596 -0.6307   136.335     7.144   -12.498  
+ 
+ Match found in 1lij_c01     ADENOSINE KINASE                    
+   Pattern 1lij_c01               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A  59    ALA  
+    A 317    GLY       matches     A  62    GLY  
+    A 318    ASP       matches     A  61    ASP  
+  TRANSFORM   -0.2131  0.2201 -0.9519 -0.6648 -0.7467 -0.0238  0.7160 -0.6277 -0.3054    18.291   -35.334   -38.928  
+ 
+ Match found in 1tz3_c03     PUTATIVE SUGAR KINASE               
+   Pattern 1tz3_c03               Query structure     RMSD=  1.39 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 250    ALA       matches     A  59    ALA  
+    B 251    GLY       matches     A  62    GLY  
+    B 252    ASP       matches     A  61    ASP  
+  TRANSFORM    0.3259  0.9416 -0.0846  0.3341 -0.0310  0.9420 -0.8844  0.3353  0.3247    35.773   -15.626   -17.091  
+ 
+ Match found in 1tz3_c02     PUTATIVE SUGAR KINASE               
+   Pattern 1tz3_c02               Query structure     RMSD=  1.42 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 250    ALA       matches     A  59    ALA  
+    A 251    GLY       matches     A  62    GLY  
+    A 252    ASP       matches     A  61    ASP  
+  TRANSFORM    0.6662  0.6969  0.2656 -0.7312  0.5403  0.4164 -0.1467  0.4716 -0.8695    33.646    80.788    10.808  
+ 
+ Match found in 2qv4_p00     PANCREATIC ALPHA-AMYLASE            
+   Pattern 2qv4_p00               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 459    ASN       matches     A  64    ASN  
+    A 460    GLY       matches     A  62    GLY  
+    A 461    ASN       matches     A  63    ASN  
+  TRANSFORM   -0.0287  0.9851 -0.1698 -0.2431  0.1579  0.9571 -0.9696 -0.0687 -0.2349    56.947     8.757    18.123  
+ 
+ Match found in 1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB
+   Pattern 1q6l_c05               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  67    ASP       matches     A  50    ASP  
+    A  68    ALA       matches     A  46    ALA  
+    A  72    LEU       matches     A  48    LEU  
+
+************************************************* user.SUMS ********************************************************
+   1lio_c01     ADENOSINE KINASE                        :        1.07  <
+   1lij_c01     ADENOSINE KINASE                        :        1.24  <
+   1tz3_c03     PUTATIVE SUGAR KINASE                   :        1.28  <
+   1tz3_c02     PUTATIVE SUGAR KINASE                   :        1.30  <
+
+************************************************* user.SUML ********************************************************
+   1lio_c01     ADENOSINE KINASE                        :        1.18  <
+   1lij_c01     ADENOSINE KINASE                        :        1.36  <
+   1tz3_c03     PUTATIVE SUGAR KINASE                   :        1.39  <
+   1tz3_c02     PUTATIVE SUGAR KINASE                   :        1.42  <
+   2qv4_p00     PANCREATIC ALPHA-AMYLASE                :        1.47  <
+   1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB    :        1.49  <

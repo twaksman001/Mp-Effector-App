@@ -1,0 +1,547 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM   -0.2539 -0.1662 -0.9528  0.2411 -0.9649  0.1040 -0.9367 -0.2033  0.2851    41.708    67.317     9.153  
+ 
+ Match found in 2dbt_c01     CHITINASE C                         
+   Pattern 2dbt_c01               Query structure     RMSD=  1.01 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 147    GLU       matches     A  95    GLU  
+    B 156    GLU       matches     A  87    GLU  
+    B 194    ASN       matches     A  65    ASN  
+  TRANSFORM    0.6564  0.7325  0.1804  0.6373 -0.6664  0.3870  0.4037 -0.1391 -0.9042    16.368    57.862   102.711  
+ 
+ Match found in 2v3r_p00     EXOGLUCANASE 1                      
+   Pattern 2v3r_p00               Query structure     RMSD=  1.02 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 270    ASN       matches     A  17    ASN  
+    A 384    ASN       matches     A  83    ASN  
+    A 385    GLU       matches     A  95    GLU  
+  TRANSFORM    0.4445  0.1570 -0.8819 -0.1976  0.9774  0.0744  0.8737  0.1412  0.4655    43.404    25.956    22.109  
+ 
+ Match found in 2dbt_c02     CHITINASE C                         
+   Pattern 2dbt_c02               Query structure     RMSD=  1.07 A  No. of residues =   3
+   ------- -------                --------------- 
+    C 147    GLU       matches     A  95    GLU  
+    C 156    GLU       matches     A  87    GLU  
+    C 194    ASN       matches     A  65    ASN  
+  TRANSFORM    0.3741 -0.9224  0.0961  0.5563  0.3061  0.7726 -0.7420 -0.2355  0.6276     2.165     8.579    25.605  
+ 
+ Match found in 1nww_c03     LIMONENE-1,2-EPOXIDE HYDROLASE      
+   Pattern 1nww_c03               Query structure     RMSD=  1.14 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  99    ARG       matches     A  62    ARG  
+    B 101    ASP       matches     A  60    ASP  
+    B 132    ASP       matches     A  11    ASP  
+  TRANSFORM   -0.3845  0.9176 -0.1006 -0.6203 -0.3375 -0.7080 -0.6836 -0.2098  0.6990    20.829    17.898    25.028  
+ 
+ Match found in 1nww_c02     LIMONENE-1,2-EPOXIDE HYDROLASE      
+   Pattern 1nww_c02               Query structure     RMSD=  1.15 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  99    ARG       matches     A  62    ARG  
+    A 101    ASP       matches     A  60    ASP  
+    A 132    ASP       matches     A  11    ASP  
+  TRANSFORM   -0.0813 -0.0106  0.9966  0.4386 -0.8983  0.0262  0.8950  0.4392  0.0777    75.429    21.563    16.347  
+ 
+ Match found in 2dbt_c00     CHITINASE C                         
+   Pattern 2dbt_c00               Query structure     RMSD=  1.18 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 147    GLU       matches     A  95    GLU  
+    A 156    GLU       matches     A  87    GLU  
+    A 194    ASN       matches     A  65    ASN  
+  TRANSFORM    0.3563 -0.9263  0.1227  0.5442  0.3124  0.7786 -0.7596 -0.2106  0.6154     2.558     9.001    25.786  
+ 
+ Match found in 1nu3_c01     LIMONENE-1,2-EPOXIDE HYDROLASE      
+   Pattern 1nu3_c01               Query structure     RMSD=  1.19 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  99    ARG       matches     A  62    ARG  
+    B 101    ASP       matches     A  60    ASP  
+    B 132    ASP       matches     A  11    ASP  
+  TRANSFORM   -0.3863  0.9157 -0.1110 -0.6338 -0.3509 -0.6893 -0.6701 -0.1959  0.7160    20.868    18.143    25.038  
+ 
+ Match found in 1nu3_c00     LIMONENE-1,2-EPOXIDE HYDROLASE      
+   Pattern 1nu3_c00               Query structure     RMSD=  1.23 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  99    ARG       matches     A  62    ARG  
+    A 101    ASP       matches     A  60    ASP  
+    A 132    ASP       matches     A  11    ASP  
+  TRANSFORM    0.6278  0.4921 -0.6031 -0.4062 -0.4538 -0.7931 -0.6640  0.7429 -0.0850    10.129    25.633    35.229  
+ 
+ Match found in 2odj_o00     PORIN D                             
+   Pattern 2odj_o00               Query structure     RMSD=  1.29 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 156    HIS       matches     A  25    HIS  
+    A 208    ASP       matches     A  11    ASP  
+    A 296    SER       matches     A  99    SER  
+  TRANSFORM   -0.0386  0.9866 -0.1582 -0.6119  0.1018  0.7844  0.7900  0.1271  0.5998    19.209    33.430     6.724  
+ 
+ Match found in 1ssx_c02     ALPHA-LYTIC PROTEASE                
+   Pattern 1ssx_c02               Query structure     RMSD=  1.30 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  57    HIS       matches     A  25    HIS  
+    A 102    ASP       matches     A  27    ASP  
+    A 193    GLY       matches     A  19    GLY  
+  TRANSFORM   -0.3740 -0.1482  0.9155 -0.9115 -0.1235 -0.3924  0.1713 -0.9812 -0.0889    17.631    28.533    25.570  
+ 
+ Match found in 1hq0_o00     CYTOTOXIC NECROTIZING FACTOR 1      
+   Pattern 1hq0_o00               Query structure     RMSD=  1.30 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 833    VAL       matches     A  30    VAL  
+    A 866    CYH       matches     A  18    CYH  
+    A 881    HIS       matches     A  29    HIS  
+  TRANSFORM    0.3318  0.8892 -0.3150 -0.1612  0.3824  0.9098  0.9295 -0.2511  0.2702    -4.656    26.137    28.829  
+ 
+ Match found in 1rtf_c06     TWO CHAIN TISSUE PLASMINOGEN ACTIVAT
+   Pattern 1rtf_c06               Query structure     RMSD=  1.32 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  57    HIS       matches     A  25    HIS  
+    B 102    ASP       matches     A  27    ASP  
+    B 193    GLY       matches     A  19    GLY  
+  TRANSFORM    0.8444 -0.4888  0.2194  0.5292  0.6970 -0.4838  0.0836  0.5247  0.8472     5.104    13.659    69.565  
+ 
+ Match found in 1et0_c00     4-AMINO-4-DEOXYCHORISMATE LYASE     
+   Pattern 1et0_c00               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 159    LYS       matches     A  51    LYS  
+    A 193    GLU       matches     A  95    GLU  
+    A 217    VAL       matches     A  49    VAL  
+  TRANSFORM    0.2273  0.4322 -0.8726  0.8257  0.3896  0.4081  0.5163 -0.8133 -0.2683     3.153    34.036    72.573  
+ 
+ Match found in 1m53_c06     ISOMALTULOSE SYNTHASE               
+   Pattern 1m53_c06               Query structure     RMSD=  1.39 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 241    ASP       matches     A  11    ASP  
+    A 279    GLU       matches     A  38    GLU  
+    A 369    ASP       matches     A  60    ASP  
+  TRANSFORM    0.7788  0.5302  0.3352  0.3345  0.1009 -0.9370 -0.5306  0.8419 -0.0988     9.532    12.950    39.067  
+ 
+ Match found in 1pmi_c00     PHOSPHOMANNOSE ISOMERASE            
+   Pattern 1pmi_c00               Query structure     RMSD=  1.39 A  No. of residues =   3
+   ------- -------                --------------- 
+      111    GLN       matches     A   5    GLN  
+      294    GLU       matches     A  33    GLU  
+      304    ARG       matches     A  69    ARG  
+  TRANSFORM   -0.1234 -0.9400 -0.3179 -0.3436 -0.2601  0.9024 -0.9310  0.2206 -0.2909    41.988    49.532    73.677  
+ 
+ Match found in 1ga8_c00     GALACTOSYL TRANSFERASE LGTC         
+   Pattern 1ga8_c00               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 130    ASP       matches     A 101    ASP  
+    A 153    ASN       matches     A 102    ASN  
+    A 189    GLN       matches     A   2    GLN  
+  TRANSFORM    0.4404 -0.2903 -0.8496  0.5625 -0.6483  0.5131 -0.6997 -0.7039 -0.1222   -31.236    34.892    75.280  
+ 
+ Match found in 2z3x_d00     DNA BINDING PROTEIN/DNA             
+   Pattern 2z3x_d00               Query structure     RMSD=  1.44 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  34    SER       matches     A  15    SER  
+    B  37    ASN       matches     A  17    ASN  
+    B  45    THR       matches     A  50    THR  
+  TRANSFORM   -0.9179 -0.3566 -0.1739 -0.2465  0.8560 -0.4544  0.3109 -0.3742 -0.8737    20.394     8.855    18.691  
+ 
+ Match found in 8pch_c00     CATHEPSIN H                         
+   Pattern 8pch_c00               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  25    CYH       matches     A   6    CYH  
+    A 159    HIS       matches     A  29    HIS  
+    A 175    ASN       matches     A 104    ASN  
+  TRANSFORM    0.5210  0.6828 -0.5122  0.4400 -0.7291 -0.5243 -0.7314  0.0478 -0.6802     6.250    51.445    20.218  
+ 
+ Match found in 1pp4_c03     RHAMNOGALACTURONAN ACETYLESTERASE   
+   Pattern 1pp4_c03               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  74    ASN       matches     A 108    ASN  
+    B 192    ASP       matches     A  27    ASP  
+    B 195    HIS       matches     A  25    HIS  
+  TRANSFORM    0.7456  0.4396 -0.5008 -0.3471  0.8977  0.2713  0.5688 -0.0285  0.8220   -29.818   -23.232    -6.319  
+ 
+ Match found in 1a4s_c00     BETAINE ALDEHYDE DEHYDROGENASE      
+   Pattern 1a4s_c00               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 166    ASN       matches     A 104    ASN  
+    A 263    GLU       matches     A  33    GLU  
+    A 297    CYH       matches     A  70    CYH  
+  TRANSFORM   -0.9184 -0.0921  0.3849 -0.3668  0.5629 -0.7407 -0.1484 -0.8214 -0.5507    20.776   -14.753    28.236  
+ 
+ Match found in 1a4s_c02     BETAINE ALDEHYDE DEHYDROGENASE      
+   Pattern 1a4s_c02               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    C 166    ASN       matches     A 104    ASN  
+    C 263    GLU       matches     A  33    GLU  
+    C 297    CYH       matches     A  70    CYH  
+  TRANSFORM   -0.3037  0.1436  0.9419  0.9404 -0.1139  0.3206  0.1533  0.9831 -0.1005    18.532    63.155   105.794  
+ 
+ Match found in 2v3r_p00     EXOGLUCANASE 1                      
+   Pattern 2v3r_p00               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 270    ASN       matches     A 104    ASN  
+    A 384    ASN       matches     A  89    ASN  
+    A 385    GLU       matches     A  87    GLU  
+  TRANSFORM    0.8259 -0.0181 -0.5636 -0.0280 -0.9996 -0.0090 -0.5632  0.0232 -0.8260   -15.957    33.843     6.319  
+ 
+ Match found in 1a4s_c01     BETAINE ALDEHYDE DEHYDROGENASE      
+   Pattern 1a4s_c01               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 166    ASN       matches     A 104    ASN  
+    B 263    GLU       matches     A  33    GLU  
+    B 297    CYH       matches     A  70    CYH  
+  TRANSFORM   -0.6533 -0.3340  0.6794  0.7410 -0.4659  0.4835  0.1551  0.8194  0.5518    25.184     4.322   -28.352  
+ 
+ Match found in 1a4s_c03     BETAINE ALDEHYDE DEHYDROGENASE      
+   Pattern 1a4s_c03               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    D 166    ASN       matches     A 104    ASN  
+    D 263    GLU       matches     A  33    GLU  
+    D 297    CYH       matches     A  70    CYH  
+  TRANSFORM    0.9231 -0.2003  0.3282 -0.2800  0.2349  0.9308 -0.2635 -0.9512  0.1608   -12.469    44.267    24.334  
+ 
+ Match found in 1pp4_c02     RHAMNOGALACTURONAN ACETYLESTERASE   
+   Pattern 1pp4_c02               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  74    ASN       matches     A 108    ASN  
+    A 192    ASP       matches     A  27    ASP  
+    A 195    HIS       matches     A  25    HIS  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM    0.7057 -0.0224  0.7082  0.1007 -0.9862 -0.1315 -0.7014 -0.1641  0.6937   -25.333    44.939    68.539  
+ 
+ Match found in 2z3x_d00     DNA BINDING PROTEIN/DNA             
+   Pattern 2z3x_d00               Query structure     RMSD=  1.19 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  34    SER       matches     A 105    SER  
+    B  37    ASN       matches     A 104    ASN  
+    B  45    THR       matches     A  79    THR  
+  TRANSFORM   -0.8464  0.2551  0.4675 -0.2978  0.5009 -0.8126  0.4415  0.8270  0.3480    22.237    25.361    27.844  
+ 
+ Match found in 1hwt_d00     GENE REGULATION/DNA                 
+   Pattern 1hwt_d00               Query structure     RMSD=  1.22 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  70    ARG       matches     A  69    ARG  
+    C  71    LYS       matches     A  48    LYS  
+    C  72    VAL       matches     A  47    VAL  
+  TRANSFORM   -0.8133 -0.2829 -0.5085 -0.4567  0.8517  0.2567 -0.3605 -0.4410  0.8219     9.160    14.548    23.357  
+ 
+ Match found in 1nww_c03     LIMONENE-1,2-EPOXIDE HYDROLASE      
+   Pattern 1nww_c03               Query structure     RMSD=  1.26 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  99    ARG       matches     A  62    ARG  
+    B 101    ASP       matches     A  60    ASP  
+    B 132    ASP       matches     A  11    ASP  
+  TRANSFORM    0.6798  0.5168 -0.5205 -0.6685  0.7284 -0.1499 -0.3016 -0.4499 -0.8406     2.247    17.011    51.845  
+ 
+ Match found in 1vzx_c02    	 2.04.01.0087                       
+   Pattern 1vzx_c02               Query structure     RMSD=  1.27 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 314    TYR       matches     A  21    TYR  
+    A 317    GLU       matches     A  22    GLU  
+    A 365    ARG       matches     A  68    ARG  
+  TRANSFORM    0.8159  0.2719  0.5102  0.4118 -0.8928 -0.1828 -0.4058 -0.3593  0.8404    13.758    11.818    23.392  
+ 
+ Match found in 1nww_c02     LIMONENE-1,2-EPOXIDE HYDROLASE      
+   Pattern 1nww_c02               Query structure     RMSD=  1.28 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  99    ARG       matches     A  62    ARG  
+    A 101    ASP       matches     A  60    ASP  
+    A 132    ASP       matches     A  11    ASP  
+  TRANSFORM   -0.6715 -0.5247  0.5231 -0.7073  0.6644 -0.2415  0.2209  0.5322  0.8173    12.759    19.877    -2.859  
+ 
+ Match found in 1vzx_c03    	 2.04.01.0087                       
+   Pattern 1vzx_c03               Query structure     RMSD=  1.28 A  No. of residues =   3
+   ------- -------                --------------- 
+    B1314    TYR       matches     A  21    TYR  
+    B1317    GLU       matches     A  22    GLU  
+    B1365    ARG       matches     A  68    ARG  
+  TRANSFORM    0.1747  0.9657  0.1922  0.5075 -0.2556  0.8229 -0.8437  0.0462  0.5348    55.091    75.697    12.072  
+ 
+ Match found in 2dbt_c01     CHITINASE C                         
+   Pattern 2dbt_c01               Query structure     RMSD=  1.31 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 147    GLU       matches     A  87    GLU  
+    B 156    GLU       matches     A  95    GLU  
+    B 194    ASN       matches     A  65    ASN  
+  TRANSFORM   -0.8297 -0.2919 -0.4758 -0.4553  0.8470  0.2743 -0.3229 -0.4442  0.8357     9.571    14.911    23.204  
+ 
+ Match found in 1nu3_c01     LIMONENE-1,2-EPOXIDE HYDROLASE      
+   Pattern 1nu3_c01               Query structure     RMSD=  1.32 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  99    ARG       matches     A  62    ARG  
+    B 101    ASP       matches     A  60    ASP  
+    B 132    ASP       matches     A  11    ASP  
+  TRANSFORM    0.9470  0.3207 -0.0168  0.1473 -0.4803 -0.8646  0.2854 -0.8164  0.5021    -2.303    57.321    -0.195  
+ 
+ Match found in 1pp4_c03     RHAMNOGALACTURONAN ACETYLESTERASE   
+   Pattern 1pp4_c03               Query structure     RMSD=  1.32 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  74    ASN       matches     A 108    ASN  
+    B 192    ASP       matches     A  27    ASP  
+    B 195    HIS       matches     A  25    HIS  
+  TRANSFORM   -0.0349  0.6120 -0.7901 -0.6742  0.5691  0.4707 -0.7377 -0.5491 -0.3927     6.790    52.191    33.868  
+ 
+ Match found in 1pp4_c02     RHAMNOGALACTURONAN ACETYLESTERASE   
+   Pattern 1pp4_c02               Query structure     RMSD=  1.32 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  74    ASN       matches     A 108    ASN  
+    A 192    ASP       matches     A  27    ASP  
+    A 195    HIS       matches     A  25    HIS  
+  TRANSFORM   -0.2179  0.9733  0.0718  0.6029  0.1921 -0.7744  0.7675  0.1254  0.6287    20.212    26.630     6.850  
+ 
+ Match found in 1ssx_c02     ALPHA-LYTIC PROTEASE                
+   Pattern 1ssx_c02               Query structure     RMSD=  1.33 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  57    HIS       matches     A  25    HIS  
+    A 102    ASP       matches     A  27    ASP  
+    A 193    GLY       matches     A  19    GLY  
+  TRANSFORM    0.3871 -0.2350 -0.8916  0.6518 -0.6141  0.4449  0.6521  0.7534  0.0845    14.164    57.981   104.744  
+ 
+ Match found in 2v3r_p00     EXOGLUCANASE 1                      
+   Pattern 2v3r_p00               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 270    ASN       matches     A  17    ASN  
+    A 384    ASN       matches     A  83    ASN  
+    A 385    GLU       matches     A  95    GLU  
+  TRANSFORM   -0.3567 -0.7511  0.5555  0.8316 -0.5262 -0.1774 -0.4256 -0.3987 -0.8124   -18.730    41.869    79.389  
+ 
+ Match found in 2z3x_d00     DNA BINDING PROTEIN/DNA             
+   Pattern 2z3x_d00               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  34    SER       matches     A 105    SER  
+    B  37    ASN       matches     A 102    ASN  
+    B  45    THR       matches     A  41    THR  
+  TRANSFORM   -0.2728  0.8444  0.4610  0.8193  0.4551 -0.3487  0.5042 -0.2826  0.8160    -1.272    20.649    31.210  
+ 
+ Match found in 1rtf_c06     TWO CHAIN TISSUE PLASMINOGEN ACTIVAT
+   Pattern 1rtf_c06               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  57    HIS       matches     A  25    HIS  
+    B 102    ASP       matches     A  27    ASP  
+    B 193    GLY       matches     A  19    GLY  
+  TRANSFORM    0.8238  0.2689  0.4990  0.3971 -0.9020 -0.1696 -0.4045 -0.3379  0.8498    13.709    12.043    23.466  
+ 
+ Match found in 1nu3_c00     LIMONENE-1,2-EPOXIDE HYDROLASE      
+   Pattern 1nu3_c00               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  99    ARG       matches     A  62    ARG  
+    A 101    ASP       matches     A  60    ASP  
+    A 132    ASP       matches     A  11    ASP  
+  TRANSFORM    0.7601 -0.1267 -0.6373 -0.1167  0.9382 -0.3258 -0.6392 -0.3220 -0.6984    -3.331   -10.704    81.760  
+ 
+ Match found in 1e3v_c02     STEROID DELTA-ISOMERASE             
+   Pattern 1e3v_c02               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  16    TYR       matches     A  21    TYR  
+    A  40    ASP       matches     A  11    ASP  
+    A 103    ASP       matches     A  16    ASP  
+  TRANSFORM    0.6449  0.6782 -0.3524 -0.5378  0.0750 -0.8398  0.5431 -0.7310 -0.4131    49.603    15.290    11.820  
+ 
+ Match found in 2dbt_c02     CHITINASE C                         
+   Pattern 2dbt_c02               Query structure     RMSD=  1.37 A  No. of residues =   3
+   ------- -------                --------------- 
+    C 147    GLU       matches     A  87    GLU  
+    C 156    GLU       matches     A  95    GLU  
+    C 194    ASN       matches     A  65    ASN  
+  TRANSFORM   -0.5202  0.4033 -0.7528 -0.6839  0.3312  0.6500 -0.5115 -0.8530 -0.1036    10.172    48.210    82.224  
+ 
+ Match found in 1m53_c06     ISOMALTULOSE SYNTHASE               
+   Pattern 1m53_c06               Query structure     RMSD=  1.37 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 241    ASP       matches     A  11    ASP  
+    A 279    GLU       matches     A  38    GLU  
+    A 369    ASP       matches     A  60    ASP  
+  TRANSFORM   -0.6049  0.6864  0.4037  0.5880  0.7268 -0.3549  0.5370 -0.0227  0.8433   -33.620   -20.600    -6.408  
+ 
+ Match found in 1a4s_c00     BETAINE ALDEHYDE DEHYDROGENASE      
+   Pattern 1a4s_c00               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 166    ASN       matches     A 104    ASN  
+    A 263    GLU       matches     A  33    GLU  
+    A 297    CYH       matches     A  70    CYH  
+  TRANSFORM    0.6505 -0.3799 -0.6576 -0.3967  0.5684 -0.7208 -0.6476 -0.7298 -0.2190    25.193   -14.837    26.831  
+ 
+ Match found in 1a4s_c02     BETAINE ALDEHYDE DEHYDROGENASE      
+   Pattern 1a4s_c02               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    C 166    ASN       matches     A 104    ASN  
+    C 263    GLU       matches     A  33    GLU  
+    C 297    CYH       matches     A  70    CYH  
+  TRANSFORM   -0.8027  0.2800  0.5266 -0.2452 -0.9598  0.1365 -0.5437  0.0196 -0.8391   -20.545    33.231     6.374  
+ 
+ Match found in 1a4s_c01     BETAINE ALDEHYDE DEHYDROGENASE      
+   Pattern 1a4s_c01               Query structure     RMSD=  1.39 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 166    ASN       matches     A 104    ASN  
+    B 263    GLU       matches     A  33    GLU  
+    B 297    CYH       matches     A  70    CYH  
+  TRANSFORM   -0.4104 -0.0953 -0.9069 -0.6062  0.7714  0.1933 -0.6812 -0.6291  0.3744    70.273     2.659    42.096  
+ 
+ Match found in 2ag0_c10     BENZALDEHYDE LYASE                  
+   Pattern 2ag0_c10               Query structure     RMSD=  1.39 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  29    HIS       matches     A  40    HIS  
+    C  50    GLU       matches     A  33    GLU  
+    C 113    GLN       matches     A   5    GLN  
+  TRANSFORM    0.3593  0.0547 -0.9316  0.9332 -0.0267  0.3583  0.0053  0.9981  0.0607    57.020   -15.660    30.318  
+ 
+ Match found in 1bwp_c01     PLATELET-ACTIVATING FACTOR ACETYLHYD
+   Pattern 1bwp_c01               Query structure     RMSD=  1.39 A  No. of residues =   3
+   ------- -------                --------------- 
+      104    ASN       matches     A 108    ASN  
+      192    ASP       matches     A  27    ASP  
+      195    HIS       matches     A  25    HIS  
+  TRANSFORM    0.7599 -0.5933 -0.2655  0.0614 -0.3411  0.9380  0.6471  0.7291  0.2228    29.173     2.404   -26.963  
+ 
+ Match found in 1a4s_c03     BETAINE ALDEHYDE DEHYDROGENASE      
+   Pattern 1a4s_c03               Query structure     RMSD=  1.39 A  No. of residues =   3
+   ------- -------                --------------- 
+    D 166    ASN       matches     A 104    ASN  
+    D 263    GLU       matches     A  33    GLU  
+    D 297    CYH       matches     A  70    CYH  
+  TRANSFORM   -0.3192  0.0211 -0.9475  0.5990 -0.7702 -0.2189  0.7344  0.6374 -0.2332    66.559    -7.755    -8.179  
+ 
+ Match found in 2ag0_c09     BENZALDEHYDE LYASE                  
+   Pattern 2ag0_c09               Query structure     RMSD=  1.39 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  29    HIS       matches     A  40    HIS  
+    A  50    GLU       matches     A  33    GLU  
+    A 113    GLN       matches     A   5    GLN  
+  TRANSFORM    0.3399  0.1120  0.9338 -0.8336 -0.4238  0.3543 -0.4354  0.8988  0.0507    43.572    22.801    17.843  
+ 
+ Match found in 2ag0_c11     BENZALDEHYDE LYASE                  
+   Pattern 2ag0_c11               Query structure     RMSD=  1.39 A  No. of residues =   3
+   ------- -------                --------------- 
+    D  29    HIS       matches     A  40    HIS  
+    D  50    GLU       matches     A  33    GLU  
+    D 113    GLN       matches     A   5    GLN  
+  TRANSFORM   -0.4211 -0.9017  0.0983  0.6853 -0.2453  0.6857  0.5942 -0.3561 -0.7212    64.898    29.272     6.985  
+ 
+ Match found in 2dbt_c00     CHITINASE C                         
+   Pattern 2dbt_c00               Query structure     RMSD=  1.39 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 147    GLU       matches     A  87    GLU  
+    A 156    GLU       matches     A  95    GLU  
+    A 194    ASN       matches     A  65    ASN  
+  TRANSFORM    0.3927 -0.0364  0.9189  0.8367  0.4289 -0.3406  0.3817 -0.9026 -0.1989    44.205   -28.445    19.956  
+ 
+ Match found in 2ag0_c08     BENZALDEHYDE LYASE                  
+   Pattern 2ag0_c08               Query structure     RMSD=  1.40 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  29    HIS       matches     A  40    HIS  
+    B  50    GLU       matches     A  33    GLU  
+    B 113    GLN       matches     A   5    GLN  
+  TRANSFORM    0.3927 -0.0364  0.9189  0.8367  0.4289 -0.3406  0.3817 -0.9026 -0.1989    44.205   -28.445    19.956  
+ 
+ Match found in 2ag0_c04     BENZALDEHYDE LYASE                  
+   Pattern 2ag0_c04               Query structure     RMSD=  1.40 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  29    HIS       matches     A  40    HIS  
+    B  50    GLU       matches     A  33    GLU  
+    B 113    GLN       matches     A   5    GLN  
+  TRANSFORM    0.9273 -0.3528 -0.1249  0.1827  0.1355  0.9738  0.3266  0.9259 -0.1901    24.871    -6.480   -29.484  
+ 
+ Match found in 1a4s_c03     BETAINE ALDEHYDE DEHYDROGENASE      
+   Pattern 1a4s_c03               Query structure     RMSD=  1.40 A  No. of residues =   3
+   ------- -------                --------------- 
+    D 166    ASN       matches     A 102    ASN  
+    D 263    GLU       matches     A  33    GLU  
+    D 297    CYH       matches     A   3    CYH  
+  TRANSFORM   -0.8519  0.1866  0.4893  0.1301 -0.8297  0.5429 -0.5073 -0.5261 -0.6825   -19.187    29.922    15.913  
+ 
+ Match found in 1a4s_c01     BETAINE ALDEHYDE DEHYDROGENASE      
+   Pattern 1a4s_c01               Query structure     RMSD=  1.41 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 166    ASN       matches     A 102    ASN  
+    B 263    GLU       matches     A  33    GLU  
+    B 297    CYH       matches     A   3    CYH  
+  TRANSFORM    0.0155  0.9955  0.0930 -0.9055  0.0534 -0.4211  0.4242  0.0776 -0.9023     6.406    55.952    68.062  
+ 
+ Match found in 2c3x_p00     ALPHA-AMYLASE G-6                   
+   Pattern 2c3x_p00               Query structure     RMSD=  1.41 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  26    HIS       matches     A  25    HIS  
+    A  76    ASN       matches     A  17    ASN  
+    A  81    ASP       matches     A  16    ASP  
+  TRANSFORM    0.4535  0.0819 -0.8875 -0.8802 -0.1149 -0.4604  0.1396 -0.9900 -0.0200     8.942    28.205    25.902  
+ 
+ Match found in 1hq0_o00     CYTOTOXIC NECROTIZING FACTOR 1      
+   Pattern 1hq0_o00               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 833    VAL       matches     A  30    VAL  
+    A 866    CYH       matches     A  18    CYH  
+    A 881    HIS       matches     A  29    HIS  
+  TRANSFORM   -0.1363 -0.8524  0.5049  0.4002 -0.5135 -0.7590 -0.9063 -0.0986 -0.4111   -18.758    47.451    76.885  
+ 
+ Match found in 2z3x_d00     DNA BINDING PROTEIN/DNA             
+   Pattern 2z3x_d00               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  34    SER       matches     A 105    SER  
+    B  37    ASN       matches     A 102    ASN  
+    B  45    THR       matches     A  44    THR  
+  TRANSFORM   -0.5825  0.7516  0.3097 -0.7852 -0.6188  0.0248 -0.2102  0.2287 -0.9505   -57.101     2.502    36.806  
+ 
+ Match found in 1qrz_c23     PLASMINOGEN                         
+   Pattern 1qrz_c23               Query structure     RMSD=  1.50 A  No. of residues =   3
+   ------- -------                --------------- 
+    D 603    HIS       matches     A  40    HIS  
+    D 646    ASP       matches     A  37    ASP  
+    D 739    GLY       matches     A  71    GLY  
+
+************************************************* user.SUMS ********************************************************
+   2dbt_c01     CHITINASE C                             :        1.01  <
+   2v3r_p00     EXOGLUCANASE 1                          :        1.02  <
+   2dbt_c02     CHITINASE C                             :        1.07  <
+   1nww_c03     LIMONENE-1,2-EPOXIDE HYDROLASE          :        1.14  <
+   1nww_c02     LIMONENE-1,2-EPOXIDE HYDROLASE          :        1.15  <
+   2dbt_c00     CHITINASE C                             :        1.18  <
+   1nu3_c01     LIMONENE-1,2-EPOXIDE HYDROLASE          :        1.19  <
+   1nu3_c00     LIMONENE-1,2-EPOXIDE HYDROLASE          :        1.23  <
+   2odj_o00     PORIN D                                 :        1.29  <
+   1ssx_c02     ALPHA-LYTIC PROTEASE                    :        1.30  <
+   1hq0_o00     CYTOTOXIC NECROTIZING FACTOR 1          :        1.30  <
+   1rtf_c06     TWO CHAIN TISSUE PLASMINOGEN ACTIVAT    :        1.32  <
+   1et0_c00     4-AMINO-4-DEOXYCHORISMATE LYASE         :        1.38  <
+   1m53_c06     ISOMALTULOSE SYNTHASE                   :        1.39  <
+   1pmi_c00     PHOSPHOMANNOSE ISOMERASE                :        1.39  <
+   1ga8_c00     GALACTOSYL TRANSFERASE LGTC             :        1.43  <
+   2z3x_d00     DNA BINDING PROTEIN/DNA                 :        1.44  <
+   8pch_c00     CATHEPSIN H                             :        1.45  <
+   1pp4_c03     RHAMNOGALACTURONAN ACETYLESTERASE       :        1.46  <
+   1a4s_c00     BETAINE ALDEHYDE DEHYDROGENASE          :        1.46  <
+   1a4s_c02     BETAINE ALDEHYDE DEHYDROGENASE          :        1.46  <
+   2v3r_p00     EXOGLUCANASE 1                          :        1.47  <
+   1a4s_c01     BETAINE ALDEHYDE DEHYDROGENASE          :        1.47  <
+   1a4s_c03     BETAINE ALDEHYDE DEHYDROGENASE          :        1.48  <
+   1pp4_c02     RHAMNOGALACTURONAN ACETYLESTERASE       :        1.49  <
+
+************************************************* user.SUML ********************************************************
+   2z3x_d00     DNA BINDING PROTEIN/DNA                 :        1.19  <
+   1hwt_d00     GENE REGULATION/DNA                     :        1.22  <
+   1nww_c03     LIMONENE-1,2-EPOXIDE HYDROLASE          :        1.26  <
+   1vzx_c02    	 2.04.01.0087                           :        1.27  <
+   1nww_c02     LIMONENE-1,2-EPOXIDE HYDROLASE          :        1.28  <
+   1vzx_c03    	 2.04.01.0087                           :        1.28  <
+   2dbt_c01     CHITINASE C                             :        1.31  <
+   1nu3_c01     LIMONENE-1,2-EPOXIDE HYDROLASE          :        1.32  <
+   1pp4_c03     RHAMNOGALACTURONAN ACETYLESTERASE       :        1.32  <
+   1pp4_c02     RHAMNOGALACTURONAN ACETYLESTERASE       :        1.32  <
+   1ssx_c02     ALPHA-LYTIC PROTEASE                    :        1.33  <
+   2v3r_p00     EXOGLUCANASE 1                          :        1.35  <
+   2z3x_d00     DNA BINDING PROTEIN/DNA                 :        1.35  <
+   1rtf_c06     TWO CHAIN TISSUE PLASMINOGEN ACTIVAT    :        1.35  <
+   1nu3_c00     LIMONENE-1,2-EPOXIDE HYDROLASE          :        1.35  <
+   1e3v_c02     STEROID DELTA-ISOMERASE                 :        1.35  <
+   2dbt_c02     CHITINASE C                             :        1.37  <
+   1m53_c06     ISOMALTULOSE SYNTHASE                   :        1.37  <
+   1a4s_c00     BETAINE ALDEHYDE DEHYDROGENASE          :        1.38  <
+   1a4s_c02     BETAINE ALDEHYDE DEHYDROGENASE          :        1.38  <
+   1a4s_c01     BETAINE ALDEHYDE DEHYDROGENASE          :        1.39  <
+   2ag0_c10     BENZALDEHYDE LYASE                      :        1.39  <
+   1bwp_c01     PLATELET-ACTIVATING FACTOR ACETYLHYD    :        1.39  <
+   1a4s_c03     BETAINE ALDEHYDE DEHYDROGENASE          :        1.39  <
+   2ag0_c09     BENZALDEHYDE LYASE                      :        1.39  <
+   2ag0_c11     BENZALDEHYDE LYASE                      :        1.39  <
+   2dbt_c00     CHITINASE C                             :        1.39  <
+   2ag0_c08     BENZALDEHYDE LYASE                      :        1.40  <
+   2ag0_c04     BENZALDEHYDE LYASE                      :        1.40  <
+   1a4s_c03     BETAINE ALDEHYDE DEHYDROGENASE          :        1.40  <
+   1a4s_c01     BETAINE ALDEHYDE DEHYDROGENASE          :        1.41  <
+   2c3x_p00     ALPHA-AMYLASE G-6                       :        1.41  <
+   1hq0_o00     CYTOTOXIC NECROTIZING FACTOR 1          :        1.46  <
+   2z3x_d00     DNA BINDING PROTEIN/DNA                 :        1.46  <
+   1qrz_c23     PLASMINOGEN                             :        1.50  <

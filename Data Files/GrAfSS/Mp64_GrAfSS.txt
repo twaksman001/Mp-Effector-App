@@ -1,0 +1,250 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM   -0.5516 -0.8337 -0.0273 -0.6810  0.4311  0.5919 -0.4817  0.3451 -0.8055    52.704    11.287    21.549  
+ 
+ Match found in 1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB
+   Pattern 1q6l_c05               Query structure     RMSD=  1.21 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  67    ASP       matches     A 100    ASP  
+    A  68    ALA       matches     A  99    ALA  
+    A  72    LEU       matches     A 102    LEU  
+  TRANSFORM   -0.6446  0.1605  0.7475 -0.2046 -0.9783  0.0336  0.7366 -0.1313  0.6634    37.401    50.073    67.138  
+ 
+ Match found in 1bsj_c00     PEPTIDE DEFORMYLASE                 
+   Pattern 1bsj_c00               Query structure     RMSD=  1.28 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  50    GLN       matches     A 105    GLN  
+    A  91    LEU       matches     A 102    LEU  
+    A 133    GLU       matches     A 109    GLU  
+  TRANSFORM    0.5574 -0.8279  0.0630  0.7952  0.5104 -0.3274  0.2389  0.2326  0.9428    -1.107   -71.819    53.051  
+ 
+ Match found in 1pyl_c01     RIBONUCLEASE                        
+   Pattern 1pyl_c01               Query structure     RMSD=  1.28 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  56    GLU       matches     A  46    GLU  
+    B  67    ARG       matches     A  40    ARG  
+    B  86    HIS       matches     A   9    HIS  
+  TRANSFORM   -0.4121  0.8348 -0.3651  0.3862  0.5229  0.7599  0.8253  0.1722 -0.5379    79.303    35.321   179.120  
+ 
+ Match found in 1hto_c00     GLUTAMINE SYNTHETASE                
+   Pattern 1hto_c00               Query structure     RMSD=  1.30 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  50    ASP       matches     A 149    ASP  
+    A 327    GLU       matches     A 116    GLU  
+    A 339    ARG       matches     A 119    ARG  
+  TRANSFORM   -0.8175 -0.4848 -0.3107  0.4703 -0.2506 -0.8462  0.3324 -0.8379  0.4329    41.439    44.137    63.932  
+ 
+ Match found in 1bs4_c00     PEPTIDE DEFORMYLASE                 
+   Pattern 1bs4_c00               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  50    GLN       matches     A 105    GLN  
+    A  91    LEU       matches     A 102    LEU  
+    A 133    GLU       matches     A 109    GLU  
+  TRANSFORM   -0.1992 -0.4379 -0.8767  0.8959  0.2812 -0.3441  0.3972 -0.8539  0.3363    67.440    36.639    40.404  
+ 
+ Match found in 1bs4_c02     PEPTIDE DEFORMYLASE                 
+   Pattern 1bs4_c02               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    C1050    GLN       matches     A 105    GLN  
+    C1091    LEU       matches     A 102    LEU  
+    C1133    GLU       matches     A 109    GLU  
+  TRANSFORM   -0.5060  0.0224  0.8622  0.6994  0.5957  0.3950 -0.5048  0.8029 -0.3171    86.823    46.626    59.507  
+ 
+ Match found in 1bs4_c01     PEPTIDE DEFORMYLASE                 
+   Pattern 1bs4_c01               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 550    GLN       matches     A 105    GLN  
+    B 591    LEU       matches     A 102    LEU  
+    B 633    GLU       matches     A 109    GLU  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM   -0.6994  0.6752 -0.2344 -0.6471 -0.7375 -0.1932  0.3033 -0.0166 -0.9527    83.896   105.766   -28.200  
+ 
+ Match found in 1kim_c00     THYMIDINE KINASE                    
+   Pattern 1kim_c00               Query structure     RMSD=  1.33 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  83    GLU       matches     A  46    GLU  
+    A 163    ARG       matches     A  43    ARG  
+    A 222    ARG       matches     A  40    ARG  
+  TRANSFORM    0.0873  0.9080 -0.4098  0.7671 -0.3238 -0.5539  0.6356  0.2659  0.7248    71.253    34.926    43.576  
+ 
+ Match found in 1bs4_c02     PEPTIDE DEFORMYLASE                 
+   Pattern 1bs4_c02               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    C1050    GLN       matches     A 105    GLN  
+    C1091    LEU       matches     A 102    LEU  
+    C1133    GLU       matches     A 109    GLU  
+  TRANSFORM   -0.2827  0.9513 -0.1231 -0.9581 -0.2740  0.0831 -0.0453 -0.1415 -0.9889    53.932   118.262    79.739  
+ 
+ Match found in 1pyi_d00     PROTEIN (PYRIMIDINE PATHWAY REGULATO
+   Pattern 1pyi_d00               Query structure     RMSD=  1.37 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  40    LYS       matches     A  55    LYS  
+    A  41    LYS       matches     A  54    LYS  
+    A  42    ILE       matches     A  56    ILE  
+  TRANSFORM    0.1155  0.8304  0.5450  0.8804 -0.3397  0.3309 -0.4599 -0.4416  0.7703   111.560    51.415   160.906  
+ 
+ Match found in 1bhg_c02     BETA-GLUCURONIDASE                  
+   Pattern 1bhg_c02               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 451    GLU       matches     A  46    GLU  
+    A 504    TYR       matches     A  11    TYR  
+    A 540    GLU       matches     A  17    GLU  
+  TRANSFORM    0.9367 -0.3497  0.0177  0.3481  0.9243 -0.1566 -0.0384 -0.1529 -0.9875   -34.757   119.186   -48.053  
+ 
+ Match found in 1bgl_c08     BETA-GALACTOSIDASE                  
+   Pattern 1bgl_c08               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 461    GLU       matches     A  46    GLU  
+    A 503    TYR       matches     A  11    TYR  
+    A 537    GLU       matches     A  17    GLU  
+  TRANSFORM   -0.5845 -0.3456  0.7341  0.3768 -0.9169 -0.1316 -0.7186 -0.1997 -0.6662    85.783    42.350    56.673  
+ 
+ Match found in 1bs4_c01     PEPTIDE DEFORMYLASE                 
+   Pattern 1bs4_c01               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 550    GLN       matches     A 105    GLN  
+    B 591    LEU       matches     A 102    LEU  
+    B 633    GLU       matches     A 109    GLU  
+  TRANSFORM   -0.5364  0.8317  0.1434  0.6324  0.5087 -0.5843  0.5589  0.2227  0.7988    45.178    46.293    66.945  
+ 
+ Match found in 1bs4_c00     PEPTIDE DEFORMYLASE                 
+   Pattern 1bs4_c00               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  50    GLN       matches     A 105    GLN  
+    A  91    LEU       matches     A 102    LEU  
+    A 133    GLU       matches     A 109    GLU  
+  TRANSFORM   -0.3770 -0.5259  0.7624 -0.9054  0.0356 -0.4231 -0.1954  0.8498  0.4896    50.731    13.822    18.314  
+ 
+ Match found in 1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB
+   Pattern 1q6l_c05               Query structure     RMSD=  1.40 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  67    ASP       matches     A 100    ASP  
+    A  68    ALA       matches     A  99    ALA  
+    A  72    LEU       matches     A 102    LEU  
+  TRANSFORM   -0.2336  0.7841  0.5750 -0.7797 -0.5044  0.3711 -0.5810  0.3616 -0.7292     2.011    39.052    46.978  
+ 
+ Match found in 1cdg_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE (E.
+   Pattern 1cdg_c00               Query structure     RMSD=  1.40 A  No. of residues =   3
+   ------- -------                --------------- 
+      229    ASP       matches     A 144    ASP  
+      264    GLU       matches     A 158    GLU  
+      328    ASP       matches     A 149    ASP  
+  TRANSFORM   -0.7525 -0.3315  0.5690  0.1714  0.7356  0.6553  0.6358 -0.5907  0.4968    36.042    54.804    65.870  
+ 
+ Match found in 1bsj_c00     PEPTIDE DEFORMYLASE                 
+   Pattern 1bsj_c00               Query structure     RMSD=  1.40 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  50    GLN       matches     A 105    GLN  
+    A  91    LEU       matches     A 102    LEU  
+    A 133    GLU       matches     A 109    GLU  
+  TRANSFORM   -0.1982 -0.9722  0.1243  0.3911  0.0378  0.9196  0.8988 -0.2309 -0.3727    74.881    23.218   201.041  
+ 
+ Match found in 1hto_c00     GLUTAMINE SYNTHETASE                
+   Pattern 1hto_c00               Query structure     RMSD=  1.41 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  50    ASP       matches     A 167    ASP  
+    A 327    GLU       matches     A 133    GLU  
+    A 339    ARG       matches     A 134    ARG  
+  TRANSFORM   -0.3930  0.1959  0.8984 -0.6883 -0.7106 -0.1461 -0.6098  0.6758 -0.4141    62.159    44.907    17.769  
+ 
+ Match found in 1uok_c05     OLIGO-1,6-GLUCOSIDASE               
+   Pattern 1uok_c05               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+      199    ASP       matches     A  93    ASP  
+      242    GLU       matches     A  80    GLU  
+      329    ASP       matches     A 100    ASP  
+  TRANSFORM   -0.7069  0.7067  0.0304 -0.2244 -0.1832 -0.9571  0.6708  0.6834 -0.2881    -7.486    60.121   135.792  
+ 
+ Match found in 1fob_c00     BETA-1,4-GALACTANASE                
+   Pattern 1fob_c00               Query structure     RMSD=  1.44 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  45    ARG       matches     A 135    ARG  
+    A 136    GLU       matches     A 128    GLU  
+    A 246    GLU       matches     A 131    GLU  
+  TRANSFORM   -0.1280  0.2180  0.9675  0.7267  0.6845 -0.0581  0.6749 -0.6957  0.2460   -62.375    58.978    58.639  
+ 
+ Match found in 1h19_c00     LEUKOTRIENE A-4 HYDROLASE           
+   Pattern 1h19_c00               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 271    GLN       matches     A 192    GLN  
+    A 296    GLU       matches     A 191    GLU  
+    A 383    TYR       matches     A 184    TYR  
+  TRANSFORM   -0.7089  0.7048 -0.0263 -0.2108 -0.2472 -0.9457  0.6731  0.6649 -0.3238    -5.635    60.637   137.630  
+ 
+ Match found in 1fhl_c00     BETA-1,4-GALACTANASE                
+   Pattern 1fhl_c00               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  45    ARG       matches     A 135    ARG  
+    A 136    GLU       matches     A 128    GLU  
+    A 246    GLU       matches     A 131    GLU  
+  TRANSFORM    0.5897 -0.4578 -0.6653 -0.7525 -0.6107 -0.2468  0.2933 -0.6462  0.7046     2.264    -4.942   141.644  
+ 
+ Match found in 1pjh_c02     ENOYL-COA ISOMERASE; ECI1P          
+   Pattern 1pjh_c02               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  70    ALA       matches     A  99    ALA  
+    C 126    LEU       matches     A 102    LEU  
+    C 158    GLU       matches     A 106    GLU  
+  TRANSFORM    0.7990 -0.5787  0.1634 -0.5800 -0.8134 -0.0447 -0.1587  0.0591  0.9856    98.532    28.022    76.379  
+ 
+ Match found in 1bhg_c05     BETA-GLUCURONIDASE                  
+   Pattern 1bhg_c05               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 382    ARG       matches     A 135    ARG  
+    B 451    GLU       matches     A 128    GLU  
+    B 540    GLU       matches     A 131    GLU  
+  TRANSFORM   -0.9400 -0.3134  0.1350 -0.1124  0.6578  0.7448  0.3222 -0.6849  0.6535   -31.487     5.819   142.561  
+ 
+ Match found in 1pjh_c01     ENOYL-COA ISOMERASE; ECI1P          
+   Pattern 1pjh_c01               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  70    ALA       matches     A  99    ALA  
+    B 126    LEU       matches     A 102    LEU  
+    B 158    GLU       matches     A 106    GLU  
+  TRANSFORM   -0.6761  0.7368 -0.0105 -0.3151 -0.3020 -0.8997  0.6661  0.6050 -0.4363   -15.200    62.905   151.298  
+ 
+ Match found in 1fob_c00     BETA-1,4-GALACTANASE                
+   Pattern 1fob_c00               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  45    ARG       matches     A 146    ARG  
+    A 136    GLU       matches     A 139    GLU  
+    A 246    GLU       matches     A 142    GLU  
+  TRANSFORM    0.3838  0.6970  0.6057  0.8936 -0.1152 -0.4337  0.2326 -0.7078  0.6671    -5.565    29.510   140.770  
+ 
+ Match found in 1pjh_c00     ENOYL-COA ISOMERASE; ECI1P          
+   Pattern 1pjh_c00               Query structure     RMSD=  1.50 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  70    ALA       matches     A  99    ALA  
+    A 126    LEU       matches     A 102    LEU  
+    A 158    GLU       matches     A 106    GLU  
+
+************************************************* user.SUMS ********************************************************
+   1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB    :        1.21  <
+   1bsj_c00     PEPTIDE DEFORMYLASE                     :        1.28  <
+   1pyl_c01     RIBONUCLEASE                            :        1.28  <
+   1hto_c00     GLUTAMINE SYNTHETASE                    :        1.30  <
+   1bs4_c00     PEPTIDE DEFORMYLASE                     :        1.35  <
+   1bs4_c02     PEPTIDE DEFORMYLASE                     :        1.36  <
+   1bs4_c01     PEPTIDE DEFORMYLASE                     :        1.36  <
+
+************************************************* user.SUML ********************************************************
+   1kim_c00     THYMIDINE KINASE                        :        1.33  <
+   1bs4_c02     PEPTIDE DEFORMYLASE                     :        1.36  <
+   1pyi_d00     PROTEIN (PYRIMIDINE PATHWAY REGULATO    :        1.37  <
+   1bhg_c02     BETA-GLUCURONIDASE                      :        1.38  <
+   1bgl_c08     BETA-GALACTOSIDASE                      :        1.38  <
+   1bs4_c01     PEPTIDE DEFORMYLASE                     :        1.38  <
+   1bs4_c00     PEPTIDE DEFORMYLASE                     :        1.38  <
+   1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB    :        1.40  <
+   1cdg_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE (E.    :        1.40  <
+   1bsj_c00     PEPTIDE DEFORMYLASE                     :        1.40  <
+   1hto_c00     GLUTAMINE SYNTHETASE                    :        1.41  <
+   1uok_c05     OLIGO-1,6-GLUCOSIDASE                   :        1.43  <
+   1fob_c00     BETA-1,4-GALACTANASE                    :        1.44  <
+   1h19_c00     LEUKOTRIENE A-4 HYDROLASE               :        1.45  <
+   1fhl_c00     BETA-1,4-GALACTANASE                    :        1.46  <
+   1pjh_c02     ENOYL-COA ISOMERASE; ECI1P              :        1.46  <
+   1bhg_c05     BETA-GLUCURONIDASE                      :        1.47  <
+   1pjh_c01     ENOYL-COA ISOMERASE; ECI1P              :        1.49  <
+   1fob_c00     BETA-1,4-GALACTANASE                    :        1.49  <
+   1pjh_c00     ENOYL-COA ISOMERASE; ECI1P              :        1.50  <

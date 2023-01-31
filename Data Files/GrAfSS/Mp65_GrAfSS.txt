@@ -1,0 +1,422 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM    0.5334 -0.5665  0.6281 -0.6683 -0.7374 -0.0976  0.5185 -0.3677 -0.7720     0.030     7.758     7.608  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  0.66 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A  16    ASP  
+      166    GLY       matches     A  55    GLY  
+      169    GLU       matches     A  58    GLU  
+  TRANSFORM    0.4213  0.8081 -0.4118 -0.8573  0.5029  0.1099  0.2959  0.3068  0.9046    40.363  -111.926  -123.175  
+ 
+ Match found in 1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c01               Query structure     RMSD=  0.87 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 420    ALA       matches     A  61    ALA  
+    B 182    GLY       matches     A  56    GLY  
+    B 183    GLY       matches     A  55    GLY  
+  TRANSFORM   -0.8001  0.0850  0.5937 -0.2189 -0.9630 -0.1570  0.5584 -0.2556  0.7892     0.846   -14.992   138.881  
+ 
+ Match found in 1pjh_c02     ENOYL-COA ISOMERASE; ECI1P          
+   Pattern 1pjh_c02               Query structure     RMSD=  1.13 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  70    ALA       matches     A  78    ALA  
+    C 126    LEU       matches     A  79    LEU  
+    C 158    GLU       matches     A   5    GLU  
+  TRANSFORM   -0.7190 -0.3141  0.6201 -0.5976 -0.1762 -0.7822  0.3549 -0.9329 -0.0610     3.538    -9.782    26.334  
+ 
+ Match found in 1euu_c00     SIALIDASE                           
+   Pattern 1euu_c00               Query structure     RMSD=  1.15 A  No. of residues =   3
+   ------- -------                --------------- 
+       92    ASP       matches     A  16    ASP  
+      260    GLU       matches     A  47    GLU  
+      370    TYR       matches     A  38    TYR  
+  TRANSFORM    0.6379  0.7653 -0.0860 -0.5698  0.5441  0.6159  0.5181 -0.3438  0.7831     3.534    33.199   137.040  
+ 
+ Match found in 1pjh_c00     ENOYL-COA ISOMERASE; ECI1P          
+   Pattern 1pjh_c00               Query structure     RMSD=  1.15 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  70    ALA       matches     A  78    ALA  
+    A 126    LEU       matches     A  79    LEU  
+    A 158    GLU       matches     A   5    GLU  
+  TRANSFORM    0.2223 -0.8815 -0.4165  0.8404  0.3899 -0.3765  0.4943 -0.2663  0.8275   -39.527    11.831   139.527  
+ 
+ Match found in 1pjh_c01     ENOYL-COA ISOMERASE; ECI1P          
+   Pattern 1pjh_c01               Query structure     RMSD=  1.16 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  70    ALA       matches     A  78    ALA  
+    B 126    LEU       matches     A  79    LEU  
+    B 158    GLU       matches     A   5    GLU  
+  TRANSFORM    0.1062  0.6789 -0.7265  0.5796 -0.6360 -0.5095 -0.8079 -0.3670 -0.4610    48.288    71.610    45.980  
+ 
+ Match found in 1bu7_c02     CYTOCHROME P450                     
+   Pattern 1bu7_c02               Query structure     RMSD=  1.19 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 268    THR       matches     A  14    THR  
+    A 393    PHE       matches     A  35    PHE  
+    A 400    CYH       matches     A  39    CYH  
+  TRANSFORM   -0.0023 -0.6469  0.7625 -0.2095  0.7459  0.6322 -0.9778 -0.1583 -0.1373    34.451   114.783    53.979  
+ 
+ Match found in 1bu7_c03     CYTOCHROME P450                     
+   Pattern 1bu7_c03               Query structure     RMSD=  1.19 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 268    THR       matches     A  14    THR  
+    B 393    PHE       matches     A  35    PHE  
+    B 400    CYH       matches     A  39    CYH  
+  TRANSFORM    0.3945 -0.9188  0.0098  0.0987  0.0529  0.9937 -0.9136 -0.3911  0.1115    -0.707    14.709    -2.638  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.26 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A  94    ASP  
+      166    GLY       matches     A  56    GLY  
+      169    GLU       matches     A  58    GLU  
+  TRANSFORM    0.4129  0.8974  0.1555  0.2641  0.0454 -0.9634 -0.8716  0.4389 -0.2183    22.397    30.127    82.075  
+ 
+ Match found in 1m53_c05     ISOMALTULOSE SYNTHASE               
+   Pattern 1m53_c05               Query structure     RMSD=  1.26 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 241    ASP       matches     A  94    ASP  
+    A 265    GLU       matches     A   5    GLU  
+    A 369    ASP       matches     A  89    ASP  
+  TRANSFORM    0.9428 -0.3149  0.1098  0.0889  0.5545  0.8274 -0.3214 -0.7703  0.5508    15.540    17.418    13.086  
+ 
+ Match found in 1akd_c01     CYTOCHROME P450CAM                  
+   Pattern 1akd_c01               Query structure     RMSD=  1.28 A  No. of residues =   3
+   ------- -------                --------------- 
+      252    THR       matches     A  14    THR  
+      350    PHE       matches     A  35    PHE  
+      357    CYH       matches     A  39    CYH  
+  TRANSFORM    0.6327 -0.5462 -0.5490 -0.1150  0.6348 -0.7641  0.7658  0.5466  0.3388    28.268    70.511    39.880  
+ 
+ Match found in 1qho_c05     ALPHA-AMYLASE                       
+   Pattern 1qho_c05               Query structure     RMSD=  1.33 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 228    ASP       matches     A  89    ASP  
+    A 261    ASP       matches     A  45    ASP  
+    A 329    ASP       matches     A  94    ASP  
+  TRANSFORM   -0.6456 -0.3853 -0.6594 -0.0706 -0.8296  0.5539 -0.7604  0.4041  0.5084    34.023    40.093    25.316  
+ 
+ Match found in 1tde_c00     THIOREDOXIN REDUCTASE (E.C.1.6.4.5) 
+   Pattern 1tde_c00               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+      135    CYH       matches     A 130    CYH  
+      138    CYH       matches     A 127    CYH  
+      139    ASP       matches     A 128    ASP  
+  TRANSFORM    0.6424  0.6666 -0.3781  0.3455  0.1885  0.9193  0.6841 -0.7212 -0.1092    65.484     4.587    20.599  
+ 
+ Match found in 1t4c_c02     FORMYL-COENZYME A TRANSFERASE       
+   Pattern 1t4c_c02               Query structure     RMSD=  1.37 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 261    GLY       matches     A  24    GLY  
+    B  17    GLN       matches     A  34    GLN  
+    B 140    GLU       matches     A  23    GLU  
+  TRANSFORM    0.5176 -0.5901  0.6196 -0.6909 -0.7154 -0.1042  0.5047 -0.3742 -0.7780     0.112     8.570     7.858  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.40 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A  16    ASP  
+      166    GLY       matches     A  56    GLY  
+      169    GLU       matches     A  58    GLU  
+  TRANSFORM    0.5808  0.3066  0.7541 -0.3258  0.9365 -0.1299 -0.7461 -0.1702  0.6438    12.360    37.926   100.138  
+ 
+ Match found in 1m53_c05     ISOMALTULOSE SYNTHASE               
+   Pattern 1m53_c05               Query structure     RMSD=  1.41 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 241    ASP       matches     A 121    ASP  
+    A 265    GLU       matches     A 141    GLU  
+    A 369    ASP       matches     A  98    ASP  
+  TRANSFORM   -0.6490  0.7276 -0.2224  0.6961  0.6858  0.2125  0.3071 -0.0169 -0.9515    12.260    20.342    23.595  
+ 
+ Match found in 1xqd_c02     CYTOCHROME P450 55A1                
+   Pattern 1xqd_c02               Query structure     RMSD=  1.42 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 243    THR       matches     A  14    THR  
+    A 345    PHE       matches     A  35    PHE  
+    A 352    CYH       matches     A  39    CYH  
+  TRANSFORM   -0.1598 -0.9221  0.3524  0.9411 -0.2501 -0.2277  0.2981  0.2952  0.9077    40.837     6.576     9.145  
+ 
+ Match found in 1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB
+   Pattern 1q6l_c05               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  67    ASP       matches     A  16    ASP  
+    A  68    ALA       matches     A  78    ALA  
+    A  72    LEU       matches     A  79    LEU  
+  TRANSFORM    0.2767 -0.2192 -0.9356 -0.1751 -0.9688  0.1752 -0.9449  0.1153 -0.3065   127.651    76.612   116.379  
+ 
+ Match found in 1cjy_c01     CYTOSOLIC PHOSPHOLIPASE A2          
+   Pattern 1cjy_c01               Query structure     RMSD=  1.44 A  No. of residues =   3
+   ------- -------                --------------- 
+    B1198    GLY       matches     A  56    GLY  
+    B1228    SER       matches     A  60    SER  
+    B1549    ASP       matches     A  59    ASP  
+  TRANSFORM   -0.7803  0.3761  0.4996 -0.6239 -0.4143 -0.6626 -0.0422 -0.8288  0.5580    56.902    25.133    10.896  
+ 
+ Match found in 1uok_c04     OLIGO-1,6-GLUCOSIDASE               
+   Pattern 1uok_c04               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+      199    ASP       matches     A  94    ASP  
+      218    GLU       matches     A  23    GLU  
+      329    ASP       matches     A  89    ASP  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM    0.5623 -0.2582 -0.7856 -0.8039 -0.3932 -0.4461  0.1938 -0.8824  0.4287     5.230    -7.611    16.023  
+ 
+ Match found in 1kqq_d00     TRANSCRIPTION/DNA                   
+   Pattern 1kqq_d00               Query structure     RMSD=  1.47 A  No. of residues =   4
+   ------- -------                --------------- 
+    A  92    THR       matches     A  62    THR  
+    A  93    SER       matches     A  60    SER  
+    A  96    LEU       matches     A  57    LEU  
+    A 131    ARG       matches     A  49    ARG  
+  TRANSFORM    0.5157 -0.5624  0.6463 -0.2969 -0.8250 -0.4809 -0.8036 -0.0561  0.5925    -0.108    10.669    -2.755  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  0.66 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A  16    ASP  
+      166    GLY       matches     A  55    GLY  
+      169    GLU       matches     A  58    GLU  
+  TRANSFORM    0.3467  0.8516 -0.3931  0.8213 -0.4781 -0.3113  0.4530  0.2150  0.8652    39.534   -93.256  -121.428  
+ 
+ Match found in 1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c01               Query structure     RMSD=  0.86 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 420    ALA       matches     A  61    ALA  
+    B 182    GLY       matches     A  56    GLY  
+    B 183    GLY       matches     A  55    GLY  
+  TRANSFORM   -0.8156  0.2060  0.5407  0.5731  0.1586  0.8040 -0.0799 -0.9656  0.2474    44.299   -23.390    49.675  
+ 
+ Match found in 1cns_c01     CHITINASE                           
+   Pattern 1cns_c01               Query structure     RMSD=  0.88 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  67    GLU       matches     A 142    GLU  
+    B  89    GLU       matches     A 125    GLU  
+    B 120    SER       matches     A 146    SER  
+  TRANSFORM    0.9613  0.0017 -0.2754  0.2543  0.3786  0.8900 -0.1058  0.9256 -0.3635    73.583     2.271     0.539  
+ 
+ Match found in 1t4c_c02     FORMYL-COENZYME A TRANSFERASE       
+   Pattern 1t4c_c02               Query structure     RMSD=  1.02 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 261    GLY       matches     A  24    GLY  
+    B  17    GLN       matches     A  34    GLN  
+    B 140    GLU       matches     A  23    GLU  
+  TRANSFORM    0.6324  0.7646 -0.1241 -0.7238  0.5262 -0.4463  0.2760 -0.3721 -0.8862     3.880    42.854   152.216  
+ 
+ Match found in 1pjh_c00     ENOYL-COA ISOMERASE; ECI1P          
+   Pattern 1pjh_c00               Query structure     RMSD=  1.06 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  70    ALA       matches     A  78    ALA  
+    A 126    LEU       matches     A  79    LEU  
+    A 158    GLU       matches     A   5    GLU  
+  TRANSFORM    0.3345 -0.8692  0.3643  0.9106  0.3976  0.1126  0.2427 -0.2941 -0.9245   -46.630     7.381   155.465  
+ 
+ Match found in 1pjh_c01     ENOYL-COA ISOMERASE; ECI1P          
+   Pattern 1pjh_c01               Query structure     RMSD=  1.08 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  70    ALA       matches     A  78    ALA  
+    B 126    LEU       matches     A  79    LEU  
+    B 158    GLU       matches     A   5    GLU  
+  TRANSFORM   -0.9372  0.0680 -0.3421 -0.1597 -0.9557  0.2475  0.3101 -0.2866 -0.9065     9.346   -18.666   154.281  
+ 
+ Match found in 1pjh_c02     ENOYL-COA ISOMERASE; ECI1P          
+   Pattern 1pjh_c02               Query structure     RMSD=  1.08 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  70    ALA       matches     A  78    ALA  
+    C 126    LEU       matches     A  79    LEU  
+    C 158    GLU       matches     A   5    GLU  
+  TRANSFORM   -0.6828  0.7153 -0.1487 -0.7118 -0.6054  0.3562 -0.1648 -0.3490 -0.9225    72.556    58.644     6.889  
+ 
+ Match found in 1lam_c00     LEUCINE AMINOPEPTIDASE              
+   Pattern 1lam_c00               Query structure     RMSD=  1.12 A  No. of residues =   3
+   ------- -------                --------------- 
+      255    ASP       matches     A  98    ASP  
+      262    LYS       matches     A 118    LYS  
+      336    ARG       matches     A  49    ARG  
+  TRANSFORM    0.1168 -0.5955 -0.7948  0.7719  0.5580 -0.3046 -0.6249  0.5780 -0.5248   -41.126   -18.042    80.731  
+ 
+ Match found in 1cns_c00     CHITINASE                           
+   Pattern 1cns_c00               Query structure     RMSD=  1.15 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  67    GLU       matches     A 142    GLU  
+    A  89    GLU       matches     A 125    GLU  
+    A 120    SER       matches     A 146    SER  
+  TRANSFORM    0.3271 -0.8646 -0.3814  0.1990 -0.3315  0.9222  0.9238  0.3775 -0.0636   -38.130   -57.655   -64.948  
+ 
+ Match found in 1fdy_c02     N-ACETYLNEURAMINATE LYASE           
+   Pattern 1fdy_c02               Query structure     RMSD=  1.25 A  No. of residues =   3
+   ------- -------                --------------- 
+    C 137    TYR       matches     A 136    TYR  
+    C 142    LEU       matches     A 131    LEU  
+    C 165    LYS       matches     A 117    LYS  
+  TRANSFORM   -0.8180  0.0204  0.5749 -0.5582  0.2133 -0.8018  0.1390  0.9768  0.1630    70.128    91.112    23.724  
+ 
+ Match found in 1qrr_c01     SULFOLIPID BIOSYNTHESIS (SQD1) PROTE
+   Pattern 1qrr_c01               Query structure     RMSD=  1.26 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 145    THR       matches     A  14    THR  
+    A 182    TYR       matches     A  38    TYR  
+    A 186    LYS       matches     A  17    LYS  
+  TRANSFORM    0.6256  0.4145  0.6610 -0.7135 -0.0389  0.6996 -0.3157  0.9092 -0.2714    10.815    51.432    85.200  
+ 
+ Match found in 1m53_c05     ISOMALTULOSE SYNTHASE               
+   Pattern 1m53_c05               Query structure     RMSD=  1.29 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 241    ASP       matches     A  98    ASP  
+    A 265    GLU       matches     A 141    GLU  
+    A 369    ASP       matches     A 121    ASP  
+  TRANSFORM   -0.8221 -0.2225  0.5240 -0.4564 -0.2927 -0.8403 -0.3403  0.9300 -0.1391    27.164   -87.687   -25.761  
+ 
+ Match found in 1fdy_c01     N-ACETYLNEURAMINATE LYASE           
+   Pattern 1fdy_c01               Query structure     RMSD=  1.32 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 137    TYR       matches     A 136    TYR  
+    B 142    LEU       matches     A 131    LEU  
+    B 165    LYS       matches     A 117    LYS  
+  TRANSFORM    0.9533  0.1847 -0.2391 -0.2967  0.4220 -0.8567  0.0574 -0.8876 -0.4571   -60.775   -97.251   -40.144  
+ 
+ Match found in 1fdy_c00     N-ACETYLNEURAMINATE LYASE           
+   Pattern 1fdy_c00               Query structure     RMSD=  1.34 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 137    TYR       matches     A 136    TYR  
+    A 142    LEU       matches     A 131    LEU  
+    A 165    LYS       matches     A 117    LYS  
+  TRANSFORM    0.4188 -0.9080  0.0139 -0.3787 -0.1607  0.9114  0.8253  0.3870  0.4112    -0.536    11.351     9.592  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A  94    ASP  
+      166    GLY       matches     A  56    GLY  
+      169    GLU       matches     A  58    GLU  
+  TRANSFORM    0.9727 -0.0465  0.2272  0.1455  0.8852 -0.4419  0.1806 -0.4629 -0.8678    24.763    58.147   108.215  
+ 
+ Match found in 1pyi_d00     PROTEIN (PYRIMIDINE PATHWAY REGULATO
+   Pattern 1pyi_d00               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  40    LYS       matches     A 118    LYS  
+    A  41    LYS       matches     A 117    LYS  
+    A  42    ILE       matches     A 119    ILE  
+  TRANSFORM   -0.5034  0.8549  0.1256  0.5711  0.2201  0.7908 -0.6484 -0.4699  0.5990    -2.204   -77.764    14.540  
+ 
+ Match found in 1fdy_c03     N-ACETYLNEURAMINATE LYASE           
+   Pattern 1fdy_c03               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    D 137    TYR       matches     A 136    TYR  
+    D 142    LEU       matches     A 131    LEU  
+    D 165    LYS       matches     A 117    LYS  
+  TRANSFORM   -0.6867  0.1665 -0.7077 -0.4568 -0.8560  0.2419  0.5655 -0.4894 -0.6639   117.793    73.730   131.834  
+ 
+ Match found in 1cjy_c01     CYTOSOLIC PHOSPHOLIPASE A2          
+   Pattern 1cjy_c01               Query structure     RMSD=  1.37 A  No. of residues =   3
+   ------- -------                --------------- 
+    B1198    GLY       matches     A  56    GLY  
+    B1228    SER       matches     A  60    SER  
+    B1549    ASP       matches     A  59    ASP  
+  TRANSFORM    0.0587 -0.7277 -0.6834 -0.5131  0.5653 -0.6459 -0.8563 -0.3886  0.3402     2.710    34.463    98.100  
+ 
+ Match found in 1m53_c05     ISOMALTULOSE SYNTHASE               
+   Pattern 1m53_c05               Query structure     RMSD=  1.42 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 241    ASP       matches     A 121    ASP  
+    A 265    GLU       matches     A 141    GLU  
+    A 369    ASP       matches     A  98    ASP  
+  TRANSFORM   -0.1747 -0.1046  0.9790  0.0854  0.9890  0.1209  0.9809 -0.1047  0.1638    20.987    35.617    77.243  
+ 
+ Match found in 1m53_c06     ISOMALTULOSE SYNTHASE               
+   Pattern 1m53_c06               Query structure     RMSD=  1.42 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 241    ASP       matches     A  45    ASP  
+    A 279    GLU       matches     A  58    GLU  
+    A 369    ASP       matches     A  98    ASP  
+  TRANSFORM    0.8261 -0.5581  0.0779  0.3421  0.6067  0.7176  0.4477  0.5661 -0.6921    33.065    81.849    31.991  
+ 
+ Match found in 1qho_c05     ALPHA-AMYLASE                       
+   Pattern 1qho_c05               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 228    ASP       matches     A  89    ASP  
+    A 261    ASP       matches     A  45    ASP  
+    A 329    ASP       matches     A  94    ASP  
+  TRANSFORM   -0.5197  0.6817  0.5150 -0.5787 -0.7243  0.3747 -0.6285  0.1033 -0.7709    58.217    96.625    42.537  
+ 
+ Match found in 1cdg_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE (E.
+   Pattern 1cdg_c00               Query structure     RMSD=  1.44 A  No. of residues =   3
+   ------- -------                --------------- 
+      229    ASP       matches     A 121    ASP  
+      264    GLU       matches     A  47    GLU  
+      328    ASP       matches     A  98    ASP  
+  TRANSFORM    0.5013 -0.5863  0.6363 -0.2969 -0.8073 -0.5100 -0.8127 -0.0668  0.5788    -0.015    11.652    -2.448  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A  16    ASP  
+      166    GLY       matches     A  56    GLY  
+      169    GLU       matches     A  58    GLU  
+  TRANSFORM   -0.0509  0.7287 -0.6829 -0.9220 -0.2971 -0.2483  0.3839 -0.6170 -0.6870    37.919   -16.436    59.248  
+ 
+ Match found in 1cjy_c00     CYTOSOLIC PHOSPHOLIPASE A2          
+   Pattern 1cjy_c00               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 198    GLY       matches     A  56    GLY  
+    A 228    SER       matches     A  60    SER  
+    A 549    ASP       matches     A  59    ASP  
+  TRANSFORM    0.5143 -0.5214 -0.6809  0.0686 -0.7664  0.6387  0.8549  0.3752  0.3584    33.443   -19.341    46.852  
+ 
+ Match found in 1cns_c01     CHITINASE                           
+   Pattern 1cns_c01               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  67    GLU       matches     A  25    GLU  
+    B  89    GLU       matches     A  32    GLU  
+    B 120    SER       matches     A  73    SER  
+
+************************************************* user.SUMS ********************************************************
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        0.66  <
+   1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        0.87  <
+   1pjh_c02     ENOYL-COA ISOMERASE; ECI1P              :        1.13  <
+   1euu_c00     SIALIDASE                               :        1.15  <
+   1pjh_c00     ENOYL-COA ISOMERASE; ECI1P              :        1.15  <
+   1pjh_c01     ENOYL-COA ISOMERASE; ECI1P              :        1.16  <
+   1bu7_c02     CYTOCHROME P450                         :        1.19  <
+   1bu7_c03     CYTOCHROME P450                         :        1.19  <
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.26  <
+   1m53_c05     ISOMALTULOSE SYNTHASE                   :        1.26  <
+   1akd_c01     CYTOCHROME P450CAM                      :        1.28  <
+   1qho_c05     ALPHA-AMYLASE                           :        1.33  <
+   1tde_c00     THIOREDOXIN REDUCTASE (E.C.1.6.4.5)     :        1.36  <
+   1t4c_c02     FORMYL-COENZYME A TRANSFERASE           :        1.37  <
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.40  <
+   1m53_c05     ISOMALTULOSE SYNTHASE                   :        1.41  <
+   1xqd_c02     CYTOCHROME P450 55A1                    :        1.42  <
+   1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB    :        1.43  <
+   1cjy_c01     CYTOSOLIC PHOSPHOLIPASE A2              :        1.44  <
+   1uok_c04     OLIGO-1,6-GLUCOSIDASE                   :        1.48  <
+
+************************************************* user.SUML ********************************************************
+   1kqq_d00     TRANSCRIPTION/DNA                       :        1.47  <<
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        0.66  <
+   1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        0.86  <
+   1cns_c01     CHITINASE                               :        0.88  <
+   1t4c_c02     FORMYL-COENZYME A TRANSFERASE           :        1.02  <
+   1pjh_c00     ENOYL-COA ISOMERASE; ECI1P              :        1.06  <
+   1pjh_c01     ENOYL-COA ISOMERASE; ECI1P              :        1.08  <
+   1pjh_c02     ENOYL-COA ISOMERASE; ECI1P              :        1.08  <
+   1lam_c00     LEUCINE AMINOPEPTIDASE                  :        1.12  <
+   1cns_c00     CHITINASE                               :        1.15  <
+   1fdy_c02     N-ACETYLNEURAMINATE LYASE               :        1.25  <
+   1qrr_c01     SULFOLIPID BIOSYNTHESIS (SQD1) PROTE    :        1.26  <
+   1m53_c05     ISOMALTULOSE SYNTHASE                   :        1.29  <
+   1fdy_c01     N-ACETYLNEURAMINATE LYASE               :        1.32  <
+   1fdy_c00     N-ACETYLNEURAMINATE LYASE               :        1.34  <
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.36  <
+   1pyi_d00     PROTEIN (PYRIMIDINE PATHWAY REGULATO    :        1.36  <
+   1fdy_c03     N-ACETYLNEURAMINATE LYASE               :        1.36  <
+   1cjy_c01     CYTOSOLIC PHOSPHOLIPASE A2              :        1.37  <
+   1m53_c05     ISOMALTULOSE SYNTHASE                   :        1.42  <
+   1m53_c06     ISOMALTULOSE SYNTHASE                   :        1.42  <
+   1qho_c05     ALPHA-AMYLASE                           :        1.43  <
+   1cdg_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE (E.    :        1.44  <
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.45  <
+   1cjy_c00     CYTOSOLIC PHOSPHOLIPASE A2              :        1.48  <
+   1cns_c01     CHITINASE                               :        1.49  <

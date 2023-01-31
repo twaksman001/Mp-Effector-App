@@ -1,0 +1,376 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM    0.2548  0.9364  0.2414 -0.5388  0.3447 -0.7686 -0.8029  0.0658  0.5924    27.704   -66.832  -130.074  
+ 
+ Match found in 1xny_c00     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c00               Query structure     RMSD=  0.84 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 183    GLY       matches     A  58    GLY  
+    B 419    GLY       matches     A  59    GLY  
+    B 420    ALA       matches     A  37    ALA  
+  TRANSFORM   -0.9368  0.3095 -0.1631 -0.0594 -0.6001 -0.7977 -0.3448 -0.7376  0.5806    39.659  -103.279  -129.092  
+ 
+ Match found in 1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c01               Query structure     RMSD=  0.91 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 420    ALA       matches     A  76    ALA  
+    B 182    GLY       matches     A  59    GLY  
+    B 183    GLY       matches     A  58    GLY  
+  TRANSFORM    0.5179  0.5924  0.6171  0.8554 -0.3637 -0.3687  0.0061  0.7188 -0.6952    19.347    24.818     6.690  
+ 
+ Match found in 1cqt_d00     GENE REGULATION/DNA                 
+   Pattern 1cqt_d00               Query structure     RMSD=  1.07 A  No. of residues =   3
+   ------- -------                --------------- 
+    I 303    TYR       matches     A  42    TYR  
+    I 306    VAL       matches     A  56    VAL  
+    I 308    VAL       matches     A  75    VAL  
+  TRANSFORM    0.9661  0.1276 -0.2244  0.0098  0.8506  0.5257  0.2579 -0.5101  0.8205    35.920   -12.357    51.527  
+ 
+ Match found in 1cjy_c00     CYTOSOLIC PHOSPHOLIPASE A2          
+   Pattern 1cjy_c00               Query structure     RMSD=  1.12 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 198    GLY       matches     A  41    GLY  
+    A 228    SER       matches     A  24    SER  
+    A 549    ASP       matches     A  22    ASP  
+  TRANSFORM   -0.1527  0.5796  0.8005  0.2044 -0.7739  0.5994  0.9669  0.2551 -0.0003    -0.695    -6.965     5.316  
+ 
+ Match found in 1be1_c02     GLUTAMATE MUTASE                    
+   Pattern 1be1_c02               Query structure     RMSD=  1.15 A  No. of residues =   3
+   ------- -------                --------------- 
+       14    ASP       matches     A  86    ASP  
+       16    HIS       matches     A  87    HIS  
+       67    GLY       matches     A  32    GLY  
+  TRANSFORM   -0.1759  0.6974 -0.6947  0.5551 -0.5126 -0.6551 -0.8130 -0.5009 -0.2970    31.130  -107.677  -123.368  
+ 
+ Match found in 1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c01               Query structure     RMSD=  1.16 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 420    ALA       matches     A  53    ALA  
+    B 182    GLY       matches     A  80    GLY  
+    B 183    GLY       matches     A  77    GLY  
+  TRANSFORM    0.5354  0.8439  0.0335  0.8042 -0.4973 -0.3254 -0.2580  0.2012 -0.9450     3.090    -5.398   -15.804  
+ 
+ Match found in 1be1_c02     GLUTAMATE MUTASE                    
+   Pattern 1be1_c02               Query structure     RMSD=  1.19 A  No. of residues =   3
+   ------- -------                --------------- 
+       14    ASP       matches     A  86    ASP  
+       16    HIS       matches     A  87    HIS  
+       67    GLY       matches     A  77    GLY  
+  TRANSFORM   -0.4687 -0.6767 -0.5678 -0.5826 -0.2463  0.7745 -0.6639  0.6939 -0.2788     6.121    76.230   124.717  
+ 
+ Match found in 1ct9_c04     ASPARAGINE SYNTHETASE B             
+   Pattern 1ct9_c04               Query structure     RMSD=  1.23 A  No. of residues =   3
+   ------- -------                --------------- 
+    A   1    ALA       matches     A  53    ALA  
+    A  74    ASN       matches     A  55    ASN  
+    A  75    GLY       matches     A  77    GLY  
+  TRANSFORM    0.6475  0.6733  0.3569 -0.6838  0.3067  0.6621  0.3364 -0.6728  0.6590   118.757    76.312   123.138  
+ 
+ Match found in 1cjy_c01     CYTOSOLIC PHOSPHOLIPASE A2          
+   Pattern 1cjy_c01               Query structure     RMSD=  1.23 A  No. of residues =   3
+   ------- -------                --------------- 
+    B1198    GLY       matches     A  41    GLY  
+    B1228    SER       matches     A  24    SER  
+    B1549    ASP       matches     A  22    ASP  
+  TRANSFORM    0.7905  0.5605  0.2469  0.3130 -0.7162  0.6237  0.5265 -0.4158 -0.7416    42.221  -103.220  -127.893  
+ 
+ Match found in 1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c01               Query structure     RMSD=  1.29 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 420    ALA       matches     A  37    ALA  
+    B 182    GLY       matches     A  58    GLY  
+    B 183    GLY       matches     A  59    GLY  
+  TRANSFORM    0.4243  0.9024 -0.0758  0.7981 -0.4122 -0.4395 -0.4279  0.1260 -0.8950     2.011    -5.433   -17.906  
+ 
+ Match found in 1be1_c02     GLUTAMATE MUTASE                    
+   Pattern 1be1_c02               Query structure     RMSD=  1.33 A  No. of residues =   3
+   ------- -------                --------------- 
+       14    ASP       matches     A  86    ASP  
+       16    HIS       matches     A  87    HIS  
+       67    GLY       matches     A  80    GLY  
+  TRANSFORM    0.5785  0.7722 -0.2630 -0.6065  0.1915 -0.7717 -0.5455  0.6059  0.5791   -17.139     9.796     8.239  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.34 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A  48    ASP  
+      166    GLY       matches     A  77    GLY  
+      169    GLU       matches     A  57    GLU  
+  TRANSFORM   -0.4738 -0.4199 -0.7741  0.2852  0.7585 -0.5860  0.8332 -0.4984 -0.2396    62.217    35.934   -32.865  
+ 
+ Match found in 1vom_c00     MYOSIN                              
+   Pattern 1vom_c00               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+      233    ASN       matches     A  55    ASN  
+      457    GLY       matches     A  58    GLY  
+      459    GLU       matches     A  39    GLU  
+  TRANSFORM    0.3270  0.8439  0.4253 -0.2132  0.5043 -0.8368 -0.9207  0.1829  0.3448   -21.035    53.969   -11.375  
+ 
+ Match found in 1hkd_p00     PEA LECTIN ALPHA CHAIN              
+   Pattern 1hkd_p00               Query structure     RMSD=  1.41 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  81    ASP       matches     A  17    ASP  
+    A  99    GLY       matches     A  18    GLY  
+    A 125    ASN       matches     A  20    ASN  
+  TRANSFORM   -0.5044 -0.7097 -0.4918 -0.7847  0.1392  0.6040 -0.3603  0.6906 -0.6271   -40.741    33.278   -25.846  
+ 
+ Match found in 1ddj_c13     PLASMINOGEN                         
+   Pattern 1ddj_c13               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 603    HIS       matches     A  87    HIS  
+    B 646    ASP       matches     A  86    ASP  
+    B 739    GLY       matches     A  67    GLY  
+  TRANSFORM    0.1047 -0.8376  0.5361  0.5873  0.4871  0.6464 -0.8026  0.2472  0.5429   -26.997    51.400   -25.096  
+ 
+ Match found in 1ddj_c13     PLASMINOGEN                         
+   Pattern 1ddj_c13               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 603    HIS       matches     A  87    HIS  
+    B 646    ASP       matches     A  86    ASP  
+    B 739    GLY       matches     A  59    GLY  
+  TRANSFORM    0.9899 -0.1201  0.0749 -0.0629 -0.8473 -0.5274  0.1267  0.5174 -0.8463    34.932     1.319    60.595  
+ 
+ Match found in 1cjy_c00     CYTOSOLIC PHOSPHOLIPASE A2          
+   Pattern 1cjy_c00               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 198    GLY       matches     A  18    GLY  
+    A 228    SER       matches     A  24    SER  
+    A 549    ASP       matches     A  22    ASP  
+  TRANSFORM    0.9123 -0.2428  0.3297  0.3739  0.8221 -0.4294 -0.1668  0.5150  0.8408    28.951    65.400     2.578  
+ 
+ Match found in 1ddj_c12     PLASMINOGEN                         
+   Pattern 1ddj_c12               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 603    HIS       matches     A  87    HIS  
+    A 646    ASP       matches     A  86    ASP  
+    A 739    GLY       matches     A  67    GLY  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM   -0.9402  0.2735 -0.2030  0.0676  0.7339  0.6759 -0.3338 -0.6218  0.7085    39.588  -100.663  -128.865  
+ 
+ Match found in 1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c01               Query structure     RMSD=  0.79 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 420    ALA       matches     A  76    ALA  
+    B 182    GLY       matches     A  59    GLY  
+    B 183    GLY       matches     A  58    GLY  
+  TRANSFORM    0.4684  0.8816  0.0577  0.8631 -0.4427 -0.2431  0.1887 -0.1637  0.9683     3.366    -3.440     0.994  
+ 
+ Match found in 1be1_c02     GLUTAMATE MUTASE                    
+   Pattern 1be1_c02               Query structure     RMSD=  0.93 A  No. of residues =   3
+   ------- -------                --------------- 
+       14    ASP       matches     A  86    ASP  
+       16    HIS       matches     A  87    HIS  
+       67    GLY       matches     A  80    GLY  
+  TRANSFORM    0.5529  0.8167  0.1651  0.8333 -0.5425 -0.1065 -0.0026 -0.1964  0.9805     4.089    -3.736    -1.191  
+ 
+ Match found in 1be1_c02     GLUTAMATE MUTASE                    
+   Pattern 1be1_c02               Query structure     RMSD=  0.95 A  No. of residues =   3
+   ------- -------                --------------- 
+       14    ASP       matches     A  86    ASP  
+       16    HIS       matches     A  87    HIS  
+       67    GLY       matches     A  77    GLY  
+  TRANSFORM    0.5741  0.1419  0.8064 -0.0048 -0.9843  0.1766 -0.8188  0.1053  0.5643    26.368   -69.066  -130.008  
+ 
+ Match found in 1xny_c00     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c00               Query structure     RMSD=  1.11 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 183    GLY       matches     A  58    GLY  
+    B 419    GLY       matches     A  59    GLY  
+    B 420    ALA       matches     A  37    ALA  
+  TRANSFORM    0.9783  0.2061 -0.0203 -0.1082  0.4253 -0.8986  0.1766 -0.8813 -0.4384    34.577    -0.067    62.118  
+ 
+ Match found in 1cjy_c00     CYTOSOLIC PHOSPHOLIPASE A2          
+   Pattern 1cjy_c00               Query structure     RMSD=  1.18 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 198    GLY       matches     A  18    GLY  
+    A 228    SER       matches     A  24    SER  
+    A 549    ASP       matches     A  22    ASP  
+  TRANSFORM   -0.1733  0.6945 -0.6983 -0.4166  0.5908  0.6909 -0.8924 -0.4107 -0.1869    31.102   -97.281  -122.518  
+ 
+ Match found in 1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c01               Query structure     RMSD=  1.21 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 420    ALA       matches     A  53    ALA  
+    B 182    GLY       matches     A  80    GLY  
+    B 183    GLY       matches     A  77    GLY  
+  TRANSFORM    0.7964  0.5477  0.2565 -0.3802  0.7832 -0.4920  0.4703 -0.2943 -0.8320    42.200  -100.852  -127.701  
+ 
+ Match found in 1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c01               Query structure     RMSD=  1.26 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 420    ALA       matches     A  37    ALA  
+    B 182    GLY       matches     A  58    GLY  
+    B 183    GLY       matches     A  59    GLY  
+  TRANSFORM    0.4421  0.3741  0.8152  0.7599 -0.6391 -0.1188 -0.4766 -0.6720  0.5668    20.619    26.423    14.795  
+ 
+ Match found in 1cqt_d00     GENE REGULATION/DNA                 
+   Pattern 1cqt_d00               Query structure     RMSD=  1.27 A  No. of residues =   3
+   ------- -------                --------------- 
+    I 303    TYR       matches     A  42    TYR  
+    I 306    VAL       matches     A  56    VAL  
+    I 308    VAL       matches     A  75    VAL  
+  TRANSFORM    0.8769 -0.3349  0.3448  0.4444  0.2916 -0.8470 -0.1831 -0.8960 -0.4045     2.290    11.104    19.354  
+ 
+ Match found in 1ef8_c02     METHYLMALONYL COA DECARBOXYLASE     
+   Pattern 1ef8_c02               Query structure     RMSD=  1.28 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  66    HIS       matches     A  87    HIS  
+    C 110    GLY       matches     A  85    GLY  
+    C 140    TYR       matches     A  60    TYR  
+  TRANSFORM    0.5609  0.3583 -0.7463 -0.7799 -0.0738 -0.6215  0.2778 -0.9307 -0.2381   128.426    86.935   130.731  
+ 
+ Match found in 1cjy_c01     CYTOSOLIC PHOSPHOLIPASE A2          
+   Pattern 1cjy_c01               Query structure     RMSD=  1.29 A  No. of residues =   3
+   ------- -------                --------------- 
+    B1198    GLY       matches     A  18    GLY  
+    B1228    SER       matches     A  24    SER  
+    B1549    ASP       matches     A  22    ASP  
+  TRANSFORM    0.1822 -0.4550 -0.8716 -0.9165 -0.3996  0.0170  0.3560 -0.7958  0.4899     9.646    28.838    13.794  
+ 
+ Match found in 1ef8_c01     METHYLMALONYL COA DECARBOXYLASE     
+   Pattern 1ef8_c01               Query structure     RMSD=  1.31 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  66    HIS       matches     A  87    HIS  
+    B 110    GLY       matches     A  85    GLY  
+    B 140    TYR       matches     A  60    TYR  
+  TRANSFORM   -0.4766 -0.8367  0.2700  0.4169  0.0553  0.9073  0.7740 -0.5449 -0.3224    17.385    11.687     7.209  
+ 
+ Match found in 1ef8_c00     METHYLMALONYL COA DECARBOXYLASE     
+   Pattern 1ef8_c00               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  66    HIS       matches     A  87    HIS  
+    A 110    GLY       matches     A  85    GLY  
+    A 140    TYR       matches     A  60    TYR  
+  TRANSFORM    0.2182 -0.8478  0.4833 -0.7873  0.1397  0.6005  0.5766  0.5116  0.6370   -26.303    33.226    -7.127  
+ 
+ Match found in 1ddj_c13     PLASMINOGEN                         
+   Pattern 1ddj_c13               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 603    HIS       matches     A  87    HIS  
+    B 646    ASP       matches     A  86    ASP  
+    B 739    GLY       matches     A  67    GLY  
+  TRANSFORM   -0.0661 -0.0462 -0.9967  0.6333  0.7700 -0.0777 -0.7711  0.6364  0.0217     9.438    70.574    -9.473  
+ 
+ Match found in 1ddj_c12     PLASMINOGEN                         
+   Pattern 1ddj_c12               Query structure     RMSD=  1.40 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 603    HIS       matches     A  87    HIS  
+    A 646    ASP       matches     A  86    ASP  
+    A 739    GLY       matches     A  67    GLY  
+  TRANSFORM   -0.0481  0.8510 -0.5230  0.4194  0.4924  0.7627 -0.9065  0.1827  0.3806    -6.662    29.727   -11.917  
+ 
+ Match found in 1hkd_p00     PEA LECTIN ALPHA CHAIN              
+   Pattern 1hkd_p00               Query structure     RMSD=  1.41 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  81    ASP       matches     A  17    ASP  
+    A  99    GLY       matches     A  18    GLY  
+    A 125    ASN       matches     A  20    ASN  
+  TRANSFORM   -0.6486 -0.1330 -0.7495  0.7395 -0.3433 -0.5790  0.1802  0.9298 -0.3210    13.522    36.255    48.352  
+ 
+ Match found in 1lio_c01     ADENOSINE KINASE                    
+   Pattern 1lio_c01               Query structure     RMSD=  1.41 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A  64    ALA  
+    A 317    GLY       matches     A  67    GLY  
+    A 318    ASP       matches     A  66    ASP  
+  TRANSFORM    0.9779 -0.1288 -0.1645  0.0733 -0.5259  0.8474  0.1956  0.8407  0.5049    36.251   -10.578    49.781  
+ 
+ Match found in 1cjy_c00     CYTOSOLIC PHOSPHOLIPASE A2          
+   Pattern 1cjy_c00               Query structure     RMSD=  1.42 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 198    GLY       matches     A  41    GLY  
+    A 228    SER       matches     A  24    SER  
+    A 549    ASP       matches     A  22    ASP  
+  TRANSFORM    0.8055 -0.4561 -0.3783  0.5812  0.4838  0.6543  0.1154  0.7469 -0.6548   -23.466    51.370   -20.471  
+ 
+ Match found in 1ddj_c13     PLASMINOGEN                         
+   Pattern 1ddj_c13               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 603    HIS       matches     A  87    HIS  
+    B 646    ASP       matches     A  86    ASP  
+    B 739    GLY       matches     A  59    GLY  
+  TRANSFORM    0.7240 -0.3908  0.5683 -0.6529 -0.1227  0.7474  0.2224  0.9123  0.3440   119.984    76.808   121.309  
+ 
+ Match found in 1cjy_c01     CYTOSOLIC PHOSPHOLIPASE A2          
+   Pattern 1cjy_c01               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    B1198    GLY       matches     A  41    GLY  
+    B1228    SER       matches     A  24    SER  
+    B1549    ASP       matches     A  22    ASP  
+  TRANSFORM   -0.1228 -0.0769 -0.9894  0.6602  0.7380 -0.1394 -0.7409  0.6704  0.0398     6.039    69.431    54.416  
+ 
+ Match found in 1ddj_c14     PLASMINOGEN                         
+   Pattern 1ddj_c14               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    C 603    HIS       matches     A  87    HIS  
+    C 646    ASP       matches     A  86    ASP  
+    C 739    GLY       matches     A  67    GLY  
+  TRANSFORM   -0.3079  0.8236 -0.4763  0.9461  0.2124 -0.2444  0.1001  0.5259  0.8446    29.841    90.348     6.252  
+ 
+ Match found in 1uf7_c01     N-CARBAMYL-D-AMINO ACID AMIDOHYDROLA
+   Pattern 1uf7_c01               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  46    GLU       matches     A  15    GLU  
+    B 126    LYS       matches     A  26    LYS  
+    B 171    ALA       matches     A  28    ALA  
+  TRANSFORM    0.1220 -0.4283  0.8953 -0.5536 -0.7781 -0.2968 -0.8238  0.4594  0.3321   145.620     4.166   -18.355  
+ 
+ Match found in 1lij_c01     ADENOSINE KINASE                    
+   Pattern 1lij_c01               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A  64    ALA  
+    A 317    GLY       matches     A  67    GLY  
+    A 318    ASP       matches     A  66    ASP  
+  TRANSFORM    0.5873  0.7583 -0.2829 -0.8015  0.4965 -0.3332  0.1122 -0.4224 -0.8994   -17.273    12.743    -1.696  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A  48    ASP  
+      166    GLY       matches     A  77    GLY  
+      169    GLU       matches     A  57    GLU  
+
+************************************************* user.SUMS ********************************************************
+   1xny_c00     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        0.84  <
+   1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        0.91  <
+   1cqt_d00     GENE REGULATION/DNA                     :        1.07  <
+   1cjy_c00     CYTOSOLIC PHOSPHOLIPASE A2              :        1.12  <
+   1be1_c02     GLUTAMATE MUTASE                        :        1.15  <
+   1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        1.16  <
+   1be1_c02     GLUTAMATE MUTASE                        :        1.19  <
+   1ct9_c04     ASPARAGINE SYNTHETASE B                 :        1.23  <
+   1cjy_c01     CYTOSOLIC PHOSPHOLIPASE A2              :        1.23  <
+   1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        1.29  <
+   1be1_c02     GLUTAMATE MUTASE                        :        1.33  <
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.34  <
+   1vom_c00     MYOSIN                                  :        1.36  <
+   1hkd_p00     PEA LECTIN ALPHA CHAIN                  :        1.41  <
+   1ddj_c13     PLASMINOGEN                             :        1.43  <
+   1ddj_c13     PLASMINOGEN                             :        1.43  <
+   1cjy_c00     CYTOSOLIC PHOSPHOLIPASE A2              :        1.47  <
+   1ddj_c12     PLASMINOGEN                             :        1.48  <
+
+************************************************* user.SUML ********************************************************
+   1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        0.79  <
+   1be1_c02     GLUTAMATE MUTASE                        :        0.93  <
+   1be1_c02     GLUTAMATE MUTASE                        :        0.95  <
+   1xny_c00     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        1.11  <
+   1cjy_c00     CYTOSOLIC PHOSPHOLIPASE A2              :        1.18  <
+   1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        1.21  <
+   1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        1.26  <
+   1cqt_d00     GENE REGULATION/DNA                     :        1.27  <
+   1ef8_c02     METHYLMALONYL COA DECARBOXYLASE         :        1.28  <
+   1cjy_c01     CYTOSOLIC PHOSPHOLIPASE A2              :        1.29  <
+   1ef8_c01     METHYLMALONYL COA DECARBOXYLASE         :        1.31  <
+   1ef8_c00     METHYLMALONYL COA DECARBOXYLASE         :        1.38  <
+   1ddj_c13     PLASMINOGEN                             :        1.38  <
+   1ddj_c12     PLASMINOGEN                             :        1.40  <
+   1hkd_p00     PEA LECTIN ALPHA CHAIN                  :        1.41  <
+   1lio_c01     ADENOSINE KINASE                        :        1.41  <
+   1cjy_c00     CYTOSOLIC PHOSPHOLIPASE A2              :        1.42  <
+   1ddj_c13     PLASMINOGEN                             :        1.43  <
+   1cjy_c01     CYTOSOLIC PHOSPHOLIPASE A2              :        1.46  <
+   1ddj_c14     PLASMINOGEN                             :        1.46  <
+   1uf7_c01     N-CARBAMYL-D-AMINO ACID AMIDOHYDROLA    :        1.47  <
+   1lij_c01     ADENOSINE KINASE                        :        1.48  <
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.49  <

@@ -1,0 +1,124 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM   -0.0973 -0.3374  0.9363 -0.9825  0.1825 -0.0364 -0.1586 -0.9235 -0.3493    -0.069   145.766    88.902  
+ 
+ Match found in 1dhp_c03     DIHYDRODIPICOLINATE SYNTHASE        
+   Pattern 1dhp_c03               Query structure     RMSD=  1.22 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  44    THR       matches     A  48    THR  
+    B  45    THR       matches     A  47    THR  
+    B 161    LYS       matches     A  75    LYS  
+  TRANSFORM   -0.1125  0.6852  0.7196 -0.5482  0.5612 -0.6201 -0.8287 -0.4643  0.3125   101.801    57.031    46.238  
+ 
+ Match found in 1mjo_d00     TRANSCRIPTION/DNA                   
+   Pattern 1mjo_d00               Query structure     RMSD=  1.27 A  No. of residues =   3
+   ------- -------                --------------- 
+    D  23    LYS       matches     A  84    LYS  
+    D  25    THR       matches     A  69    THR  
+    D  27    SER       matches     A  67    SER  
+  TRANSFORM    0.0805  0.3113 -0.9469  0.8274  0.5089  0.2377  0.5559 -0.8026 -0.2166    33.702    79.626    62.987  
+ 
+ Match found in 1dhp_c02     DIHYDRODIPICOLINATE SYNTHASE        
+   Pattern 1dhp_c02               Query structure     RMSD=  1.27 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  44    THR       matches     A  48    THR  
+    A  45    THR       matches     A  47    THR  
+    A 161    LYS       matches     A  75    LYS  
+  TRANSFORM   -0.2284 -0.9484 -0.2201  0.9407 -0.1567 -0.3010  0.2510 -0.2757  0.9279    -6.482    13.972    24.914  
+ 
+ Match found in 2hos_d00     TRANSCRIPTION/DNA                   
+   Pattern 2hos_d00               Query structure     RMSD=  1.28 A  No. of residues =   3
+   ------- -------                --------------- 
+    A   5    ARG       matches     A  65    ARG  
+    A  50    LYS       matches     A  85    LYS  
+    A  51    ASN       matches     A  68    ASN  
+  TRANSFORM   -0.9692 -0.0763 -0.2340  0.2441 -0.1774 -0.9534  0.0313 -0.9812  0.1906    56.171    41.975   -20.662  
+ 
+ Match found in 1vom_c00     MYOSIN                              
+   Pattern 1vom_c00               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+      233    ASN       matches     A   2    ASN  
+      457    GLY       matches     A 127    GLY  
+      459    GLU       matches     A 128    GLU  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM    0.8738  0.4838 -0.0492 -0.4538  0.7748 -0.4401  0.1749 -0.4068 -0.8966   -40.216    38.628    60.392  
+ 
+ Match found in 2z3x_d00     DNA BINDING PROTEIN/DNA             
+   Pattern 2z3x_d00               Query structure     RMSD=  1.09 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  34    SER       matches     A  11    SER  
+    B  37    ASN       matches     A   9    ASN  
+    B  45    THR       matches     A  24    THR  
+  TRANSFORM   -0.4165 -0.4738  0.7759  0.8085 -0.5833  0.0778 -0.4157 -0.6597 -0.6260    62.310    48.244   -25.626  
+ 
+ Match found in 1vom_c00     MYOSIN                              
+   Pattern 1vom_c00               Query structure     RMSD=  1.28 A  No. of residues =   3
+   ------- -------                --------------- 
+      233    ASN       matches     A   2    ASN  
+      457    GLY       matches     A 127    GLY  
+      459    GLU       matches     A 128    GLU  
+  TRANSFORM    0.7692  0.4884 -0.4121 -0.5419  0.1568 -0.8257  0.3386 -0.8584 -0.3853    21.260   104.365    66.912  
+ 
+ Match found in 1dhp_c02     DIHYDRODIPICOLINATE SYNTHASE        
+   Pattern 1dhp_c02               Query structure     RMSD=  1.29 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  44    THR       matches     A  48    THR  
+    A  45    THR       matches     A  47    THR  
+    A 161    LYS       matches     A  75    LYS  
+  TRANSFORM   -0.7541 -0.5024  0.4230  0.1705  0.4722  0.8648  0.6343 -0.7243  0.2705    11.846   124.848    74.517  
+ 
+ Match found in 1dhp_c03     DIHYDRODIPICOLINATE SYNTHASE        
+   Pattern 1dhp_c03               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  44    THR       matches     A  48    THR  
+    B  45    THR       matches     A  47    THR  
+    B 161    LYS       matches     A  75    LYS  
+  TRANSFORM    0.9471  0.2326 -0.2211  0.2434 -0.0717  0.9673 -0.2091  0.9699  0.1245    19.274    -6.998    35.376  
+ 
+ Match found in 1vq1_c00     N5-GLUTAMINE METHYLTRANSFERASE, HEMK
+   Pattern 1vq1_c00               Query structure     RMSD=  1.40 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 100    PHE       matches     A 105    PHE  
+    A 197    ASN       matches     A 107    ASN  
+    A 198    PRO       matches     A 108    PRO  
+  TRANSFORM    0.6225  0.7757 -0.1039 -0.2483  0.0698 -0.9662  0.7422 -0.6273 -0.2361    31.142    -9.750     2.940  
+ 
+ Match found in 1vq1_c01     N5-GLUTAMINE METHYLTRANSFERASE, HEMK
+   Pattern 1vq1_c01               Query structure     RMSD=  1.41 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 100    PHE       matches     A 105    PHE  
+    B 197    ASN       matches     A 107    ASN  
+    B 198    PRO       matches     A 108    PRO  
+  TRANSFORM    0.0419  0.9409  0.3362 -0.9991  0.0358  0.0244 -0.0109  0.3369 -0.9415    12.459   144.365   101.068  
+ 
+ Match found in 1dhp_c03     DIHYDRODIPICOLINATE SYNTHASE        
+   Pattern 1dhp_c03               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  44    THR       matches     A  47    THR  
+    B  45    THR       matches     A  48    THR  
+    B 161    LYS       matches     A  75    LYS  
+  TRANSFORM   -0.0520 -0.9302 -0.3634  0.7356 -0.2818  0.6161  0.6755  0.2353 -0.6988    21.483    71.956    73.024  
+ 
+ Match found in 1dhp_c02     DIHYDRODIPICOLINATE SYNTHASE        
+   Pattern 1dhp_c02               Query structure     RMSD=  1.50 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  44    THR       matches     A  47    THR  
+    A  45    THR       matches     A  48    THR  
+    A 161    LYS       matches     A  75    LYS  
+
+************************************************* user.SUMS ********************************************************
+   1dhp_c03     DIHYDRODIPICOLINATE SYNTHASE            :        1.22  <
+   1mjo_d00     TRANSCRIPTION/DNA                       :        1.27  <
+   1dhp_c02     DIHYDRODIPICOLINATE SYNTHASE            :        1.27  <
+   2hos_d00     TRANSCRIPTION/DNA                       :        1.28  <
+   1vom_c00     MYOSIN                                  :        1.38  <
+
+************************************************* user.SUML ********************************************************
+   2z3x_d00     DNA BINDING PROTEIN/DNA                 :        1.09  <
+   1vom_c00     MYOSIN                                  :        1.28  <
+   1dhp_c02     DIHYDRODIPICOLINATE SYNTHASE            :        1.29  <
+   1dhp_c03     DIHYDRODIPICOLINATE SYNTHASE            :        1.35  <
+   1vq1_c00     N5-GLUTAMINE METHYLTRANSFERASE, HEMK    :        1.40  <
+   1vq1_c01     N5-GLUTAMINE METHYLTRANSFERASE, HEMK    :        1.41  <
+   1dhp_c03     DIHYDRODIPICOLINATE SYNTHASE            :        1.45  <
+   1dhp_c02     DIHYDRODIPICOLINATE SYNTHASE            :        1.50  <

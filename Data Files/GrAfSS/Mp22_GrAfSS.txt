@@ -1,0 +1,610 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM   -0.6882  0.5488 -0.4746 -0.4250  0.2251  0.8767  0.5880  0.8051  0.0783    -7.940    13.837   134.195  
+ 
+ Match found in 1am5_c04     PEPSIN                              
+   Pattern 1am5_c04               Query structure     RMSD=  1.13 A  No. of residues =   3
+   ------- -------                --------------- 
+       32    ASP       matches     A  60    ASP  
+       35    SER       matches     A  55    SER  
+      215    ASP       matches     A  62    ASP  
+  TRANSFORM    0.8473  0.5186  0.1149 -0.2505  0.1994  0.9474  0.4684 -0.8315  0.2988    15.998    16.856    20.866  
+ 
+ Match found in 1apt_c04     ISOVALERYL (IVA)-VAL-VAL-LYSTA-O-ET 
+   Pattern 1apt_c04               Query structure     RMSD=  1.14 A  No. of residues =   3
+   ------- -------                --------------- 
+    E  33    ASP       matches     A  60    ASP  
+    E  36    SER       matches     A  55    SER  
+    E 213    ASP       matches     A  62    ASP  
+  TRANSFORM   -0.3884  0.9157 -0.1036  0.5078  0.1189 -0.8532 -0.7689 -0.3840 -0.5112    42.628    14.439    15.822  
+ 
+ Match found in 1eag_c04     PEPTIDE INHIBITOR                   
+   Pattern 1eag_c04               Query structure     RMSD=  1.16 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  32    ASP       matches     A  60    ASP  
+    A  35    SER       matches     A  55    SER  
+    A 218    ASP       matches     A  62    ASP  
+  TRANSFORM    0.7916  0.3487 -0.5019 -0.5534  0.7574 -0.3466  0.2593  0.5521  0.7925     1.232    14.337    69.411  
+ 
+ Match found in 1rne_c04     RENIN (ACTIVATED, GLYCOSYLATED, INHI
+   Pattern 1rne_c04               Query structure     RMSD=  1.19 A  No. of residues =   3
+   ------- -------                --------------- 
+       32    ASP       matches     A  60    ASP  
+       35    SER       matches     A  55    SER  
+      215    ASP       matches     A  62    ASP  
+  TRANSFORM    0.7658 -0.5133  0.3875 -0.0734 -0.6683 -0.7402  0.6389  0.5384 -0.5495    40.613    61.972    93.745  
+ 
+ Match found in 2apr_c04     ACID PROTEINASE (RHIZOPUSPEPSIN) (E.
+   Pattern 2apr_c04               Query structure     RMSD=  1.19 A  No. of residues =   3
+   ------- -------                --------------- 
+       35    ASP       matches     A  60    ASP  
+       38    SER       matches     A  55    SER  
+      218    ASP       matches     A  62    ASP  
+  TRANSFORM    0.2581 -0.9115  0.3202 -0.2284 -0.3796 -0.8965  0.9387  0.1583 -0.3062    17.189    19.452    17.642  
+ 
+ Match found in 1xqd_c02     CYTOCHROME P450 55A1                
+   Pattern 1xqd_c02               Query structure     RMSD=  1.19 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 243    THR       matches     A  64    THR  
+    A 345    PHE       matches     A  18    PHE  
+    A 352    CYH       matches     A  20    CYH  
+  TRANSFORM    0.0992  0.9767 -0.1905  0.9536 -0.0386  0.2987  0.2844 -0.2113 -0.9351     0.820    27.252     7.990  
+ 
+ Match found in 1eed_c04     ENDOTHIAPEPSIN (E.C.3.4.23.22) COMPL
+   Pattern 1eed_c04               Query structure     RMSD=  1.20 A  No. of residues =   3
+   ------- -------                --------------- 
+    P  32    ASP       matches     A  60    ASP  
+    P  35    SER       matches     A  55    SER  
+    P 215    ASP       matches     A  62    ASP  
+  TRANSFORM    0.4746 -0.6412  0.6031  0.7751 -0.0202 -0.6315  0.4171  0.7671  0.4874    64.666    37.483    71.140  
+ 
+ Match found in 1bbs_c07     RENIN                               
+   Pattern 1bbs_c07               Query structure     RMSD=  1.20 A  No. of residues =   3
+   ------- -------                --------------- 
+       32    ASP       matches     A  60    ASP  
+       35    SER       matches     A  55    SER  
+      215    ASP       matches     A  62    ASP  
+  TRANSFORM    0.4746 -0.6412  0.6031  0.7751 -0.0202 -0.6315  0.4171  0.7671  0.4874    64.666    37.483    71.140  
+ 
+ Match found in 1bbs_c06     RENIN                               
+   Pattern 1bbs_c06               Query structure     RMSD=  1.20 A  No. of residues =   3
+   ------- -------                --------------- 
+       32    ASP       matches     A  60    ASP  
+       35    SER       matches     A  55    SER  
+      215    ASP       matches     A  62    ASP  
+  TRANSFORM   -0.4926  0.2484  0.8340  0.5190 -0.6855  0.5107  0.6986  0.6844  0.2087    -9.194    64.930    33.909  
+ 
+ Match found in 2jxr_c04     LIGAND CP-081282                    
+   Pattern 2jxr_c04               Query structure     RMSD=  1.20 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  32    ASP       matches     A  60    ASP  
+    A  35    SER       matches     A  55    SER  
+    A 215    ASP       matches     A  62    ASP  
+  TRANSFORM   -0.7430  0.5198 -0.4217 -0.6350 -0.7466  0.1984 -0.2117  0.4151  0.8848    21.195    26.218    33.787  
+ 
+ Match found in 1mpp_c04     PEPSIN (RENIN) (E.C.3.4.23.23)      
+   Pattern 1mpp_c04               Query structure     RMSD=  1.20 A  No. of residues =   3
+   ------- -------                --------------- 
+       32    ASP       matches     A  60    ASP  
+       35    SER       matches     A  55    SER  
+      215    ASP       matches     A  62    ASP  
+  TRANSFORM    0.9995 -0.0155 -0.0292  0.0323  0.2706  0.9621 -0.0071 -0.9626  0.2710     9.437    98.630    61.502  
+ 
+ Match found in 1sme_c05     PLASMEPSIN II                       
+   Pattern 1sme_c05               Query structure     RMSD=  1.20 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  34    ASP       matches     A  60    ASP  
+    B  37    SER       matches     A  55    SER  
+    B 214    ASP       matches     A  62    ASP  
+  TRANSFORM    0.4832 -0.3013 -0.8220  0.8172 -0.1817  0.5469 -0.3141 -0.9361  0.1584    47.314    57.257    29.590  
+ 
+ Match found in 1sme_c04     PLASMEPSIN II                       
+   Pattern 1sme_c04               Query structure     RMSD=  1.21 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  34    ASP       matches     A  60    ASP  
+    A  37    SER       matches     A  55    SER  
+    A 214    ASP       matches     A  62    ASP  
+  TRANSFORM   -0.2745  0.2893 -0.9170 -0.4758  0.7879  0.3909  0.8356  0.5437 -0.0786    13.503    25.012    18.001  
+ 
+ Match found in 1cms_c04     CHYMOSIN B (FORMERLY KNOWN AS RENNIN
+   Pattern 1cms_c04               Query structure     RMSD=  1.21 A  No. of residues =   3
+   ------- -------                --------------- 
+       34    ASP       matches     A  60    ASP  
+       37    SER       matches     A  55    SER  
+      216    ASP       matches     A  62    ASP  
+  TRANSFORM   -0.2105 -0.3324 -0.9193 -0.5596  0.8121 -0.1655  0.8016  0.4796 -0.3569    -7.402     3.727    -2.131  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.24 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A   2    ASP  
+      166    GLY       matches     A  46    GLY  
+      169    GLU       matches     A  43    GLU  
+  TRANSFORM    0.5357  0.1759 -0.8259  0.8370  0.0182  0.5468  0.1112 -0.9842 -0.1375    55.473    39.835    21.734  
+ 
+ Match found in 1js4_c00     ENDO-EXOCELLULASE E4                
+   Pattern 1js4_c00               Query structure     RMSD=  1.25 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  55    ASP       matches     A  56    ASP  
+    A  58    ASP       matches     A  62    ASP  
+    A 424    GLU       matches     A  43    GLU  
+  TRANSFORM    0.4732 -0.6753  0.5657 -0.8734 -0.2758  0.4014 -0.1151 -0.6840 -0.7203    31.462   115.388     7.927  
+ 
+ Match found in 1grc_c03     GLYCINAMIDE RIBONUCLEOTIDE TRANSFORM
+   Pattern 1grc_c03               Query structure     RMSD=  1.29 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 106    ASN       matches     A  23    ASN  
+    B 108    HIS       matches     A  34    HIS  
+    B 144    ASP       matches     A  62    ASP  
+  TRANSFORM    0.1764  0.3154 -0.9324 -0.8310  0.5554  0.0307  0.5276  0.7694  0.3601   -44.952   -15.305    11.194  
+ 
+ Match found in 1avf_c05     GASTRICSIN                          
+   Pattern 1avf_c05               Query structure     RMSD=  1.32 A  No. of residues =   3
+   ------- -------                --------------- 
+    J  32    ASP       matches     A  60    ASP  
+    J  35    SER       matches     A  55    SER  
+    J 217    ASP       matches     A  62    ASP  
+  TRANSFORM    0.7755  0.4293 -0.4629  0.2857  0.4151  0.8637  0.5630 -0.8021  0.1993     7.141     9.048    20.794  
+ 
+ Match found in 1fr8_c00     BETA 1,4 GALACTOSYLTRANSFERASE      
+   Pattern 1fr8_c00               Query structure     RMSD=  1.32 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 317    GLU       matches     A  63    GLU  
+    A 319    ASP       matches     A  56    ASP  
+    A 359    ARG       matches     A  36    ARG  
+  TRANSFORM   -0.5141 -0.6999 -0.4958  0.8259 -0.5599 -0.0660 -0.2314 -0.4434  0.8659    -1.907     0.362    58.447  
+ 
+ Match found in 1avf_c04     GASTRICSIN                          
+   Pattern 1avf_c04               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  32    ASP       matches     A  60    ASP  
+    A  35    SER       matches     A  55    SER  
+    A 217    ASP       matches     A  62    ASP  
+  TRANSFORM   -0.4490  0.8300 -0.3309 -0.8779 -0.4787 -0.0094 -0.1662  0.2863  0.9436   -18.632   -11.242    21.085  
+ 
+ Match found in 1uaq_c01     CYTOSINE DEAMINASE                  
+   Pattern 1uaq_c01               Query structure     RMSD=  1.42 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  64    GLU       matches     A  63    GLU  
+    B  89    SER       matches     A  55    SER  
+    B  91    CYH       matches     A  57    CYH  
+  TRANSFORM   -0.8930  0.4406 -0.0916  0.1921  0.1892 -0.9630 -0.4069 -0.8776 -0.2536   118.766    61.547    25.269  
+ 
+ Match found in 1js4_c01     ENDO-EXOCELLULASE E4                
+   Pattern 1js4_c01               Query structure     RMSD=  1.42 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  55    ASP       matches     A  56    ASP  
+    B  58    ASP       matches     A  62    ASP  
+    B 424    GLU       matches     A  43    GLU  
+  TRANSFORM    0.0663 -0.7720  0.6321 -0.1064  0.6244  0.7738 -0.9921 -0.1186 -0.0408   -12.170    -6.603    14.999  
+ 
+ Match found in 1uaq_c00     CYTOSINE DEAMINASE                  
+   Pattern 1uaq_c00               Query structure     RMSD=  1.42 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  64    GLU       matches     A  63    GLU  
+    A  89    SER       matches     A  55    SER  
+    A  91    CYH       matches     A  57    CYH  
+  TRANSFORM   -0.1641  0.6483 -0.7435 -0.8390 -0.4881 -0.2404 -0.5188  0.5844  0.6240     9.780    22.349    14.911  
+ 
+ Match found in 1akd_c01     CYTOCHROME P450CAM                  
+   Pattern 1akd_c01               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+      252    THR       matches     A  64    THR  
+      350    PHE       matches     A  18    PHE  
+      357    CYH       matches     A  20    CYH  
+  TRANSFORM    0.7473  0.6384  0.1844  0.3605 -0.6226  0.6946  0.5583 -0.4525 -0.6954    65.282    27.764    21.395  
+ 
+ Match found in 1w1o_c00     CYTOKININ DEHYDROGENASE 1           
+   Pattern 1w1o_c00               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 105    HIS       matches     A  34    HIS  
+    A 169    ASP       matches     A  56    ASP  
+    A 288    GLU       matches     A  43    GLU  
+  TRANSFORM   -0.1833  0.8818  0.4346  0.1753  0.4644 -0.8681 -0.9673 -0.0830 -0.2397    78.302    37.207   116.615  
+ 
+ Match found in 1bhg_c03     BETA-GLUCURONIDASE                  
+   Pattern 1bhg_c03               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 451    GLU       matches     A  43    GLU  
+    B 504    TYR       matches     A  53    TYR  
+    B 540    GLU       matches     A  63    GLU  
+  TRANSFORM   -0.7329 -0.6697  0.1194 -0.0025 -0.1729 -0.9849  0.6803 -0.7222  0.1250    42.716    10.591     6.641  
+ 
+ Match found in 2p3i_p00     VP4                                 
+   Pattern 2p3i_p00               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 101    ARG       matches     A  36    ARG  
+    A 188    TYR       matches     A  19    TYR  
+    A 190    SER       matches     A  35    SER  
+  TRANSFORM    0.3020  0.9234  0.2368 -0.0172 -0.2431  0.9699  0.9532 -0.2969 -0.0575     5.901    63.032    88.722  
+ 
+ Match found in 1ax4_c05     TRYPTOPHANASE                       
+   Pattern 1ax4_c05               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 130    PHE       matches     A  58    PHE  
+    B 223    ASP       matches     A  62    ASP  
+    B 265    LYS       matches     A  69    LYS  
+  TRANSFORM   -0.6747  0.6954 -0.2474 -0.0717  0.2719  0.9597  0.7346  0.6652 -0.1335     7.285    11.938    31.898  
+ 
+ Match found in 1fr8_c01     BETA 1,4 GALACTOSYLTRANSFERASE      
+   Pattern 1fr8_c01               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 317    GLU       matches     A  63    GLU  
+    B 319    ASP       matches     A  56    ASP  
+    B 359    ARG       matches     A  36    ARG  
+  TRANSFORM   -0.9332  0.2173  0.2862 -0.1331  0.5307 -0.8370 -0.3338 -0.8192 -0.4664   -26.067    49.951    52.693  
+ 
+ Match found in 1ax4_c07     TRYPTOPHANASE                       
+   Pattern 1ax4_c07               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    D 130    PHE       matches     A  58    PHE  
+    D 223    ASP       matches     A  62    ASP  
+    D 265    LYS       matches     A  69    LYS  
+  TRANSFORM   -0.3083 -0.9193 -0.2447  0.4248 -0.3632  0.8292 -0.8512  0.1517  0.5025    -4.987    75.591    36.975  
+ 
+ Match found in 1ax4_c06     TRYPTOPHANASE                       
+   Pattern 1ax4_c06               Query structure     RMSD=  1.50 A  No. of residues =   3
+   ------- -------                --------------- 
+    C 130    PHE       matches     A  58    PHE  
+    C 223    ASP       matches     A  62    ASP  
+    C 265    LYS       matches     A  69    LYS  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM   -0.5421  0.1641 -0.8241  0.0312 -0.9761 -0.2149  0.8397  0.1423 -0.5240    -7.683    14.640   134.638  
+ 
+ Match found in 1am5_c04     PEPSIN                              
+   Pattern 1am5_c04               Query structure     RMSD=  0.97 A  No. of residues =   3
+   ------- -------                --------------- 
+       32    ASP       matches     A  60    ASP  
+       35    SER       matches     A  55    SER  
+      215    ASP       matches     A  62    ASP  
+  TRANSFORM    0.9626  0.2109 -0.1701  0.1886 -0.9723 -0.1379  0.1945 -0.1006  0.9757    16.205    17.644    20.375  
+ 
+ Match found in 1apt_c04     ISOVALERYL (IVA)-VAL-VAL-LYSTA-O-ET 
+   Pattern 1apt_c04               Query structure     RMSD=  1.00 A  No. of residues =   3
+   ------- -------                --------------- 
+    E  33    ASP       matches     A  60    ASP  
+    E  36    SER       matches     A  55    SER  
+    E 213    ASP       matches     A  62    ASP  
+  TRANSFORM   -0.0264 -0.0507 -0.9984  0.1848  0.9813 -0.0547 -0.9824  0.1859  0.0166    43.280    13.857    15.437  
+ 
+ Match found in 1eag_c04     PEPTIDE INHIBITOR                   
+   Pattern 1eag_c04               Query structure     RMSD=  1.03 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  32    ASP       matches     A  60    ASP  
+    A  35    SER       matches     A  55    SER  
+    A 218    ASP       matches     A  62    ASP  
+  TRANSFORM   -0.2358 -0.3389 -0.9108 -0.0568  0.9404 -0.3352 -0.9701  0.0273  0.2410    -7.320     2.098     3.608  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.04 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A   2    ASP  
+      166    GLY       matches     A  46    GLY  
+      169    GLU       matches     A  43    GLU  
+  TRANSFORM    0.6020 -0.0745  0.7950 -0.5688  0.6587  0.4924  0.5604  0.7487 -0.3542    40.315    61.071    93.602  
+ 
+ Match found in 2apr_c04     ACID PROTEINASE (RHIZOPUSPEPSIN) (E.
+   Pattern 2apr_c04               Query structure     RMSD=  1.04 A  No. of residues =   3
+   ------- -------                --------------- 
+       35    ASP       matches     A  60    ASP  
+       38    SER       matches     A  55    SER  
+      218    ASP       matches     A  62    ASP  
+  TRANSFORM   -0.4479  0.7502 -0.4865  0.0216 -0.5348 -0.8447  0.8938  0.3888 -0.2233    13.205    25.868    18.102  
+ 
+ Match found in 1cms_c04     CHYMOSIN B (FORMERLY KNOWN AS RENNIN
+   Pattern 1cms_c04               Query structure     RMSD=  1.06 A  No. of residues =   3
+   ------- -------                --------------- 
+       34    ASP       matches     A  60    ASP  
+       37    SER       matches     A  55    SER  
+      216    ASP       matches     A  62    ASP  
+  TRANSFORM    0.3852  0.2120 -0.8982  0.9090  0.0805  0.4088 -0.1589  0.9739  0.1617     1.339    27.171     7.184  
+ 
+ Match found in 1eed_c04     ENDOTHIAPEPSIN (E.C.3.4.23.22) COMPL
+   Pattern 1eed_c04               Query structure     RMSD=  1.06 A  No. of residues =   3
+   ------- -------                --------------- 
+    P  32    ASP       matches     A  60    ASP  
+    P  35    SER       matches     A  55    SER  
+    P 215    ASP       matches     A  62    ASP  
+  TRANSFORM    0.1443 -0.8582  0.4927  0.3426 -0.4238 -0.8385 -0.9283 -0.2898 -0.2328    90.034    43.196   118.010  
+ 
+ Match found in 1bhg_c03     BETA-GLUCURONIDASE                  
+   Pattern 1bhg_c03               Query structure     RMSD=  1.06 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 451    GLU       matches     A  43    GLU  
+    B 504    TYR       matches     A  53    TYR  
+    B 540    GLU       matches     A  63    GLU  
+  TRANSFORM   -0.5893  0.1109 -0.8002 -0.7570 -0.4218  0.4991  0.2822 -0.8999 -0.3325    21.468    26.001    34.665  
+ 
+ Match found in 1mpp_c04     PEPSIN (RENIN) (E.C.3.4.23.23)      
+   Pattern 1mpp_c04               Query structure     RMSD=  1.07 A  No. of residues =   3
+   ------- -------                --------------- 
+       32    ASP       matches     A  60    ASP  
+       35    SER       matches     A  55    SER  
+      215    ASP       matches     A  62    ASP  
+  TRANSFORM    0.8365  0.4125  0.3606  0.4697 -0.8788 -0.0843 -0.2821 -0.2399  0.9289     9.155    99.387    61.026  
+ 
+ Match found in 1sme_c05     PLASMEPSIN II                       
+   Pattern 1sme_c05               Query structure     RMSD=  1.07 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  34    ASP       matches     A  60    ASP  
+    B  37    SER       matches     A  55    SER  
+    B 214    ASP       matches     A  62    ASP  
+  TRANSFORM    0.6376  0.7607 -0.1215 -0.3117  0.1105 -0.9437  0.7045 -0.6396 -0.3076     0.948    14.782    70.231  
+ 
+ Match found in 1rne_c04     RENIN (ACTIVATED, GLYCOSYLATED, INHI
+   Pattern 1rne_c04               Query structure     RMSD=  1.08 A  No. of residues =   3
+   ------- -------                --------------- 
+       32    ASP       matches     A  60    ASP  
+       35    SER       matches     A  55    SER  
+      215    ASP       matches     A  62    ASP  
+  TRANSFORM    0.0135  0.9474  0.3196  0.8214 -0.1928  0.5368 -0.5702 -0.2553  0.7808    46.457    57.265    29.123  
+ 
+ Match found in 1sme_c04     PLASMEPSIN II                       
+   Pattern 1sme_c04               Query structure     RMSD=  1.08 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  34    ASP       matches     A  60    ASP  
+    A  37    SER       matches     A  55    SER  
+    A 214    ASP       matches     A  62    ASP  
+  TRANSFORM    0.3649 -0.3505  0.8625  0.4341  0.8836  0.1754  0.8236 -0.3104 -0.4746    64.457    36.833    71.916  
+ 
+ Match found in 1bbs_c07     RENIN                               
+   Pattern 1bbs_c07               Query structure     RMSD=  1.11 A  No. of residues =   3
+   ------- -------                --------------- 
+       32    ASP       matches     A  60    ASP  
+       35    SER       matches     A  55    SER  
+      215    ASP       matches     A  62    ASP  
+  TRANSFORM    0.3649 -0.3505  0.8625  0.4341  0.8836  0.1754  0.8236 -0.3104 -0.4746    64.457    36.833    71.916  
+ 
+ Match found in 1bbs_c06     RENIN                               
+   Pattern 1bbs_c06               Query structure     RMSD=  1.11 A  No. of residues =   3
+   ------- -------                --------------- 
+       32    ASP       matches     A  60    ASP  
+       35    SER       matches     A  55    SER  
+      215    ASP       matches     A  62    ASP  
+  TRANSFORM   -0.5938 -0.7385 -0.3196 -0.7536  0.3711  0.5426  0.2821 -0.5630  0.7768    24.116    12.846    22.859  
+ 
+ Match found in 1eyi_c00     FRUCTOSE-1,6-BISPHOSPHATASE         
+   Pattern 1eyi_c00               Query structure     RMSD=  1.15 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  68    ASP       matches     A  56    ASP  
+    A  74    ASP       matches     A  60    ASP  
+    A  98    GLU       matches     A  63    GLU  
+  TRANSFORM    0.4564 -0.7850  0.4189  0.4610 -0.1940 -0.8659 -0.7611 -0.5883 -0.2734    44.342   104.130    13.342  
+ 
+ Match found in 2f61_c01     ACID BETA-GLUCOSIDASE               
+   Pattern 2f61_c01               Query structure     RMSD=  1.17 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 235    GLU       matches     A  43    GLU  
+    B 340    GLU       matches     A  63    GLU  
+    B 342    CYH       matches     A  57    CYH  
+  TRANSFORM   -0.0482 -0.9513 -0.3044  0.3760 -0.2997  0.8768  0.9253  0.0722 -0.3722    -8.401    64.675    34.314  
+ 
+ Match found in 2jxr_c04     LIGAND CP-081282                    
+   Pattern 2jxr_c04               Query structure     RMSD=  1.19 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  32    ASP       matches     A  60    ASP  
+    A  35    SER       matches     A  55    SER  
+    A 215    ASP       matches     A  62    ASP  
+  TRANSFORM    0.1378  0.1255 -0.9825 -0.3347  0.9395  0.0731 -0.9322 -0.3188 -0.1715     5.421   -19.181    31.699  
+ 
+ Match found in 1euu_c00     SIALIDASE                           
+   Pattern 1euu_c00               Query structure     RMSD=  1.24 A  No. of residues =   3
+   ------- -------                --------------- 
+       92    ASP       matches     A  62    ASP  
+      260    GLU       matches     A  43    GLU  
+      370    TYR       matches     A  53    TYR  
+  TRANSFORM   -0.0568  0.9389 -0.3394 -0.5035 -0.3205 -0.8024  0.8621 -0.1253 -0.4909   -45.345   -14.753    11.758  
+ 
+ Match found in 1avf_c05     GASTRICSIN                          
+   Pattern 1avf_c05               Query structure     RMSD=  1.26 A  No. of residues =   3
+   ------- -------                --------------- 
+    J  32    ASP       matches     A  60    ASP  
+    J  35    SER       matches     A  55    SER  
+    J 217    ASP       matches     A  62    ASP  
+  TRANSFORM   -0.4083  0.9125 -0.0247 -0.8776 -0.3849  0.2858 -0.2513 -0.1384 -0.9580     4.570    20.152    41.947  
+ 
+ Match found in 1fr8_c01     BETA 1,4 GALACTOSYLTRANSFERASE      
+   Pattern 1fr8_c01               Query structure     RMSD=  1.27 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 317    GLU       matches     A  63    GLU  
+    B 319    ASP       matches     A  56    ASP  
+    B 359    ARG       matches     A  36    ARG  
+  TRANSFORM    0.2464 -0.9153  0.3185 -0.2744  0.2493  0.9287  0.9295  0.3162  0.1898    86.169    79.520    82.096  
+ 
+ Match found in 1bhg_c02     BETA-GLUCURONIDASE                  
+   Pattern 1bhg_c02               Query structure     RMSD=  1.29 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 451    GLU       matches     A  43    GLU  
+    A 504    TYR       matches     A  53    TYR  
+    A 540    GLU       matches     A  63    GLU  
+  TRANSFORM   -0.8700  0.2560  0.4214  0.4893  0.3441  0.8014 -0.0601 -0.9034  0.4246    -2.505    -0.204    58.735  
+ 
+ Match found in 1avf_c04     GASTRICSIN                          
+   Pattern 1avf_c04               Query structure     RMSD=  1.30 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  32    ASP       matches     A  60    ASP  
+    A  35    SER       matches     A  55    SER  
+    A 217    ASP       matches     A  62    ASP  
+  TRANSFORM    0.8498 -0.5024  0.1594 -0.1066 -0.4599 -0.8815 -0.5162 -0.7321  0.4444    60.531   -15.562     0.048  
+ 
+ Match found in 1d6o_c00     FK506-BINDING PROTEIN               
+   Pattern 1d6o_c00               Query structure     RMSD=  1.34 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  37    ASP       matches     A   2    ASP  
+    A  56    ILE       matches     A   8    ILE  
+    A  82    TYR       matches     A  66    TYR  
+  TRANSFORM    0.8478 -0.5039  0.1655 -0.0875 -0.4406 -0.8934 -0.5231 -0.7429  0.4176    63.479   -32.070   -27.971  
+ 
+ Match found in 1d6o_c01     FK506-BINDING PROTEIN               
+   Pattern 1d6o_c01               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  37    ASP       matches     A   2    ASP  
+    B  56    ILE       matches     A   8    ILE  
+    B  82    TYR       matches     A  66    TYR  
+  TRANSFORM   -0.6052 -0.3932 -0.6922 -0.6929 -0.1679  0.7012  0.3919 -0.9040  0.1708    18.685    17.231    22.224  
+ 
+ Match found in 1fr8_c00     BETA 1,4 GALACTOSYLTRANSFERASE      
+   Pattern 1fr8_c00               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 317    GLU       matches     A  63    GLU  
+    A 319    ASP       matches     A  56    ASP  
+    A 359    ARG       matches     A  36    ARG  
+  TRANSFORM   -0.4106 -0.7762  0.4784 -0.2635  0.6033  0.7527  0.8729 -0.1830  0.4523    10.531    33.768    33.326  
+ 
+ Match found in 1v0e_c02     ENDO-ALPHA-SIALIDASE                
+   Pattern 1v0e_c02               Query structure     RMSD=  1.37 A  No. of residues =   3
+   ------- -------                --------------- 
+    C 581    GLU       matches     A  70    GLU  
+    C 596    ARG       matches     A  73    ARG  
+    C 647    ARG       matches     A  77    ARG  
+  TRANSFORM   -0.1416 -0.9705 -0.1953  0.6854 -0.2385  0.6880  0.7143  0.0364 -0.6989    62.385    41.382    15.579  
+ 
+ Match found in 1js4_c00     ENDO-EXOCELLULASE E4                
+   Pattern 1js4_c00               Query structure     RMSD=  1.37 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  55    ASP       matches     A  56    ASP  
+    A  58    ASP       matches     A  62    ASP  
+    A 424    GLU       matches     A  43    GLU  
+  TRANSFORM    0.7353  0.5007  0.4568 -0.5417  0.8392 -0.0480  0.4074  0.2122 -0.8883    44.556    55.549    68.739  
+ 
+ Match found in 1v0e_c01     ENDO-ALPHA-SIALIDASE                
+   Pattern 1v0e_c01               Query structure     RMSD=  1.37 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 581    GLU       matches     A  70    GLU  
+    B 596    ARG       matches     A  73    ARG  
+    B 647    ARG       matches     A  77    ARG  
+  TRANSFORM   -0.3196  0.2954 -0.9003 -0.9185  0.1368  0.3710 -0.2327 -0.9455 -0.2276    63.699    29.180    25.481  
+ 
+ Match found in 1v0e_c00     ENDO-ALPHA-SIALIDASE                
+   Pattern 1v0e_c00               Query structure     RMSD=  1.39 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 581    GLU       matches     A  70    GLU  
+    A 596    ARG       matches     A  73    ARG  
+    A 647    ARG       matches     A  77    ARG  
+  TRANSFORM    0.3080 -0.2673  0.9131  0.9496  0.1445 -0.2781  0.0576 -0.9527 -0.2984   -39.159   -14.168    19.317  
+ 
+ Match found in 1v0e_c03     ENDO-ALPHA-SIALIDASE                
+   Pattern 1v0e_c03               Query structure     RMSD=  1.39 A  No. of residues =   3
+   ------- -------                --------------- 
+    D 581    GLU       matches     A  70    GLU  
+    D 596    ARG       matches     A  73    ARG  
+    D 647    ARG       matches     A  77    ARG  
+  TRANSFORM    0.3524  0.1288  0.9269  0.9356 -0.0269 -0.3520  0.0204 -0.9913  0.1300   111.094    57.093    22.577  
+ 
+ Match found in 1js4_c01     ENDO-EXOCELLULASE E4                
+   Pattern 1js4_c01               Query structure     RMSD=  1.41 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  55    ASP       matches     A  62    ASP  
+    B  58    ASP       matches     A  56    ASP  
+    B 424    GLU       matches     A  43    GLU  
+  TRANSFORM   -0.7338 -0.5073 -0.4519  0.4045 -0.8606  0.3093  0.5458 -0.0442 -0.8367   -20.055   -51.635    53.087  
+ 
+ Match found in 1v0e_c05     ENDO-ALPHA-SIALIDASE                
+   Pattern 1v0e_c05               Query structure     RMSD=  1.41 A  No. of residues =   3
+   ------- -------                --------------- 
+    F 581    GLU       matches     A  70    GLU  
+    F 596    ARG       matches     A  73    ARG  
+    F 647    ARG       matches     A  77    ARG  
+  TRANSFORM    0.4065  0.7986 -0.4438 -0.0067 -0.4831 -0.8755  0.9136 -0.3589  0.1910    14.041   -20.245    25.663  
+ 
+ Match found in 1v0e_c04     ENDO-ALPHA-SIALIDASE                
+   Pattern 1v0e_c04               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    E 581    GLU       matches     A  70    GLU  
+    E 596    ARG       matches     A  73    ARG  
+    E 647    ARG       matches     A  77    ARG  
+  TRANSFORM    0.7512  0.0993 -0.6525 -0.6326  0.3902 -0.6690 -0.1882 -0.9154 -0.3559    54.254    48.907    23.536  
+ 
+ Match found in 1js4_c00     ENDO-EXOCELLULASE E4                
+   Pattern 1js4_c00               Query structure     RMSD=  1.44 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  55    ASP       matches     A  62    ASP  
+    A  58    ASP       matches     A  56    ASP  
+    A 424    GLU       matches     A  43    GLU  
+  TRANSFORM    0.0121 -0.9996  0.0259 -0.4564  0.0175  0.8896  0.8897  0.0225  0.4560    33.849   113.229     2.727  
+ 
+ Match found in 1grc_c03     GLYCINAMIDE RIBONUCLEOTIDE TRANSFORM
+   Pattern 1grc_c03               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 106    ASN       matches     A  23    ASN  
+    B 108    HIS       matches     A  34    HIS  
+    B 144    ASP       matches     A  62    ASP  
+  TRANSFORM   -0.6454 -0.2757 -0.7123  0.5364 -0.8275 -0.1657  0.5438  0.4891 -0.6820    35.124    21.948    -8.008  
+ 
+ Match found in 1tde_c00     THIOREDOXIN REDUCTASE (E.C.1.6.4.5) 
+   Pattern 1tde_c00               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+      135    CYH       matches     A  20    CYH  
+      138    CYH       matches     A  57    CYH  
+      139    ASP       matches     A  62    ASP  
+
+************************************************* user.SUMS ********************************************************
+   1am5_c04     PEPSIN                                  :        1.13  <
+   1apt_c04     ISOVALERYL (IVA)-VAL-VAL-LYSTA-O-ET     :        1.14  <
+   1eag_c04     PEPTIDE INHIBITOR                       :        1.16  <
+   1rne_c04     RENIN (ACTIVATED, GLYCOSYLATED, INHI    :        1.19  <
+   2apr_c04     ACID PROTEINASE (RHIZOPUSPEPSIN) (E.    :        1.19  <
+   1xqd_c02     CYTOCHROME P450 55A1                    :        1.19  <
+   1eed_c04     ENDOTHIAPEPSIN (E.C.3.4.23.22) COMPL    :        1.20  <
+   1bbs_c07     RENIN                                   :        1.20  <
+   1bbs_c06     RENIN                                   :        1.20  <
+   2jxr_c04     LIGAND CP-081282                        :        1.20  <
+   1mpp_c04     PEPSIN (RENIN) (E.C.3.4.23.23)          :        1.20  <
+   1sme_c05     PLASMEPSIN II                           :        1.20  <
+   1sme_c04     PLASMEPSIN II                           :        1.21  <
+   1cms_c04     CHYMOSIN B (FORMERLY KNOWN AS RENNIN    :        1.21  <
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.24  <
+   1js4_c00     ENDO-EXOCELLULASE E4                    :        1.25  <
+   1grc_c03     GLYCINAMIDE RIBONUCLEOTIDE TRANSFORM    :        1.29  <
+   1avf_c05     GASTRICSIN                              :        1.32  <
+   1fr8_c00     BETA 1,4 GALACTOSYLTRANSFERASE          :        1.32  <
+   1avf_c04     GASTRICSIN                              :        1.35  <
+   1uaq_c01     CYTOSINE DEAMINASE                      :        1.42  <
+   1js4_c01     ENDO-EXOCELLULASE E4                    :        1.42  <
+   1uaq_c00     CYTOSINE DEAMINASE                      :        1.42  <
+   1akd_c01     CYTOCHROME P450CAM                      :        1.43  <
+   1w1o_c00     CYTOKININ DEHYDROGENASE 1               :        1.43  <
+   1bhg_c03     BETA-GLUCURONIDASE                      :        1.45  <
+   2p3i_p00     VP4                                     :        1.45  <
+   1ax4_c05     TRYPTOPHANASE                           :        1.48  <
+   1fr8_c01     BETA 1,4 GALACTOSYLTRANSFERASE          :        1.49  <
+   1ax4_c07     TRYPTOPHANASE                           :        1.49  <
+   1ax4_c06     TRYPTOPHANASE                           :        1.50  <
+
+************************************************* user.SUML ********************************************************
+   1am5_c04     PEPSIN                                  :        0.97  <
+   1apt_c04     ISOVALERYL (IVA)-VAL-VAL-LYSTA-O-ET     :        1.00  <
+   1eag_c04     PEPTIDE INHIBITOR                       :        1.03  <
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.04  <
+   2apr_c04     ACID PROTEINASE (RHIZOPUSPEPSIN) (E.    :        1.04  <
+   1cms_c04     CHYMOSIN B (FORMERLY KNOWN AS RENNIN    :        1.06  <
+   1eed_c04     ENDOTHIAPEPSIN (E.C.3.4.23.22) COMPL    :        1.06  <
+   1bhg_c03     BETA-GLUCURONIDASE                      :        1.06  <
+   1mpp_c04     PEPSIN (RENIN) (E.C.3.4.23.23)          :        1.07  <
+   1sme_c05     PLASMEPSIN II                           :        1.07  <
+   1rne_c04     RENIN (ACTIVATED, GLYCOSYLATED, INHI    :        1.08  <
+   1sme_c04     PLASMEPSIN II                           :        1.08  <
+   1bbs_c07     RENIN                                   :        1.11  <
+   1bbs_c06     RENIN                                   :        1.11  <
+   1eyi_c00     FRUCTOSE-1,6-BISPHOSPHATASE             :        1.15  <
+   2f61_c01     ACID BETA-GLUCOSIDASE                   :        1.17  <
+   2jxr_c04     LIGAND CP-081282                        :        1.19  <
+   1euu_c00     SIALIDASE                               :        1.24  <
+   1avf_c05     GASTRICSIN                              :        1.26  <
+   1fr8_c01     BETA 1,4 GALACTOSYLTRANSFERASE          :        1.27  <
+   1bhg_c02     BETA-GLUCURONIDASE                      :        1.29  <
+   1avf_c04     GASTRICSIN                              :        1.30  <
+   1d6o_c00     FK506-BINDING PROTEIN                   :        1.34  <
+   1d6o_c01     FK506-BINDING PROTEIN                   :        1.36  <
+   1fr8_c00     BETA 1,4 GALACTOSYLTRANSFERASE          :        1.36  <
+   1v0e_c02     ENDO-ALPHA-SIALIDASE                    :        1.37  <
+   1js4_c00     ENDO-EXOCELLULASE E4                    :        1.37  <
+   1v0e_c01     ENDO-ALPHA-SIALIDASE                    :        1.37  <
+   1v0e_c00     ENDO-ALPHA-SIALIDASE                    :        1.39  <
+   1v0e_c03     ENDO-ALPHA-SIALIDASE                    :        1.39  <
+   1js4_c01     ENDO-EXOCELLULASE E4                    :        1.41  <
+   1v0e_c05     ENDO-ALPHA-SIALIDASE                    :        1.41  <
+   1v0e_c04     ENDO-ALPHA-SIALIDASE                    :        1.43  <
+   1js4_c00     ENDO-EXOCELLULASE E4                    :        1.44  <
+   1grc_c03     GLYCINAMIDE RIBONUCLEOTIDE TRANSFORM    :        1.45  <
+   1tde_c00     THIOREDOXIN REDUCTASE (E.C.1.6.4.5)     :        1.46  <

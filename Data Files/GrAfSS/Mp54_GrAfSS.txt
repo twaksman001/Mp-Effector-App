@@ -1,0 +1,43 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM    0.9032 -0.4066  0.1373  0.0616  0.4395  0.8961 -0.4247 -0.8010  0.4220    -0.150    -7.528    81.909  
+ 
+ Match found in 2z3x_d00     DNA BINDING PROTEIN/DNA             
+   Pattern 2z3x_d00               Query structure     RMSD=  1.28 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  34    SER       matches     A  65    SER  
+    B  37    ASN       matches     A  64    ASN  
+    B  45    THR       matches     A  60    THR  
+  TRANSFORM   -0.9785 -0.1377  0.1538 -0.2022  0.4902 -0.8478  0.0414 -0.8607 -0.5075    29.203    97.285    20.413  
+ 
+ Match found in 1grc_c03     GLYCINAMIDE RIBONUCLEOTIDE TRANSFORM
+   Pattern 1grc_c03               Query structure     RMSD=  1.42 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 106    ASN       matches     A  24    ASN  
+    B 108    HIS       matches     A  23    HIS  
+    B 144    ASP       matches     A  42    ASP  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM    0.6387 -0.0988  0.7631  0.7081 -0.3126 -0.6331 -0.3011 -0.9447  0.1297   -36.967    82.438    99.105  
+ 
+ Match found in 2z3x_d00     DNA BINDING PROTEIN/DNA             
+   Pattern 2z3x_d00               Query structure     RMSD=  1.27 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  34    SER       matches     A  65    SER  
+    B  37    ASN       matches     A  64    ASN  
+    B  45    THR       matches     A  60    THR  
+  TRANSFORM    0.5887 -0.6752 -0.4444  0.1488 -0.4499  0.8806  0.7946  0.5845  0.1644   -13.702    45.732    10.200  
+ 
+ Match found in 1ir3_c02     INSULIN RECEPTOR                    
+   Pattern 1ir3_c02               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    A1132    ASP       matches     A  42    ASP  
+    A1134    ALA       matches     A  40    ALA  
+    A1137    ASN       matches     A  41    ASN  
+
+************************************************* user.SUMS ********************************************************
+   2z3x_d00     DNA BINDING PROTEIN/DNA                 :        1.28  <
+   1grc_c03     GLYCINAMIDE RIBONUCLEOTIDE TRANSFORM    :        1.42  <
+
+************************************************* user.SUML ********************************************************
+   2z3x_d00     DNA BINDING PROTEIN/DNA                 :        1.27  <
+   1ir3_c02     INSULIN RECEPTOR                        :        1.47  <

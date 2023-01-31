@@ -1,0 +1,133 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM    0.5374  0.4324  0.7240 -0.8430  0.2986  0.4474 -0.0227 -0.8508  0.5250    46.349    25.612     8.260  
+ 
+ Match found in 1eo7_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE    
+   Pattern 1eo7_c00               Query structure     RMSD=  1.28 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 229    ALA       matches     A  92    ALA  
+    A 257    ALA       matches     A  94    ALA  
+    A 328    ASP       matches     A  99    ASP  
+  TRANSFORM    0.5241  0.8460  0.0977  0.1355  0.0305 -0.9903 -0.8408  0.5322 -0.0987    65.278    15.840    10.872  
+ 
+ Match found in 1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB
+   Pattern 1q6l_c05               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  67    ASP       matches     A  50    ASP  
+    A  68    ALA       matches     A  49    ALA  
+    A  72    LEU       matches     A  52    LEU  
+  TRANSFORM    0.2797 -0.0692  0.9576 -0.6157  0.7523  0.2342 -0.7366 -0.6551  0.1678    -3.183    60.652   130.620  
+ 
+ Match found in 1ct9_c04     ASPARAGINE SYNTHETASE B             
+   Pattern 1ct9_c04               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    A   1    ALA       matches     A 149    ALA  
+    A  74    ASN       matches     A 152    ASN  
+    A  75    GLY       matches     A 155    GLY  
+  TRANSFORM   -0.5218  0.1287  0.8433 -0.7856 -0.4579 -0.4162  0.3326 -0.8796  0.3400    40.414    22.072    31.483  
+ 
+ Match found in 1ct9_c05     ASPARAGINE SYNTHETASE B             
+   Pattern 1ct9_c05               Query structure     RMSD=  1.41 A  No. of residues =   3
+   ------- -------                --------------- 
+    B   1    ALA       matches     A 149    ALA  
+    B  74    ASN       matches     A 152    ASN  
+    B  75    GLY       matches     A 155    GLY  
+  TRANSFORM    0.3413 -0.7237 -0.5998  0.5788 -0.3410  0.7408 -0.7406 -0.6000  0.3025    19.573    14.115    44.041  
+ 
+ Match found in 1ct9_c06     ASPARAGINE SYNTHETASE B             
+   Pattern 1ct9_c06               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    C   1    ALA       matches     A 149    ALA  
+    C  74    ASN       matches     A 152    ASN  
+    C  75    GLY       matches     A 155    GLY  
+  TRANSFORM    0.8342  0.5397  0.1129  0.3897 -0.4321 -0.8132 -0.3901  0.7224 -0.5708    26.295     9.758    54.932  
+ 
+ Match found in 1geq_c02     TRYPTOPHAN SYNTHASE ALPHA-SUBUNIT   
+   Pattern 1geq_c02               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  36    GLU       matches     A 126    GLU  
+    A  47    ASP       matches     A 118    ASP  
+    A 161    TYR       matches     A 129    TYR  
+  TRANSFORM   -0.3383  0.5074  0.7925 -0.8462 -0.5324 -0.0203  0.4116 -0.6775  0.6095    60.662    47.787    71.873  
+ 
+ Match found in 1geq_c03     TRYPTOPHAN SYNTHASE ALPHA-SUBUNIT   
+   Pattern 1geq_c03               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  36    GLU       matches     A 126    GLU  
+    B  47    ASP       matches     A 118    ASP  
+    B 161    TYR       matches     A 129    TYR  
+  TRANSFORM   -0.4368 -0.5410 -0.7187  0.8469  0.0220 -0.5312  0.3032 -0.8407  0.4486    -7.201    37.926   120.291  
+ 
+ Match found in 1ct9_c07     ASPARAGINE SYNTHETASE B             
+   Pattern 1ct9_c07               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    D   1    ALA       matches     A 149    ALA  
+    D  74    ASN       matches     A 152    ASN  
+    D  75    GLY       matches     A 155    GLY  
+  TRANSFORM   -0.9575 -0.1311 -0.2571  0.2767 -0.1643 -0.9468  0.0819 -0.9777  0.1936   -29.597    45.071    85.636  
+ 
+ Match found in 2z3x_d00     DNA BINDING PROTEIN/DNA             
+   Pattern 2z3x_d00               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  34    SER       matches     A 110    SER  
+    B  37    ASN       matches     A 111    ASN  
+    B  45    THR       matches     A 157    THR  
+  TRANSFORM    0.0474 -0.7048 -0.7078 -0.8634  0.3274 -0.3839  0.5023  0.6293 -0.5930    57.375   -99.584  -123.573  
+ 
+ Match found in 1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c01               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 420    ALA       matches     A 165    ALA  
+    B 182    GLY       matches     A 159    GLY  
+    B 183    GLY       matches     A 163    GLY  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM    0.9033  0.2336 -0.3599 -0.3705  0.8477 -0.3797 -0.2164 -0.4763 -0.8522    67.474    12.910    14.488  
+ 
+ Match found in 1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB
+   Pattern 1q6l_c05               Query structure     RMSD=  1.22 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  67    ASP       matches     A  50    ASP  
+    A  68    ALA       matches     A  49    ALA  
+    A  72    LEU       matches     A  52    LEU  
+  TRANSFORM   -0.3128 -0.3937 -0.8644 -0.7706 -0.4269  0.4733  0.5553 -0.8141  0.1699    12.732     7.812    12.212  
+ 
+ Match found in 1emh_d00     HYDROLASE/DNA                       
+   Pattern 1emh_d00               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 271    PRO       matches     A 143    PRO  
+    A 272    LEU       matches     A 147    LEU  
+    A 276    ARG       matches     A 148    ARG  
+  TRANSFORM    0.4687  0.8333 -0.2932 -0.8748  0.4840 -0.0230 -0.1228 -0.2673 -0.9558    42.074    23.635     2.038  
+ 
+ Match found in 1eo7_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE    
+   Pattern 1eo7_c00               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 229    ALA       matches     A  92    ALA  
+    A 257    ALA       matches     A  94    ALA  
+    A 328    ASP       matches     A  99    ASP  
+  TRANSFORM    0.1932  0.0961  0.9764  0.9683 -0.1791 -0.1740 -0.1581 -0.9791  0.1277    51.419    17.867    17.308  
+ 
+ Match found in 1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB
+   Pattern 1q6l_c05               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  67    ASP       matches     A  99    ASP  
+    A  68    ALA       matches     A 102    ALA  
+    A  72    LEU       matches     A 101    LEU  
+
+************************************************* user.SUMS ********************************************************
+   1eo7_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE        :        1.28  <
+   1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB    :        1.35  <
+   1ct9_c04     ASPARAGINE SYNTHETASE B                 :        1.36  <
+   1ct9_c05     ASPARAGINE SYNTHETASE B                 :        1.41  <
+   1ct9_c06     ASPARAGINE SYNTHETASE B                 :        1.45  <
+   1geq_c02     TRYPTOPHAN SYNTHASE ALPHA-SUBUNIT       :        1.46  <
+   1geq_c03     TRYPTOPHAN SYNTHASE ALPHA-SUBUNIT       :        1.46  <
+   1ct9_c07     ASPARAGINE SYNTHETASE B                 :        1.47  <
+   2z3x_d00     DNA BINDING PROTEIN/DNA                 :        1.47  <
+   1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        1.48  <
+
+************************************************* user.SUML ********************************************************
+   1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB    :        1.22  <
+   1emh_d00     HYDROLASE/DNA                           :        1.36  <
+   1eo7_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE        :        1.48  <
+   1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB    :        1.49  <
