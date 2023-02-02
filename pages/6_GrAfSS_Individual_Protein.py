@@ -251,7 +251,6 @@ def filter_dataframe(df):
 		if column in columns_multiselect:
 			df = df[df[column].isin(df_filter_dict[column])]
 		if column in columns_selectslider:
-			st.write(column, df[column].nunique())
 			if 'tuple' in str(type(df_filter_dict[column])):
 				df = df[df[column].between(*df_filter_dict[column])]
 			if 'list' in str(type(df_filter_dict[column])):
