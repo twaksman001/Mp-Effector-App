@@ -1,0 +1,187 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM    0.1573  0.5582 -0.8147  0.1332  0.8054  0.5776  0.9785 -0.1994  0.0523    38.029    20.936    -9.644  
+ 
+ Match found in 1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB
+   Pattern 1q6l_c05               Query structure     RMSD=  1.26 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  67    ASP       matches     A 113    ASP  
+    A  68    ALA       matches     A 112    ALA  
+    A  72    LEU       matches     A 111    LEU  
+  TRANSFORM   -0.2725 -0.8980  0.3453 -0.7798 -0.0041 -0.6261  0.5636 -0.4399 -0.6991    -3.976    32.553    87.185  
+ 
+ Match found in 1pnl_c00     PENICILLIN AMIDOHYDROLASE           
+   Pattern 1pnl_c00               Query structure     RMSD=  1.33 A  No. of residues =   3
+   ------- -------                --------------- 
+    B   1    SER       matches     A  21    SER  
+    B  69    ALA       matches     A  24    ALA  
+    B 241    ASN       matches     A  25    ASN  
+  TRANSFORM   -0.9634 -0.0908  0.2521 -0.2287 -0.2121 -0.9501  0.1398 -0.9730  0.1836   -33.112    15.685   143.412  
+ 
+ Match found in 1pjh_c02     ENOYL-COA ISOMERASE; ECI1P          
+   Pattern 1pjh_c02               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  70    ALA       matches     A 164    ALA  
+    C 126    LEU       matches     A 163    LEU  
+    C 158    GLU       matches     A 160    GLU  
+  TRANSFORM    0.6900  0.1389  0.7104 -0.7173 -0.0008  0.6968  0.0973 -0.9903  0.0991    -5.572   -11.362   143.710  
+ 
+ Match found in 1pjh_c00     ENOYL-COA ISOMERASE; ECI1P          
+   Pattern 1pjh_c00               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  70    ALA       matches     A 164    ALA  
+    A 126    LEU       matches     A 163    LEU  
+    A 158    GLU       matches     A 160    GLU  
+  TRANSFORM   -0.1318  0.7533 -0.6444  0.9874  0.0425 -0.1522 -0.0872 -0.6563 -0.7494    28.563    69.033    67.545  
+ 
+ Match found in 1dfo_c07     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c07               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    D  57    GLU       matches     A  54    GLU  
+    D 226    THR       matches     A 152    THR  
+    D 229    LYS       matches     A 156    LYS  
+  TRANSFORM    0.0285  0.9379  0.3457 -0.9885 -0.0250  0.1493  0.1486 -0.3460  0.9264    16.072    74.487    46.634  
+ 
+ Match found in 1dfo_c05     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c05               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  57    GLU       matches     A  54    GLU  
+    B 226    THR       matches     A 152    THR  
+    B 229    LYS       matches     A 156    LYS  
+  TRANSFORM   -0.7776  0.0505  0.6267  0.0805 -0.9806  0.1788  0.6236  0.1895  0.7585    -7.163    39.090    66.215  
+ 
+ Match found in 1dfo_c06     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c06               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  57    GLU       matches     A  54    GLU  
+    C 226    THR       matches     A 152    THR  
+    C 229    LYS       matches     A 156    LYS  
+  TRANSFORM   -0.9185 -0.1573 -0.3629 -0.0987  0.9797 -0.1747  0.3830 -0.1247 -0.9153    -0.404   103.842    78.946  
+ 
+ Match found in 1dfo_c04     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c04               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  57    GLU       matches     A  54    GLU  
+    A 226    THR       matches     A 152    THR  
+    A 229    LYS       matches     A 156    LYS  
+  TRANSFORM   -0.7437 -0.0469  0.6669 -0.5789 -0.4538 -0.6775  0.3344 -0.8899  0.3103    16.368    17.963  -153.465  
+ 
+ Match found in 1xpx_d00     TRANSCRIPTION REGULATION/DNA        
+   Pattern 1xpx_d00               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    A1290    LYS       matches     A  44    LYS  
+    A1294    ASN       matches     A  48    ASN  
+    A1297    GLU       matches     A  51    GLU  
+  TRANSFORM   -0.6350  0.4342 -0.6389 -0.3069  0.6172  0.7245  0.7090  0.6561 -0.2587    51.904    53.683    -7.454  
+ 
+ Match found in 1eo7_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE    
+   Pattern 1eo7_c00               Query structure     RMSD=  1.50 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 229    ALA       matches     A 109    ALA  
+    A 257    ALA       matches     A 112    ALA  
+    A 328    ASP       matches     A 117    ASP  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM    0.7169  0.6964 -0.0334 -0.1091  0.0648 -0.9919  0.6886 -0.7148 -0.1224    40.692   123.210   100.988  
+ 
+ Match found in 1dfo_c05     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c05               Query structure     RMSD=  1.33 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  57    GLU       matches     A  15    GLU  
+    B 226    THR       matches     A  28    THR  
+    B 229    LYS       matches     A  32    LYS  
+  TRANSFORM    0.3871 -0.0963 -0.9170 -0.2536 -0.9673 -0.0055  0.8865 -0.2346  0.3989    65.056    44.735    92.417  
+ 
+ Match found in 1dfo_c06     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c06               Query structure     RMSD=  1.33 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  57    GLU       matches     A  15    GLU  
+    C 226    THR       matches     A  28    THR  
+    C 229    LYS       matches     A  32    LYS  
+  TRANSFORM   -0.2612  0.9622  0.0766  0.1138 -0.0481  0.9923 -0.9586 -0.2679  0.0969    -6.553    20.206    19.406  
+ 
+ Match found in 1dfo_c07     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c07               Query structure     RMSD=  1.33 A  No. of residues =   3
+   ------- -------                --------------- 
+    D  57    GLU       matches     A  15    GLU  
+    D 226    THR       matches     A  28    THR  
+    D 229    LYS       matches     A  32    LYS  
+  TRANSFORM   -0.5964  0.1456 -0.7894  0.2529  0.9674 -0.0126 -0.7618  0.2072  0.6138    11.274    99.178     2.945  
+ 
+ Match found in 1dfo_c04     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c04               Query structure     RMSD=  1.33 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  57    GLU       matches     A  15    GLU  
+    A 226    THR       matches     A  28    THR  
+    A 229    LYS       matches     A  32    LYS  
+  TRANSFORM   -0.5048  0.8188 -0.2733  0.8528  0.5221 -0.0108 -0.1339  0.2385  0.9619    66.438    -9.943    38.092  
+ 
+ Match found in 1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB
+   Pattern 1q6l_c05               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  67    ASP       matches     A 113    ASP  
+    A  68    ALA       matches     A 112    ALA  
+    A  72    LEU       matches     A 111    LEU  
+  TRANSFORM    0.3679 -0.8336 -0.4120 -0.2628  0.3318 -0.9060 -0.8920 -0.4416  0.0970    11.603    27.920    18.898  
+ 
+ Match found in 1fr8_c00     BETA 1,4 GALACTOSYLTRANSFERASE      
+   Pattern 1fr8_c00               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 317    GLU       matches     A 135    GLU  
+    A 319    ASP       matches     A 138    ASP  
+    A 359    ARG       matches     A 141    ARG  
+  TRANSFORM   -0.7193  0.6662 -0.1972 -0.3518 -0.5940 -0.7235  0.5991  0.4510 -0.6616    -8.010     3.024   190.632  
+ 
+ Match found in 1pjh_c02     ENOYL-COA ISOMERASE; ECI1P          
+   Pattern 1pjh_c02               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  70    ALA       matches     A 164    ALA  
+    C 126    LEU       matches     A 163    LEU  
+    C 158    GLU       matches     A 160    GLU  
+  TRANSFORM    0.8248  0.5589 -0.0850 -0.1924  0.1360 -0.9719  0.5316 -0.8180 -0.2197     8.811    27.708    34.836  
+ 
+ Match found in 1fr8_c01     BETA 1,4 GALACTOSYLTRANSFERASE      
+   Pattern 1fr8_c01               Query structure     RMSD=  1.44 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 317    GLU       matches     A 135    GLU  
+    B 319    ASP       matches     A 138    ASP  
+    B 359    ARG       matches     A 141    ARG  
+  TRANSFORM   -0.5820  0.2731 -0.7660 -0.4368 -0.8995  0.0111  0.6859 -0.3411 -0.6428    25.828    10.160    -6.690  
+ 
+ Match found in 1eyi_c00     FRUCTOSE-1,6-BISPHOSPHATASE         
+   Pattern 1eyi_c00               Query structure     RMSD=  1.44 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  68    ASP       matches     A 113    ASP  
+    A  74    ASP       matches     A 117    ASP  
+    A  98    GLU       matches     A 116    GLU  
+  TRANSFORM    0.7164  0.2207  0.6619 -0.4311  0.8859  0.1711  0.5486  0.4079 -0.7298    -2.859    18.024   190.050  
+ 
+ Match found in 1pjh_c00     ENOYL-COA ISOMERASE; ECI1P          
+   Pattern 1pjh_c00               Query structure     RMSD=  1.44 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  70    ALA       matches     A 164    ALA  
+    A 126    LEU       matches     A 163    LEU  
+    A 158    GLU       matches     A 160    GLU  
+
+************************************************* user.SUMS ********************************************************
+   1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB    :        1.26  <
+   1pnl_c00     PENICILLIN AMIDOHYDROLASE               :        1.33  <
+   1pjh_c02     ENOYL-COA ISOMERASE; ECI1P              :        1.35  <
+   1pjh_c00     ENOYL-COA ISOMERASE; ECI1P              :        1.38  <
+   1dfo_c07     SERINE HYDROXYMETHYLTRANSFERASE         :        1.43  <
+   1dfo_c05     SERINE HYDROXYMETHYLTRANSFERASE         :        1.43  <
+   1dfo_c06     SERINE HYDROXYMETHYLTRANSFERASE         :        1.43  <
+   1dfo_c04     SERINE HYDROXYMETHYLTRANSFERASE         :        1.43  <
+   1xpx_d00     TRANSCRIPTION REGULATION/DNA            :        1.47  <
+   1eo7_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE        :        1.50  <
+
+************************************************* user.SUML ********************************************************
+   1dfo_c05     SERINE HYDROXYMETHYLTRANSFERASE         :        1.33  <
+   1dfo_c06     SERINE HYDROXYMETHYLTRANSFERASE         :        1.33  <
+   1dfo_c07     SERINE HYDROXYMETHYLTRANSFERASE         :        1.33  <
+   1dfo_c04     SERINE HYDROXYMETHYLTRANSFERASE         :        1.33  <
+   1q6l_c05     3-KETO-L-GULONATE 6-PHOSPHATE DECARB    :        1.35  <
+   1fr8_c00     BETA 1,4 GALACTOSYLTRANSFERASE          :        1.38  <
+   1pjh_c02     ENOYL-COA ISOMERASE; ECI1P              :        1.43  <
+   1fr8_c01     BETA 1,4 GALACTOSYLTRANSFERASE          :        1.44  <
+   1eyi_c00     FRUCTOSE-1,6-BISPHOSPHATASE             :        1.44  <
+   1pjh_c00     ENOYL-COA ISOMERASE; ECI1P              :        1.44  <

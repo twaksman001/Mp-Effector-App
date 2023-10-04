@@ -1,0 +1,151 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM   -0.1034 -0.9870  0.1232 -0.0532  0.1291  0.9902 -0.9932  0.0959 -0.0659   -15.192    55.597    47.774  
+ 
+ Match found in 1boo_c00     N-4 CYTOSINE-SPECIFIC METHYLTRANSFER
+   Pattern 1boo_c00               Query structure     RMSD=  1.01 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  53    SER       matches     A  45    SER  
+    A  54    PRO       matches     A  44    PRO  
+    A  96    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.2333  0.5006  0.8336  0.8484  0.5237 -0.0771 -0.4752  0.6893 -0.5469    25.161     1.363     4.765  
+ 
+ Match found in 1j7g_c00     D-TYROSYL-TRNA(TYR) DEACYLASE       
+   Pattern 1j7g_c00               Query structure     RMSD=  1.23 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  78    GLN       matches     A  25    GLN  
+    A  79    PHE       matches     A  22    PHE  
+    A  80    THR       matches     A  21    THR  
+  TRANSFORM   -0.7308 -0.2334  0.6414  0.6794 -0.1586  0.7164 -0.0655  0.9593  0.2745    27.788    -2.222     1.017  
+ 
+ Match found in 1j7g_c00     D-TYROSYL-TRNA(TYR) DEACYLASE       
+   Pattern 1j7g_c00               Query structure     RMSD=  1.41 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  78    GLN       matches     A  24    GLN  
+    A  79    PHE       matches     A  22    PHE  
+    A  80    THR       matches     A  21    THR  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM   -0.6393 -0.7607  0.1127  0.1497 -0.2669 -0.9520 -0.7543  0.5918 -0.2845   -14.665    -7.083    57.061  
+ 
+ Match found in 1avf_c04     GASTRICSIN                          
+   Pattern 1avf_c04               Query structure     RMSD=  1.22 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  32    ASP       matches     A  46    ASP  
+    A  35    SER       matches     A  45    SER  
+    A 217    ASP       matches     A  49    ASP  
+  TRANSFORM    0.6512 -0.7135  0.2586 -0.1442  0.2183  0.9652  0.7451  0.6658 -0.0393   -45.879    -8.242    24.231  
+ 
+ Match found in 1avf_c05     GASTRICSIN                          
+   Pattern 1avf_c05               Query structure     RMSD=  1.25 A  No. of residues =   3
+   ------- -------                --------------- 
+    J  32    ASP       matches     A  46    ASP  
+    J  35    SER       matches     A  45    SER  
+    J 217    ASP       matches     A  49    ASP  
+  TRANSFORM    0.3474 -0.7150  0.6066  0.1183  0.6752  0.7281  0.9302  0.1812 -0.3192    12.213    37.674    25.563  
+ 
+ Match found in 1cms_c04     CHYMOSIN B (FORMERLY KNOWN AS RENNIN
+   Pattern 1cms_c04               Query structure     RMSD=  1.26 A  No. of residues =   3
+   ------- -------                --------------- 
+       34    ASP       matches     A  46    ASP  
+       37    SER       matches     A  45    SER  
+      216    ASP       matches     A  49    ASP  
+  TRANSFORM    0.1247 -0.1755  0.9765 -0.4256  0.8796  0.2124  0.8963  0.4421 -0.0350    -3.032    21.265   146.034  
+ 
+ Match found in 1am5_c04     PEPSIN                              
+   Pattern 1am5_c04               Query structure     RMSD=  1.28 A  No. of residues =   3
+   ------- -------                --------------- 
+       32    ASP       matches     A  46    ASP  
+       35    SER       matches     A  45    SER  
+      215    ASP       matches     A  49    ASP  
+  TRANSFORM   -0.0199  0.1503 -0.9884 -0.2542 -0.9569 -0.1404  0.9670 -0.2484 -0.0573    36.186    48.678    98.503  
+ 
+ Match found in 2apr_c04     ACID PROTEINASE (RHIZOPUSPEPSIN) (E.
+   Pattern 2apr_c04               Query structure     RMSD=  1.28 A  No. of residues =   3
+   ------- -------                --------------- 
+       35    ASP       matches     A  46    ASP  
+       38    SER       matches     A  45    SER  
+      218    ASP       matches     A  49    ASP  
+  TRANSFORM   -0.4342  0.8488  0.3017 -0.3437  0.1535 -0.9264  0.8327  0.5060 -0.2251    -1.626    58.371    44.810  
+ 
+ Match found in 2jxr_c04     LIGAND CP-081282                    
+   Pattern 2jxr_c04               Query structure     RMSD=  1.30 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  32    ASP       matches     A  46    ASP  
+    A  35    SER       matches     A  45    SER  
+    A 215    ASP       matches     A  49    ASP  
+  TRANSFORM    0.0468 -0.1810  0.9824 -0.9878 -0.1545  0.0186 -0.1484  0.9713  0.1860    25.506    16.674    44.244  
+ 
+ Match found in 1mpp_c04     PEPSIN (RENIN) (E.C.3.4.23.23)      
+   Pattern 1mpp_c04               Query structure     RMSD=  1.31 A  No. of residues =   3
+   ------- -------                --------------- 
+       32    ASP       matches     A  46    ASP  
+       35    SER       matches     A  45    SER  
+      215    ASP       matches     A  49    ASP  
+  TRANSFORM    0.8473  0.3473 -0.4018 -0.3498  0.9342  0.0700 -0.3997 -0.0813 -0.9131    24.219    24.611    11.347  
+ 
+ Match found in 1apt_c04     ISOVALERYL (IVA)-VAL-VAL-LYSTA-O-ET 
+   Pattern 1apt_c04               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    E  33    ASP       matches     A  46    ASP  
+    E  36    SER       matches     A  45    SER  
+    E 213    ASP       matches     A  49    ASP  
+  TRANSFORM    0.8126  0.2508  0.5261  0.4597  0.2790 -0.8431  0.3583 -0.9269 -0.1114    13.243    28.969     0.121  
+ 
+ Match found in 1eed_c04     ENDOTHIAPEPSIN (E.C.3.4.23.22) COMPL
+   Pattern 1eed_c04               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    P  32    ASP       matches     A  46    ASP  
+    P  35    SER       matches     A  45    SER  
+    P 215    ASP       matches     A  49    ASP  
+  TRANSFORM    0.4371  0.3001  0.8479  0.6995 -0.7060 -0.1108 -0.5653 -0.6415  0.5185    54.457    11.751     7.379  
+ 
+ Match found in 1eag_c04     PEPTIDE INHIBITOR                   
+   Pattern 1eag_c04               Query structure     RMSD=  1.40 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  32    ASP       matches     A  46    ASP  
+    A  35    SER       matches     A  45    SER  
+    A 218    ASP       matches     A  49    ASP  
+  TRANSFORM    0.3874 -0.8573 -0.3391  0.1850  0.4327 -0.8824 -0.9032 -0.2791 -0.3262    39.018    58.214    17.300  
+ 
+ Match found in 1sme_c04     PLASMEPSIN II                       
+   Pattern 1sme_c04               Query structure     RMSD=  1.42 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  34    ASP       matches     A  46    ASP  
+    A  37    SER       matches     A  45    SER  
+    A 214    ASP       matches     A  49    ASP  
+  TRANSFORM    0.9109 -0.2850 -0.2985  0.3083 -0.0108  0.9512  0.2743  0.9585 -0.0781     3.708    22.394    81.555  
+ 
+ Match found in 1rne_c04     RENIN (ACTIVATED, GLYCOSYLATED, INHI
+   Pattern 1rne_c04               Query structure     RMSD=  1.44 A  No. of residues =   3
+   ------- -------                --------------- 
+       32    ASP       matches     A  46    ASP  
+       35    SER       matches     A  45    SER  
+      215    ASP       matches     A  49    ASP  
+  TRANSFORM   -0.2978 -0.9409  0.1615  0.4570  0.0081  0.8894  0.8381 -0.3387 -0.4276   -13.707    51.697    33.778  
+ 
+ Match found in 1boo_c00     N-4 CYTOSINE-SPECIFIC METHYLTRANSFER
+   Pattern 1boo_c00               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  53    SER       matches     A  45    SER  
+    A  54    PRO       matches     A  44    PRO  
+    A  96    ASP       matches     A  46    ASP  
+
+************************************************* user.SUMS ********************************************************
+   1boo_c00     N-4 CYTOSINE-SPECIFIC METHYLTRANSFER    :        1.01  <
+   1j7g_c00     D-TYROSYL-TRNA(TYR) DEACYLASE           :        1.23  <
+   1j7g_c00     D-TYROSYL-TRNA(TYR) DEACYLASE           :        1.41  <
+
+************************************************* user.SUML ********************************************************
+   1avf_c04     GASTRICSIN                              :        1.22  <
+   1avf_c05     GASTRICSIN                              :        1.25  <
+   1cms_c04     CHYMOSIN B (FORMERLY KNOWN AS RENNIN    :        1.26  <
+   1am5_c04     PEPSIN                                  :        1.28  <
+   2apr_c04     ACID PROTEINASE (RHIZOPUSPEPSIN) (E.    :        1.28  <
+   2jxr_c04     LIGAND CP-081282                        :        1.30  <
+   1mpp_c04     PEPSIN (RENIN) (E.C.3.4.23.23)          :        1.31  <
+   1apt_c04     ISOVALERYL (IVA)-VAL-VAL-LYSTA-O-ET     :        1.36  <
+   1eed_c04     ENDOTHIAPEPSIN (E.C.3.4.23.22) COMPL    :        1.36  <
+   1eag_c04     PEPTIDE INHIBITOR                       :        1.40  <
+   1sme_c04     PLASMEPSIN II                           :        1.42  <
+   1rne_c04     RENIN (ACTIVATED, GLYCOSYLATED, INHI    :        1.44  <
+   1boo_c00     N-4 CYTOSINE-SPECIFIC METHYLTRANSFER    :        1.49  <

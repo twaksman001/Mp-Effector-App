@@ -1,0 +1,466 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM    0.0797  0.4092 -0.9089 -0.7157  0.6582  0.2336  0.6939  0.6319  0.3453    33.951   -42.507    43.238  
+ 
+ Match found in 1cns_c01     CHITINASE                           
+   Pattern 1cns_c01               Query structure     RMSD=  1.02 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  67    GLU       matches     A 152    GLU  
+    B  89    GLU       matches     A 154    GLU  
+    B 120    SER       matches     A 149    SER  
+  TRANSFORM    0.8646  0.4638  0.1931  0.4978 -0.8429 -0.2042  0.0681  0.2727 -0.9597    -4.500    17.396     3.908  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.07 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A 108    ASP  
+      166    GLY       matches     A 221    GLY  
+      169    GLU       matches     A  51    GLU  
+  TRANSFORM   -0.8802 -0.3969 -0.2604  0.0283  0.5038 -0.8634  0.4738 -0.7673 -0.4322    23.456    31.928     0.120  
+ 
+ Match found in 1eo7_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE    
+   Pattern 1eo7_c00               Query structure     RMSD=  1.17 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 229    ALA       matches     A  23    ALA  
+    A 257    ALA       matches     A  19    ALA  
+    A 328    ASP       matches     A  11    ASP  
+  TRANSFORM   -0.6093 -0.7363  0.2942 -0.3741  0.5941  0.7121 -0.6991  0.3238 -0.6374   -38.081    41.435     8.138  
+ 
+ Match found in 1ir3_c02     INSULIN RECEPTOR                    
+   Pattern 1ir3_c02               Query structure     RMSD=  1.18 A  No. of residues =   3
+   ------- -------                --------------- 
+    A1132    ASP       matches     A  11    ASP  
+    A1134    ALA       matches     A  19    ALA  
+    A1137    ASN       matches     A  20    ASN  
+  TRANSFORM   -0.2297 -0.0759 -0.9703 -0.9628 -0.1282  0.2379 -0.1425  0.9888 -0.0436   -16.446    38.921    51.462  
+ 
+ Match found in 1boo_c00     N-4 CYTOSINE-SPECIFIC METHYLTRANSFER
+   Pattern 1boo_c00               Query structure     RMSD=  1.33 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  53    SER       matches     A   8    SER  
+    A  54    PRO       matches     A   7    PRO  
+    A  96    ASP       matches     A  11    ASP  
+  TRANSFORM   -0.1853  0.9794  0.0800  0.8860  0.2017 -0.4176 -0.4251 -0.0064 -0.9051     5.272    -0.073   -59.750  
+ 
+ Match found in 1qgn_c23     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c23               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    F 163    TYR       matches     A 109    TYR  
+    F 236    ASP       matches     A 108    ASP  
+    H 110    ARG       matches     A 230    ARG  
+  TRANSFORM    0.8121 -0.3816 -0.4415  0.2827  0.9191 -0.2743  0.5105  0.0979  0.8543    63.012   -32.339   -43.391  
+ 
+ Match found in 1qgn_c22     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c22               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    E 163    TYR       matches     A 109    TYR  
+    E 236    ASP       matches     A 108    ASP  
+    G 110    ARG       matches     A 230    ARG  
+  TRANSFORM    0.4062  0.8896 -0.2088 -0.8234  0.4555  0.3384  0.3961  0.0345  0.9176    14.544   -18.041    34.970  
+ 
+ Match found in 1qgn_c17     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c17               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 110    ARG       matches     A 230    ARG  
+    D 163    TYR       matches     A 109    TYR  
+    D 236    ASP       matches     A 108    ASP  
+  TRANSFORM   -0.8424  0.3837  0.3784 -0.3387 -0.9231  0.1822  0.4192  0.0253  0.9075    14.697    18.077   -42.488  
+ 
+ Match found in 1qgn_c21     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c21               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    F 110    ARG       matches     A 230    ARG  
+    H 163    TYR       matches     A 109    TYR  
+    H 236    ASP       matches     A 108    ASP  
+  TRANSFORM    0.2164 -0.9762  0.0112 -0.8387 -0.1800  0.5140 -0.4998 -0.1206 -0.8577    73.818   -12.734   -57.419  
+ 
+ Match found in 1qgn_c20     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c20               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    E 110    ARG       matches     A 230    ARG  
+    G 163    TYR       matches     A 109    TYR  
+    G 236    ASP       matches     A 108    ASP  
+  TRANSFORM   -0.8817 -0.2494  0.4006 -0.2276  0.9684  0.1020 -0.4133 -0.0012 -0.9106    32.465   -25.989    17.707  
+ 
+ Match found in 1qgn_c19     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c19               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 163    TYR       matches     A 109    TYR  
+    B 236    ASP       matches     A 108    ASP  
+    D 110    ARG       matches     A 230    ARG  
+  TRANSFORM    0.8129  0.2315 -0.5344  0.2674 -0.9635 -0.0107 -0.5174 -0.1342 -0.8452    41.098    43.339    20.411  
+ 
+ Match found in 1qgn_c16     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c16               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 110    ARG       matches     A 230    ARG  
+    C 163    TYR       matches     A 109    TYR  
+    C 236    ASP       matches     A 108    ASP  
+  TRANSFORM   -0.3232 -0.8915  0.3174  0.7820 -0.4405 -0.4410  0.5330  0.1057  0.8395    61.494    33.677    34.146  
+ 
+ Match found in 1qgn_c18     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c18               Query structure     RMSD=  1.37 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 163    TYR       matches     A 109    TYR  
+    A 236    ASP       matches     A 108    ASP  
+    C 110    ARG       matches     A 230    ARG  
+  TRANSFORM   -0.6085  0.6746  0.4179 -0.7102 -0.6979  0.0925  0.3540 -0.2405  0.9038    20.108     9.775    53.351  
+ 
+ Match found in 1cs1_c01     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1cs1_c01               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  48    ARG       matches     A 230    ARG  
+    C 101    TYR       matches     A 109    TYR  
+    C 173    ASP       matches     A 108    ASP  
+  TRANSFORM   -0.6643  0.7246  0.1836  0.7267  0.6836 -0.0685 -0.1752  0.0879 -0.9806    16.752    -9.127    31.608  
+ 
+ Match found in 1cs1_c00     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1cs1_c00               Query structure     RMSD=  1.39 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 101    TYR       matches     A 109    TYR  
+    A 173    ASP       matches     A 108    ASP  
+    C  48    ARG       matches     A 230    ARG  
+  TRANSFORM    0.7313 -0.6564 -0.1852  0.4150  0.6437 -0.6430  0.5413  0.3934  0.7431    82.238   -14.261    36.725  
+ 
+ Match found in 1cs1_c03     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1cs1_c03               Query structure     RMSD=  1.40 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 101    TYR       matches     A 109    TYR  
+    B 173    ASP       matches     A 108    ASP  
+    D  48    ARG       matches     A 230    ARG  
+  TRANSFORM    0.7504  0.3746 -0.5446 -0.6089  0.7123 -0.3490  0.2572  0.5935  0.7626    80.725     3.347   -20.427  
+ 
+ Match found in 1t4c_c02     FORMYL-COENZYME A TRANSFERASE       
+   Pattern 1t4c_c02               Query structure     RMSD=  1.40 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 261    GLY       matches     A 127    GLY  
+    B  17    GLN       matches     A 125    GLN  
+    B 140    GLU       matches     A 126    GLU  
+  TRANSFORM    0.1052 -0.6927  0.7135 -0.9030 -0.3671 -0.2233  0.4166 -0.6208 -0.6642   -29.088    36.404    52.744  
+ 
+ Match found in 2z3x_d00     DNA BINDING PROTEIN/DNA             
+   Pattern 2z3x_d00               Query structure     RMSD=  1.41 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  34    SER       matches     A 194    SER  
+    B  37    ASN       matches     A 193    ASN  
+    B  45    THR       matches     A 201    THR  
+  TRANSFORM    0.4518 -0.0200 -0.8919  0.5614 -0.7706  0.3017 -0.6933 -0.6370 -0.3370    61.820    72.129   124.395  
+ 
+ Match found in 1pyi_d00     PROTEIN (PYRIMIDINE PATHWAY REGULATO
+   Pattern 1pyi_d00               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  40    LYS       matches     A 155    LYS  
+    A  41    LYS       matches     A 157    LYS  
+    A  42    ILE       matches     A 158    ILE  
+  TRANSFORM    0.5893 -0.8047  0.0724  0.7192  0.5632  0.4069 -0.3682 -0.1877  0.9106    39.163    47.374    93.190  
+ 
+ Match found in 1bsj_c00     PEPTIDE DEFORMYLASE                 
+   Pattern 1bsj_c00               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  50    GLN       matches     A  74    GLN  
+    A  91    LEU       matches     A  71    LEU  
+    A 133    GLU       matches     A  78    GLU  
+  TRANSFORM    0.5305 -0.7632 -0.3688 -0.4521 -0.6228  0.6385 -0.7170 -0.1720 -0.6755    81.813    13.385    30.478  
+ 
+ Match found in 1cs1_c02     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1cs1_c02               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  48    ARG       matches     A 230    ARG  
+    D 101    TYR       matches     A 109    TYR  
+    D 173    ASP       matches     A 108    ASP  
+  TRANSFORM    0.6060  0.5551 -0.5698  0.0398  0.6943  0.7186  0.7945 -0.4582  0.3986   -15.922    91.266    92.713  
+ 
+ Match found in 1bd3_c01     URACIL PHOSPHORIBOSYLTRANSFERASE    
+   Pattern 1bd3_c01               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    D 137    ARG       matches     A 181    ARG  
+    D 141    THR       matches     A 179    THR  
+    D 235    ASP       matches     A 217    ASP  
+  TRANSFORM   -0.6237 -0.5915  0.5110 -0.1269  0.7217  0.6805 -0.7713  0.3595 -0.5252    13.847    93.529    43.887  
+ 
+ Match found in 1bd3_c00     URACIL PHOSPHORIBOSYLTRANSFERASE    
+   Pattern 1bd3_c00               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 137    ARG       matches     A 181    ARG  
+    A 141    THR       matches     A 179    THR  
+    A 235    ASP       matches     A 217    ASP  
+  TRANSFORM    0.4315  0.6794 -0.5935  0.7707 -0.6195 -0.1489 -0.4688 -0.3932 -0.7910    19.419    70.854   116.755  
+ 
+ Match found in 1b57_c01     FRUCTOSE-BISPHOSPHATE ALDOLASE II   
+   Pattern 1b57_c01               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 109    ASP       matches     A  11    ASP  
+    B 182    GLU       matches     A  15    GLU  
+    B 286    ASN       matches     A  20    ASN  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM   -0.7912  0.3579  0.4959  0.0701  0.8586 -0.5078  0.6075  0.3670  0.7044    37.823    38.683    21.710  
+ 
+ Match found in 1eo7_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE    
+   Pattern 1eo7_c00               Query structure     RMSD=  1.03 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 229    ALA       matches     A  23    ALA  
+    A 257    ALA       matches     A  19    ALA  
+    A 328    ASP       matches     A  11    ASP  
+  TRANSFORM    0.7082  0.7018  0.0769 -0.6018  0.6570 -0.4540  0.3691 -0.2753 -0.8877    58.128     7.165    39.582  
+ 
+ Match found in 1t4c_c02     FORMYL-COENZYME A TRANSFERASE       
+   Pattern 1t4c_c02               Query structure     RMSD=  1.24 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 261    GLY       matches     A 127    GLY  
+    B  17    GLN       matches     A 125    GLN  
+    B 140    GLU       matches     A 126    GLU  
+  TRANSFORM   -0.1234  0.7592 -0.6391  0.9591 -0.0742 -0.2733  0.2549  0.6467  0.7189     0.460    49.930    41.949  
+ 
+ Match found in 1pnl_c00     PENICILLIN AMIDOHYDROLASE           
+   Pattern 1pnl_c00               Query structure     RMSD=  1.26 A  No. of residues =   3
+   ------- -------                --------------- 
+    B   1    SER       matches     A  57    SER  
+    B  69    ALA       matches     A  54    ALA  
+    B 241    ASN       matches     A  58    ASN  
+  TRANSFORM   -0.8602  0.3783  0.3419 -0.5019 -0.5098 -0.6987  0.0900  0.7727 -0.6284    14.097    36.032    71.026  
+ 
+ Match found in 1dfo_c07     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c07               Query structure     RMSD=  1.29 A  No. of residues =   3
+   ------- -------                --------------- 
+    D  57    GLU       matches     A  15    GLU  
+    D 226    THR       matches     A  27    THR  
+    D 229    LYS       matches     A  31    LYS  
+  TRANSFORM   -0.4996 -0.5038  0.7047  0.4881  0.5084  0.7095  0.7157 -0.6984  0.0081     5.570   107.233    57.943  
+ 
+ Match found in 1dfo_c05     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c05               Query structure     RMSD=  1.29 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  57    GLU       matches     A  15    GLU  
+    B 226    THR       matches     A  27    THR  
+    B 229    LYS       matches     A  31    LYS  
+  TRANSFORM    0.7270 -0.0373  0.6857 -0.5505 -0.6284  0.5496 -0.4104  0.7770  0.4773    51.793   -18.648   -25.534  
+ 
+ Match found in 1d6o_c00     FK506-BINDING PROTEIN               
+   Pattern 1d6o_c00               Query structure     RMSD=  1.29 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  37    ASP       matches     A 156    ASP  
+    A  56    ILE       matches     A 121    ILE  
+    A  82    TYR       matches     A 120    TYR  
+  TRANSFORM    0.6196  0.0032  0.7849  0.7836  0.0558 -0.6188  0.0458 -0.9984 -0.0321    23.548    52.996    53.029  
+ 
+ Match found in 1dfo_c06     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c06               Query structure     RMSD=  1.29 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  57    GLU       matches     A  15    GLU  
+    C 226    THR       matches     A  27    THR  
+    C 229    LYS       matches     A  31    LYS  
+  TRANSFORM    0.2680  0.8786  0.3952 -0.7738 -0.0481  0.6316 -0.5740  0.4751 -0.6670    26.082    90.547    58.162  
+ 
+ Match found in 1dfo_c04     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c04               Query structure     RMSD=  1.29 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  57    GLU       matches     A  15    GLU  
+    A 226    THR       matches     A  27    THR  
+    A 229    LYS       matches     A  31    LYS  
+  TRANSFORM    0.7319 -0.0350  0.6805 -0.5331 -0.6514  0.5399 -0.4243  0.7580  0.4954    54.837   -34.452   -53.639  
+ 
+ Match found in 1d6o_c01     FK506-BINDING PROTEIN               
+   Pattern 1d6o_c01               Query structure     RMSD=  1.31 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  37    ASP       matches     A 156    ASP  
+    B  56    ILE       matches     A 121    ILE  
+    B  82    TYR       matches     A 120    TYR  
+  TRANSFORM   -0.7944  0.1000  0.5991  0.3201 -0.7693  0.5529 -0.5162 -0.6310 -0.5791    29.739    50.790   -34.835  
+ 
+ Match found in 1mro_c01     METHYL-COENZYME M REDUCTASE         
+   Pattern 1mro_c01               Query structure     RMSD=  1.31 A  No. of residues =   3
+   ------- -------                --------------- 
+    D 465    GLY       matches     A 180    GLY  
+    D 501    ASP       matches     A  36    ASP  
+    E 367    TYR       matches     A 238    TYR  
+  TRANSFORM   -0.7712  0.6312 -0.0829  0.4270  0.4163 -0.8027  0.4722  0.6544  0.5906    17.369    25.038   -30.645  
+ 
+ Match found in 1mro_c00     METHYL-COENZYME M REDUCTASE         
+   Pattern 1mro_c00               Query structure     RMSD=  1.34 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 465    GLY       matches     A 180    GLY  
+    A 501    ASP       matches     A  36    ASP  
+    B 367    TYR       matches     A 238    TYR  
+  TRANSFORM   -0.0643  0.9979 -0.0089 -0.6837 -0.0376  0.7288 -0.7269 -0.0529 -0.6847    -0.941    21.713     4.736  
+ 
+ Match found in 1qaz_c00     ALGINATE LYASE A1-III               
+   Pattern 1qaz_c00               Query structure     RMSD=  1.37 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 191    ASN       matches     A  67    ASN  
+    A 239    ARG       matches     A  76    ARG  
+    A 246    TYR       matches     A  72    TYR  
+  TRANSFORM    0.8662  0.4497  0.2178  0.4684 -0.5789 -0.6675  0.1741 -0.6802  0.7121    -4.477    16.962     5.473  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A 108    ASP  
+      166    GLY       matches     A 221    GLY  
+      169    GLU       matches     A  51    GLU  
+  TRANSFORM    0.3007 -0.5976 -0.7432 -0.7748 -0.6075  0.1750  0.5561 -0.5232  0.6457    41.771     8.236    58.166  
+ 
+ Match found in 1cs1_c01     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1cs1_c01               Query structure     RMSD=  1.44 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  48    ARG       matches     A 230    ARG  
+    C 101    TYR       matches     A 109    TYR  
+    C 173    ASP       matches     A 108    ASP  
+  TRANSFORM    0.2961  0.4354  0.8501 -0.6656 -0.5443  0.5106 -0.6851  0.7170 -0.1286     2.068    10.110    33.019  
+ 
+ Match found in 1inp_c02     INOSITOL POLYPHOSPHATE 1-PHOSPHATASE
+   Pattern 1inp_c02               Query structure     RMSD=  1.44 A  No. of residues =   3
+   ------- -------                --------------- 
+       54    ASP       matches     A 217    ASP  
+      158    THR       matches     A  55    THR  
+      317    ASP       matches     A  11    ASP  
+  TRANSFORM    0.1698 -0.4414 -0.8811  0.7884  0.5973 -0.1473 -0.5913  0.6696 -0.4494    36.609    -7.658    21.701  
+ 
+ Match found in 1cs1_c00     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1cs1_c00               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 101    TYR       matches     A 109    TYR  
+    A 173    ASP       matches     A 108    ASP  
+    C  48    ARG       matches     A 230    ARG  
+  TRANSFORM   -0.0913  0.4948  0.8642  0.2692  0.8478 -0.4570  0.9588 -0.1909  0.2106    62.641   -17.734    46.670  
+ 
+ Match found in 1cs1_c03     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1cs1_c03               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 101    TYR       matches     A 109    TYR  
+    B 173    ASP       matches     A 108    ASP  
+    D  48    ARG       matches     A 230    ARG  
+  TRANSFORM    0.5390 -0.0339 -0.8416  0.3899  0.8957  0.2136 -0.7466  0.4433 -0.4960    22.511   -11.879   -67.401  
+ 
+ Match found in 1qgn_c23     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c23               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    F 163    TYR       matches     A 109    TYR  
+    F 236    ASP       matches     A 108    ASP  
+    H 110    ARG       matches     A 230    ARG  
+  TRANSFORM    0.6561  0.5402 -0.5269  0.0031 -0.7002 -0.7140  0.7547 -0.4668  0.4610    20.489     1.625    43.501  
+ 
+ Match found in 1qgn_c17     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c17               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 110    ARG       matches     A 230    ARG  
+    D 163    TYR       matches     A 109    TYR  
+    D 236    ASP       matches     A 108    ASP  
+  TRANSFORM   -0.0217  0.7845  0.6197  0.5684  0.5196 -0.6379  0.8225 -0.3384  0.4572    43.171   -25.540   -35.967  
+ 
+ Match found in 1qgn_c22     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c22               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    E 163    TYR       matches     A 109    TYR  
+    E 236    ASP       matches     A 108    ASP  
+    G 110    ARG       matches     A 230    ARG  
+  TRANSFORM   -0.0292 -0.7541 -0.6561 -0.6539 -0.4820  0.5832  0.7560 -0.4460  0.4790    34.052    10.574   -34.470  
+ 
+ Match found in 1qgn_c21     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c21               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    F 110    ARG       matches     A 230    ARG  
+    H 163    TYR       matches     A 109    TYR  
+    H 236    ASP       matches     A 108    ASP  
+  TRANSFORM   -0.0035 -0.6179 -0.7862  0.4611  0.6967 -0.5495 -0.8873  0.3645 -0.2825     7.972    87.959    44.986  
+ 
+ Match found in 1bd3_c00     URACIL PHOSPHORIBOSYLTRANSFERASE    
+   Pattern 1bd3_c00               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 137    ARG       matches     A 181    ARG  
+    A 141    THR       matches     A 179    THR  
+    A 235    ASP       matches     A 217    ASP  
+  TRANSFORM   -0.4259 -0.8868 -0.1795  0.5206 -0.0780 -0.8502 -0.7400  0.4555 -0.4949    43.311    -8.185     9.935  
+ 
+ Match found in 1qgn_c19     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c19               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 163    TYR       matches     A 109    TYR  
+    B 236    ASP       matches     A 108    ASP  
+    D 110    ARG       matches     A 230    ARG  
+  TRANSFORM   -0.4690 -0.0170  0.8830 -0.2966 -0.9387 -0.1756 -0.8319  0.3442 -0.4352    57.502     0.172   -65.326  
+ 
+ Match found in 1qgn_c20     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c20               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    E 110    ARG       matches     A 230    ARG  
+    G 163    TYR       matches     A 109    TYR  
+    G 236    ASP       matches     A 108    ASP  
+  TRANSFORM    0.3020  0.9463  0.1156 -0.4446  0.0325  0.8951 -0.8433  0.3217 -0.4305    28.938    26.395    12.655  
+ 
+ Match found in 1qgn_c16     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c16               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 110    ARG       matches     A 230    ARG  
+    C 163    TYR       matches     A 109    TYR  
+    C 236    ASP       matches     A 108    ASP  
+  TRANSFORM   -0.5506 -0.5734  0.6067 -0.0744  0.7575  0.6485  0.8315 -0.3120  0.4597    56.083    13.296    41.250  
+ 
+ Match found in 1qgn_c18     CYSTATHIONINE GAMMA-SYNTHASE        
+   Pattern 1qgn_c18               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 163    TYR       matches     A 109    TYR  
+    A 236    ASP       matches     A 108    ASP  
+    C 110    ARG       matches     A 230    ARG  
+  TRANSFORM    0.9484  0.2473 -0.1983  0.3169 -0.7381  0.5956 -0.0009  0.6277  0.7785   -12.867     0.996    15.664  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A  84    ASP  
+      166    GLY       matches     A 192    GLY  
+      169    GLU       matches     A   5    GLU  
+
+************************************************* user.SUMS ********************************************************
+   1cns_c01     CHITINASE                               :        1.02  <
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.07  <
+   1eo7_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE        :        1.17  <
+   1ir3_c02     INSULIN RECEPTOR                        :        1.18  <
+   1boo_c00     N-4 CYTOSINE-SPECIFIC METHYLTRANSFER    :        1.33  <
+   1qgn_c23     CYSTATHIONINE GAMMA-SYNTHASE            :        1.35  <
+   1qgn_c22     CYSTATHIONINE GAMMA-SYNTHASE            :        1.36  <
+   1qgn_c17     CYSTATHIONINE GAMMA-SYNTHASE            :        1.36  <
+   1qgn_c21     CYSTATHIONINE GAMMA-SYNTHASE            :        1.36  <
+   1qgn_c20     CYSTATHIONINE GAMMA-SYNTHASE            :        1.36  <
+   1qgn_c19     CYSTATHIONINE GAMMA-SYNTHASE            :        1.36  <
+   1qgn_c16     CYSTATHIONINE GAMMA-SYNTHASE            :        1.36  <
+   1qgn_c18     CYSTATHIONINE GAMMA-SYNTHASE            :        1.37  <
+   1cs1_c01     CYSTATHIONINE GAMMA-SYNTHASE            :        1.38  <
+   1cs1_c00     CYSTATHIONINE GAMMA-SYNTHASE            :        1.39  <
+   1cs1_c03     CYSTATHIONINE GAMMA-SYNTHASE            :        1.40  <
+   1t4c_c02     FORMYL-COENZYME A TRANSFERASE           :        1.40  <
+   2z3x_d00     DNA BINDING PROTEIN/DNA                 :        1.41  <
+   1pyi_d00     PROTEIN (PYRIMIDINE PATHWAY REGULATO    :        1.43  <
+   1bsj_c00     PEPTIDE DEFORMYLASE                     :        1.43  <
+   1cs1_c02     CYSTATHIONINE GAMMA-SYNTHASE            :        1.45  <
+   1bd3_c01     URACIL PHOSPHORIBOSYLTRANSFERASE        :        1.46  <
+   1bd3_c00     URACIL PHOSPHORIBOSYLTRANSFERASE        :        1.46  <
+   1b57_c01     FRUCTOSE-BISPHOSPHATE ALDOLASE II       :        1.49  <
+
+************************************************* user.SUML ********************************************************
+   1eo7_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE        :        1.03  <
+   1t4c_c02     FORMYL-COENZYME A TRANSFERASE           :        1.24  <
+   1pnl_c00     PENICILLIN AMIDOHYDROLASE               :        1.26  <
+   1dfo_c07     SERINE HYDROXYMETHYLTRANSFERASE         :        1.29  <
+   1dfo_c05     SERINE HYDROXYMETHYLTRANSFERASE         :        1.29  <
+   1d6o_c00     FK506-BINDING PROTEIN                   :        1.29  <
+   1dfo_c06     SERINE HYDROXYMETHYLTRANSFERASE         :        1.29  <
+   1dfo_c04     SERINE HYDROXYMETHYLTRANSFERASE         :        1.29  <
+   1d6o_c01     FK506-BINDING PROTEIN                   :        1.31  <
+   1mro_c01     METHYL-COENZYME M REDUCTASE             :        1.31  <
+   1mro_c00     METHYL-COENZYME M REDUCTASE             :        1.34  <
+   1qaz_c00     ALGINATE LYASE A1-III                   :        1.37  <
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.38  <
+   1cs1_c01     CYSTATHIONINE GAMMA-SYNTHASE            :        1.44  <
+   1inp_c02     INOSITOL POLYPHOSPHATE 1-PHOSPHATASE    :        1.44  <
+   1cs1_c00     CYSTATHIONINE GAMMA-SYNTHASE            :        1.47  <
+   1cs1_c03     CYSTATHIONINE GAMMA-SYNTHASE            :        1.47  <
+   1qgn_c23     CYSTATHIONINE GAMMA-SYNTHASE            :        1.47  <
+   1qgn_c17     CYSTATHIONINE GAMMA-SYNTHASE            :        1.47  <
+   1qgn_c22     CYSTATHIONINE GAMMA-SYNTHASE            :        1.48  <
+   1qgn_c21     CYSTATHIONINE GAMMA-SYNTHASE            :        1.48  <
+   1bd3_c00     URACIL PHOSPHORIBOSYLTRANSFERASE        :        1.48  <
+   1qgn_c19     CYSTATHIONINE GAMMA-SYNTHASE            :        1.48  <
+   1qgn_c20     CYSTATHIONINE GAMMA-SYNTHASE            :        1.48  <
+   1qgn_c16     CYSTATHIONINE GAMMA-SYNTHASE            :        1.49  <
+   1qgn_c18     CYSTATHIONINE GAMMA-SYNTHASE            :        1.49  <
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.49  <

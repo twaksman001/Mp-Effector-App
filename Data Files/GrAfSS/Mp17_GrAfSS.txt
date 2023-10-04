@@ -1,0 +1,664 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM   -0.1715  0.7033  0.6899 -0.4798 -0.6712  0.5650  0.8604 -0.2341  0.4526    13.822   -80.580  -120.335  
+ 
+ Match found in 1xny_c00     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c00               Query structure     RMSD=  0.96 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 183    GLY       matches     A  95    GLY  
+    B 419    GLY       matches     A  71    GLY  
+    B 420    ALA       matches     A  69    ALA  
+  TRANSFORM   -0.2665 -0.1588 -0.9507  0.9304  0.2152 -0.2968  0.2517 -0.9636  0.0903    44.916     4.363    23.806  
+ 
+ Match found in 2tmd_c01     TRIMETHYLAMINE DEHYDROGENASE        
+   Pattern 2tmd_c01               Query structure     RMSD=  0.97 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 169    TYR       matches     A  37    TYR  
+    B 172    HIS       matches     A  48    HIS  
+    B 267    ASP       matches     A  46    ASP  
+  TRANSFORM    0.4747  0.0913  0.8754  0.6892 -0.6572 -0.3052  0.5474  0.7482 -0.3749    26.151    14.510     7.710  
+ 
+ Match found in 2tmd_c00     TRIMETHYLAMINE DEHYDROGENASE        
+   Pattern 2tmd_c00               Query structure     RMSD=  0.99 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 169    TYR       matches     A  37    TYR  
+    A 172    HIS       matches     A  48    HIS  
+    A 267    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.6010 -0.7989  0.0233  0.4626 -0.3715 -0.8050  0.6517 -0.4730  0.5929    62.269    21.732    18.749  
+ 
+ Match found in 1uok_c04     OLIGO-1,6-GLUCOSIDASE               
+   Pattern 1uok_c04               Query structure     RMSD=  1.11 A  No. of residues =   3
+   ------- -------                --------------- 
+      199    ASP       matches     A  82    ASP  
+      218    GLU       matches     A  93    GLU  
+      329    ASP       matches     A  55    ASP  
+  TRANSFORM   -0.0729  0.2765  0.9582  0.8271  0.5537 -0.0969 -0.5574  0.7855 -0.2691    61.956    95.197    27.254  
+ 
+ Match found in 3qwd_o03     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o03               Query structure     RMSD=  1.11 A  No. of residues =   3
+   ------- -------                --------------- 
+    D  98    SER       matches     A  65    SER  
+    D 123    HIS       matches     A  48    HIS  
+    D 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.5194  0.0445 -0.8534  0.0140 -0.9990 -0.0436 -0.8544  0.0107 -0.5195    57.297   -98.982  -137.325  
+ 
+ Match found in 1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c01               Query structure     RMSD=  1.13 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 420    ALA       matches     A  69    ALA  
+    B 182    GLY       matches     A  94    GLY  
+    B 183    GLY       matches     A  95    GLY  
+  TRANSFORM   -0.8935 -0.4172 -0.1661 -0.3510  0.4181  0.8379 -0.2801  0.8069 -0.5200    10.592    65.744    33.968  
+ 
+ Match found in 3qwd_o05     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o05               Query structure     RMSD=  1.14 A  No. of residues =   3
+   ------- -------                --------------- 
+    F  98    SER       matches     A  65    SER  
+    F 123    HIS       matches     A  48    HIS  
+    F 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.3479 -0.4231 -0.8366 -0.9315  0.0552  0.3594 -0.1059  0.9044 -0.4134    21.004    35.233    42.157  
+ 
+ Match found in 3qwd_o06     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o06               Query structure     RMSD=  1.14 A  No. of residues =   3
+   ------- -------                --------------- 
+    G  98    SER       matches     A  65    SER  
+    G 123    HIS       matches     A  48    HIS  
+    G 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.7802  0.4812  0.3997  0.3969  0.1131 -0.9109 -0.4835  0.8693 -0.1028   172.805    38.309    83.822  
+ 
+ Match found in 3qwd_o13     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o13               Query structure     RMSD=  1.15 A  No. of residues =   3
+   ------- -------                --------------- 
+    N  98    SER       matches     A  65    SER  
+    N 123    HIS       matches     A  48    HIS  
+    N 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.7492 -0.0895  0.6562  0.4491  0.6596  0.6027 -0.4868  0.7463 -0.4540    29.168    92.495    27.224  
+ 
+ Match found in 3qwd_o04     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o04               Query structure     RMSD=  1.15 A  No. of residues =   3
+   ------- -------                --------------- 
+    E  98    SER       matches     A  65    SER  
+    E 123    HIS       matches     A  48    HIS  
+    E 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.9305  0.2714 -0.2461 -0.2137 -0.1437 -0.9663 -0.2977  0.9517 -0.0757    80.368    40.502    41.176  
+ 
+ Match found in 3qwd_o01     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o01               Query structure     RMSD=  1.15 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  98    SER       matches     A  65    SER  
+    B 123    HIS       matches     A  48    HIS  
+    B 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.9334 -0.3588  0.0076 -0.1795  0.4853  0.8557 -0.3107  0.7973 -0.5174    98.873    44.846    83.210  
+ 
+ Match found in 3qwd_o09     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o09               Query structure     RMSD=  1.15 A  No. of residues =   3
+   ------- -------                --------------- 
+    J  98    SER       matches     A  65    SER  
+    J 123    HIS       matches     A  48    HIS  
+    J 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.6950  0.4508  0.5602  0.5277  0.2094 -0.8232 -0.4884  0.8677 -0.0924    84.756    72.131    33.351  
+ 
+ Match found in 3qwd_o02     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o02               Query structure     RMSD=  1.15 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  98    SER       matches     A  65    SER  
+    C 123    HIS       matches     A  48    HIS  
+    C 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.0877  0.3629  0.9277  0.8223  0.4992 -0.2730 -0.5622  0.7868 -0.2547   154.587    64.955    77.483  
+ 
+ Match found in 3qwd_o07     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o07               Query structure     RMSD=  1.16 A  No. of residues =   3
+   ------- -------                --------------- 
+    H  98    SER       matches     A  65    SER  
+    H 123    HIS       matches     A  48    HIS  
+    H 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.6748  0.0070  0.7380  0.5505  0.6708  0.4970 -0.4916  0.7416 -0.4565   121.722    67.630    77.098  
+ 
+ Match found in 3qwd_o08     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o08               Query structure     RMSD=  1.16 A  No. of residues =   3
+   ------- -------                --------------- 
+    I  98    SER       matches     A  65    SER  
+    I 123    HIS       matches     A  48    HIS  
+    I 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.3179 -0.1705 -0.9327 -0.9358 -0.2148 -0.2797 -0.1526  0.9617 -0.2278   131.826    -3.331    94.974  
+ 
+ Match found in 3qwd_o11     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o11               Query structure     RMSD=  1.16 A  No. of residues =   3
+   ------- -------                --------------- 
+    L  98    SER       matches     A  65    SER  
+    L 123    HIS       matches     A  48    HIS  
+    L 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.8766  0.2440 -0.4148 -0.3776 -0.1856 -0.9072 -0.2983  0.9518 -0.0705   162.724     7.886    91.584  
+ 
+ Match found in 3qwd_o12     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o12               Query structure     RMSD=  1.16 A  No. of residues =   3
+   ------- -------                --------------- 
+    M  98    SER       matches     A  65    SER  
+    M 123    HIS       matches     A  48    HIS  
+    M 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.5089 -0.4154 -0.7540 -0.8520  0.1175  0.5103 -0.1234  0.9020 -0.4137   103.153    12.986    91.590  
+ 
+ Match found in 3qwd_o10     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o10               Query structure     RMSD=  1.17 A  No. of residues =   3
+   ------- -------                --------------- 
+    K  98    SER       matches     A  65    SER  
+    K 123    HIS       matches     A  48    HIS  
+    K 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.4884 -0.0944 -0.8675 -0.8533 -0.2596 -0.4522 -0.1826  0.9611 -0.2074    52.191    24.254    44.586  
+ 
+ Match found in 3qwd_o00     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o00               Query structure     RMSD=  1.17 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  98    SER       matches     A  65    SER  
+    A 123    HIS       matches     A  48    HIS  
+    A 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.4884 -0.0944 -0.8675 -0.8533 -0.2596 -0.4522 -0.1826  0.9611 -0.2074    52.191    24.254    44.586  
+ 
+ Match found in 3qwd_o00     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o00               Query structure     RMSD=  1.17 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  98    SER       matches     A  65    SER  
+    A 123    HIS       matches     A  48    HIS  
+    A 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.5955 -0.7564  0.2706 -0.7644  0.6371  0.0984 -0.2469 -0.1482 -0.9576   -39.633    34.825    48.973  
+ 
+ Match found in 1ddj_c15     PLASMINOGEN                         
+   Pattern 1ddj_c15               Query structure     RMSD=  1.19 A  No. of residues =   3
+   ------- -------                --------------- 
+    D 603    HIS       matches     A  48    HIS  
+    D 646    ASP       matches     A  46    ASP  
+    D 739    GLY       matches     A  71    GLY  
+  TRANSFORM    0.8370 -0.5305 -0.1345  0.1538  0.4638 -0.8725  0.5252  0.7096  0.4698    61.695    14.730    10.211  
+ 
+ Match found in 1t4c_c02     FORMYL-COENZYME A TRANSFERASE       
+   Pattern 1t4c_c02               Query structure     RMSD=  1.22 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 261    GLY       matches     A  62    GLY  
+    B  17    GLN       matches     A  50    GLN  
+    B 140    GLU       matches     A  52    GLU  
+  TRANSFORM   -0.7331 -0.5276 -0.4292 -0.4122 -0.1572  0.8974 -0.5409  0.8348 -0.1023     2.447    19.121    40.769  
+ 
+ Match found in 1sll_c00     SIALIDASE L                         
+   Pattern 1sll_c00               Query structure     RMSD=  1.32 A  No. of residues =   3
+   ------- -------                --------------- 
+      318    ASP       matches     A  55    ASP  
+      595    GLU       matches     A  52    GLU  
+      713    TYR       matches     A  33    TYR  
+  TRANSFORM   -0.0011  0.2148 -0.9767  0.9137 -0.3967 -0.0883 -0.4064 -0.8925 -0.1958    18.718    20.472    47.316  
+ 
+ Match found in 1lio_c01     ADENOSINE KINASE                    
+   Pattern 1lio_c01               Query structure     RMSD=  1.34 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A  80    ALA  
+    A 317    GLY       matches     A  85    GLY  
+    A 318    ASP       matches     A  81    ASP  
+  TRANSFORM    0.0261  0.9988 -0.0411  0.9986 -0.0279 -0.0456 -0.0467 -0.0399 -0.9981    -7.199   -16.363    17.354  
+ 
+ Match found in 1wbf_p00     PROTEIN (AGGLUTININ)                
+   Pattern 1wbf_p00               Query structure     RMSD=  1.36 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  44    ASN       matches     A  57    ASN  
+    A 213    PRO       matches     A  30    PRO  
+    A 219    ASN       matches     A  34    ASN  
+  TRANSFORM    0.5850 -0.4783 -0.6550 -0.1180  0.7488 -0.6522  0.8024  0.4588  0.3816    59.998    31.459   -26.992  
+ 
+ Match found in 1vom_c00     MYOSIN                              
+   Pattern 1vom_c00               Query structure     RMSD=  1.44 A  No. of residues =   3
+   ------- -------                --------------- 
+      233    ASN       matches     A  87    ASN  
+      457    GLY       matches     A  62    GLY  
+      459    GLU       matches     A  77    GLU  
+  TRANSFORM    0.0067 -0.9831  0.1831 -0.8738  0.0833  0.4791 -0.4862 -0.1632 -0.8585     6.103    64.492    28.901  
+ 
+ Match found in 3qwd_o05     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o05               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    F  98    SER       matches     A  38    SER  
+    F 123    HIS       matches     A  48    HIS  
+    F 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.7027  0.3290  0.6308 -0.0086  0.8827 -0.4699 -0.7114 -0.3356 -0.6175    63.044    98.330    21.241  
+ 
+ Match found in 3qwd_o03     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o03               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    D  98    SER       matches     A  38    SER  
+    D 123    HIS       matches     A  48    HIS  
+    D 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.5738 -0.4908  0.6557 -0.5960  0.7993  0.0767 -0.5617 -0.3468 -0.7511    26.540    94.714    21.260  
+ 
+ Match found in 3qwd_o04     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o04               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    E  98    SER       matches     A  38    SER  
+    E 123    HIS       matches     A  48    HIS  
+    E 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.2230  0.9747 -0.0173  0.5220  0.1044 -0.8465 -0.8233 -0.1978 -0.5320   176.952    38.234    78.300  
+ 
+ Match found in 3qwd_o13     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o13               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    N  98    SER       matches     A  38    SER  
+    N 123    HIS       matches     A  48    HIS  
+    N 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.5738 -0.7076 -0.4124 -0.6186 -0.7045  0.3480 -0.5368  0.0554 -0.8419    18.209    30.439    38.068  
+ 
+ Match found in 3qwd_o06     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o06               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    G  98    SER       matches     A  38    SER  
+    G 123    HIS       matches     A  48    HIS  
+    G 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.5800  0.4824 -0.6564  0.5553 -0.3554 -0.7519 -0.5960 -0.8006 -0.0617    58.623    31.301   -33.203  
+ 
+ Match found in 1vom_c00     MYOSIN                              
+   Pattern 1vom_c00               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+      233    ASN       matches     A  34    ASN  
+      457    GLY       matches     A  62    GLY  
+      459    GLU       matches     A  52    GLU  
+  TRANSFORM   -0.3144  0.9390  0.1392  0.4625  0.2796 -0.8414 -0.8290 -0.2001 -0.5222    88.851    72.758    27.823  
+ 
+ Match found in 3qwd_o02     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o02               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  98    SER       matches     A  38    SER  
+    C 123    HIS       matches     A  48    HIS  
+    C 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.6843  0.4850  0.5446  0.1076  0.8058 -0.5823 -0.7213 -0.3399 -0.6036   156.241    67.768    71.409  
+ 
+ Match found in 3qwd_o07     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o07               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    H  98    SER       matches     A  38    SER  
+    H 123    HIS       matches     A  48    HIS  
+    H 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.1421 -0.9446  0.2958 -0.8585  0.2663  0.4382 -0.4927 -0.1916 -0.8488    94.385    44.496    78.015  
+ 
+ Match found in 3qwd_o09     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o09               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    J  98    SER       matches     A  38    SER  
+    J 123    HIS       matches     A  48    HIS  
+    J 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.3169  0.8397 -0.4411  0.4805 -0.5431 -0.6886 -0.8177  0.0062 -0.5756    84.512    37.394    36.627  
+ 
+ Match found in 3qwd_o01     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o01               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  98    SER       matches     A  38    SER  
+    B 123    HIS       matches     A  48    HIS  
+    B 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.6526 -0.3690  0.6618 -0.5112  0.8591 -0.0251 -0.5592 -0.3547 -0.7493   119.447    70.150    71.093  
+ 
+ Match found in 3qwd_o08     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o08               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    I  98    SER       matches     A  38    SER  
+    I 123    HIS       matches     A  48    HIS  
+    I 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.3929  0.7304 -0.5587  0.4138 -0.6830 -0.6019 -0.8212  0.0053 -0.5706   166.236     4.088    87.016  
+ 
+ Match found in 3qwd_o12     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o12               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    M  98    SER       matches     A  38    SER  
+    M 123    HIS       matches     A  48    HIS  
+    M 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.7188 -0.0725 -0.6914 -0.1198 -0.9926 -0.0205 -0.6848  0.0976 -0.7222   131.906    -8.918    91.001  
+ 
+ Match found in 3qwd_o11     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o11               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    L  98    SER       matches     A  38    SER  
+    L 123    HIS       matches     A  48    HIS  
+    L 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.5633 -0.7898 -0.2425 -0.7265  0.3336  0.6008 -0.3936  0.5146 -0.7617     9.698    65.958    33.834  
+ 
+ Match found in 3qwd_o05     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o05               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    F  98    SER       matches     A  49    SER  
+    F 123    HIS       matches     A  48    HIS  
+    F 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.4573 -0.8244 -0.3335 -0.7054 -0.5646  0.4285 -0.5415  0.0393 -0.8398    99.560     8.843    87.414  
+ 
+ Match found in 3qwd_o10     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o10               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    K  98    SER       matches     A  38    SER  
+    K 123    HIS       matches     A  48    HIS  
+    K 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.8212 -0.3140  0.4764 -0.0476  0.8698  0.4911 -0.5686  0.3807 -0.7293    28.850    93.340    26.963  
+ 
+ Match found in 3qwd_o04     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o04               Query structure     RMSD=  1.50 A  No. of residues =   3
+   ------- -------                --------------- 
+    E  98    SER       matches     A  49    SER  
+    E 123    HIS       matches     A  48    HIS  
+    E 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.1925  0.8793  0.4355  0.1116 -0.4606  0.8806  0.9749 -0.1209 -0.1868   -16.022    55.146   -19.820  
+ 
+ Match found in 1hkd_p00     PEA LECTIN ALPHA CHAIN              
+   Pattern 1hkd_p00               Query structure     RMSD=  1.50 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  81    ASP       matches     A  81    ASP  
+    A  99    GLY       matches     A  85    GLY  
+    A 125    ASN       matches     A  87    ASN  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM    0.9855  0.0796  0.1502  0.1179  0.3163 -0.9413  0.1224 -0.9453 -0.3023    64.320    14.095     3.089  
+ 
+ Match found in 1t4c_c02     FORMYL-COENZYME A TRANSFERASE       
+   Pattern 1t4c_c02               Query structure     RMSD=  0.90 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 261    GLY       matches     A  62    GLY  
+    B  17    GLN       matches     A  50    GLN  
+    B 140    GLU       matches     A  52    GLU  
+  TRANSFORM    0.1691 -0.2216  0.9604  0.1420  0.9697  0.1988  0.9753 -0.1027 -0.1955    -1.186    35.872   -20.065  
+ 
+ Match found in 1hkd_p00     PEA LECTIN ALPHA CHAIN              
+   Pattern 1hkd_p00               Query structure     RMSD=  0.95 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  81    ASP       matches     A  81    ASP  
+    A  99    GLY       matches     A  85    GLY  
+    A 125    ASN       matches     A  87    ASN  
+  TRANSFORM    0.3058  0.9509 -0.0471  0.4512 -0.1883 -0.8723  0.8384 -0.2456  0.4867    29.839   -49.342  -121.076  
+ 
+ Match found in 1xny_c00     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c00               Query structure     RMSD=  0.96 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 183    GLY       matches     A  95    GLY  
+    B 419    GLY       matches     A  71    GLY  
+    B 420    ALA       matches     A  69    ALA  
+  TRANSFORM    0.5124 -0.0375 -0.8580  0.1839  0.9807  0.0670 -0.8388  0.1921 -0.5093    57.420  -101.949  -137.597  
+ 
+ Match found in 1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B 
+   Pattern 1xny_c01               Query structure     RMSD=  1.07 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 420    ALA       matches     A  69    ALA  
+    B 182    GLY       matches     A  94    GLY  
+    B 183    GLY       matches     A  95    GLY  
+  TRANSFORM   -0.0157  0.2186 -0.9757 -0.9941  0.1013  0.0386 -0.1073 -0.9705 -0.2157    18.780    28.635    46.036  
+ 
+ Match found in 1lio_c01     ADENOSINE KINASE                    
+   Pattern 1lio_c01               Query structure     RMSD=  1.11 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A  80    ALA  
+    A 317    GLY       matches     A  85    GLY  
+    A 318    ASP       matches     A  81    ASP  
+  TRANSFORM    0.2785  0.1874  0.9420 -0.7638  0.6379  0.0990  0.5823  0.7470 -0.3208   -35.095    34.829    53.278  
+ 
+ Match found in 1ddj_c15     PLASMINOGEN                         
+   Pattern 1ddj_c15               Query structure     RMSD=  1.22 A  No. of residues =   3
+   ------- -------                --------------- 
+    D 603    HIS       matches     A  48    HIS  
+    D 646    ASP       matches     A  46    ASP  
+    D 739    GLY       matches     A  71    GLY  
+  TRANSFORM   -0.5501 -0.3201  0.7713 -0.2312  0.9459  0.2277  0.8025  0.0531  0.5943    -9.436    -4.735     7.567  
+ 
+ Match found in 1qrz_c22     PLASMINOGEN                         
+   Pattern 1qrz_c22               Query structure     RMSD=  1.22 A  No. of residues =   3
+   ------- -------                --------------- 
+    C 603    HIS       matches     A  48    HIS  
+    C 646    ASP       matches     A  41    ASP  
+    C 739    GLY       matches     A  71    GLY  
+  TRANSFORM   -0.9271 -0.1799 -0.3287  0.2483 -0.9519 -0.1794  0.2806  0.2480 -0.9272   -51.046    -1.919     6.517  
+ 
+ Match found in 1qrz_c21     PLASMINOGEN                         
+   Pattern 1qrz_c21               Query structure     RMSD=  1.22 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 603    HIS       matches     A  48    HIS  
+    B 646    ASP       matches     A  41    ASP  
+    B 739    GLY       matches     A  71    GLY  
+  TRANSFORM   -0.9378 -0.0498  0.3437  0.1693 -0.9297  0.3272 -0.3032 -0.3650 -0.8802    63.546    36.613   -37.232  
+ 
+ Match found in 1vom_c00     MYOSIN                              
+   Pattern 1vom_c00               Query structure     RMSD=  1.29 A  No. of residues =   3
+   ------- -------                --------------- 
+      233    ASN       matches     A  34    ASN  
+      457    GLY       matches     A  62    GLY  
+      459    GLU       matches     A  52    GLU  
+  TRANSFORM    0.4116  0.4417  0.7972  0.0693  0.8570 -0.5106  0.9087 -0.2654 -0.3221   145.436     9.065   -10.028  
+ 
+ Match found in 1lij_c01     ADENOSINE KINASE                    
+   Pattern 1lij_c01               Query structure     RMSD=  1.30 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A  80    ALA  
+    A 317    GLY       matches     A  85    GLY  
+    A 318    ASP       matches     A  81    ASP  
+  TRANSFORM   -0.0827 -0.9747 -0.2075  0.2316  0.1837 -0.9553 -0.9693  0.1271 -0.2105     4.823    52.553    32.471  
+ 
+ Match found in 1amy_c06     ALPHA-1,4 GLYCAN-4-GLUCANOHYDROLASE 
+   Pattern 1amy_c06               Query structure     RMSD=  1.32 A  No. of residues =   3
+   ------- -------                --------------- 
+      179    ASP       matches     A  81    ASP  
+      227    GLU       matches     A  77    GLU  
+      289    ASP       matches     A  55    ASP  
+  TRANSFORM   -0.9347 -0.1265 -0.3321  0.2141 -0.9463 -0.2423  0.2836  0.2976 -0.9116   -23.008    -1.476    45.050  
+ 
+ Match found in 1qrz_c20     PLASMINOGEN                         
+   Pattern 1qrz_c20               Query structure     RMSD=  1.34 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 603    HIS       matches     A  48    HIS  
+    A 646    ASP       matches     A  41    ASP  
+    A 739    GLY       matches     A  71    GLY  
+  TRANSFORM   -0.4837  0.8151 -0.3190  0.7312  0.1760 -0.6591  0.4811  0.5520  0.6810    25.869    41.550    36.044  
+ 
+ Match found in 1lio_c01     ADENOSINE KINASE                    
+   Pattern 1lio_c01               Query structure     RMSD=  1.34 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A  69    ALA  
+    A 317    GLY       matches     A  71    GLY  
+    A 318    ASP       matches     A  70    ASP  
+  TRANSFORM    0.5066 -0.8002 -0.3210  0.4545  0.5642 -0.6893 -0.7327 -0.2033 -0.6495    15.675   -33.505   -48.014  
+ 
+ Match found in 1tz3_c03     PUTATIVE SUGAR KINASE               
+   Pattern 1tz3_c03               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 250    ALA       matches     A  80    ALA  
+    B 251    GLY       matches     A  85    GLY  
+    B 252    ASP       matches     A  81    ASP  
+  TRANSFORM   -0.0672 -0.6223  0.7799 -0.5612  0.6699  0.4861  0.8250  0.4050  0.3943    36.558   -13.333    -7.820  
+ 
+ Match found in 1tz3_c02     PUTATIVE SUGAR KINASE               
+   Pattern 1tz3_c02               Query structure     RMSD=  1.37 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 250    ALA       matches     A  80    ALA  
+    A 251    GLY       matches     A  85    GLY  
+    A 252    ASP       matches     A  81    ASP  
+  TRANSFORM   -0.5732 -0.2733  0.7725 -0.2270  0.9588  0.1708  0.7874  0.0774  0.6116   -63.303    -3.843    45.736  
+ 
+ Match found in 1qrz_c23     PLASMINOGEN                         
+   Pattern 1qrz_c23               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    D 603    HIS       matches     A  48    HIS  
+    D 646    ASP       matches     A  41    ASP  
+    D 739    GLY       matches     A  71    GLY  
+  TRANSFORM   -0.7634 -0.5987 -0.2423  0.6150 -0.5594 -0.5557 -0.1972  0.5733 -0.7953    59.444    24.382     3.985  
+ 
+ Match found in 1uok_c04     OLIGO-1,6-GLUCOSIDASE               
+   Pattern 1uok_c04               Query structure     RMSD=  1.40 A  No. of residues =   3
+   ------- -------                --------------- 
+      199    ASP       matches     A  82    ASP  
+      218    GLU       matches     A  93    GLU  
+      329    ASP       matches     A  55    ASP  
+  TRANSFORM   -0.7595  0.6491  0.0441 -0.5842 -0.7102  0.3929 -0.2863 -0.2726 -0.9185    17.817    60.068    29.392  
+ 
+ Match found in 3qwd_o05     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o05               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    F  98    SER       matches     A  49    SER  
+    F 123    HIS       matches     A  48    HIS  
+    F 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.8490 -0.0997  0.5189  0.1913 -0.9734  0.1260 -0.4925 -0.2062 -0.8455    30.067    82.868    23.629  
+ 
+ Match found in 3qwd_o04     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o04               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    E  98    SER       matches     A  49    SER  
+    E 123    HIS       matches     A  48    HIS  
+    E 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.5819 -0.8076  0.0958  0.5616  0.3138 -0.7656 -0.5882 -0.4993 -0.6361   164.437    39.241    77.826  
+ 
+ Match found in 3qwd_o13     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o13               Query structure     RMSD=  1.46 A  No. of residues =   3
+   ------- -------                --------------- 
+    N  98    SER       matches     A  49    SER  
+    N 123    HIS       matches     A  48    HIS  
+    N 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.4688 -0.8513  0.2356  0.6523  0.1538 -0.7422 -0.5956 -0.5016 -0.6274    76.361    71.438    27.353  
+ 
+ Match found in 3qwd_o02     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o02               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  98    SER       matches     A  49    SER  
+    C 123    HIS       matches     A  48    HIS  
+    C 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.8120 -0.2345  0.5344  0.3036 -0.9518  0.0436 -0.4985 -0.1976 -0.8441   121.242    57.898    73.567  
+ 
+ Match found in 3qwd_o08     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o08               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    I  98    SER       matches     A  49    SER  
+    I 123    HIS       matches     A  48    HIS  
+    I 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.0855  0.8913 -0.4452 -0.9836 -0.0043  0.1804 -0.1589 -0.4533 -0.8771    28.965    36.439    35.750  
+ 
+ Match found in 3qwd_o06     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o06               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    G  98    SER       matches     A  49    SER  
+    G 123    HIS       matches     A  48    HIS  
+    G 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.8423  0.5192  0.1448 -0.4367 -0.8148  0.3812 -0.3159 -0.2579 -0.9131   105.112    37.947    78.810  
+ 
+ Match found in 3qwd_o09     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o09               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    J  98    SER       matches     A  49    SER  
+    J 123    HIS       matches     A  48    HIS  
+    J 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.1792 -0.8262  0.5340  0.7670 -0.4573 -0.4501 -0.6161 -0.3289 -0.7157   147.671    58.699    73.049  
+ 
+ Match found in 3qwd_o07     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o07               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    H  98    SER       matches     A  49    SER  
+    H 123    HIS       matches     A  48    HIS  
+    H 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.5362  0.5740 -0.6189 -0.8053  0.5676 -0.1712 -0.2530 -0.5901 -0.7666   135.690     2.641    87.536  
+ 
+ Match found in 3qwd_o11     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o11               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    L  98    SER       matches     A  49    SER  
+    L 123    HIS       matches     A  48    HIS  
+    L 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.6802  0.4148 -0.6044 -0.6665  0.6932 -0.2744 -0.3052 -0.5894 -0.7480    54.509    31.159    37.088  
+ 
+ Match found in 3qwd_o00     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o00               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  98    SER       matches     A  49    SER  
+    A 123    HIS       matches     A  48    HIS  
+    A 172    ASP       matches     A  46    ASP  
+  TRANSFORM    0.6802  0.4148 -0.6044 -0.6665  0.6932 -0.2744 -0.3052 -0.5894 -0.7480    54.509    31.159    37.088  
+ 
+ Match found in 3qwd_o00     ATP-DEPENDENT CLP PROTEASE PROTEOLYT
+   Pattern 3qwd_o00               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  98    SER       matches     A  49    SER  
+    A 123    HIS       matches     A  48    HIS  
+    A 172    ASP       matches     A  46    ASP  
+  TRANSFORM   -0.8017 -0.5341  0.2683  0.3864 -0.8056 -0.4492 -0.4560  0.2565 -0.8522    22.062    13.539     4.495  
+ 
+ Match found in 2tmd_c00     TRIMETHYLAMINE DEHYDROGENASE        
+   Pattern 2tmd_c00               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 169    TYR       matches     A  37    TYR  
+    A 172    HIS       matches     A  48    HIS  
+    A 267    ASP       matches     A  46    ASP  
+  TRANSFORM    0.8284  0.3605 -0.4286 -0.2966 -0.3667 -0.8818  0.4751 -0.8576  0.1969    48.274     0.600    24.491  
+ 
+ Match found in 2tmd_c01     TRIMETHYLAMINE DEHYDROGENASE        
+   Pattern 2tmd_c01               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 169    TYR       matches     A  37    TYR  
+    B 172    HIS       matches     A  48    HIS  
+    B 267    ASP       matches     A  46    ASP  
+
+************************************************* user.SUMS ********************************************************
+   1xny_c00     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        0.96  <
+   2tmd_c01     TRIMETHYLAMINE DEHYDROGENASE            :        0.97  <
+   2tmd_c00     TRIMETHYLAMINE DEHYDROGENASE            :        0.99  <
+   1uok_c04     OLIGO-1,6-GLUCOSIDASE                   :        1.11  <
+   3qwd_o03     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.11  <
+   1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        1.13  <
+   3qwd_o05     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.14  <
+   3qwd_o06     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.14  <
+   3qwd_o13     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.15  <
+   3qwd_o04     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.15  <
+   3qwd_o01     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.15  <
+   3qwd_o09     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.15  <
+   3qwd_o02     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.15  <
+   3qwd_o07     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.16  <
+   3qwd_o08     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.16  <
+   3qwd_o11     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.16  <
+   3qwd_o12     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.16  <
+   3qwd_o10     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.17  <
+   3qwd_o00     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.17  <
+   3qwd_o00     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.17  <
+   1ddj_c15     PLASMINOGEN                             :        1.19  <
+   1t4c_c02     FORMYL-COENZYME A TRANSFERASE           :        1.22  <
+   1sll_c00     SIALIDASE L                             :        1.32  <
+   1lio_c01     ADENOSINE KINASE                        :        1.34  <
+   1wbf_p00     PROTEIN (AGGLUTININ)                    :        1.36  <
+   1vom_c00     MYOSIN                                  :        1.44  <
+   3qwd_o05     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.45  <
+   3qwd_o03     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.45  <
+   3qwd_o04     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.46  <
+   3qwd_o13     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.46  <
+   3qwd_o06     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.46  <
+   1vom_c00     MYOSIN                                  :        1.47  <
+   3qwd_o02     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.47  <
+   3qwd_o07     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.47  <
+   3qwd_o09     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.47  <
+   3qwd_o01     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.48  <
+   3qwd_o08     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.48  <
+   3qwd_o12     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.49  <
+   3qwd_o11     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.49  <
+   3qwd_o05     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.49  <
+   3qwd_o10     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.49  <
+   3qwd_o04     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.50  <
+   1hkd_p00     PEA LECTIN ALPHA CHAIN                  :        1.50  <
+
+************************************************* user.SUML ********************************************************
+   1t4c_c02     FORMYL-COENZYME A TRANSFERASE           :        0.90  <
+   1hkd_p00     PEA LECTIN ALPHA CHAIN                  :        0.95  <
+   1xny_c00     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        0.96  <
+   1xny_c01     PROPIONYL-COA CARBOXYLASE COMPLEX B     :        1.07  <
+   1lio_c01     ADENOSINE KINASE                        :        1.11  <
+   1ddj_c15     PLASMINOGEN                             :        1.22  <
+   1qrz_c22     PLASMINOGEN                             :        1.22  <
+   1qrz_c21     PLASMINOGEN                             :        1.22  <
+   1vom_c00     MYOSIN                                  :        1.29  <
+   1lij_c01     ADENOSINE KINASE                        :        1.30  <
+   1amy_c06     ALPHA-1,4 GLYCAN-4-GLUCANOHYDROLASE     :        1.32  <
+   1qrz_c20     PLASMINOGEN                             :        1.34  <
+   1lio_c01     ADENOSINE KINASE                        :        1.34  <
+   1tz3_c03     PUTATIVE SUGAR KINASE                   :        1.35  <
+   1tz3_c02     PUTATIVE SUGAR KINASE                   :        1.37  <
+   1qrz_c23     PLASMINOGEN                             :        1.38  <
+   1uok_c04     OLIGO-1,6-GLUCOSIDASE                   :        1.40  <
+   3qwd_o05     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.45  <
+   3qwd_o04     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.46  <
+   3qwd_o13     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.46  <
+   3qwd_o02     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.47  <
+   3qwd_o08     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.47  <
+   3qwd_o06     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.47  <
+   3qwd_o09     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.47  <
+   3qwd_o07     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.47  <
+   3qwd_o11     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.47  <
+   3qwd_o00     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.48  <
+   3qwd_o00     ATP-DEPENDENT CLP PROTEASE PROTEOLYT    :        1.48  <
+   2tmd_c00     TRIMETHYLAMINE DEHYDROGENASE            :        1.49  <
+   2tmd_c01     TRIMETHYLAMINE DEHYDROGENASE            :        1.49  <

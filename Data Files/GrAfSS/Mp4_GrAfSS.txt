@@ -1,0 +1,52 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM    0.5481 -0.3902  0.7398 -0.6652 -0.7396  0.1027  0.5071 -0.5484 -0.6649    80.476    51.507   144.817  
+ 
+ Match found in 1hto_c00     GLUTAMINE SYNTHETASE                
+   Pattern 1hto_c00               Query structure     RMSD=  1.22 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  50    ASP       matches     A  82    ASP  
+    A 327    GLU       matches     A  51    GLU  
+    A 339    ARG       matches     A  52    ARG  
+  TRANSFORM   -0.5273  0.7234  0.4457 -0.8142 -0.2800 -0.5087 -0.2432 -0.6311  0.7366   -40.297     9.332    67.745  
+ 
+ Match found in 1cns_c00     CHITINASE                           
+   Pattern 1cns_c00               Query structure     RMSD=  1.34 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  67    GLU       matches     A  72    GLU  
+    A  89    GLU       matches     A  70    GLU  
+    A 120    SER       matches     A  66    SER  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM    0.2189  0.8998 -0.3773  0.1207  0.3587  0.9256 -0.9683  0.2482  0.0300    73.958     7.622   -58.180  
+ 
+ Match found in 1vom_c00     MYOSIN                              
+   Pattern 1vom_c00               Query structure     RMSD=  1.31 A  No. of residues =   3
+   ------- -------                --------------- 
+      233    ASN       matches     A  97    ASN  
+      457    GLY       matches     A  90    GLY  
+      459    GLU       matches     A  92    GLU  
+  TRANSFORM    0.4403 -0.1013 -0.8921 -0.3562  0.8924 -0.2771 -0.8241 -0.4398 -0.3569   140.228    53.394    19.202  
+ 
+ Match found in 1js4_c01     ENDO-EXOCELLULASE E4                
+   Pattern 1js4_c01               Query structure     RMSD=  1.35 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  55    ASP       matches     A  82    ASP  
+    B  58    ASP       matches     A  79    ASP  
+    B 424    GLU       matches     A  78    GLU  
+  TRANSFORM    0.2971 -0.1228  0.9469  0.7176  0.6829 -0.1366  0.6299 -0.7201 -0.2910    64.486    19.875    16.744  
+ 
+ Match found in 2dbt_c00     CHITINASE C                         
+   Pattern 2dbt_c00               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 147    GLU       matches     A  70    GLU  
+    A 156    GLU       matches     A  72    GLU  
+    A 194    ASN       matches     A  63    ASN  
+
+************************************************* user.SUMS ********************************************************
+   1hto_c00     GLUTAMINE SYNTHETASE                    :        1.22  <
+   1cns_c00     CHITINASE                               :        1.34  <
+
+************************************************* user.SUML ********************************************************
+   1vom_c00     MYOSIN                                  :        1.31  <
+   1js4_c01     ENDO-EXOCELLULASE E4                    :        1.35  <
+   2dbt_c00     CHITINASE C                             :        1.45  <

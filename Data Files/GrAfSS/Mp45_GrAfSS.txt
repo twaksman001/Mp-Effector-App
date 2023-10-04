@@ -1,0 +1,52 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM    0.9843  0.0871 -0.1538  0.1447 -0.8966  0.4185 -0.1014 -0.4341 -0.8951    -5.083    18.193    13.381  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.34 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A  89    ASP  
+      166    GLY       matches     A  22    GLY  
+      169    GLU       matches     A  18    GLU  
+  TRANSFORM   -0.0221 -0.7880 -0.6152  0.3496 -0.5826  0.7337 -0.9366 -0.1989  0.2884    33.533    53.181    85.937  
+ 
+ Match found in 1b57_c00     FRUCTOSE-BISPHOSPHATE ALDOLASE II   
+   Pattern 1b57_c00               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 109    ASP       matches     A   9    ASP  
+    A 182    GLU       matches     A  11    GLU  
+    A 286    ASN       matches     A   6    ASN  
+  TRANSFORM    0.7378 -0.4922  0.4620  0.6540  0.3517 -0.6697  0.1672  0.7963  0.5814    57.973    -3.957    31.301  
+ 
+ Match found in 1t4c_c02     FORMYL-COENZYME A TRANSFERASE       
+   Pattern 1t4c_c02               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 261    GLY       matches     A  66    GLY  
+    B  17    GLN       matches     A  68    GLN  
+    B 140    GLU       matches     A  67    GLU  
+  TRANSFORM    0.3150 -0.9240  0.2169 -0.1962 -0.2870 -0.9376  0.9286  0.2528 -0.2717    26.239    70.916   154.714  
+ 
+ Match found in 1b57_c01     FRUCTOSE-BISPHOSPHATE ALDOLASE II   
+   Pattern 1b57_c01               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 109    ASP       matches     A   9    ASP  
+    B 182    GLU       matches     A  11    GLU  
+    B 286    ASN       matches     A   6    ASN  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM    0.9694 -0.0084  0.2453  0.1210 -0.8532 -0.5074 -0.2135 -0.5216  0.8261    55.349    -8.405    24.739  
+ 
+ Match found in 1t4c_c02     FORMYL-COENZYME A TRANSFERASE       
+   Pattern 1t4c_c02               Query structure     RMSD=  1.33 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 261    GLY       matches     A  66    GLY  
+    B  17    GLN       matches     A  69    GLN  
+    B 140    GLU       matches     A  67    GLU  
+
+************************************************* user.SUMS ********************************************************
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.34  <
+   1b57_c00     FRUCTOSE-BISPHOSPHATE ALDOLASE II       :        1.43  <
+   1t4c_c02     FORMYL-COENZYME A TRANSFERASE           :        1.48  <
+   1b57_c01     FRUCTOSE-BISPHOSPHATE ALDOLASE II       :        1.49  <
+
+************************************************* user.SUML ********************************************************
+   1t4c_c02     FORMYL-COENZYME A TRANSFERASE           :        1.33  <

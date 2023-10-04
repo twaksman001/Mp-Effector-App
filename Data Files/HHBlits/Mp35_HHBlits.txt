@@ -1,0 +1,3240 @@
+Query         7398317
+Match_columns 136
+No_of_seqs    35 out of 51
+Neff          2.8516
+Searched_HMMs 398
+Date          Fri Feb 17 15:29:39 2023
+Command       hhblits -cpu 8 -i ../results/7398317.in.a3m -d /cluster/toolkit/production/databases/hhblits/UniRef30 -o /ebio/toolkit_rye/user/toolkit/production/jobs/7398317/results/7398317.hhr -oa3m /ebio/toolkit_rye/user/toolkit/production/jobs/7398317/results/7398317.a3m -e 0.1 -n 8 -p 20 -Z 10000 -z 1 -b 1 -B 10000 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 UniRef100_A0A2S2NN57 Uncharact 100.0 2.4E-61 5.4E-67  379.0   0.0  132    1-136    20-151 (151)
+  2 UniRef100_UPI000B936FC6 unchar 100.0 1.7E-48 3.3E-54  318.8   0.0  136    1-136    84-219 (219)
+  3 UniRef100_A0A6G0U6F7 Uncharact 100.0 1.1E-44 2.1E-50  300.1   0.0  131    1-136   113-244 (244)
+  4 UniRef100_A0A2S2NC66 Uncharact  99.6 3.5E-19 9.9E-25  149.5   0.0   63   73-136   135-197 (200)
+  5 UniRef100_UPI00100FD2C0 unchar  98.6 3.2E-10 6.3E-16   98.6   0.0   55   73-133   179-233 (233)
+  6 UniRef100_A0A6G0ZLD5 Uncharact  98.0 1.3E-07 2.5E-13   86.3   0.0   56   74-135   225-280 (322)
+  7 UniRef100_UPI000B93121B cell w  97.3 8.4E-06 1.7E-11   73.4   0.0   42   95-136   206-248 (248)
+  8 UniRef100_J9LMZ6 Uncharacteriz  97.2 1.6E-05 3.2E-11   70.7   0.0   42   95-136   170-214 (214)
+  9 UniRef100_A0A2S2PL09 Uncharact  97.2 1.4E-05 3.3E-11   68.0   0.0   30  103-136   113-142 (142)
+ 10 UniRef100_A0A2S2NGQ1 Uncharact  96.6 0.00025 5.4E-10   62.2   0.0   65   70-135    95-166 (166)
+ 11 UniRef100_A0A0V0GDV8 Putative   96.3 0.00069 1.5E-09   57.2   0.0   33   96-133    86-118 (119)
+ 12 UniRef100_A0A0K8T9K1 Uncharact  94.1   0.041 1.3E-07   51.3   0.0   28  103-135   209-236 (237)
+ 13 UniRef100_A0A6G0YY08 Uncharact  93.4    0.13 2.6E-07   47.9   0.0   31  103-136   172-202 (204)
+ 14 UniRef100_A0A194QL00 Uncharact  92.5    0.18 4.9E-07   40.7   0.0   21  114-134    53-73  (73)
+ 15 UniRef100_A0A084W7G2 AGAP00892  92.4    0.17 5.2E-07   42.0   0.0   30  100-134    60-89  (93)
+ 16 UniRef100_A0A154P4B3 Uncharact  92.4    0.22 5.2E-07   45.9   0.0   34   96-133   139-172 (173)
+ 17 UniRef100_A0A0L7R743 Uncharact  91.9    0.27 7.1E-07   43.8   0.0   31  100-134    99-129 (136)
+ 18 UniRef100_A0A212ERU6 Uncharact  91.2    0.37   1E-06   44.8   0.0   29  101-134   147-175 (186)
+ 19 UniRef100_A0A8H3CTZ4 Hypotheti  90.6    0.67 1.3E-06   41.5   0.0   31  102-135    76-106 (133)
+ 20 UniRef100_Q1IBN4 Uncharacteriz  90.3    0.75 1.5E-06   35.5   0.0   28  104-134    20-47  (49)
+ 21 UniRef100_A0A6P3Y8U9 uncharact  90.2    0.76 1.5E-06   38.8   0.0   72   26-131    14-85  (87)
+ 22 UniRef100_A0A2K8JNU9 Venom pep  90.2    0.78 1.5E-06   39.0   0.0   27  102-133    63-89  (90)
+ 23 UniRef100_A0A6P7GC15 uncharact  90.0    0.79 1.6E-06   42.0   0.0   58   76-135    91-152 (152)
+ 24 UniRef100_A0A212F1A0 Uncharact  89.9    0.86 1.7E-06   41.6   0.0   33   98-133   119-151 (151)
+ 25 UniRef100_A0A382GC48 Uncharact  89.8    0.88 1.7E-06   34.1   0.0   18  116-133    23-40  (41)
+ 26 UniRef100_A0A8J2WDI0 (African   89.8    0.82 1.8E-06   39.0   0.0   31   98-133    61-91  (91)
+ 27 UniRef100_A0A1B6EZC5 Uncharact  89.4    0.95   2E-06   39.6   0.0   30  100-133    77-106 (106)
+ 28 UniRef100_UPI0018D0A1D0 unchar  89.4       1   2E-06   38.4   0.0   21  114-134    70-90  (91)
+ 29 UniRef100_A0A6P7GBU9 uncharact  89.1     1.2 2.3E-06   38.6   0.0   22  114-135    77-98  (98)
+ 30 UniRef100_A0A4C1VXC1 Uncharact  88.8     1.3 2.5E-06   42.6   0.0   30   99-133   189-218 (218)
+ 31 UniRef100_A0A5E4ME39 Uncharact  88.7     1.3 2.5E-06   42.1   0.0   49   75-135   148-196 (198)
+ 32 UniRef100_P30251 Paralytic pep  88.5     1.3 2.7E-06   29.9   0.0   19  115-133     5-23  (23)
+ 33 UniRef100_A0A2P8Z2S6 Uncharact  88.3     1.5 2.9E-06   37.2   0.0   42   88-133    43-84  (84)
+ 34 UniRef100_A0A482WWM4 Uncharact  88.2     1.5   3E-06   38.9   0.0   29  103-135    36-64  (117)
+ 35 UniRef100_A0A6M2DXM8 Putative   88.1     1.4   3E-06   39.8   0.0   29  100-133   104-132 (132)
+ 36 UniRef100_A0A8J2WF97 (African   88.1     1.5 3.1E-06   36.3   0.0   34   97-133    40-73  (73)
+ 37 UniRef100_A0A194Q630 Uncharact  88.0     1.6 3.1E-06   35.3   0.0   18  114-132    42-59  (62)
+ 38 UniRef100_A0A2S2P7Z4 Uncharact  87.8     1.5 3.3E-06   42.7   0.0   31  101-135   166-196 (231)
+ 39 UniRef100_A0A146M325 Uncharact  87.7     1.7 3.4E-06   38.2   0.0   33   96-132    73-105 (108)
+ 40 UniRef100_A0A6G9XTR8 TIL domai  87.7     1.7 3.4E-06   35.1   0.0   19  114-132    43-61  (62)
+ 41 UniRef100_UPI001CA90DCC unchar  87.5     1.8 3.6E-06   39.5   0.0   29  100-133   114-142 (143)
+ 42 UniRef100_A0A5B7E0Z2 Uncharact  87.4     1.6 3.7E-06   42.2   0.0   27  104-134   131-157 (220)
+ 43 UniRef100_UPI001D06BB9A ATP-de  86.4     2.4 4.7E-06   41.4   0.0   30   99-133   207-236 (236)
+ 44 UniRef100_A0A2H1W3L3 SFRICE_01  86.4     2.4 4.7E-06   35.3   0.0   20  115-134    48-67  (72)
+ 45 UniRef100_A0A1B0GMT8 Uncharact  86.3     2.4 4.8E-06   34.8   0.0   20  114-133    47-66  (66)
+ 46 UniRef100_A0A194QFP3 Uncharact  86.0     1.6 5.2E-06   41.7   0.0   17  115-131   174-190 (231)
+ 47 UniRef100_A0A0P5XQF2 Uncharact  85.7     2.8 5.5E-06   36.6   0.0   20  114-133    79-98  (99)
+ 48 UniRef100_A0A195B0U7 Uncharact  85.2       3 6.1E-06   35.1   0.0   20  113-132    50-69  (75)
+ 49 UniRef100_A0A1B0GMT9 Uncharact  84.9     3.1 6.5E-06   34.9   0.0   21  113-133    53-73  (73)
+ 50 UniRef100_E0VBL1 Uncharacteriz  84.8     3.3 6.6E-06   35.3   0.0   26  104-134    33-58  (83)
+ 51 UniRef100_UPI0016613AB2 hypoth  84.7     3.4 6.7E-06   40.1   0.0   36   97-136    17-52  (221)
+ 52 UniRef100_A0A212F9Y2 Uncharact  84.6     3.4 6.8E-06   33.3   0.0   20  114-133    15-34  (58)
+ 53 UniRef100_A0A2P8Z2X5 Uncharact  84.5     3.5 6.9E-06   36.7   0.0   41   90-135    61-101 (110)
+ 54 UniRef100_A0A0Q0SEZ2 Uncharact  84.4     3.3 7.1E-06   43.3   0.0   26  106-132   227-252 (407)
+ 55 UniRef100_A0A0L0CA05 TIL domai  84.2     2.5 7.3E-06   36.8   0.0   21  113-133    65-85  (107)
+ 56 UniRef100_UPI000C252162 probab  83.8       4 7.9E-06   40.7   0.0   21  114-134   253-273 (273)
+ 57 UniRef100_A0A835L4S6 Uncharact  83.8       4 7.9E-06   32.9   0.0   19  115-133    37-55  (57)
+ 58 UniRef100_A0A2E2NUJ0 Peptidogl  83.6     4.1 8.1E-06   34.1   0.0   19  114-132    29-47  (72)
+ 59 UniRef100_A0A0L7KSP0 Uncharact  83.4     3.6 8.5E-06   44.5   0.0   20  114-133   527-546 (547)
+ 60 UniRef100_A0A0A9VZU9 Uncharact  83.3     4.1 8.6E-06   37.6   0.0   31  102-135    21-51  (140)
+ 61 UniRef100_A0A3E0V6Z5 DUF3761 d  83.2     4.4 8.7E-06   36.4   0.0   28  105-132    43-70  (115)
+ 62 UniRef100_A0A6P7GMC2 uncharact  83.2     4.4 8.7E-06   37.1   0.0   21  113-133   113-133 (133)
+ 63 UniRef100_A0A2W1BBE1 Uncharact  82.1     5.3 1.1E-05   33.1   0.0   33  103-135    35-67  (67)
+ 64 UniRef100_UPI00159629AB hypoth  81.7     5.6 1.1E-05   36.9   0.0   70   63-134    56-125 (144)
+ 65 UniRef100_A0A194PE44 Uncharact  81.6     5.7 1.1E-05   35.3   0.0   30  100-134    76-105 (105)
+ 66 UniRef100_A0A182NVW8 Uncharact  81.6     5.1 1.1E-05   32.5   0.0   19  116-134    31-49  (58)
+ 67 UniRef100_A0A177ENB4 Uncharact  81.2       6 1.2E-05   35.5   0.0   17  116-132    94-110 (113)
+ 68 UniRef100_A7RFH4 Predicted pro  80.5     6.7 1.3E-05   32.6   0.0   18  115-132    34-51  (66)
+ 69 UniRef100_A0A1D2N697 Uncharact  80.4     6.7 1.3E-05   40.7   0.0   61   73-134   217-286 (374)
+ 70 UniRef100_A0A2P8Z2Y2 Uncharact  79.9     7.2 1.4E-05   34.5   0.0   37   95-134    57-99  (100)
+ 71 UniRef100_A0A6V7LTG7 Uncharact  79.6     7.5 1.5E-05   29.4   0.0   18  115-132     2-19  (38)
+ 72 UniRef100_R4WDZ5 Uncharacteriz  79.6     7.5 1.5E-05   34.8   0.0   19  116-134    86-104 (109)
+ 73 UniRef100_A0A7X8UDH0 Uncharact  79.4     7.8 1.5E-05   31.3   0.0   19  114-132    25-43  (55)
+ 74 UniRef100_UPI001E1CF39D unchar  78.7     8.5 1.7E-05   36.7   0.0   20  115-134   119-138 (170)
+ 75 UniRef100_N6TPZ9 Uncharacteriz  78.4     8.8 1.7E-05   37.4   0.0   34   96-133   170-203 (203)
+ 76 UniRef100_A0A7R9RI94 Hypotheti  78.4     8.8 1.7E-05   38.0   0.0   18  115-132   213-230 (233)
+ 77 UniRef100_A0A1Q9VFD8 Uncharact  78.3     8.9 1.8E-05   31.6   0.0   31   99-132    28-58  (61)
+ 78 UniRef100_N8UIP5 Uncharacteriz  78.1     8.3 1.8E-05   41.6   0.0   19  114-132   119-137 (495)
+ 79 UniRef100_UPI000AA49EEB hypoth  77.9     8.8 1.8E-05   31.4   0.0   27  103-132    25-52  (58)
+ 80 UniRef100_E9J086 Soinpin-3 (Fr  77.7     8.4 1.9E-05   33.9   0.0   34   98-131    57-90  (92)
+ 81 UniRef100_A0A2I0D3Y4 Peptidase  77.2      10   2E-05   37.7   0.0   18  114-131     5-22  (233)
+ 82 UniRef100_A0A6J2KR84 venom ser  77.2     9.2   2E-05   34.8   0.0   30  103-132    39-68  (115)
+ 83 UniRef100_A0A2D9HC42 Uncharact  77.1     9.1   2E-05   42.6   0.0   24  105-132   285-308 (676)
+ 84 UniRef100_A0A3S2TFG2 Uncharact  76.5      11 2.2E-05   36.1   0.0   22  113-134   152-173 (173)
+ 85 UniRef100_A0A8J2QHP1 (African   75.9      11 2.3E-05   34.5   0.0   20  114-133    98-117 (118)
+ 86 UniRef100_A0A0M3JIF4 EGF-like   75.7      12 2.4E-05   30.6   0.0   21  115-135    36-56  (57)
+ 87 UniRef100_A0A2T4D471 Uncharact  75.3      12 2.5E-05   35.9   0.0   20  113-132    33-52  (177)
+ 88 UniRef100_UPI001CCEF735 M23 fa  75.1      13 2.5E-05   39.1   0.0   18  114-131   194-211 (385)
+ 89 UniRef100_A0A6G1INP3 Uncharact  74.6      13 2.6E-05   30.1   0.0   18  114-131    23-40  (54)
+ 90 UniRef100_A0A2E3RRJ5 Uncharact  73.7      15 2.9E-05   36.4   0.0   20  113-132    37-56  (216)
+ 91 UniRef100_UPI0004CCF713 unchar  73.5      14   3E-05   33.9   0.0   31  101-131    83-114 (116)
+ 92 UniRef100_A0A7I0YXU1 uncharact  72.6      15 3.2E-05   38.0   0.0   30  100-134   279-308 (309)
+ 93 UniRef100_A0A177ENB4 Uncharact  72.2      17 3.3E-05   33.1   0.0   23  107-130    23-45  (113)
+ 94 UniRef100_E2CAF3 Uncharacteriz  71.9      16 3.4E-05   35.4   0.0   31   98-133   119-149 (174)
+ 95 UniRef100_A0A2E3UTT5 Uncharact  71.9      16 3.4E-05   36.6   0.0   22  114-135   204-225 (227)
+ 96 UniRef100_A0A0K0CTH1 EGF-like   71.5      18 3.6E-05   38.8   0.0   19  114-132   265-283 (449)
+ 97 UniRef100_A0A6V7H1D4 Hypotheti  71.0      18 3.7E-05   32.8   0.0   21  113-133    66-86  (108)
+ 98 UniRef100_S4P2Q1 Uncharacteriz  70.8      19 3.8E-05   32.2   0.0   17  116-132    34-50  (99)
+ 99 UniRef100_A0A835G5S9 TIL domai  70.8      19 3.8E-05   33.2   0.0   19  114-132    91-109 (121)
+100 UniRef100_A0A6J8A0A8 Uncharact  70.5      16 3.9E-05   39.8   0.0   21  115-135   124-144 (487)
+101 UniRef100_A0A6J2KJR7 inducible  70.5      20 3.9E-05   36.2   0.0   34   99-132   157-190 (249)
+102 UniRef100_A0A553NBT0 Uncharact  69.9      21 4.1E-05   35.3   0.0   23  113-135   157-179 (203)
+103 UniRef100_A0A821X8C8 Hypotheti  69.9      21 4.1E-05   32.8   0.0   27  101-133    91-117 (117)
+104 UniRef100_A0A1I6NXS2 Uncharact  69.3      22 4.3E-05   37.8   0.0   18  114-131   155-172 (397)
+105 UniRef100_A0A2E3RRI4 Uncharact  69.2      22 4.4E-05   36.6   0.0   18  114-131    33-50  (296)
+106 UniRef100_I3EI06 Uncharacteriz  69.2      22 4.4E-05   32.5   0.0   15  116-130    65-79  (113)
+107 UniRef100_A0A084W7G4 AGAP00892  68.7      18 4.5E-05   33.0   0.0   20  113-132    95-114 (115)
+108 UniRef100_A0A7M7HPJ0 Uncharact  68.5      21 4.6E-05   42.2   0.0   23  113-135   581-603 (1143)
+109 UniRef100_A0A7R9RZJ1 Hypotheti  68.3      24 4.7E-05   31.7   0.0   32  101-132    62-93  (98)
+110 UniRef100_A0A821X8C8 Hypotheti  68.0      24 4.8E-05   32.5   0.0   31   96-131    27-57  (117)
+111 UniRef100_A0A5B7FMT4 Uncharact  67.4      25   5E-05   36.0   0.0   20  115-134   119-138 (278)
+112 UniRef100_A0A195B1D8 Uncharact  67.3      26 5.1E-05   30.6   0.0   38   95-132    42-79  (80)
+113 UniRef100_UPI001F4FEE4F unchar  66.4      28 5.4E-05   33.1   0.0   38   93-134    98-136 (143)
+114 UniRef100_A0A0C2C885 Low-densi  66.3      28 5.5E-05   36.9   0.0   18  116-133   334-351 (369)
+115 UniRef100_A0A6V7HTA5 Peptidase  66.3      28 5.5E-05   29.4   0.0   27  105-131    33-59  (65)
+116 UniRef100_A0A1I8BC35 Uncharact  66.1      26 5.6E-05   35.3   0.0   16  116-131    71-86  (225)
+117 UniRef100_A0A8J2KYQ9 Hypotheti  64.6      32 6.3E-05   35.2   0.0   20  116-135    61-80  (257)
+118 UniRef100_A0A154NXQ3 Uncharact  64.6      32 6.3E-05   30.7   0.0   33  100-132    58-90  (91)
+119 UniRef100_A0A2A4IZ86 Uncharact  64.0      28 6.5E-05   33.5   0.0   18  115-132   124-141 (154)
+120 UniRef100_A0A0A1XQX5 von Wille  63.9      33 6.6E-05   34.2   0.0   27  104-134   166-192 (203)
+121 UniRef100_A0A182SBI7 Uncharact  63.8      34 6.6E-05   40.7   0.0   22  114-135   797-818 (1335)
+122 UniRef100_A0A836C3C0 Uncharact  62.9      36 7.1E-05   35.9   0.0   40   95-134   289-328 (335)
+123 UniRef100_A0A212F1B1 uncharact  62.7      36 7.2E-05   31.0   0.0   20  114-133    85-104 (104)
+124 UniRef100_A0A8J2PN19 Hypotheti  62.6      37 7.3E-05   33.2   0.0   20  113-132   147-167 (173)
+125 UniRef100_A0A7Z9P2R0 Uncharact  62.1      38 7.5E-05   32.4   0.0   19  114-132    31-49  (147)
+126 UniRef100_A0A504Y5J7 Neural-ca  61.9      38 7.6E-05   34.9   0.0   22  114-135   149-170 (273)
+127 UniRef100_A0A8B7PG11 uncharact  61.9      39 7.6E-05   34.9   0.0   24  111-134   111-134 (275)
+128 UniRef100_UPI001A430FAE hypoth  61.7      39 7.7E-05   36.5   0.0   37   95-132   227-263 (426)
+129 UniRef100_A0A6C0INS7 Uncharact  61.0      41 8.1E-05   34.7   0.0   18  115-132   181-198 (269)
+130 UniRef100_A0A7E4W3N8 Uncharact  60.9      41 8.2E-05   33.3   0.0   17  116-132     8-24  (191)
+131 UniRef100_H0GCX9 YCR099C-like   60.1      44 8.6E-05   30.5   0.0   21  114-134    15-35  (101)
+132 UniRef100_A0A506PS81 M23 famil  59.8      44 8.8E-05   36.5   0.0   23  113-135   240-262 (467)
+133 UniRef100_A0A8B7NMG0 uncharact  59.6      45 8.9E-05   31.9   0.0   44   90-133    93-141 (145)
+134 UniRef100_A0A1B0CHK6 Uncharact  59.3      46 9.1E-05   30.2   0.0   20  114-133    78-97  (97)
+135 UniRef100_A0A1J1HWF2 CLUMA_CG0  59.3      46 9.1E-05   33.1   0.0   17  115-131   118-134 (196)
+136 UniRef100_A0A084W7G5 AGAP00892  59.0      47 9.3E-05   29.4   0.0   29  103-131    51-79  (82)
+137 UniRef100_T1FJL3 VWFA domain-c  59.0      47 9.3E-05   34.9   0.0   16  115-130   234-249 (315)
+138 UniRef100_A0A242L0Q4 Uncharact  58.6      48 9.5E-05   36.2   0.0   37    1-37    145-181 (457)
+139 UniRef100_A0A6P7GZE5 uncharact  58.6      48 9.5E-05   35.1   0.0   28  102-131   300-327 (331)
+140 UniRef100_UPI00191741E0 M23 fa  58.6      48 9.5E-05   36.2   0.0   22  113-134   255-276 (459)
+141 UniRef100_UPI000B381645 unchar  58.5      49 9.6E-05   32.6   0.0   34  102-135   146-179 (179)
+142 UniRef100_E1ZNX5 Uncharacteriz  58.0      50 9.9E-05   32.7   0.0   19  114-132    92-110 (186)
+143 UniRef100_A0A6V7M3E3 Uncharact  57.7      51  0.0001   26.8   0.0   26  107-132     5-30  (49)
+144 UniRef100_UPI000C1FDB8A unchar  57.5      52  0.0001   30.9   0.0   21  113-133   103-123 (123)
+145 UniRef100_A0A5J4N5H1 Uncharact  57.3      53  0.0001   31.3   0.0   19  114-132    94-112 (135)
+146 UniRef100_UPI0018A6FFE7 unchar  57.2      53  0.0001   32.6   0.0   54   81-134    89-160 (186)
+147 UniRef100_A0A034VZW0 Uncharact  57.1      42  0.0001   32.9   0.0   35   97-131   128-162 (171)
+148 UniRef100_A0A7R8H8U8 (salmon l  57.1      53 0.00011   37.3   0.0   29  106-134   106-134 (687)
+149 UniRef100_A0A2A6BFM0 Uncharact  57.0      53 0.00011   30.9   0.0   19  116-134    76-94  (126)
+150 UniRef100_A0A7J6EBL0 RNase H t  56.5      55 0.00011   34.2   0.0   52    8-59     16-67  (292)
+151 UniRef100_A0A4Y2VQ31 TIL domai  56.2      56 0.00011   30.1   0.0   20  113-132    38-57  (107)
+152 UniRef100_UPI001AE68DDF cappin  56.1      57 0.00011   34.3   0.0   31  105-135   246-276 (302)
+153 UniRef100_UPI001C99C3B9 hypoth  55.9      58 0.00011   37.4   0.0   25  108-132   171-196 (751)
+154 UniRef100_B3MZE8 Uncharacteriz  55.4      59 0.00012   32.8   0.0   36   96-131   175-210 (213)
+155 UniRef100_A0A0L7K3L9 Serine pr  54.8      61 0.00012   34.1   0.0   28  106-133   218-245 (305)
+156 UniRef100_A0A1Q3FLV8 Putative   54.2      62 0.00013   31.5   0.0   31  104-134   122-152 (154)
+157 UniRef100_A0A016VC95 EGF-like   53.8      62 0.00013   32.0   0.0   19  115-133    34-52  (171)
+158 UniRef100_UPI00191FCBBF hypoth  53.2      68 0.00013   33.4   0.0   19  114-132    90-108 (271)
+159 UniRef100_L7MEF7 Putative simi  52.1      73 0.00014   28.4   0.0   19  115-133    50-68  (83)
+160 UniRef100_A0A7R9BYE9 Hypotheti  51.5      76 0.00015   37.0   0.0   23  114-136   597-619 (844)
+161 UniRef100_A0A7R9BYE9 Hypotheti  51.5      76 0.00015   37.0   0.0   23  114-136   748-770 (844)
+162 UniRef100_A0A1E1W185 TIL domai  51.3      64 0.00015   31.6   0.0   20  113-132    59-78  (158)
+163 UniRef100_A0A1E1W185 TIL domai  51.1      64 0.00015   31.5   0.0   20  113-132   123-142 (158)
+164 UniRef100_UPI00071CBDA7 unchar  50.8      79 0.00016   34.3   0.0   41   95-135    99-139 (383)
+165 UniRef100_A0A7Z9MGI2 Uncharact  49.9      83 0.00016   34.8   0.0   22  113-134   131-152 (465)
+166 UniRef100_A0A7Y5VEY5 Uncharact  49.8      84 0.00017   35.5   0.0   16  116-131   380-395 (574)
+167 UniRef100_UPI001747084D adhesi  49.4      86 0.00017   33.1   0.0   18  116-133    26-43  (290)
+168 UniRef100_A0A0L8I6A9 Uncharact  49.3      86 0.00017   34.6   0.0   41   95-135   300-340 (449)
+169 UniRef100_A0A8D8J449 (northern  49.2      87 0.00017   30.4   0.0   19  116-134     2-20  (145)
+170 UniRef100_UPI000F666D55 unchar  49.0      82 0.00017   34.2   0.0   20  113-132    68-87  (357)
+171 UniRef100_UPI001EB03DBB low-de  48.4      91 0.00018   31.6   0.0   20  116-135   179-198 (202)
+172 UniRef100_A0A7L4ZH26 Uncharact  48.3      92 0.00018   28.8   0.0   54   78-131    31-85  (101)
+173 UniRef100_A0A814RMZ2 Hypotheti  48.2      92 0.00018   34.6   0.0   18  114-131   262-279 (472)
+174 UniRef100_A0A1Y9GKD5 Uncharact  48.1      93 0.00018   42.1   0.0   18  116-133  6876-6893(8205)
+175 UniRef100_A0A0C9QV93 LRP2 prot  47.8      87 0.00019   32.4   0.0   31  102-132   101-131 (231)
+176 UniRef100_UPI0007ACA748 cartil  46.9   1E+02  0.0002   29.1   0.0   19  113-131    11-29  (116)
+177 UniRef100_A0A2G8K5Y1 Putative   46.7   1E+02  0.0002   33.5   0.0   20  115-134   301-320 (368)
+178 UniRef100_T1FJL3 VWFA domain-c  46.5   1E+02  0.0002   32.9   0.0   17  115-131   168-184 (315)
+179 UniRef100_UPI0015DE9827 zonadh  46.2   1E+02 0.00021   34.3   0.0   21  113-133   334-354 (473)
+180 UniRef100_A0A5N6XTX5 Uncharact  46.2   1E+02 0.00021   32.1   0.0   18  114-131    39-56  (254)
+181 UniRef100_E1F3D6 Uncharacteriz  46.1   1E+02 0.00021   33.2   0.0   19  114-132   279-297 (342)
+182 UniRef100_A0A6J1RSN1 flocculat  45.5   1E+02 0.00021   35.4   0.0   32  102-133    24-55  (598)
+183 UniRef100_A0A7E4W3N8 Uncharact  45.2 1.1E+02 0.00022   30.9   0.0   17  116-132    78-94  (191)
+184 UniRef100_A0A0K6GD42 Uncharact  44.4      98 0.00023   29.3   0.0   36  100-135    50-85  (117)
+185 UniRef100_A0A0T6AZT5 Uncharact  44.3 1.1E+02 0.00023   33.6   0.0   20  114-133   195-214 (370)
+186 UniRef100_A0A182J072 Uncharact  43.8 1.2E+02 0.00024   40.9   0.0   21  115-135  5420-5440(6751)
+187 UniRef100_A0A034WAQ1 von Wille  43.5 1.2E+02 0.00024   31.4   0.0   19  116-134    54-72  (237)
+188 UniRef100_A0A8A4T569 Uncharact  42.5 1.3E+02 0.00026   33.9   0.0   19  114-132   117-135 (501)
+189 UniRef100_A0A182K622 Chitin-bi  41.7 1.2E+02 0.00027   31.4   0.0   31  101-131   137-167 (223)
+190 UniRef100_A0A7X5F8M1 DUF5011 d  39.7 1.5E+02  0.0003   32.1   0.0   22  113-134   316-337 (341)
+191 UniRef100_A0A7S2BZL7 Pyruvate   39.5 1.5E+02 0.00031   29.2   0.0   23  113-135    11-33  (153)
+192 UniRef100_A0A137NPP6 Uncharact  39.2 1.6E+02 0.00031   33.1   0.0   17  116-132    23-39  (460)
+193 UniRef100_A0A8J4YTZ0 Uncharact  39.2 1.6E+02 0.00031   31.2   0.0   22  114-135    71-92  (265)
+194 UniRef100_A0A7R9BYE9 Hypotheti  38.9 1.6E+02 0.00032   34.9   0.0   31  105-135   801-831 (844)
+195 UniRef100_A0A2D9FPR3 Peptidase  38.7 1.6E+02 0.00032   32.9   0.0   19  113-131   253-271 (447)
+196 UniRef100_A0A3A4JVJ9 Uncharact  38.5 1.7E+02 0.00033   31.0   0.0   22  114-135    32-53  (260)
+197 UniRef100_A0A401RS44 Uncharact  38.4 1.7E+02 0.00033   30.6   0.0   20  113-132    90-109 (231)
+198 UniRef100_A0A1Y1YQZ6 Uncharact  37.8 1.7E+02 0.00034   30.1   0.0   22  113-134    82-103 (208)
+199 UniRef100_A0A318YYP3 Uncharact  37.5 1.6E+02 0.00035   30.3   0.0   24  113-136    99-122 (204)
+200 UniRef100_A0A7J4V4Q1 Uncharact  37.1 1.8E+02 0.00035   32.5   0.0   20  116-135   278-297 (434)
+201 UniRef100_A0A7Z9JHC2 Uncharact  36.7 1.8E+02 0.00036   32.4   0.0   19  114-132    81-99  (421)
+202 UniRef100_A0A0K8UET9 von Wille  36.6 1.8E+02 0.00037   32.3   0.0   19  116-134   132-150 (420)
+203 UniRef100_A0A8B7PH25 low-densi  35.7 1.8E+02 0.00039   28.9   0.0   21  113-133    24-44  (148)
+204 UniRef100_A0A137NYN7 Uncharact  34.9   2E+02 0.00041   30.9   0.0   19  114-132    28-47  (300)
+205 UniRef100_UPI0015DE9827 zonadh  34.4 2.1E+02 0.00042   32.4   0.0   21  113-133   251-271 (473)
+206 UniRef100_A0A8D8J449 (northern  34.2 2.1E+02 0.00042   28.2   0.0   16  114-129   130-145 (145)
+207 UniRef100_A0A8B6F5N4 Uncharact  33.3 2.3E+02 0.00045   26.8   0.0   35   99-134    20-54  (105)
+208 UniRef100_A0A0R1E8U0 Uncharact  33.2 2.2E+02 0.00045   28.9   0.0   38   95-132   129-166 (176)
+209 UniRef100_A0A066W8H0 Uncharact  32.1 2.4E+02 0.00048   26.6   0.0   27  106-132    39-65  (103)
+210 UniRef100_A0A482VFP4 C8, VWD,   32.0 2.5E+02 0.00049   31.7   0.0   37   96-132   219-269 (431)
+211 UniRef100_A0A382NRW6 Uncharact  31.9 2.5E+02 0.00049   26.3   0.0   22  107-128    75-96  (97)
+212 UniRef100_A0A0L7K3L9 Serine pr  31.7 2.5E+02 0.00049   30.5   0.0   37   96-132    90-126 (305)
+213 UniRef100_D0LH81 Uncharacteriz  31.7 2.5E+02 0.00049   31.6   0.0   20  113-132   100-119 (432)
+214 UniRef100_A0A3M7QQ84 Fibrillin  31.4 2.5E+02  0.0005   31.8   0.0   20  113-132   270-289 (463)
+215 UniRef100_B4PXK7 Uncharacteriz  31.3 2.6E+02 0.00051   29.3   0.0   38   95-132   171-208 (218)
+216 UniRef100_A0A1F7VED1 Kazal-lik  31.1 2.6E+02 0.00051   35.8   0.0   22  114-135   930-951 (1965)
+217 UniRef100_A0A2P8Z2T0 Uncharact  30.5 2.7E+02 0.00053   30.8   0.0   31  102-133   330-360 (360)
+218 UniRef100_A0A1Y1Z8E2 Uncharact  30.1 2.5E+02 0.00055   31.2   0.0   17  116-132    85-101 (346)
+219 UniRef100_A0A6P7SVK0 von Wille  29.9 2.8E+02 0.00056   33.3   0.0   41   95-135   664-704 (829)
+220 UniRef100_A0A084VMP0 Uncharact  29.8 2.4E+02 0.00056   36.3   0.0   38   95-132   663-700 (1565)
+221 UniRef100_A0A4Y2J2J4 Uncharact  29.4 2.9E+02 0.00058   32.4   0.0   31  103-133   108-138 (626)
+222 UniRef100_UPI0018DED3D2 hypoth  27.7 3.2E+02 0.00064   28.2   0.0   20  113-132    36-55  (193)
+223 UniRef100_UPI00145CF008 hypoth  27.5 3.3E+02 0.00065   31.4   0.0   26  108-133   110-135 (511)
+224 UniRef100_A0A6B3R1G5 Uncharact  27.1 3.4E+02 0.00067   30.8   0.0   31  104-134   240-270 (429)
+225 UniRef100_UPI0007E2FEBB hypoth  27.0 3.4E+02 0.00067   31.0   0.0   19  113-131    83-101 (455)
+226 UniRef100_A0A137NYN7 Uncharact  26.8 3.4E+02 0.00068   29.6   0.0   18  115-132   137-155 (300)
+227 UniRef100_A0A2A4IZ86 Uncharact  25.9 3.1E+02 0.00073   27.6   0.0   18  115-132    62-79  (154)
+228 UniRef100_A0A4C1WUG8 Zonadhesi  25.5 3.8E+02 0.00075   31.0   0.0   29  104-132   257-285 (511)
+229 UniRef100_A0A545UQE3 Uncharact  25.3 3.8E+02 0.00076   26.1   0.0   21  113-133    47-67  (119)
+230 UniRef100_A0A8J5DHI5 SCO-spond  25.3 3.8E+02 0.00076   35.3   0.0   19  114-132   713-731 (2553)
+231 UniRef100_UPI000DBED283 hepati  25.1 3.9E+02 0.00077   28.0   0.0   35   96-131   170-204 (206)
+232 UniRef100_UPI0018956B11 unchar  24.7   4E+02 0.00079   30.6   0.0   23  113-135   427-449 (460)
+233 UniRef100_A0A4C1WRU3 Inducible  24.0 4.2E+02 0.00083   31.4   0.0   27  106-132   595-621 (626)
+234 UniRef100_A0A0F9DS41 Uncharact  24.0 4.2E+02 0.00083   30.5   0.0   28  108-136    83-110 (475)
+235 UniRef100_A0A1J1HWF2 CLUMA_CG0  24.0 4.2E+02 0.00083   27.7   0.0   17  115-131   175-191 (196)
+236 UniRef100_A0A2G8JU69 Uncharact  23.8 4.3E+02 0.00084   27.4   0.0   40   95-134    76-115 (182)
+237 UniRef100_A0A2R7VTY0 Chitin-bi  23.3 4.2E+02 0.00088   26.9   0.0   28  104-131   107-134 (154)
+238 UniRef100_A0A2E7A184 Uncharact  23.1 4.5E+02 0.00089   28.2   0.0   22  113-134    73-94  (244)
+239 UniRef100_A0A137NPP6 Uncharact  22.9 4.6E+02  0.0009   30.2   0.0   21  113-133    98-118 (460)
+240 UniRef100_A0A1B0D665 Uncharact  22.9   4E+02 0.00091   32.1   0.0   29  104-132   231-259 (666)
+241 UniRef100_A0A0K8TXM5 Chitin-bi  22.8 4.4E+02 0.00091   29.6   0.0   34   99-132   106-139 (351)
+242 UniRef100_A0A7V3XEI9 Uncharact  22.2 4.8E+02 0.00095   30.4   0.0   36   76-111   208-247 (507)
+243 UniRef100_A0A7W0RXD4 Uncharact  21.3 5.1E+02   0.001   27.6   0.0   14  117-130   155-168 (222)
+244 UniRef100_A0A6J2KJR7 inducible  21.2 5.2E+02   0.001   27.9   0.0   27  106-132    39-65  (249)
+245 UniRef100_A0A318YYP3 Uncharact  20.8   5E+02  0.0011   27.5   0.0   19  113-131   122-140 (204)
+246 UniRef100_A0A7Z9JHC2 Uncharact  20.2 5.6E+02  0.0011   29.4   0.0   20  113-132    20-39  (421)
+
+No 1
+>UniRef100_A0A2S2NN57 Uncharacterized protein n=1 Tax=Schizaphis graminum TaxID=13262 RepID=A0A2S2NN57_SCHGA
+Probab=100.00  E-value=2.4e-61  Score=379.03  Aligned_cols=132  Identities=67%  Similarity=0.969  Sum_probs=131.0  Template_Neff=1.735
+
+Q 7398317           1 RNVHQTTTNKSPNYKHQNRINGTTKINITTSVIPVGRNFKQFPACDTTKKCRRSNSTTTNANKHRTSNTTQKYTKLNGTD   80 (136)
+Q Consensus         1 r~~h~t~tn~~~~~khq~rin~t~k~n~t~~~~pvgrn~k~f~~~~~tk~~~~~~s~~~~~~~~~~~~t~qkyt~~~sVE   80 (136)
+                      |||||||||+|+|||||+|||||+||||||+++|||||+||||+|++||+|+||+|++++++|||+|||+||||++++++
+T Consensus        20 r~vhqtstnks~n~khq~ringt~k~nit~~~~pvgrnskqfp~~tttk~~~~s~stat~t~kfh~snttqkytk~n~~~   99 (151)
+T UniRef100_A0A2   20 RHVHQTSTNKSSNCKHQNRINGTIKCNITTSITPVGRNSKQFPVSTTTKKYRRSGSTATKTEKFHTSNTTQKYTKLNSSD   99 (151)
+Confidence            89999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7398317          81 TVTKKVVIADHQTTTESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFPDD  136 (136)
+Q Consensus        81 TVTEnqvtstnqTTtES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D~  136 (136)
+                      +|||+.|+.+.|+++||+++.+||+|.|+++    .|.+|.++|.||+|+..|+||
+T Consensus       100 t~t~r~viv~~~tttes~~i~trffi~~pik----~c~dgltr~vngdcvfkf~dd  151 (151)
+T UniRef100_A0A2  100 TITERAVIVDDQTTTESSLIQTRFFITPPIK----ECKDGLTRDVNGDCVFKFSDD  151 (151)
+Confidence            9999999999999999999999999999999    799999999999999999997
+
+
+No 2
+>UniRef100_UPI000B936FC6 uncharacterized protein LOC111031724 n=1 Tax=Myzus persicae TaxID=13164 RepID=UPI000B936FC6
+Probab=100.00  E-value=1.7e-48  Score=318.76  Aligned_cols=136  Identities=99%  Similarity=1.380  Sum_probs=134.7  Template_Neff=1.000
+
+Q 7398317           1 RNVHQTTTNKSPNYKHQNRINGTTKINITTSVIPVGRNFKQFPACDTTKKCRRSNSTTTNANKHRTSNTTQKYTKLNGTD   80 (136)
+Q Consensus         1 r~~h~t~tn~~~~~khq~rin~t~k~n~t~~~~pvgrn~k~f~~~~~tk~~~~~~s~~~~~~~~~~~~t~qkyt~~~sVE   80 (136)
+                      |.||||.||+|||+|||+||||++||||.+++.|||||.||||+|.+|||||||+|+.++.+|+++|||+||||++++.+
+T Consensus        84 rnvhqtttnkspnykhqnringttkinistsvipvgrnfkqfpacdttkkcrrsnstttnankhrtsnttqkytklngtd  163 (219)
+T UniRef100_UPI0   84 RNVHQTTTNKSPNYKHQNRINGTTKINISTSVIPVGRNFKQFPACDTTKKCRRSNSTTTNANKHRTSNTTQKYTKLNGTD  163 (219)
+Confidence            78999999999999999999999999999999999999999999999999999999999999999999999999999999
+
+
+Q 7398317          81 TVTKKVVIADHQTTTESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFPDD  136 (136)
+Q Consensus        81 TVTEnqvtstnqTTtES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D~  136 (136)
+                      |||+..|+.+.|+++||++|++||+|+|+.+.+++.|.+|....+||+|+.+|+||
+T Consensus       164 tvtkkvviadhqtttesdllhtrffinppekkkesacmeglalaangecvlkfpdd  219 (219)
+T UniRef100_UPI0  164 TVTKKVVIADHQTTTESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFPDD  219 (219)
+Confidence            99999999999999999999999999999999999999999999999999999996
+
+
+No 3
+>UniRef100_A0A6G0U6F7 Uncharacterized protein n=1 Tax=Aphis glycines TaxID=307491 RepID=A0A6G0U6F7_APHGL
+Probab=100.00  E-value=1.1e-44  Score=300.11  Aligned_cols=131  Identities=60%  Similarity=0.884  Sum_probs=129.4  Template_Neff=1.000
+
+Q 7398317           1 RNVHQTTTNKSPNY-KHQNRINGTTKINITTSVIPVGRNFKQFPACDTTKKCRRSNSTTTNANKHRTSNTTQKYTKLNGT   79 (136)
+Q Consensus         1 r~~h~t~tn~~~~~-khq~rin~t~k~n~t~~~~pvgrn~k~f~~~~~tk~~~~~~s~~~~~~~~~~~~t~qkyt~~~sV   79 (136)
+                      ||.||-|+|+|+|| |||+||||+.|||||+.++|||||+||||++++|||| +|+|.+++++|||+||++.|||++++.
+T Consensus       113 ryahqvstnkssncikhqhringttkcnitttltpvgrnskqfpvstttkky-ksgsnatktekfhksnttrkytklnss  191 (244)
+T UniRef100_A0A6  113 RYAHQVSTNKSSNCIKHQHRINGTTKCNITTTLTPVGRNSKQFPVSTTTKKY-KSGSNATKTEKFHKSNTTRKYTKLNSS  191 (244)
+Confidence            79999999999999 9999999999999999999999999999999999999 999999999999999999999999999
+
+
+Q 7398317          80 DTVTKKVVIADHQTTTESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFPDD  136 (136)
+Q Consensus        80 ETVTEnqvtstnqTTtES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D~  136 (136)
+                      -+.||+.|+...|+++||+|+++||+|..+++    .|.+|+++|.||+|++.|+||
+T Consensus       192 vttteravivneqtttesslvdtrffitapik----ectdgltrdvngdcvfkfpdd  244 (244)
+T UniRef100_A0A6  192 VTTTERAVIVNEQTTTESSLVDTRFFITAPIK----ECTDGLTRDVNGDCVFKFPDD  244 (244)
+Confidence            99999999999999999999999999999999    799999999999999999996
+
+
+No 4
+>UniRef100_A0A2S2NC66 Uncharacterized protein n=1 Tax=Schizaphis graminum TaxID=13262 RepID=A0A2S2NC66_SCHGA
+Probab=99.63  E-value=3.5e-19  Score=149.47  Aligned_cols=63  Identities=41%  Similarity=0.612  Sum_probs=60.8  Template_Neff=3.025
+
+Q 7398317          73 YTKLNGTDTVTKKVVIADHQTTTESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFPDD  136 (136)
+Q Consensus        73 yt~~~sVETVTEnqvtstnqTTtES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D~  136 (136)
+                      -++++|||||||+| ++++|+++||+||++|+||+|+++.++++||+||+.|+||+|+|+|+|+
+T Consensus       135 ~tTi~svETvtenq-tstn~tt~es~~l~~r~iI~p~~~~~~~~Cp~g~t~~~nG~C~pif~~~  197 (200)
+T UniRef100_A0A2  135 ATTITSVETVTENQ-TSTNQTTTESGLLTTRYIIRPKIFTKAPTCPSGYTVNANGGCSPIFPDL  197 (200)
+Confidence            35899999999999 9999999999999999999999999999999999999999999999986
+
+
+No 5
+>UniRef100_UPI00100FD2C0 uncharacterized protein LOC114124695 n=1 Tax=Aphis gossypii TaxID=80765 RepID=UPI00100FD2C0
+Probab=98.63  E-value=3.2e-10  Score=98.61  Aligned_cols=55  Identities=40%  Similarity=0.611  Sum_probs=52.5  Template_Neff=1.000
+
+Q 7398317          73 YTKLNGTDTVTKKVVIADHQTTTESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus        73 yt~~~sVETVTEnqvtstnqTTtES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      -|.+++||.|||+| +.-||++ |..||.+||+|+|+.+    +|..|.+++.||+|+|.|
+T Consensus       179 attianveivtenq-tpinqtt-egellttrfminprtk----kcstgetentnggcspsf  233 (233)
+T UniRef100_UPI0  179 ATTIANVEIVTENQ-TPINQTT-EGELLTTRFMINPRTK----KCSTGETENTNGGCSPSF  233 (233)
+Confidence            46789999999999 9999998 9999999999999999    799999999999999987
+
+
+No 6
+>UniRef100_A0A6G0ZLD5 Uncharacterized protein n=1 Tax=Aphis craccivora TaxID=307492 RepID=A0A6G0ZLD5_APHCR
+Probab=97.98  E-value=1.3e-07  Score=86.29  Aligned_cols=56  Identities=34%  Similarity=0.535  Sum_probs=51.6  Template_Neff=1.000
+
+Q 7398317          74 TKLNGTDTVTKKVVIADHQTTTESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus        74 t~~~sVETVTEnqvtstnqTTtES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      |.+++||.|+||| +++||++ |..||.+||+|+|+..    +|..|.++++||+-...+++
+T Consensus       225 ttiasveavtenq-tstnqtt-egellttrfvirprtt----kcstgetenangglfsvysn  280 (322)
+T UniRef100_A0A6  225 TTIASVEAVTENQ-TSTNQTT-EGELLTTRFVIRPRTT----KCSTGETENANGGLFSVYSN  280 (322)
+Confidence            4789999999999 9999999 9999999999999998    79999999999998776654
+
+
+No 7
+>UniRef100_UPI000B93121B cell wall integrity and stress response component 4-like n=1 Tax=Myzus persicae TaxID=13164 RepID=UPI000B93121B
+Probab=97.34  E-value=8.4e-06  Score=73.42  Aligned_cols=42  Identities=33%  Similarity=0.727  Sum_probs=38.4  Template_Neff=1.000
+
+Q 7398317          95 TESDLLHTRFFINPPEKK-KESACMEGLALAANGECVLKFPDD  136 (136)
+Q Consensus        95 tES~lL~TRfIIrPki~t-k~~~CPsGyT~daNG~C~PiF~D~  136 (136)
+                      -|.+....+.||.|++++ ....||+||++..||+|+|+|+|.
+T Consensus       206 geesvdnkhiiiqppirqtgknlcpegytmtnngncspkfpdk  248 (248)
+T UniRef100_UPI0  206 GEESVDNKHIIIQPPIRQTGKNLCPEGYTMTNNGNCSPKFPDK  248 (248)
+Confidence            577788899999999998 788999999999999999999984
+
+
+No 8
+>UniRef100_J9LMZ6 Uncharacterized protein n=1 Tax=Acyrthosiphon pisum TaxID=7029 RepID=J9LMZ6_ACYPI
+Probab=97.23  E-value=1.6e-05  Score=70.66  Aligned_cols=42  Identities=31%  Similarity=0.630  Sum_probs=37.5  Template_Neff=1.000
+
+Q 7398317          95 TESDLLHTRFFINPPEKKK---ESACMEGLALAANGECVLKFPDD  136 (136)
+Q Consensus        95 tES~lL~TRfIIrPki~tk---~~~CPsGyT~daNG~C~PiF~D~  136 (136)
+                      ....+|....+|+|+.+++   ..+||+||+.-+||+|+|+|.|.
+T Consensus       170 dgevylnikklinppqfqdppitdqcpsgytvlpngdckpkfvdn  214 (214)
+T UniRef100_J9LM  170 DGEVYLNIKKLINPPQFQDPPITDQCPSGYTVLPNGDCKPKFVDN  214 (214)
+Confidence            3677899999999999984   57999999999999999999884
+
+
+No 9
+>UniRef100_A0A2S2PL09 Uncharacterized protein n=1 Tax=Schizaphis graminum TaxID=13262 RepID=A0A2S2PL09_SCHGA
+Probab=97.22  E-value=1.4e-05  Score=68.04  Aligned_cols=30  Identities=37%  Similarity=0.749  Sum_probs=27.8  Template_Neff=2.192
+
+Q 7398317         103 RFFINPPEKKKESACMEGLALAANGECVLKFPDD  136 (136)
+Q Consensus       103 RfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D~  136 (136)
+                      -.+|+|+++    +||+||++|.+|+|...|+|.
+T Consensus       113 m~LIrPKLR----qC~eGmVrd~~GeC~~~F~d~  142 (142)
+T UniRef100_A0A2  113 MVLIRPKLR----QCPEGMVRDNRGECAFKFSDY  142 (142)
+Confidence            468999999    799999999999999999984
+
+
+No 10
+>UniRef100_A0A2S2NGQ1 Uncharacterized protein n=1 Tax=Schizaphis graminum TaxID=13262 RepID=A0A2S2NGQ1_SCHGA
+Probab=96.62  E-value=0.00025  Score=62.22  Aligned_cols=65  Identities=23%  Similarity=0.414  Sum_probs=42.7  Template_Neff=1.524
+
+Q 7398317          70 TQKYTKLNGTDTVTKKVVIA---DHQTTT--ESDLLHTRFFINPPEKK--KESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus        70 ~qkyt~~~sVETVTEnqvts---tnqTTt--ES~lL~TRfIIrPki~t--k~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      .|+| +++++.++-|...+-   .+-+.+  -.....+.+||.|+...  .++.||+|.+.+.||+|.|+|.|
+T Consensus        95 ~~~~-~i~~~~~~~edkiil~~~~~~~i~~s~t~~~~~i~~~~p~~iirlreftcpdgqtkntngdcepifld  166 (166)
+T UniRef100_A0A2   95 AQAT-KIASVKTINEDKIILKIENNKTIYVSPTNEPNTIYIASPKSIIRLREFTCPDGQTKNTNGDCEPIFLD  166 (166)
+Confidence            4444 566666666554221   111111  11223567888888776  68899999999999999999976
+
+
+No 11
+>UniRef100_A0A0V0GDV8 Putative secreted protein (Fragment) n=1 Tax=Triatoma dimidiata TaxID=72491 RepID=A0A0V0GDV8_TRIDM
+Probab=96.33  E-value=0.00069  Score=57.22  Aligned_cols=33  Identities=33%  Similarity=0.625  Sum_probs=30.9  Template_Neff=1.637
+
+Q 7398317          96 ESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus        96 ES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      |+..+..+..|+.+.+     ||+||.++++|+|++.|
+T Consensus        86 ~~tti~~~vai~ak~r-----cpsg~~~~~~g~ck~~f  118 (119)
+T UniRef100_A0A0   86 ESTTIRGRVAINAKNR-----CPSGFQRDPNGDCKPVF  118 (119)
+Confidence            7778899999999988     99999999999999998
+
+
+No 12
+>UniRef100_A0A0K8T9K1 Uncharacterized protein (Fragment) n=1 Tax=Lygus hesperus TaxID=30085 RepID=A0A0K8T9K1_LYGHE
+Probab=94.07  E-value=0.041  Score=51.26  Aligned_cols=28  Identities=25%  Similarity=0.299  Sum_probs=22.6  Template_Neff=3.875
+
+Q 7398317         103 RFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       103 RfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      |.||.-     +.+||+||-.|+.|.|.|+|..
+T Consensus       209 rNIIsV-----PnQCP~GYrPDa~GiCRpIl~~  236 (237)
+T UniRef100_A0A0  209 RNIISV-----PNQCPAGYRPDAFGICRPILDM  236 (237)
+Confidence            555543     4579999999999999999964
+
+
+No 13
+>UniRef100_A0A6G0YY08 Uncharacterized protein n=1 Tax=Aphis craccivora TaxID=307492 RepID=A0A6G0YY08_APHCR
+Probab=93.37  E-value=0.13  Score=47.89  Aligned_cols=31  Identities=42%  Similarity=0.682  Sum_probs=24.8  Template_Neff=1.000
+
+Q 7398317         103 RFFINPPEKKKESACMEGLALAANGECVLKFPDD  136 (136)
+Q Consensus       103 RfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D~  136 (136)
+                      |.+|.-+-+.   .|.+||+.+.||.|+.+|.|+
+T Consensus       172 rnlitikpfk---ncqdgytankngkcvlkfedl  202 (204)
+T UniRef100_A0A6  172 RNLITIKPFK---NCQDGYTANKNGKCVLKFEDL  202 (204)
+Confidence            4455555453   799999999999999999884
+
+
+No 14
+>UniRef100_A0A194QL00 Uncharacterized protein n=1 Tax=Papilio machaon TaxID=76193 RepID=A0A194QL00_PAPMA
+Probab=92.49  E-value=0.18  Score=40.72  Aligned_cols=21  Identities=33%  Similarity=0.637  Sum_probs=18.8  Template_Neff=2.824
+
+Q 7398317         114 ESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      ++.||.||.+++.|-|.-.|.
+T Consensus        53 P~NCPpG~kmgaDGvCREVf~   73 (73)
+T UniRef100_A0A1   53 PSNCPPGYKMGADGVCREVFD   73 (73)
+Confidence            567999999999999998883
+
+
+No 15
+>UniRef100_A0A084W7G2 AGAP008922-PA-like protein n=1 Tax=Anopheles sinensis TaxID=74873 RepID=A0A084W7G2_ANOSI
+Probab=92.40  E-value=0.17  Score=41.99  Aligned_cols=30  Identities=27%  Similarity=0.489  Sum_probs=23.5  Template_Neff=3.600
+
+Q 7398317         100 LHTRFFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       100 L~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      ...-.||.++.-     ||+|...|.||.|.++|.
+T Consensus        60 ~~~~NIId~P~V-----CPeGqk~Dh~GKCRpi~~   89 (93)
+T UniRef100_A0A0   60 VQKTNIIDAPVV-----CPEGQKPDHNGKCRPIWG   89 (93)
+Confidence            344456666555     999999999999999985
+
+
+No 16
+>UniRef100_A0A154P4B3 Uncharacterized protein n=1 Tax=Dufourea novaeangliae TaxID=178035 RepID=A0A154P4B3_DUFNO
+Probab=92.40  E-value=0.22  Score=45.93  Aligned_cols=34  Identities=32%  Similarity=0.561  Sum_probs=30.4  Template_Neff=2.027
+
+Q 7398317          96 ESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus        96 ES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      .+--|..|-||.|+.+    .||+|.-.|.+|.|.++.
+T Consensus       139 ~~p~l~srtiid~p~~----~cp~gqr~d~~g~cr~ii  172 (173)
+T UniRef100_A0A1  139 KSPQLDSRTIIDPPSF----QCPEGQRKDPTGRCRPII  172 (173)
+Confidence            4556889999999999    799999999999999874
+
+
+No 17
+>UniRef100_A0A0L7R743 Uncharacterized protein n=1 Tax=Habropoda laboriosa TaxID=597456 RepID=A0A0L7R743_9HYME
+Probab=91.86  E-value=0.27  Score=43.81  Aligned_cols=31  Identities=32%  Similarity=0.545  Sum_probs=27.6  Template_Neff=2.745
+
+Q 7398317         100 LHTRFFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       100 L~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      +-.|.||+|..+    .||.|..+|.-|+|...|.
+T Consensus        99 ~g~r~Ii~~~~~----~CP~gQkRd~~g~Crdv~~  129 (136)
+T UniRef100_A0A0   99 LGSRHIIRPPKF----RCPTGQKRDHLGKCRDVFV  129 (136)
+Confidence            338999999988    7999999999999998874
+
+
+No 18
+>UniRef100_A0A212ERU6 Uncharacterized protein n=1 Tax=Danaus plexippus plexippus TaxID=278856 RepID=A0A212ERU6_DANPL
+Probab=91.16  E-value=0.37  Score=44.80  Aligned_cols=29  Identities=34%  Similarity=0.473  Sum_probs=23.3  Template_Neff=2.900
+
+Q 7398317         101 HTRFFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       101 ~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      .-|.||+=+     .+||.||..|+.|.|.++|.
+T Consensus       147 ~~RNII~VP-----nqCP~GYrpDAlGiCR~i~~  175 (186)
+T UniRef100_A0A2  147 SPRNIINVP-----NQCPIGYRPDALGICRPIFN  175 (186)
+Confidence            455566544     46999999999999999985
+
+
+No 19
+>UniRef100_A0A8H3CTZ4 Hypothetical protein n=1 Tax=Rhizoctonia solani TaxID=456999 RepID=A0A8H3CTZ4_9AGAM
+Probab=90.57  E-value=0.67  Score=41.54  Aligned_cols=31  Identities=29%  Similarity=0.639  Sum_probs=27.0  Template_Neff=1.000
+
+Q 7398317         102 TRFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       102 TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      +-.+|+|.+-.   +||+||-+-..|-|+|.+++
+T Consensus        76 tfslihpeigs---kcpdgwymltegycvprypn  106 (133)
+T UniRef100_A0A8   76 TFSLIHPEIGS---KCPDGWYMLTEGYCVPRYPN  106 (133)
+Confidence            44588998884   99999999999999998875
+
+
+No 20
+>UniRef100_Q1IBN4 Uncharacterized protein n=1 Tax=Pseudomonas entomophila (strain L48) TaxID=384676 RepID=Q1IBN4_PSEE4
+Probab=90.29  E-value=0.75  Score=35.48  Aligned_cols=28  Identities=29%  Similarity=0.473  Sum_probs=22.1  Template_Neff=1.000
+
+Q 7398317         104 FFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       104 fIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      +.--|-.+   .+||+||.+.+-|-|.|.|.
+T Consensus        20 hasgpgfi---dqcpegyfmtatglcapdfd   47 (49)
+T UniRef100_Q1IB   20 HASGPGFI---DQCPEGYFMTATGLCAPDFD   47 (49)
+Confidence            33345555   49999999999999999885
+
+
+No 21
+>UniRef100_A0A6P3Y8U9 uncharacterized protein LOC106751171 n=1 Tax=Dinoponera quadriceps TaxID=609295 RepID=A0A6P3Y8U9_DINQU
+Probab=90.24  E-value=0.76  Score=38.84  Aligned_cols=72  Identities=36%  Similarity=0.585  Sum_probs=50.6  Template_Neff=1.000
+
+Q 7398317          26 INITTSVIPVGRNFKQFPACDTTKKCRRSNSTTTNANKHRTSNTTQKYTKLNGTDTVTKKVVIADHQTTTESDLLHTRFF  105 (136)
+Q Consensus        26 ~n~t~~~~pvgrn~k~f~~~~~tk~~~~~~s~~~~~~~~~~~~t~qkyt~~~sVETVTEnqvtstnqTTtES~lL~TRfI  105 (136)
+                      .-||.-+.|.|- -|-.|+-.+|             +.||.   +||-|.                 ++.....|.+.||
+T Consensus        14 viiticviplgt-cktipvhett-------------erfhr---tqkttq-----------------ttstetwlttpyi   59 (87)
+T UniRef100_A0A6   14 VIITICVIPLGT-CKTIPVHETT-------------ERFHR---TQKTTQ-----------------TTSTETWLTTPYI   59 (87)
+Confidence            446777788874 4566665554             45554   344332                 2223345788999
+
+
+Q 7398317         106 INPPEKKKESACMEGLALAANGECVL  131 (136)
+Q Consensus       106 IrPki~tk~~~CPsGyT~daNG~C~P  131 (136)
+                      |.-+.+.+.-.||+|...|..|-|..
+T Consensus        60 idtprksdkmicpegqkvdqhgicre   85 (87)
+T UniRef100_A0A6   60 IDTPRKSDKMICPEGQKVDQHGICRE   85 (87)
+Confidence            99999988899999999999999964
+
+
+No 22
+>UniRef100_A0A2K8JNU9 Venom peptide Pp22a n=1 Tax=Pristhesancus plagipennis TaxID=1955184 RepID=A0A2K8JNU9_PRIPG
+Probab=90.19  E-value=0.78  Score=39.00  Aligned_cols=27  Identities=41%  Similarity=0.730  Sum_probs=22.9  Template_Neff=1.000
+
+Q 7398317         102 TRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       102 TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      -|.||..+.+     ||+|-..|.-|+|+|.|
+T Consensus        63 prriidarer-----cpegtqadgagecvpvf   89 (90)
+T UniRef100_A0A2   63 PRRIIDARER-----CPEGTQADGAGECVPVF   89 (90)
+Confidence            4566766665     99999999999999998
+
+
+No 23
+>UniRef100_A0A6P7GC15 uncharacterized protein LOC114340297 isoform X1 n=1 Tax=Diabrotica virgifera virgifera TaxID=50390 RepID=A0A6P7GC15_DIAVI
+Probab=90.01  E-value=0.79  Score=42.01  Aligned_cols=58  Identities=19%  Similarity=0.318  Sum_probs=40.2  Template_Neff=1.316
+
+Q 7398317          76 LNGTDTVTKKVVIADHQTTTESDLLHTRFFINPPEKK----KESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus        76 ~~sVETVTEnqvtstnqTTtES~lL~TRfIIrPki~t----k~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      ..-|.|+.++. ......+ .--+..--.+|.|+.+.    -...|.+||.+|.+|.|...|.|
+T Consensus        91 ~kpvqt~~k~n-sd~~~a~-~~l~p~~~k~i~~~~r~n~d~~dn~c~~g~~~~~~g~c~evfdd  152 (152)
+T UniRef100_A0A6   91 IKPVQTIIKNN-SDEGVAN-KKLPPEDVKIITPKMRTNIDLMDNSCAEGFMRNFGGMCMEVFDD  152 (152)
+Confidence            34455655555 3333332 33444456789998887    46789999999999999999976
+
+
+No 24
+>UniRef100_A0A212F1A0 Uncharacterized protein n=1 Tax=Danaus plexippus plexippus TaxID=278856 RepID=A0A212F1A0_DANPL
+Probab=89.93  E-value=0.86  Score=41.63  Aligned_cols=33  Identities=27%  Similarity=0.570  Sum_probs=26.9  Template_Neff=1.000
+
+Q 7398317          98 DLLHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus        98 ~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      --+-...||-|+.-.   -||.||+....|-|...|
+T Consensus       119 lpimrnaiiappnap---vcpagmtlgsdgvcrdpf  151 (151)
+T UniRef100_A0A2  119 LPIMRNAIIAPPNAP---VCPAGMTLGSDGVCRDPF  151 (151)
+Confidence            345566788887774   999999999999999876
+
+
+No 25
+>UniRef100_A0A382GC48 Uncharacterized protein n=1 Tax=marine metagenome TaxID=408172 RepID=A0A382GC48_9ZZZZ
+Probab=89.85  E-value=0.88  Score=34.07  Aligned_cols=18  Identities=44%  Similarity=0.593  Sum_probs=16.7  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLKF  133 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~PiF  133 (136)
+                      .||+||.-+-.|+|+|+-
+T Consensus        23 acpegykgnykgecvpie   40 (41)
+T UniRef100_A0A3   23 ACPEGYKGNYKGECVPIE   40 (41)
+Confidence            799999999999999973
+
+
+No 26
+>UniRef100_A0A8J2WDI0 (African queen) hypothetical protein n=1 Tax=Danaus chrysippus TaxID=151541 RepID=A0A8J2WDI0_9NEOP
+Probab=89.83  E-value=0.82  Score=39.05  Aligned_cols=31  Identities=26%  Similarity=0.447  Sum_probs=24.3  Template_Neff=1.456
+
+Q 7398317          98 DLLHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus        98 ~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      ..+.+|.+|..+-     .||.|...+.+|-|..+|
+T Consensus        61 v~~~~rn~i~~pp-----ncppgq~~~~dgvcrdif   91 (91)
+T UniRef100_A0A8   61 IDVANRNMIQAPP-----NCPPGQQMDKDGVCRDIF   91 (91)
+Confidence            4456666665543     599999999999999887
+
+
+No 27
+>UniRef100_A0A1B6EZC5 Uncharacterized protein n=1 Tax=Cuerna arida TaxID=1464854 RepID=A0A1B6EZC5_9HEMI
+Probab=89.41  E-value=0.95  Score=39.60  Aligned_cols=30  Identities=30%  Similarity=0.484  Sum_probs=27.2  Template_Neff=1.474
+
+Q 7398317         100 LHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       100 L~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      -..|.|+..+++    .||.|..+|--|+|.|.|
+T Consensus        77 r~kr~i~dapl~----~cp~gq~rdf~g~cr~v~  106 (106)
+T UniRef100_A0A1   77 RNKRHILDAPLF----DCPEGQARDFLGNCRPVF  106 (106)
+Confidence            467889999999    799999999999999987
+
+
+No 28
+>UniRef100_UPI0018D0A1D0 uncharacterized protein LOC105392972 isoform X2 n=1 Tax=Plutella xylostella TaxID=51655 RepID=UPI0018D0A1D0
+Probab=89.40  E-value=1  Score=38.41  Aligned_cols=21  Identities=24%  Similarity=0.496  Sum_probs=19.0  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      +.+||+||-.|+.|-|.|++.
+T Consensus        70 pnqcpsgfrpdahgicrpiwt   90 (91)
+T UniRef100_UPI0   70 PNQCPSGFRPDAHGICRPIWT   90 (91)
+Confidence            568999999999999999874
+
+
+No 29
+>UniRef100_A0A6P7GBU9 uncharacterized protein LOC114340297 isoform X3 n=1 Tax=Diabrotica virgifera virgifera TaxID=50390 RepID=A0A6P7GBU9_DIAVI
+Probab=89.06  E-value=1.2  Score=38.57  Aligned_cols=22  Identities=41%  Similarity=0.795  Sum_probs=19.8  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      +..|..||..|+||+|-..|.|
+T Consensus        77 pdtctkgykkdangecmevfdd   98 (98)
+T UniRef100_A0A6   77 PDTCTKGYKKDANGECMEVFDD   98 (98)
+Confidence            4579999999999999999975
+
+
+No 30
+>UniRef100_A0A4C1VXC1 Uncharacterized protein n=1 Tax=Eumeta variegata TaxID=151549 RepID=A0A4C1VXC1_EUMVA
+Probab=88.77  E-value=1.3  Score=42.56  Aligned_cols=30  Identities=33%  Similarity=0.622  Sum_probs=24.9  Template_Neff=1.000
+
+Q 7398317          99 LLHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus        99 lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      .+.+|.+|..+-.     ||+|..+|.||-|...|
+T Consensus       189 svttrnmiqapgn-----cpsgqqmdsngvcrevf  218 (218)
+T UniRef100_A0A4  189 SVTTRNMIQAPGN-----CPSGQQMDSNGVCREVF  218 (218)
+Confidence            3577888877654     99999999999998776
+
+
+No 31
+>UniRef100_A0A5E4ME39 Uncharacterized protein n=1 Tax=Cinara cedri TaxID=506608 RepID=A0A5E4ME39_9HEMI
+Probab=88.74  E-value=1.3  Score=42.06  Aligned_cols=49  Identities=24%  Similarity=0.449  Sum_probs=32.5  Template_Neff=1.000
+
+Q 7398317          75 KLNGTDTVTKKVVIADHQTTTESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus        75 ~~~sVETVTEnqvtstnqTTtES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      +..-|..|-||- .-+..+       .-|-||-.+.+    .||+||-+.++-+|+|.|.|
+T Consensus       148 kpvavtvvqenp-klettt-------qdrtiiiapvr----pcpegmrmgpdrnckpnfdd  196 (198)
+T UniRef100_A0A5  148 KPVAVTVVQENP-KLETTT-------QDRTIIIAPVR----PCPEGMRMGPDRNCKPNFDD  196 (198)
+Confidence            445555666665 222222       23445555555    49999999999999999987
+
+
+No 32
+>UniRef100_P30251 Paralytic peptide 1 n=1 Tax=Heliothis virescens TaxID=7102 RepID=PAP1_HELVI
+Probab=88.52  E-value=1.3  Score=29.87  Aligned_cols=19  Identities=32%  Similarity=0.742  Sum_probs=17.4  Template_Neff=1.329
+
+Q 7398317         115 SACMEGLALAANGECVLKF  133 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~PiF  133 (136)
+                      .-|-.||.+.++|.|+|.|
+T Consensus         5 ggc~~g~~rtadgrck~t~   23 (23)
+T UniRef100_P302    5 GGCTPGYQRTADGRCKPTF   23 (23)
+Confidence            4699999999999999987
+
+
+No 33
+>UniRef100_A0A2P8Z2S6 Uncharacterized protein n=1 Tax=Blattella germanica TaxID=6973 RepID=A0A2P8Z2S6_BLAGE
+Probab=88.29  E-value=1.5  Score=37.19  Aligned_cols=42  Identities=19%  Similarity=0.332  Sum_probs=35.0  Template_Neff=1.000
+
+Q 7398317          88 IADHQTTTESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus        88 tstnqTTtES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      ++...-..|.+-...|.+|-.+++    .||.||-+..-|.|.+++
+T Consensus        43 tspeslssepykpsgrnvifaplr----hcppgyrrgrtgrclqiy   84 (84)
+T UniRef100_A0A2   43 TSPESLSSEPYKPSGRNVIFAPLR----HCPPGYRRGRTGRCLQIY   84 (84)
+Confidence            444445568888899999999999    799999999999998764
+
+
+No 34
+>UniRef100_A0A482WWM4 Uncharacterized protein n=1 Tax=Laodelphax striatellus TaxID=195883 RepID=A0A482WWM4_LAOST
+Probab=88.19  E-value=1.5  Score=38.93  Aligned_cols=29  Identities=28%  Similarity=0.566  Sum_probs=22.3  Template_Neff=1.000
+
+Q 7398317         103 RFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       103 RfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      |.++-.+.+    .||+||.-|.||-|.|+-++
+T Consensus        36 rafvggpvr----ecpsgmkhdengvcrpissn   64 (117)
+T UniRef100_A0A4   36 RAFVGGPVR----ECPSGMKHDENGVCRPISSN   64 (117)
+Confidence            334444455    79999999999999998664
+
+
+No 35
+>UniRef100_A0A6M2DXM8 Putative secreted protein n=1 Tax=Xenopsylla cheopis TaxID=163159 RepID=A0A6M2DXM8_9NEOP
+Probab=88.11  E-value=1.4  Score=39.84  Aligned_cols=29  Identities=28%  Similarity=0.502  Sum_probs=23.5  Template_Neff=1.416
+
+Q 7398317         100 LHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       100 L~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      ...-.||.-++.     ||+||..|+.|.|...|
+T Consensus       104 pqsvaiidvp~n-----cpeg~~pdprg~cre~f  132 (132)
+T UniRef100_A0A6  104 PQSVAIIDVPIN-----CPEGFRPDPRGICRESF  132 (132)
+Confidence            455567776665     99999999999999876
+
+
+No 36
+>UniRef100_A0A8J2WF97 (African queen) hypothetical protein n=1 Tax=Danaus chrysippus TaxID=151541 RepID=A0A8J2WF97_9NEOP
+Probab=88.09  E-value=1.5  Score=36.28  Aligned_cols=34  Identities=26%  Similarity=0.533  Sum_probs=28.7  Template_Neff=1.000
+
+Q 7398317          97 SDLLHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus        97 S~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      |.-+-...||-|+.-+   -||.||.+..+|-|...|
+T Consensus        40 svpvmrnaiiappnvp---vcppgmimgsdgvcrdpf   73 (73)
+T UniRef100_A0A8   40 SVPVMRNAIIAPPNVP---VCPPGMIMGSDGVCRDPF   73 (73)
+Confidence            4556677888888885   999999999999999876
+
+
+No 37
+>UniRef100_A0A194Q630 Uncharacterized protein n=1 Tax=Papilio xuthus TaxID=66420 RepID=A0A194Q630_PAPXU
+Probab=88.00  E-value=1.6  Score=35.30  Aligned_cols=18  Identities=33%  Similarity=0.643  Sum_probs=15.1  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      +.+||+||.+ .||.|+|.
+T Consensus        42 pkkcpsgyir-vngkcvpv   59 (62)
+T UniRef100_A0A1   42 PKKCPSGYIR-VNGKCVPV   59 (62)
+Confidence            3479999987 69999985
+
+
+No 38
+>UniRef100_A0A2S2P7Z4 Uncharacterized protein n=1 Tax=Schizaphis graminum TaxID=13262 RepID=A0A2S2P7Z4_SCHGA
+Probab=87.79  E-value=1.5  Score=42.71  Aligned_cols=31  Identities=32%  Similarity=0.622  Sum_probs=28.6  Template_Neff=1.693
+
+Q 7398317         101 HTRFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       101 ~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      .-|-||..+++    .||+|+-+...++|.|.|+|
+T Consensus       166 qdr~iit~plk----~cpegqrm~~~r~c~p~f~d  196 (231)
+T UniRef100_A0A2  166 QDRSIITVPLK----SCPEGQRMSPDRTCRPDFTD  196 (231)
+Confidence            45789999999    79999999999999999998
+
+
+No 39
+>UniRef100_A0A146M325 Uncharacterized protein n=1 Tax=Lygus hesperus TaxID=30085 RepID=A0A146M325_LYGHE
+Probab=87.70  E-value=1.7  Score=38.20  Aligned_cols=33  Identities=30%  Similarity=0.582  Sum_probs=29.7  Template_Neff=1.000
+
+Q 7398317          96 ESDLLHTRFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus        96 ES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      .-+...-||||..+.+    -||.|..+|+.|+|...
+T Consensus        73 sqdvpqlryiikapyk----vcpngqqrdargncrtv  105 (108)
+T UniRef100_A0A1   73 SQDVPQLRYIIKAPYK----VCPNGQQRDARGNCRTV  105 (108)
+Confidence            5677889999999999    79999999999999764
+
+
+No 40
+>UniRef100_A0A6G9XTR8 TIL domain-containing protein n=1 Tax=Nocardia brasiliensis TaxID=37326 RepID=A0A6G9XTR8_9NOCA
+Probab=87.68  E-value=1.7  Score=35.11  Aligned_cols=19  Identities=37%  Similarity=0.714  Sum_probs=16.6  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      .--|.+||-+|.||+|+|.
+T Consensus        43 gcfcqdgflrdrngecvpa   61 (62)
+T UniRef100_A0A6   43 GCFCQDGFLRDRNGECVPA   61 (62)
+Confidence            4469999999999999984
+
+
+No 41
+>UniRef100_UPI001CA90DCC uncharacterized protein LOC122506178 n=1 Tax=Leptopilina heterotoma TaxID=63436 RepID=UPI001CA90DCC
+Probab=87.49  E-value=1.8  Score=39.55  Aligned_cols=29  Identities=31%  Similarity=0.682  Sum_probs=22.6  Template_Neff=1.000
+
+Q 7398317         100 LHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       100 L~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      |..|.||..+.+     ||+||-.|+-|.|.-++
+T Consensus       114 lknrniidapsr-----cpegyradptgkcrriw  142 (143)
+T UniRef100_UPI0  114 LKNRNIIDAPSR-----CPEGYRADPTGKCRRIW  142 (143)
+Confidence            455666666555     99999999999998764
+
+
+No 42
+>UniRef100_A0A5B7E0Z2 Uncharacterized protein n=2 Tax=Portunus trituberculatus TaxID=210409 RepID=A0A5B7E0Z2_PORTR
+Probab=87.40  E-value=1.6  Score=42.22  Aligned_cols=27  Identities=37%  Similarity=0.636  Sum_probs=22.3  Template_Neff=1.729
+
+Q 7398317         104 FFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       104 fIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      .||.-+..    .||+||-+|-||.|...|-
+T Consensus       131 aiitvpte----~cpsgyrrd~n~vcrlkfg  157 (220)
+T UniRef100_A0A5  131 AIITVPTE----PCPSGYRRDFNGVCRLKFG  157 (220)
+Confidence            46666666    6999999999999998883
+
+
+No 43
+>UniRef100_UPI001D06BB9A ATP-dependent RNA helicase glh-2-like isoform X2 n=1 Tax=Coccinella septempunctata TaxID=41139 RepID=UPI001D06BB9A
+Probab=86.41  E-value=2.4  Score=41.37  Aligned_cols=30  Identities=23%  Similarity=0.476  Sum_probs=25.2  Template_Neff=1.000
+
+Q 7398317          99 LLHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus        99 lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      .+..|.||..+..     ||.||+.|..|.|...|
+T Consensus       207 eisgrriisahsn-----cpagyvadsrgrcretf  236 (236)
+T UniRef100_UPI0  207 EISGRRIISAHSN-----CPAGYVADSRGRCRETF  236 (236)
+Confidence            4667888877655     99999999999998776
+
+
+No 44
+>UniRef100_A0A2H1W3L3 SFRICE_012707 n=1 Tax=Spodoptera frugiperda TaxID=7108 RepID=A0A2H1W3L3_SPOFR
+Probab=86.39  E-value=2.4  Score=35.27  Aligned_cols=20  Identities=25%  Similarity=0.615  Sum_probs=17.4  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~PiF~  134 (136)
+                      ..||+|+.+|.||-|...+.
+T Consensus        48 gncpdgfqmdvngvcrevwy   67 (72)
+T UniRef100_A0A2   48 GNCPDGFQMDVNGVCREVWY   67 (72)
+Confidence            37999999999999987654
+
+
+No 45
+>UniRef100_A0A1B0GMT8 Uncharacterized protein n=1 Tax=Phlebotomus papatasi TaxID=29031 RepID=A0A1B0GMT8_PHLPP
+Probab=86.33  E-value=2.4  Score=34.76  Aligned_cols=20  Identities=35%  Similarity=0.707  Sum_probs=18.0  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF  133 (136)
+                      +.-|-.||-.+..|+|.|+|
+T Consensus        47 pkvcepgyrlnsrgeckpif   66 (66)
+T UniRef100_A0A1   47 PKVCEPGYRLNSRGECKPIF   66 (66)
+Confidence            34699999999999999998
+
+
+No 46
+>UniRef100_A0A194QFP3 Uncharacterized protein n=1 Tax=Papilio xuthus TaxID=66420 RepID=A0A194QFP3_PAPXU
+Probab=85.97  E-value=1.6  Score=41.75  Aligned_cols=17  Identities=47%  Similarity=0.845  Sum_probs=14.3  Template_Neff=3.800
+
+Q 7398317         115 SACMEGLALAANGECVL  131 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~P  131 (136)
+                      ..||+|+.+|.+|+|+.
+T Consensus       174 ~~CpEG~~kD~~GNCV~  190 (231)
+T UniRef100_A0A1  174 SDCPEGFVKDENGNCVD  190 (231)
+Confidence            67888888888888875
+
+
+No 47
+>UniRef100_A0A0P5XQF2 Uncharacterized protein n=1 Tax=Daphnia magna TaxID=35525 RepID=A0A0P5XQF2_9CRUS
+Probab=85.69  E-value=2.8  Score=36.65  Aligned_cols=20  Identities=30%  Similarity=0.652  Sum_probs=17.9  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF  133 (136)
+                      ...|..||.+|.||-|.+-|
+T Consensus        79 trdcatgysrdqngvcrqhf   98 (99)
+T UniRef100_A0A0   79 TRDCATGYSRDQNGVCRQHF   98 (99)
+Confidence            34699999999999999887
+
+
+No 48
+>UniRef100_A0A195B0U7 Uncharacterized protein n=1 Tax=Atta colombica TaxID=520822 RepID=A0A195B0U7_9HYME
+Probab=85.20  E-value=3  Score=35.08  Aligned_cols=20  Identities=30%  Similarity=0.549  Sum_probs=16.8  Template_Neff=1.213
+
+Q 7398317         113 KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      .++.||.|..+|.||.|..-
+T Consensus        50 p~fpcp~gqqrd~ngkcrlf   69 (75)
+T UniRef100_A0A1   50 PDFPCPPGQQRDTNGKCRLF   69 (75)
+Confidence            34579999999999999753
+
+
+No 49
+>UniRef100_A0A1B0GMT9 Uncharacterized protein n=1 Tax=Phlebotomus papatasi TaxID=29031 RepID=A0A1B0GMT9_PHLPP
+Probab=84.88  E-value=3.1  Score=34.86  Aligned_cols=21  Identities=29%  Similarity=0.540  Sum_probs=19.1  Template_Neff=1.341
+
+Q 7398317         113 KESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF  133 (136)
+                      .+.-||.|.-.|.-|.|.|+|
+T Consensus        53 aptvcppg~rld~~gkcrpif   73 (73)
+T UniRef100_A0A1   53 APTVCPPGQRLDQFGKCRPIF   73 (73)
+Confidence            456799999999999999998
+
+
+No 50
+>UniRef100_E0VBL1 Uncharacterized protein n=1 Tax=Pediculus humanus subsp. corporis TaxID=121224 RepID=E0VBL1_PEDHC
+Probab=84.77  E-value=3.3  Score=35.29  Aligned_cols=26  Identities=35%  Similarity=0.777  Sum_probs=22.6  Template_Neff=1.000
+
+Q 7398317         104 FFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       104 fIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      .||.|+.+     ||+|-..|+-|.|...++
+T Consensus        33 hiiqppnr-----cpegtkpdatgkcrtvws   58 (83)
+T UniRef100_E0VB   33 HIIQPPNR-----CPEGTKPDATGKCRTVWS   58 (83)
+Confidence            57888887     999999999999987654
+
+
+No 51
+>UniRef100_UPI0016613AB2 hypothetical protein n=1 Tax=Flavobacterium pokkalii TaxID=1940408 RepID=UPI0016613AB2
+Probab=84.67  E-value=3.4  Score=40.15  Aligned_cols=36  Identities=33%  Similarity=0.480  Sum_probs=25.9  Template_Neff=1.000
+
+Q 7398317          97 SDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFPDD  136 (136)
+Q Consensus        97 S~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D~  136 (136)
+                      .++|.+...---+++    .||+||+.|.||+|..+..|+
+T Consensus        17 gyfldtdnceckkii----rcpegftldingncikkvddd   52 (221)
+T UniRef100_UPI0   17 GYFLDTDNCECKKII----RCPEGFTLDINGNCIKKVDDD   52 (221)
+Confidence            344555444444455    699999999999999887664
+
+
+No 52
+>UniRef100_A0A212F9Y2 Uncharacterized protein n=1 Tax=Danaus plexippus plexippus TaxID=278856 RepID=A0A212F9Y2_DANPL
+Probab=84.62  E-value=3.4  Score=33.29  Aligned_cols=20  Identities=20%  Similarity=0.683  Sum_probs=17.5  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF  133 (136)
+                      ...||+||.+.+.|.|.|..
+T Consensus        15 dticpsgmfrcpegkcipal   34 (58)
+T UniRef100_A0A2   15 DTICPSGMFRCPEGKCIPAL   34 (58)
+Confidence            35799999999999999864
+
+
+No 53
+>UniRef100_A0A2P8Z2X5 Uncharacterized protein n=1 Tax=Blattella germanica TaxID=6973 RepID=A0A2P8Z2X5_BLAGE
+Probab=84.54  E-value=3.5  Score=36.67  Aligned_cols=41  Identities=34%  Similarity=0.675  Sum_probs=30.6  Template_Neff=1.000
+
+Q 7398317          90 DHQTTTESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus        90 tnqTTtES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      .+...+||++.  |-||..+++.  ..||+||.. +.|.|.-.|+.
+T Consensus        61 ndgkitesglf--rpiitaplrn--ntcpdgmfl-ahgrcrrrfsg  101 (110)
+T UniRef100_A0A2   61 NDGKITESGLF--RPIITAPLRN--NTCPDGMFL-AHGRCRRRFSG  101 (110)
+Confidence            33455788876  5677777764  799999975 68999988864
+
+
+No 54
+>UniRef100_A0A0Q0SEZ2 Uncharacterized protein n=1 Tax=Flavobacterium daejeonense TaxID=350893 RepID=A0A0Q0SEZ2_FLADA
+Probab=84.39  E-value=3.3  Score=43.27  Aligned_cols=26  Identities=31%  Similarity=0.735  Sum_probs=21.0  Template_Neff=1.530
+
+Q 7398317         106 INPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus       106 IrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      |+|.-. ++..||+||.+|.||.|+|+
+T Consensus       227 ~~pnp~-dp~~~~d~y~~~~~~~~~~~  252 (407)
+T UniRef100_A0A0  227 IDPNPN-DPPTCPDGYEMDSNGSCVPI  252 (407)
+Confidence            444433 57899999999999999986
+
+
+No 55
+>UniRef100_A0A0L0CA05 TIL domain-containing protein n=1 Tax=Lucilia cuprina TaxID=7375 RepID=A0A0L0CA05_LUCCU
+Probab=84.21  E-value=2.5  Score=36.80  Aligned_cols=21  Identities=33%  Similarity=0.580  Sum_probs=17.7  Template_Neff=3.400
+
+Q 7398317         113 KESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF  133 (136)
+                      +.=-|-+||.+|++|.|+|++
+T Consensus        65 dGCYC~~GYARn~~G~CIPi~   85 (107)
+T UniRef100_A0A0   65 DGCYCNKGYARNANGKCIPIA   85 (107)
+Confidence            344688999999999999985
+
+
+No 56
+>UniRef100_UPI000C252162 probable serine/threonine-protein kinase roco9 n=1 Tax=Leptinotarsa decemlineata TaxID=7539 RepID=UPI000C252162
+Probab=83.82  E-value=4  Score=40.71  Aligned_cols=21  Identities=48%  Similarity=0.842  Sum_probs=19.0  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      +..|.+||.+++||.|+.+|.
+T Consensus       253 pdtctegyarnangkcvkifq  273 (273)
+T UniRef100_UPI0  253 PDTCTEGYARNANGKCVKIFQ  273 (273)
+Confidence            568999999999999999983
+
+
+No 57
+>UniRef100_A0A835L4S6 Uncharacterized protein n=1 Tax=Spodoptera exigua TaxID=7107 RepID=A0A835L4S6_SPOEX
+Probab=83.82  E-value=4  Score=32.89  Aligned_cols=19  Identities=32%  Similarity=0.739  Sum_probs=16.7  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVLKF  133 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~PiF  133 (136)
+                      .+||+|..+|.||-|...+
+T Consensus        37 gqcpdglqmdvngvcrevw   55 (57)
+T UniRef100_A0A8   37 GQCPDGLQMDVNGVCREVW   55 (57)
+Confidence            3899999999999998654
+
+
+No 58
+>UniRef100_A0A2E2NUJ0 Peptidoglycan-binding protein (Fragment) n=1 Tax=Deltaproteobacteria bacterium TaxID=2026735 RepID=A0A2E2NUJ0_9DELT
+Probab=83.65  E-value=4.1  Score=34.08  Aligned_cols=19  Identities=21%  Similarity=0.599  Sum_probs=17.1  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ...||+||+-|..|-|.|.
+T Consensus        29 gnpcpdgytydddgvcrpe   47 (72)
+T UniRef100_A0A2   29 GNPCPDGYTYDDDGVCRPE   47 (72)
+Confidence            4689999999999999985
+
+
+No 59
+>UniRef100_A0A0L7KSP0 Uncharacterized protein (Fragment) n=1 Tax=Operophtera brumata TaxID=104452 RepID=A0A0L7KSP0_9NEOP
+Probab=83.37  E-value=3.6  Score=44.45  Aligned_cols=20  Identities=35%  Similarity=0.524  Sum_probs=18.7  Template_Neff=2.112
+
+Q 7398317         114 ESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF  133 (136)
+                      +.+||+||..|+||-|.++|
+T Consensus       527 p~qcp~gy~~da~g~cr~i~  546 (547)
+T UniRef100_A0A0  527 PSQCPSGYRPDANGICRPIL  546 (547)
+Confidence            56899999999999999998
+
+
+No 60
+>UniRef100_A0A0A9VZU9 Uncharacterized protein (Fragment) n=1 Tax=Lygus hesperus TaxID=30085 RepID=A0A0A9VZU9_LYGHE
+Probab=83.30  E-value=4.1  Score=37.59  Aligned_cols=31  Identities=29%  Similarity=0.708  Sum_probs=26.7  Template_Neff=1.292
+
+Q 7398317         102 TRFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       102 TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      .|.||..+.+.   .|-+||..|..|.|.-.|+.
+T Consensus        21 srqiisapsrn---pcdsgfvlds~gkcrrvfss   51 (140)
+T UniRef100_A0A0   21 SRQIISAPSRN---PCDSGFVLDSSGKCRRVFSS   51 (140)
+Confidence            47788887774   89999999999999999863
+
+
+No 61
+>UniRef100_A0A3E0V6Z5 DUF3761 domain-containing protein n=4 Tax=Mycobacterium tuberculosis complex TaxID=77643 RepID=A0A3E0V6Z5_MYCTX
+Probab=83.24  E-value=4.4  Score=36.36  Aligned_cols=28  Identities=25%  Similarity=0.488  Sum_probs=23.5  Template_Neff=1.000
+
+Q 7398317         105 FINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus       105 IIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      .|.|..-+.-+.||+||-+..+|.|.|.
+T Consensus        43 aispstptsvfacpsgyyesvdgqcipa   70 (115)
+T UniRef100_A0A3   43 AISPSTPTSVFACPSGYYENVDGQCIPA   70 (115)
+Confidence            4677766677899999999999999874
+
+
+No 62
+>UniRef100_A0A6P7GMC2 uncharacterized protein LOC114340569 isoform X1 n=1 Tax=Diabrotica virgifera virgifera TaxID=50390 RepID=A0A6P7GMC2_DIAVI
+Probab=83.21  E-value=4.4  Score=37.07  Aligned_cols=21  Identities=33%  Similarity=0.661  Sum_probs=18.4  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF  133 (136)
+                      ..-.||+||..|.||-|...|
+T Consensus       113 nkhecpegfvadrngvcrevf  133 (133)
+T UniRef100_A0A6  113 NKHECPEGFVADRNGVCREVF  133 (133)
+Confidence            456899999999999998776
+
+
+No 63
+>UniRef100_A0A2W1BBE1 Uncharacterized protein n=1 Tax=Helicoverpa armigera TaxID=29058 RepID=A0A2W1BBE1_HELAM
+Probab=82.07  E-value=5.3  Score=33.14  Aligned_cols=33  Identities=24%  Similarity=0.375  Sum_probs=28.0  Template_Neff=1.000
+
+Q 7398317         103 RFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       103 RfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      ..|..|.+++-+..||.|....+||-|...+.|
+T Consensus        35 eriakpniitvppncppgqklgpngvcrevwnd   67 (67)
+T UniRef100_A0A2   35 ERIAKPNIITVPPNCPPGQKLGPNGVCREVWND   67 (67)
+Confidence            456778887778899999999999999987765
+
+
+No 64
+>UniRef100_UPI00159629AB hypothetical protein n=1 Tax=Vibrio metoecus TaxID=1481663 RepID=UPI00159629AB
+Probab=81.69  E-value=5.6  Score=36.89  Aligned_cols=70  Identities=19%  Similarity=0.149  Sum_probs=36.8  Template_Neff=1.000
+
+Q 7398317          63 KHRTSNTTQKYTKLNGTDTVTKKVVIADHQTTTESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus        63 ~~~~~~t~qkyt~~~sVETVTEnqvtstnqTTtES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      -|.--|..|.+.|-.=++.--.-...-.|...+-|+--.+-.+|.--.  .-.-||+||.++++|.|+|+-+
+T Consensus        56 cfdfvnssqnfskcdlidssyniksdrnnsylycsgpsgtfkliergs--pvvmcpsgysenpdgtcspkpp  125 (144)
+T UniRef100_UPI0   56 CFDFVNSSQNFSKCDLIDSSYNIKSDRNNSYLYCSGPSGTFKLIERGS--PVVMCPSGYSENPDGTCSPKPP  125 (144)
+Confidence            355566777776543332211111011233334444444444442111  1136999999999999998743
+
+
+No 65
+>UniRef100_A0A194PE44 Uncharacterized protein n=1 Tax=Papilio xuthus TaxID=66420 RepID=A0A194PE44_PAPXU
+Probab=81.59  E-value=5.7  Score=35.29  Aligned_cols=30  Identities=33%  Similarity=0.641  Sum_probs=23.2  Template_Neff=1.000
+
+Q 7398317         100 LHTRFFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       100 L~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      +.-|.+|.-+     +.||.||.+.++|-|...|.
+T Consensus        76 iqmrnmisvp-----sncppgykmgadgvcrevfn  105 (105)
+T UniRef100_A0A1   76 IQMRNMISVP-----SNCPPGYKMGADGVCREVFN  105 (105)
+Confidence            3455666544     46999999999999998874
+
+
+No 66
+>UniRef100_A0A182NVW8 Uncharacterized protein n=1 Tax=Anopheles dirus TaxID=7168 RepID=A0A182NVW8_9DIPT
+Probab=81.57  E-value=5.1  Score=32.51  Aligned_cols=19  Identities=26%  Similarity=0.548  Sum_probs=17.4  Template_Neff=1.649
+
+Q 7398317         116 ACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~PiF~  134 (136)
+                      -||.||.+|-.|-|..+|.
+T Consensus        31 ~cp~gm~~dhrg~cr~i~~   49 (58)
+T UniRef100_A0A1   31 ICPQGMRRDHRGVCRNIFD   49 (58)
+Confidence            4999999999999999884
+
+
+No 67
+>UniRef100_A0A177ENB4 Uncharacterized protein n=1 Tax=Nematocida sp. ERTm5 TaxID=1805481 RepID=A0A177ENB4_9MICR
+Probab=81.22  E-value=6  Score=35.53  Aligned_cols=17  Identities=47%  Similarity=0.878  Sum_probs=13.5  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLK  132 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~Pi  132 (136)
+                      .||+||..|.||+|+..
+T Consensus        94 ecpegyvkdgngncvsk  110 (113)
+T UniRef100_A0A1   94 ECPEGYVKDGNGNCVSK  110 (113)
+Confidence            68888888888888764
+
+
+No 68
+>UniRef100_A7RFH4 Predicted protein (Fragment) n=1 Tax=Nematostella vectensis TaxID=45351 RepID=A7RFH4_NEMVE
+Probab=80.48  E-value=6.7  Score=32.56  Aligned_cols=18  Identities=39%  Similarity=0.885  Sum_probs=15.5  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVLK  132 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~Pi  132 (136)
+                      --||.||..|.||.|+..
+T Consensus        34 cfcprgmvvdrngkcvla   51 (66)
+T UniRef100_A7RF   34 CFCPRGMVVDRNGKCVLA   51 (66)
+Confidence            459999999999999753
+
+
+No 69
+>UniRef100_A0A1D2N697 Uncharacterized protein n=1 Tax=Orchesella cincta TaxID=48709 RepID=A0A1D2N697_ORCCI
+Probab=80.42  E-value=6.7  Score=40.68  Aligned_cols=61  Identities=28%  Similarity=0.468  Sum_probs=41.4  Template_Neff=1.000
+
+Q 7398317          73 YTKLNGTDTVTKKVVIADHQTTTESDL---------LHTRFFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus        73 yt~~~sVETVTEnqvtstnqTTtES~l---------L~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      |-..++..-..+-|..+++.+. .|-.         ..-||+|+-+.++.-..||+|..++..|-|.|+.+
+T Consensus       217 ylqqastnglskhqinsddats-gskvlnesngnfsfgdrflinvpskpnlnacpdgqvrnhrgickpivs  286 (374)
+T UniRef100_A0A1  217 YLQQASTNGLSKHQINSDDATS-GSKVLNESNGNFSFGDRFLINVPSKPNLNACPDGQVRNHRGICKPIVS  286 (374)
+Confidence            3344444445555633444333 3333         34689999888877789999999999999999864
+
+
+No 70
+>UniRef100_A0A2P8Z2Y2 Uncharacterized protein n=1 Tax=Blattella germanica TaxID=6973 RepID=A0A2P8Z2Y2_BLAGE
+Probab=79.91  E-value=7.2  Score=34.51  Aligned_cols=37  Identities=35%  Similarity=0.731  Sum_probs=27.2  Template_Neff=1.000
+
+Q 7398317          95 TESDLLH------TRFFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus        95 tES~lL~------TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      +||++|.      ...||..+++.  ..||+||.- .||-|.-+|.
+T Consensus        57 tessfltekfasskkviidaplrs--tscpdgmif-rngvcrrkfv   99 (100)
+T UniRef100_A0A2   57 TESSFLTEKFASSKKVIIDAPLRS--TSCPDGMIF-RNGVCRRKFV   99 (100)
+Confidence            3666655      45577777764  789999975 6899998885
+
+
+No 71
+>UniRef100_A0A6V7LTG7 Uncharacterized protein (Fragment) n=1 Tax=Bracon brevicornis TaxID=1563983 RepID=A0A6V7LTG7_9HYME
+Probab=79.59  E-value=7.5  Score=29.41  Aligned_cols=18  Identities=44%  Similarity=0.778  Sum_probs=16.3  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVLK  132 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~Pi  132 (136)
+                      .-||+|....+||-|.|+
+T Consensus         2 pycpdgqapcangvcipk   19 (38)
+T UniRef100_A0A6    2 PYCPDGQAPCANGVCIPK   19 (38)
+Confidence            369999999999999986
+
+
+No 72
+>UniRef100_R4WDZ5 Uncharacterized protein n=1 Tax=Riptortus pedestris TaxID=329032 RepID=R4WDZ5_RIPPE
+Probab=79.59  E-value=7.5  Score=34.84  Aligned_cols=19  Identities=32%  Similarity=0.684  Sum_probs=17.7  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~PiF~  134 (136)
+                      .||.||-+|..|+|..+|-
+T Consensus        86 pcpkgmrrdhkgecreifa  104 (109)
+T UniRef100_R4WD   86 PCPKGMRRDHKGECREIFA  104 (109)
+Confidence            5999999999999999985
+
+
+No 73
+>UniRef100_A0A7X8UDH0 Uncharacterized protein (Fragment) n=1 Tax=Acidobacteria bacterium TaxID=1978231 RepID=A0A7X8UDH0_9BACT
+Probab=79.35  E-value=7.8  Score=31.30  Aligned_cols=19  Identities=26%  Similarity=0.550  Sum_probs=16.5  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ...||.||++|..|-|+.+
+T Consensus        25 dktcprgytedgrgvcvdi   43 (55)
+T UniRef100_A0A7   25 DKTCPRGYTEDGRGVCVDI   43 (55)
+Confidence            3479999999999999865
+
+
+No 74
+>UniRef100_UPI001E1CF39D uncharacterized protein LOC123505091 n=1 Tax=Portunus trituberculatus TaxID=210409 RepID=UPI001E1CF39D
+Probab=78.66  E-value=8.5  Score=36.67  Aligned_cols=20  Identities=25%  Similarity=0.486  Sum_probs=18.2  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~PiF~  134 (136)
+                      .-||.||-.|-.|.|.++|-
+T Consensus       119 pvcpvgyrsdyrgkcrqifr  138 (170)
+T UniRef100_UPI0  119 PVCPVGYRSDYRGKCRQIFR  138 (170)
+Confidence            37999999999999999984
+
+
+No 75
+>UniRef100_N6TPZ9 Uncharacterized protein (Fragment) n=1 Tax=Dendroctonus ponderosae TaxID=77166 RepID=N6TPZ9_DENPD
+Probab=78.39  E-value=8.8  Score=37.39  Aligned_cols=34  Identities=35%  Similarity=0.612  Sum_probs=24.7  Template_Neff=1.000
+
+Q 7398317          96 ESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus        96 ES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      .-..|..|..+.-+..    .||+|..+|+.|+|+..+
+T Consensus       170 gktildnrnavdvpfn----acpsgqardasgecvssy  203 (203)
+T UniRef100_N6TP  170 GKTILDNRNAVDVPFN----ACPSGQARDASGECVSSY  203 (203)
+Confidence            4444555555555555    799999999999998754
+
+
+No 76
+>UniRef100_A0A7R9RI94 Hypothetical protein (Fragment) n=1 Tax=Argulus foliaceus TaxID=509924 RepID=A0A7R9RI94_9CRUS
+Probab=78.35  E-value=8.8  Score=37.99  Aligned_cols=18  Identities=22%  Similarity=0.600  Sum_probs=16.5  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVLK  132 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~Pi  132 (136)
+                      .-||.||-+|.+|.|.|.
+T Consensus       213 rgcpqgylrdsdgkcrpt  230 (233)
+T UniRef100_A0A7  213 RGCPQGYLRDSDGKCRPT  230 (233)
+Confidence            379999999999999986
+
+
+No 77
+>UniRef100_A0A1Q9VFD8 Uncharacterized protein n=2 Tax=Saccharomonospora sp. CUA-673 TaxID=1904969 RepID=A0A1Q9VFD8_9PSEU
+Probab=78.31  E-value=8.9  Score=31.56  Aligned_cols=31  Identities=29%  Similarity=0.630  Sum_probs=24.4  Template_Neff=1.000
+
+Q 7398317          99 LLHTRFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus        99 lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ++....+|-|-.--   .||+.|+.-+||-|++.
+T Consensus        28 lvtagiligpghdh---tcpddmtakangvcvqt   58 (61)
+T UniRef100_A0A1   28 LVTAGILIGPGHDH---TCPDDMTAKANGVCVQT   58 (61)
+Confidence            34455677777664   99999999999999864
+
+
+No 78
+>UniRef100_N8UIP5 Uncharacterized protein n=1 Tax=Acinetobacter sp. CIP 102129 TaxID=1144664 RepID=N8UIP5_9GAMM
+Probab=78.14  E-value=8.3  Score=41.60  Aligned_cols=19  Identities=42%  Similarity=0.709  Sum_probs=17.1  Template_Neff=1.544
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ..+||.||-.|+||.|.|+
+T Consensus       119 ~~~cp~gyekd~ngkcqpk  137 (495)
+T UniRef100_N8UI  119 EVKCPAGYEKDANGKCQPK  137 (495)
+Confidence            5699999999999999885
+
+
+No 79
+>UniRef100_UPI000AA49EEB hypothetical protein n=1 Tax=Streptomyces griseorubiginosus TaxID=67304 RepID=UPI000AA49EEB
+Probab=77.89  E-value=8.8  Score=31.39  Aligned_cols=27  Identities=37%  Similarity=0.680  Sum_probs=19.6  Template_Neff=1.379
+
+Q 7398317         103 RFFINPPEKKKESACMEGLALA-ANGECVLK  132 (136)
+Q Consensus       103 RfIIrPki~tk~~~CPsGyT~d-aNG~C~Pi  132 (136)
+                      ||.=+|..-   ..||.|+.+| ++|+|+|.
+T Consensus        25 rfa~~pq~d---~scp~g~~rdpa~gec~p~   52 (58)
+T UniRef100_UPI0   25 RFANSPQRD---PSCPPGMMRDPANGECRPP   52 (58)
+Confidence            444445444   4799999998 58999974
+
+
+No 80
+>UniRef100_E9J086 Soinpin-3 (Fragment) n=1 Tax=Solenopsis invicta TaxID=13686 RepID=E9J086_SOLIN
+Probab=77.70  E-value=8.4  Score=33.86  Aligned_cols=34  Identities=26%  Similarity=0.470  Sum_probs=29.2  Template_Neff=1.765
+
+Q 7398317          98 DLLHTRFFINPPEKKKESACMEGLALAANGECVL  131 (136)
+Q Consensus        98 ~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~P  131 (136)
+                      .+..-|.||+.+.+.-.-.||+|...|..|-|..
+T Consensus        57 ~~~~hr~~i~~~sr~~kl~cp~gek~~~rg~crk   90 (92)
+T UniRef100_E9J0   57 VYPHHRNIIKAPSRNAKLGCPSGEKLDPRGVCRK   90 (92)
+Confidence            4457789999988887778999999999999974
+
+
+No 81
+>UniRef100_A0A2I0D3Y4 Peptidase_M23 domain-containing protein n=1 Tax=Psychroflexus sp. MES1-P1E TaxID=2058320 RepID=A0A2I0D3Y4_9FLAO
+Probab=77.22  E-value=10  Score=37.65  Aligned_cols=18  Identities=44%  Similarity=0.805  Sum_probs=15.7  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVL  131 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~P  131 (136)
+                      +.-||+||++|..|+|+.
+T Consensus         5 egycpegytrdssgecve   22 (233)
+T UniRef100_A0A2    5 EGYCPEGYTRDSSGECVE   22 (233)
+Confidence            346999999999999974
+
+
+No 82
+>UniRef100_A0A6J2KR84 venom serine protease inhibitor-like n=1 Tax=Bombyx mandarina TaxID=7092 RepID=A0A6J2KR84_BOMMA
+Probab=77.21  E-value=9.2  Score=34.77  Aligned_cols=30  Identities=33%  Similarity=0.413  Sum_probs=24.9  Template_Neff=1.556
+
+Q 7398317         103 RFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus       103 RfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      -.-|+|+.-.+.-.|.+||.++.||-|+|.
+T Consensus        39 c~~i~~knc~kgc~cke~y~r~~ng~c~p~   68 (115)
+T UniRef100_A0A6   39 CPKINSKNCKKGCICKENYVRDENGTCVPE   68 (115)
+Confidence            344677766688899999999999999986
+
+
+No 83
+>UniRef100_A0A2D9HC42 Uncharacterized protein n=1 Tax=Myxococcales bacterium TaxID=2026763 RepID=A0A2D9HC42_9DELT
+Probab=77.08  E-value=9.1  Score=42.63  Aligned_cols=24  Identities=38%  Similarity=0.693  Sum_probs=19.5  Template_Neff=1.720
+
+Q 7398317         105 FINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus       105 IIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      -|+|..    .+||.||+-|+||.|+|.
+T Consensus       285 ~vn~~~----~~cppg~~~dp~g~cvpg  308 (676)
+T UniRef100_A0A2  285 PVNPLP----GQCPPGFTCDPNGECVPG  308 (676)
+Confidence            355554    489999999999999985
+
+
+No 84
+>UniRef100_A0A3S2TFG2 Uncharacterized protein n=1 Tax=Chilo suppressalis TaxID=168631 RepID=A0A3S2TFG2_CHISP
+Probab=76.50  E-value=11  Score=36.13  Aligned_cols=22  Identities=23%  Similarity=0.575  Sum_probs=19.4  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      .+..||.||.+..+|-|.++|.
+T Consensus       152 appncppgyemgsdgvcrqifk  173 (173)
+T UniRef100_A0A3  152 APPNCPPGYEMGSDGVCRQIFK  173 (173)
+Confidence            3457999999999999999983
+
+
+No 85
+>UniRef100_A0A8J2QHP1 (African queen) hypothetical protein n=1 Tax=Danaus chrysippus TaxID=151541 RepID=A0A8J2QHP1_9NEOP
+Probab=75.91  E-value=11  Score=34.54  Aligned_cols=20  Identities=25%  Similarity=0.685  Sum_probs=18.6  Template_Neff=1.504
+
+Q 7398317         114 ESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF  133 (136)
+                      +.-|..||.+.++|.|+|.|
+T Consensus        98 a~gc~~gy~rt~dgrckptf  117 (118)
+T UniRef100_A0A8   98 AAGCSTGYKRTSDGRCKPTF  117 (118)
+Confidence            56799999999999999998
+
+
+No 86
+>UniRef100_A0A0M3JIF4 EGF-like domain-containing protein n=1 Tax=Anisakis simplex TaxID=6269 RepID=A0A0M3JIF4_ANISI
+Probab=75.68  E-value=12  Score=30.58  Aligned_cols=21  Identities=38%  Similarity=0.801  Sum_probs=19.2  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      -.|.+||.+++-|.|..+|.+
+T Consensus        36 cicregykmnaagrctskfvn   56 (57)
+T UniRef100_A0A0   36 CICREGYKMNAAGRCTSKFVN   56 (57)
+Confidence            479999999999999999975
+
+
+No 87
+>UniRef100_A0A2T4D471 Uncharacterized protein (Fragment) n=1 Tax=Marivirga lumbricoides TaxID=1046115 RepID=A0A2T4D471_9BACT
+Probab=75.27  E-value=12  Score=35.91  Aligned_cols=20  Identities=40%  Similarity=0.745  Sum_probs=17.7  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ++..|.+||..|.||+|+|.
+T Consensus        33 davicsegyvadengecvpd   52 (177)
+T UniRef100_A0A2   33 DAVICSEGYVADENGECVPD   52 (177)
+Confidence            57789999999999999875
+
+
+No 88
+>UniRef100_UPI001CCEF735 M23 family metallopeptidase n=1 Tax=Psychroflexus sp. CCL10W TaxID=2873598 RepID=UPI001CCEF735
+Probab=75.12  E-value=13  Score=39.13  Aligned_cols=18  Identities=39%  Similarity=0.776  Sum_probs=15.8  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVL  131 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~P  131 (136)
+                      +-+||+||++|..|+|+.
+T Consensus       194 elkcpdgytrdssgecve  211 (385)
+T UniRef100_UPI0  194 ELKCPDGYTRDSSGECVE  211 (385)
+Confidence            457999999999999974
+
+
+No 89
+>UniRef100_A0A6G1INP3 Uncharacterized protein (Fragment) n=1 Tax=Lentithecium fluviatile CBS 122367 TaxID=1168545 RepID=A0A6G1INP3_9PLEO
+Probab=74.60  E-value=13  Score=30.07  Aligned_cols=18  Identities=22%  Similarity=0.541  Sum_probs=15.3  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVL  131 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~P  131 (136)
+                      +..||+||++...|.|-.
+T Consensus        23 agscpdgytecnrgscgd   40 (54)
+T UniRef100_A0A6   23 AGSCPDGYTECNRGSCGD   40 (54)
+Confidence            468999999999998853
+
+
+No 90
+>UniRef100_A0A2E3RRJ5 Uncharacterized protein n=1 Tax=Phycisphaerae bacterium TaxID=2026778 RepID=A0A2E3RRJ5_9BACT
+Probab=73.74  E-value=15  Score=36.40  Aligned_cols=20  Identities=35%  Similarity=0.695  Sum_probs=17.3  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ++..||.||++++.|.|+..
+T Consensus        37 kpgdcpkgytrnaqgrcvas   56 (216)
+T UniRef100_A0A2   37 KPGDCPKGYTRNAQGRCVAS   56 (216)
+Confidence            45789999999999999854
+
+
+No 91
+>UniRef100_UPI0004CCF713 uncharacterized protein LOC103580935 n=1 Tax=Microplitis demolitor TaxID=69319 RepID=UPI0004CCF713
+Probab=73.45  E-value=14  Score=33.87  Aligned_cols=31  Identities=23%  Similarity=0.486  Sum_probs=24.6  Template_Neff=1.517
+
+Q 7398317         101 HTRFFINPPEKK-KESACMEGLALAANGECVL  131 (136)
+Q Consensus       101 ~TRfIIrPki~t-k~~~CPsGyT~daNG~C~P  131 (136)
+                      ..|.||--+++- ....||+|..+|..|.|..
+T Consensus        83 egre~i~~p~r~~h~~~c~sg~~~d~hg~cre  114 (116)
+T UniRef100_UPI0   83 EGREVIGMPRRMKHRQGCPSGEVMDEHGQCRE  114 (116)
+Confidence            457777765555 5779999999999999974
+
+
+No 92
+>UniRef100_A0A7I0YXU1 uncharacterized protein LOC116767295 n=1 Tax=Danaus plexippus plexippus TaxID=278856 RepID=A0A7I0YXU1_DANPL
+Probab=72.57  E-value=15  Score=37.99  Aligned_cols=30  Identities=33%  Similarity=0.446  Sum_probs=24.9  Template_Neff=1.399
+
+Q 7398317         100 LHTRFFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       100 L~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      ..+|.||+-+.     +||.||-.|+-|.|.|+..
+T Consensus       279 ~~~~niinvpn-----qcp~gf~pda~g~crpi~t  308 (309)
+T UniRef100_A0A7  279 GSTRNIINVPN-----QCPIGFLPDALGNCRPILT  308 (309)
+Confidence            46788887654     6999999999999999864
+
+
+No 93
+>UniRef100_A0A177ENB4 Uncharacterized protein n=1 Tax=Nematocida sp. ERTm5 TaxID=1805481 RepID=A0A177ENB4_9MICR
+Probab=72.21  E-value=17  Score=33.15  Aligned_cols=23  Identities=39%  Similarity=0.752  Sum_probs=15.2  Template_Neff=1.000
+
+Q 7398317         107 NPPEKKKESACMEGLALAANGECV  130 (136)
+Q Consensus       107 rPki~tk~~~CPsGyT~daNG~C~  130 (136)
+                      +|+.+ +-..||.||..|.||+|+
+T Consensus        23 npksk-dckecpagyvkdgngncv   45 (113)
+T UniRef100_A0A1   23 NPKSK-DCKECPAGYVKDGNGNCV   45 (113)
+Confidence            45544 344677788888877775
+
+
+No 94
+>UniRef100_E2CAF3 Uncharacterized protein n=1 Tax=Harpegnathos saltator TaxID=610380 RepID=E2CAF3_HARSA
+Probab=71.94  E-value=16  Score=35.43  Aligned_cols=31  Identities=26%  Similarity=0.463  Sum_probs=23.1  Template_Neff=1.528
+
+Q 7398317          98 DLLHTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus        98 ~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      -+..-+.||.-+.+     ||+|.-+|.+|.|.|..
+T Consensus       119 kf~~l~~ii~~p~~-----c~eg~~md~~g~cr~~i  149 (174)
+T UniRef100_E2CA  119 KFNQLEHIIMQPPF-----CQEGQEMDSNGICRPVI  149 (174)
+Confidence            34445556655555     99999999999999864
+
+
+No 95
+>UniRef100_A0A2E3UTT5 Uncharacterized protein n=1 Tax=Bdellovibrionaceae bacterium TaxID=2026715 RepID=A0A2E3UTT5_9PROT
+Probab=71.87  E-value=16  Score=36.57  Aligned_cols=22  Identities=32%  Similarity=0.690  Sum_probs=20.0  Template_Neff=1.474
+
+Q 7398317         114 ESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      .+.|.+|..+|+.|.|+|+-+|
+T Consensus       204 tptcadgqvmdadgkcvpidsd  225 (227)
+T UniRef100_A0A2  204 TPTCADGQVMDADGKCVPIDSD  225 (227)
+Confidence            4689999999999999999776
+
+
+No 96
+>UniRef100_A0A0K0CTH1 EGF-like domain-containing protein n=1 Tax=Angiostrongylus cantonensis TaxID=6313 RepID=A0A0K0CTH1_ANGCA
+Probab=71.46  E-value=18  Score=38.77  Aligned_cols=19  Identities=32%  Similarity=0.728  Sum_probs=16.5  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      .-.||+||.+.+||+|.|-
+T Consensus       265 kclcpdgydrsangdclpl  283 (449)
+T UniRef100_A0A0  265 KCLCPDGYDRSANGDCLPL  283 (449)
+Confidence            3469999999999999874
+
+
+No 97
+>UniRef100_A0A6V7H1D4 Hypothetical protein (Fragment) n=1 Tax=Heterotrigona itama TaxID=395501 RepID=A0A6V7H1D4_9HYME
+Probab=71.04  E-value=18  Score=32.77  Aligned_cols=21  Identities=29%  Similarity=0.524  Sum_probs=18.3  Template_Neff=1.109
+
+Q 7398317         113 KESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF  133 (136)
+                      +.--|.+||.++.||-|.|+-
+T Consensus        66 dgcyckdgyarnkngvcipi~   86 (108)
+T UniRef100_A0A6   66 DGCYCKDGYARNKNGVCIPIT   86 (108)
+Confidence            456799999999999999873
+
+
+No 98
+>UniRef100_S4P2Q1 Uncharacterized protein (Fragment) n=3 Tax=Pararge aegeria TaxID=116150 RepID=S4P2Q1_9NEOP
+Probab=70.84  E-value=19  Score=32.25  Aligned_cols=17  Identities=41%  Similarity=0.886  Sum_probs=15.6  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLK  132 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~Pi  132 (136)
+                      .|-+||-++.||.|+|+
+T Consensus        34 rcvdgylrnnngkcvpk   50 (99)
+T UniRef100_S4P2   34 RCVDGYLRNNNGKCVPK   50 (99)
+Confidence            58999999999999986
+
+
+No 99
+>UniRef100_A0A835G5S9 TIL domain-containing protein n=1 Tax=Spodoptera exigua TaxID=7107 RepID=A0A835G5S9_SPOEX
+Probab=70.78  E-value=19  Score=33.16  Aligned_cols=19  Identities=32%  Similarity=0.674  Sum_probs=16.9  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      +-.|.+||-+++.|.|+|.
+T Consensus        91 aclckdgylrnaegkcvpt  109 (121)
+T UniRef100_A0A8   91 ACLCKDGYLRNAEGKCVPT  109 (121)
+Confidence            5579999999999999985
+
+
+No 100
+>UniRef100_A0A6J8A0A8 Uncharacterized protein n=1 Tax=Mytilus coruscus TaxID=42192 RepID=A0A6J8A0A8_MYTCO
+Probab=70.52  E-value=16  Score=39.78  Aligned_cols=21  Identities=43%  Similarity=0.830  Sum_probs=19.5  Template_Neff=2.058
+
+Q 7398317         115 SACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      ..||+|.+++.-|+|.+++.|
+T Consensus       124 tpcpeglv~c~agnc~~ky~d  144 (487)
+T UniRef100_A0A6  124 TPCPEGLVRCLAGNCVGKYDD  144 (487)
+Confidence            479999999999999999987
+
+
+No 101
+>UniRef100_A0A6J2KJR7 inducible metalloproteinase inhibitor protein-like n=1 Tax=Bombyx mandarina TaxID=7092 RepID=A0A6J2KJR7_BOMMA
+Probab=70.51  E-value=20  Score=36.24  Aligned_cols=34  Identities=35%  Similarity=0.432  Sum_probs=28.1  Template_Neff=1.000
+
+Q 7398317          99 LLHTRFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus        99 lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ..---.-|+|+.-.+.-.|.+||-+|.||-|+|.
+T Consensus       157 rpvpcvkinpknckkgcickegylrdenglcvpe  190 (249)
+T UniRef100_A0A6  157 RPVPCVKINPKNCKKGCICKEGYLRDENGLCVPE  190 (249)
+Confidence            3334456899888888899999999999999985
+
+
+No 102
+>UniRef100_A0A553NBT0 Uncharacterized protein n=1 Tax=Tigriopus californicus TaxID=6832 RepID=A0A553NBT0_TIGCA
+Probab=69.90  E-value=21  Score=35.25  Aligned_cols=23  Identities=22%  Similarity=0.374  Sum_probs=20.5  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      .+.+||.||++|.-|-|..+|..
+T Consensus       157 aprqcpqgwvrdiwgycreifhe  179 (203)
+T UniRef100_A0A5  157 APRQCPQGWVRDIWGYCREIFHE  179 (203)
+Confidence            35689999999999999999975
+
+
+No 103
+>UniRef100_A0A821X8C8 Hypothetical protein n=1 Tax=Pieris macdunnoughi TaxID=345717 RepID=A0A821X8C8_9NEOP
+Probab=69.86  E-value=21  Score=32.82  Aligned_cols=27  Identities=30%  Similarity=0.648  Sum_probs=21.3  Template_Neff=1.000
+
+Q 7398317         101 HTRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       101 ~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      .+..++.|      ..||.||.+.+.|-|...|
+T Consensus        91 ftnvvvtp------pncpkgfqrgadgvcrevf  117 (117)
+T UniRef100_A0A8   91 FTNVVVTP------PNCPKGFQRGADGVCREVF  117 (117)
+Confidence            34555555      3799999999999998876
+
+
+No 104
+>UniRef100_A0A1I6NXS2 Uncharacterized protein n=1 Tax=Zhouia amylolytica TaxID=376730 RepID=A0A1I6NXS2_9FLAO
+Probab=69.31  E-value=22  Score=37.81  Aligned_cols=18  Identities=39%  Similarity=0.785  Sum_probs=15.9  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVL  131 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~P  131 (136)
+                      -..||+||..|.||+|+.
+T Consensus       155 vvecpegysvdengncve  172 (397)
+T UniRef100_A0A1  155 VVECPEGYSVDENGNCVE  172 (397)
+Confidence            357999999999999974
+
+
+No 105
+>UniRef100_A0A2E3RRI4 Uncharacterized protein n=1 Tax=Phycisphaerae bacterium TaxID=2026778 RepID=A0A2E3RRI4_9BACT
+Probab=69.17  E-value=22  Score=36.65  Aligned_cols=18  Identities=33%  Similarity=0.735  Sum_probs=16.1  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVL  131 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~P  131 (136)
+                      +..||.||++++.|.|+.
+T Consensus        33 pgdcpkgytrnaqgqcva   50 (296)
+T UniRef100_A0A2   33 PGDCPKGYTRNAQGQCVA   50 (296)
+Confidence            478999999999999974
+
+
+No 106
+>UniRef100_I3EI06 Uncharacterized protein n=2 Tax=Nematocida parisii TaxID=586133 RepID=I3EI06_NEMP3
+Probab=69.16  E-value=22  Score=32.53  Aligned_cols=15  Identities=47%  Similarity=0.977  Sum_probs=8.4  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECV  130 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~  130 (136)
+                      .||.||+.+.||+|+
+T Consensus        65 ncppgftknengecv   79 (113)
+T UniRef100_I3EI   65 NCPPGFTKNENGECV   79 (113)
+Confidence            455555555555554
+
+
+No 107
+>UniRef100_A0A084W7G4 AGAP008923-PA-like protein n=1 Tax=Anopheles sinensis TaxID=74873 RepID=A0A084W7G4_ANOSI
+Probab=68.69  E-value=18  Score=33.04  Aligned_cols=20  Identities=25%  Similarity=0.587  Sum_probs=18.4  Template_Neff=2.469
+
+Q 7398317         113 KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      .+..|+.||-.|-.|.|.|.
+T Consensus        95 APtaCk~GyRvDHKGKCRPs  114 (115)
+T UniRef100_A0A0   95 APTACKPGYRVDHKGKCRPS  114 (115)
+Confidence            67789999999999999985
+
+
+No 108
+>UniRef100_A0A7M7HPJ0 Uncharacterized protein n=1 Tax=Strongylocentrotus purpuratus TaxID=7668 RepID=A0A7M7HPJ0_STRPU
+Probab=68.48  E-value=21  Score=42.22  Aligned_cols=23  Identities=35%  Similarity=0.670  Sum_probs=20.5  Template_Neff=1.752
+
+Q 7398317         113 KESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      ...+|++|+-.|.||+|.|+-+|
+T Consensus       581 ~~~~c~egfeld~ng~c~~i~sd  603 (1143)
+T UniRef100_A0A7  581 ITIQCIEGFELDDNGNCAPISSD  603 (1143)
+Confidence            45699999999999999998776
+
+
+No 109
+>UniRef100_A0A7R9RZJ1 Hypothetical protein (Fragment) n=1 Tax=Argulus foliaceus TaxID=509924 RepID=A0A7R9RZJ1_9CRUS
+Probab=68.34  E-value=24  Score=31.71  Aligned_cols=32  Identities=34%  Similarity=0.453  Sum_probs=26.4  Template_Neff=1.000
+
+Q 7398317         101 HTRFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus       101 ~TRfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      -+.-|.+-+++.+-+.||-|...|+.|+|..+
+T Consensus        62 vtkmifrlpikkqfsncpygespdaygncrkk   93 (98)
+T UniRef100_A0A7   62 VTKMIFRLPIKKQFSNCPYGESPDAYGNCRKK   93 (98)
+Confidence            45567777777778899999999999999754
+
+
+No 110
+>UniRef100_A0A821X8C8 Hypothetical protein n=1 Tax=Pieris macdunnoughi TaxID=345717 RepID=A0A821X8C8_9NEOP
+Probab=67.99  E-value=24  Score=32.46  Aligned_cols=31  Identities=32%  Similarity=0.584  Sum_probs=22.6  Template_Neff=1.000
+
+Q 7398317          96 ESDLLHTRFFINPPEKKKESACMEGLALAANGECVL  131 (136)
+Q Consensus        96 ES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~P  131 (136)
+                      |--|-.-.-||.-+.+     ||+||..|..|.|.-
+T Consensus        27 ekklnnqdgiidtpvk-----cpsgyakdqegkcqm   57 (117)
+T UniRef100_A0A8   27 EKKLNNQDGIIDTPVK-----CPSGYAKDQEGKCQM   57 (117)
+Confidence            3334445556666665     999999999999964
+
+
+No 111
+>UniRef100_A0A5B7FMT4 Uncharacterized protein n=1 Tax=Portunus trituberculatus TaxID=210409 RepID=A0A5B7FMT4_PORTR
+Probab=67.44  E-value=25  Score=36.03  Aligned_cols=20  Identities=25%  Similarity=0.486  Sum_probs=18.2  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~PiF~  134 (136)
+                      .-||.||-.|-.|.|.++|-
+T Consensus       119 pvcpvgyrsdyrgkcrqifr  138 (278)
+T UniRef100_A0A5  119 PVCPVGYRSDYRGKCRQIFR  138 (278)
+Confidence            37999999999999999984
+
+
+No 112
+>UniRef100_A0A195B1D8 Uncharacterized protein n=1 Tax=Atta colombica TaxID=520822 RepID=A0A195B1D8_9HYME
+Probab=67.27  E-value=26  Score=30.58  Aligned_cols=38  Identities=21%  Similarity=0.472  Sum_probs=30.8  Template_Neff=1.000
+
+Q 7398317          95 TESDLLHTRFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus        95 tES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      +|-..+.--.||..+.+..+..||.|.-.|..|-|...
+T Consensus        42 teckvirptsiidaprrttarpcpqgqrqdsrgvcrsp   79 (80)
+T UniRef100_A0A1   42 TECKVIRPTSIIDAPRRTTARPCPQGQRQDSRGVCRSP   79 (80)
+Confidence            45555666678888888888999999999999999753
+
+
+No 113
+>UniRef100_UPI001F4FEE4F uncharacterized protein LOC124607176 isoform X1 n=1 Tax=Schistocerca americana TaxID=7009 RepID=UPI001F4FEE4F
+Probab=66.43  E-value=28  Score=33.06  Aligned_cols=38  Identities=32%  Similarity=0.517  Sum_probs=29.0  Template_Neff=1.000
+
+Q 7398317          93 TTTESDLLHTRFF-INPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus        93 TTtES~lL~TRfI-IrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      .-+||++|+...+ ..|.++    .||.|..+|.-|.|....+
+T Consensus        98 netesglldrslvnatptlk----tcppgqqrdrlgkcrtaip  136 (143)
+T UniRef100_UPI0   98 NETESGLLDRSLVNATPTLK----TCPPGQQRDRLGKCRTAIP  136 (143)
+Confidence            3379999986544 345666    7999999999999986544
+
+
+No 114
+>UniRef100_A0A0C2C885 Low-density lipoprotein receptor repeat class B (Fragment) n=1 Tax=Ancylostoma duodenale TaxID=51022 RepID=A0A0C2C885_9BILA
+Probab=66.35  E-value=28  Score=36.91  Aligned_cols=18  Identities=22%  Similarity=0.510  Sum_probs=16.5  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLKF  133 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~PiF  133 (136)
+                      .||+||.+..+|+|+|+.
+T Consensus       334 lcpdgykeqedgdcspie  351 (369)
+T UniRef100_A0A0  334 LCPDGYKEQEDGDCSPIE  351 (369)
+Confidence            599999999999999974
+
+
+No 115
+>UniRef100_A0A6V7HTA5 Peptidase_M13 domain-containing protein (Fragment) n=1 Tax=Bracon brevicornis TaxID=1563983 RepID=A0A6V7HTA5_9HYME
+Probab=66.27  E-value=28  Score=29.43  Aligned_cols=27  Identities=26%  Similarity=0.455  Sum_probs=21.6  Template_Neff=1.000
+
+Q 7398317         105 FINPPEKKKESACMEGLALAANGECVL  131 (136)
+Q Consensus       105 IIrPki~tk~~~CPsGyT~daNG~C~P  131 (136)
+                      +-+-+.+..+++||.|-++++|..|-.
+T Consensus        33 lsnmkefseafkcpkgttmnpndkcnl   59 (65)
+T UniRef100_A0A6   33 LSNMKEFSEAFKCPKGTTMNPNDKCNL   59 (65)
+Confidence            344555667899999999999999964
+
+
+No 116
+>UniRef100_A0A1I8BC35 Uncharacterized protein n=1 Tax=Meloidogyne hapla TaxID=6305 RepID=A0A1I8BC35_MELHA
+Probab=66.11  E-value=26  Score=35.27  Aligned_cols=16  Identities=38%  Similarity=0.976  Sum_probs=14.9  Template_Neff=1.411
+
+Q 7398317         116 ACMEGLALAANGECVL  131 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~P  131 (136)
+                      +||.||.+..||+|..
+T Consensus        71 ~cppgyfmcrngdcil   86 (225)
+T UniRef100_A0A1   71 KCPPGYFMCRNGDCIL   86 (225)
+Confidence            7999999999999975
+
+
+No 117
+>UniRef100_A0A8J2KYQ9 Hypothetical protein n=1 Tax=Allacma fusca TaxID=39272 RepID=A0A8J2KYQ9_9HEXA
+Probab=64.58  E-value=32  Score=35.16  Aligned_cols=20  Identities=35%  Similarity=0.760  Sum_probs=18.3  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~PiF~D  135 (136)
+                      .||+|.+...||+|++.|-.
+T Consensus        61 scpsgetqssngncvqtfgg   80 (257)
+T UniRef100_A0A8   61 SCPSGETQSSNGNCVQTFGG   80 (257)
+Confidence            79999999999999999853
+
+
+No 118
+>UniRef100_A0A154NXQ3 Uncharacterized protein n=1 Tax=Dufourea novaeangliae TaxID=178035 RepID=A0A154NXQ3_DUFNO
+Probab=64.57  E-value=32  Score=30.71  Aligned_cols=33  Identities=27%  Similarity=0.476  Sum_probs=28.6  Template_Neff=1.000
+
+Q 7398317         100 LHTRFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus       100 L~TRfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      +++..||-.+.+.+.+.|-.|.-+|..|.|..+
+T Consensus        58 vdtssiiaaphrnkqstcgpgerrdrhgrcrki   90 (91)
+T UniRef100_A0A1   58 VDTSSIIAAPHRNKQSTCGPGERRDRHGRCRKI   90 (91)
+Confidence            356678888888899999999999999999865
+
+
+No 119
+>UniRef100_A0A2A4IZ86 Uncharacterized protein n=1 Tax=Heliothis virescens TaxID=7102 RepID=A0A2A4IZ86_HELVI
+Probab=64.03  E-value=28  Score=33.50  Aligned_cols=18  Identities=28%  Similarity=0.554  Sum_probs=16.4  Template_Neff=2.066
+
+Q 7398317         115 SACMEGLALAANGECVLK  132 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~Pi  132 (136)
+                      --|.+||.+|.+++|+|+
+T Consensus       124 CyCkDGyARD~~rnCiPv  141 (154)
+T UniRef100_A0A2  124 CYCKDGYARDDDRNCVPV  141 (154)
+Confidence            369999999999999996
+
+
+No 120
+>UniRef100_A0A0A1XQX5 von Willebrand factor D and EGF domain-containing protein (Fragment) n=1 Tax=Zeugodacus cucurbitae TaxID=28588 RepID=A0A0A1XQX5_ZEUCU
+Probab=63.86  E-value=33  Score=34.17  Aligned_cols=27  Identities=30%  Similarity=0.422  Sum_probs=21.3  Template_Neff=1.108
+
+Q 7398317         104 FFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       104 fIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      .-|-|..-    .||+||-.+.||+|.|+-+
+T Consensus       166 eciapnkc----rcpegyranenggcdpics  192 (203)
+T UniRef100_A0A0  166 ECIAPNKC----RCPEGYRANENGGCDPICS  192 (203)
+Confidence            34556554    6999999999999999754
+
+
+No 121
+>UniRef100_A0A182SBI7 Uncharacterized protein n=1 Tax=Anopheles maculatus TaxID=74869 RepID=A0A182SBI7_9DIPT
+Probab=63.82  E-value=34  Score=40.66  Aligned_cols=22  Identities=32%  Similarity=0.626  Sum_probs=19.1  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      --.||.||++|.||+|+|.--|
+T Consensus       797 vcncpagytmdgngncvppagd  818 (1335)
+T UniRef100_A0A1  797 VCNCPAGYTMDGNGNCVPPAGD  818 (1335)
+Confidence            4579999999999999997655
+
+
+No 122
+>UniRef100_A0A836C3C0 Uncharacterized protein n=1 Tax=Edaphochlamys debaryana TaxID=47281 RepID=A0A836C3C0_9CHLO
+Probab=62.89  E-value=36  Score=35.87  Aligned_cols=40  Identities=23%  Similarity=0.406  Sum_probs=34.0  Template_Neff=1.000
+
+Q 7398317          95 TESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus        95 tES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      ..|.-...|+++.|.+-.-+-.||.||.+..||.|...++
+T Consensus       289 qqsvnpsrrhllspllpsveclcpqgyvecsngscaagws  328 (335)
+T UniRef100_A0A8  289 QQSVNPSRRHLLSPLLPSVECLCPQGYVECSNGSCAAGWS  328 (335)
+Confidence            4567778899999988877889999999999999986553
+
+
+No 123
+>UniRef100_A0A212F1B1 uncharacterized protein LOC116767774 n=1 Tax=Danaus plexippus plexippus TaxID=278856 RepID=A0A212F1B1_DANPL
+Probab=62.70  E-value=36  Score=31.00  Aligned_cols=20  Identities=30%  Similarity=0.574  Sum_probs=17.7  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF  133 (136)
+                      +..||.|..+.+.|-|...|
+T Consensus        85 ppncpkgqsrgadgvcrdvf  104 (104)
+T UniRef100_A0A2   85 PPNCPKGQSRGADGVCRDVF  104 (104)
+Confidence            45799999999999998876
+
+
+No 124
+>UniRef100_A0A8J2PN19 Hypothetical protein n=1 Tax=Allacma fusca TaxID=39272 RepID=A0A8J2PN19_9HEXA
+Probab=62.56  E-value=37  Score=33.18  Aligned_cols=20  Identities=35%  Similarity=0.637  Sum_probs=16.7  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANG-ECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG-~C~Pi  132 (136)
+                      .+..||+||-+.+|| +|+|-
+T Consensus       147 gppecpegyyrtpngqdcvpl  167 (173)
+T UniRef100_A0A8  147 GPPECPEGYYRTPNGQDCVPL  167 (173)
+Confidence            466899999999999 58774
+
+
+No 125
+>UniRef100_A0A7Z9P2R0 Uncharacterized protein (Fragment) n=1 Tax=Phycisphaerales bacterium TaxID=2052180 RepID=A0A7Z9P2R0_9BACT
+Probab=62.07  E-value=38  Score=32.41  Aligned_cols=19  Identities=26%  Similarity=0.585  Sum_probs=17.0  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ..+||.|..+|-||+|.|.
+T Consensus        31 kaqcptgeiedcngncape   49 (147)
+T UniRef100_A0A7   31 KAQCPTGEIEDCNGNCAPE   49 (147)
+Confidence            4589999999999999884
+
+
+No 126
+>UniRef100_A0A504Y5J7 Neural-cadherin (Fragment) n=1 Tax=Fasciola gigantica TaxID=46835 RepID=A0A504Y5J7_FASGI
+Probab=61.90  E-value=38  Score=34.90  Aligned_cols=22  Identities=32%  Similarity=0.741  Sum_probs=19.8  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      +-.||+|..+|.-|.|+..|-|
+T Consensus       149 rcecpsgqkmdstgkcvsefcd  170 (273)
+T UniRef100_A0A5  149 RCECPSGQKMDSTGKCVSEFCD  170 (273)
+Confidence            3479999999999999999976
+
+
+No 127
+>UniRef100_A0A8B7PG11 uncharacterized protein LOC108680704 n=1 Tax=Hyalella azteca TaxID=294128 RepID=A0A8B7PG11_HYAAZ
+Probab=61.87  E-value=39  Score=34.93  Aligned_cols=24  Identities=21%  Similarity=0.379  Sum_probs=20.3  Template_Neff=1.000
+
+Q 7398317         111 KKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       111 ~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      +..+.-||.-|-+|+.|.|.|.|.
+T Consensus       111 isapdvcpnqymrdaggrcrpaft  134 (275)
+T UniRef100_A0A8  111 ISAPDVCPNQYMRDAGGRCRPAFT  134 (275)
+Confidence            334557999999999999999985
+
+
+No 128
+>UniRef100_UPI001A430FAE hypothetical protein n=1 Tax=Marivirga atlantica TaxID=1548457 RepID=UPI001A430FAE
+Probab=61.71  E-value=39  Score=36.53  Aligned_cols=37  Identities=30%  Similarity=0.704  Sum_probs=28.3  Template_Neff=1.000
+
+Q 7398317          95 TESDLLHTRFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus        95 tES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      -....|...+++.|+-. -+.-|-+||..|.||+|+|+
+T Consensus       227 pkrailevdyvldppgt-lpkvcgdgmvsdgngecvpk  263 (426)
+T UniRef100_UPI0  227 PKRAILEVDYVLDPPGT-LPKVCGDGMVSDGNGECVPK  263 (426)
+Confidence            34456677777777654 24579999999999999986
+
+
+No 129
+>UniRef100_A0A6C0INS7 Uncharacterized protein n=1 Tax=viral metagenome TaxID=1070528 RepID=A0A6C0INS7_9ZZZZ
+Probab=61.01  E-value=41  Score=34.69  Aligned_cols=18  Identities=44%  Similarity=0.822  Sum_probs=15.8  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVLK  132 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~Pi  132 (136)
+                      .+||+..-.|.||+|+|+
+T Consensus       181 nqcpddeeldsngecvpk  198 (269)
+T UniRef100_A0A6  181 NQCPDDEELDSNGECVPK  198 (269)
+Confidence            489999999999999985
+
+
+No 130
+>UniRef100_A0A7E4W3N8 Uncharacterized protein n=1 Tax=Panagrellus redivivus TaxID=6233 RepID=A0A7E4W3N8_PANRE
+Probab=60.86  E-value=41  Score=33.30  Aligned_cols=17  Identities=47%  Similarity=0.833  Sum_probs=15.1  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLK  132 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~Pi  132 (136)
+                      -|..||.+|+||+|+..
+T Consensus         8 ycqagyvrdangecvsn   24 (191)
+T UniRef100_A0A7    8 YCQAGYVRDANGECVSN   24 (191)
+Confidence            59999999999999853
+
+
+No 131
+>UniRef100_H0GCX9 YCR099C-like protein n=1 Tax=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) TaxID=1095631 RepID=H0GCX9_SACCK
+Probab=60.09  E-value=44  Score=30.46  Aligned_cols=21  Identities=19%  Similarity=0.629  Sum_probs=18.2  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      ...|.+.|.+|+.|+|.|.+.
+T Consensus        15 dyecssefvrdakgdcipdyd   35 (101)
+T UniRef100_H0GC   15 DYECSSEFVRDAKGDCIPDYD   35 (101)
+Confidence            457999999999999999763
+
+
+No 132
+>UniRef100_A0A506PS81 M23 family metallopeptidase n=1 Tax=Paucihalobacter ruber TaxID=2567861 RepID=A0A506PS81_9FLAO
+Probab=59.83  E-value=44  Score=36.52  Aligned_cols=23  Identities=30%  Similarity=0.638  Sum_probs=19.6  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      ++..||.||.+|.|.+|+|.-+.
+T Consensus       240 dpnacptgyirddnnncvpqcpe  262 (467)
+T UniRef100_A0A5  240 DPNACPTGYIRDDNNNCVPQCPE  262 (467)
+Confidence            56789999999999999987553
+
+
+No 133
+>UniRef100_A0A8B7NMG0 uncharacterized protein LOC108671793 n=1 Tax=Hyalella azteca TaxID=294128 RepID=A0A8B7NMG0_HYAAZ
+Probab=59.57  E-value=45  Score=31.94  Aligned_cols=44  Identities=25%  Similarity=0.282  Sum_probs=30.6  Template_Neff=1.000
+
+Q 7398317          90 DHQTTTESDLLHTRFFINPPE-----KKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus        90 tnqTTtES~lL~TRfIIrPki-----~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      ++|..-.|++-.+..-++...     +-...-||+-|..|+||-|.|+.
+T Consensus        93 ddqkavdsdlqetnvnlnsdfdarcifcggggcpdcyqpdpngvcrpiv  141 (145)
+T UniRef100_A0A8   93 DDQKAVDSDLQETNVNLNSDFDARCIFCGGGGCPDCYQPDPNGVCRPIV  141 (145)
+Confidence            344445666666665554432     22577899999999999999974
+
+
+No 134
+>UniRef100_A0A1B0CHK6 Uncharacterized protein n=1 Tax=Lutzomyia longipalpis TaxID=7200 RepID=A0A1B0CHK6_LUTLO
+Probab=59.34  E-value=46  Score=30.17  Aligned_cols=20  Identities=20%  Similarity=0.567  Sum_probs=17.6  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF  133 (136)
+                      ...||+|.-+|..|.|.+++
+T Consensus        78 rphcpdgqlmdhrgrcrqiw   97 (97)
+T UniRef100_A0A1   78 RPHCPDGQLMDHRGRCRQIW   97 (97)
+Confidence            45799999999999998764
+
+
+No 135
+>UniRef100_A0A1J1HWF2 CLUMA_CG005339, isoform A n=1 Tax=Clunio marinus TaxID=568069 RepID=A0A1J1HWF2_9DIPT
+Probab=59.28  E-value=46  Score=33.13  Aligned_cols=17  Identities=35%  Similarity=0.819  Sum_probs=14.9  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVL  131 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~P  131 (136)
+                      --|.+||++|+||+|..
+T Consensus       118 cyckegfvrdpngdcid  134 (196)
+T UniRef100_A0A1  118 CYCKEGFVRDPNGDCID  134 (196)
+Confidence            35999999999999974
+
+
+No 136
+>UniRef100_A0A084W7G5 AGAP008923-PB-like protein n=1 Tax=Anopheles sinensis TaxID=74873 RepID=A0A084W7G5_ANOSI
+Probab=59.00  E-value=47  Score=29.37  Aligned_cols=29  Identities=24%  Similarity=0.463  Sum_probs=23.1  Template_Neff=1.000
+
+Q 7398317         103 RFFINPPEKKKESACMEGLALAANGECVL  131 (136)
+Q Consensus       103 RfIIrPki~tk~~~CPsGyT~daNG~C~P  131 (136)
+                      .--|.|..+..+.+|.+||..|..|-|.-
+T Consensus        51 ilsiepamidapkkcrdgyamdhrgmcrr   79 (82)
+T UniRef100_A0A0   51 ILSIEPAMIDAPKKCRDGYAMDHRGMCRR   79 (82)
+Confidence            34466777667778999999999999964
+
+
+No 137
+>UniRef100_T1FJL3 VWFA domain-containing protein n=1 Tax=Helobdella robusta TaxID=6412 RepID=T1FJL3_HELRO
+Probab=58.96  E-value=47  Score=34.93  Aligned_cols=16  Identities=56%  Similarity=1.082  Sum_probs=10.9  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECV  130 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~  130 (136)
+                      ++|.+||..|+||+|+
+T Consensus       234 sqcrsgysldangncv  249 (315)
+T UniRef100_T1FJ  234 SQCRSGYSLDANGNCV  249 (315)
+Confidence            4666777777777765
+
+
+No 138
+>UniRef100_A0A242L0Q4 Uncharacterized protein (Fragment) n=1 Tax=Enterococcus mundtii TaxID=53346 RepID=A0A242L0Q4_ENTMU
+Probab=58.63  E-value=48  Score=36.23  Aligned_cols=37  Identities=38%  Similarity=0.434  Sum_probs=34.1  Template_Neff=1.000
+
+Q 7398317           1 RNVHQTTTNKSPNYKHQNRINGTTKINITTSVIPVGR   37 (136)
+Q Consensus         1 r~~h~t~tn~~~~~khq~rin~t~k~n~t~~~~pvgr   37 (136)
+                      |+..|.|-|+-||.|.|.--|.-||-|+.|-+.||.-
+T Consensus       145 rfaeqaslnkkpnlkqqslsndqikenvsmhvnpvht  181 (457)
+T UniRef100_A0A2  145 RFAEQASLNKRPNVKQQSLSNDQIKENVSMHVNPVHT  181 (457)
+Confidence            5678999999999999999999999999999999963
+
+
+No 139
+>UniRef100_A0A6P7GZE5 uncharacterized protein LOC114344896 n=1 Tax=Diabrotica virgifera virgifera TaxID=50390 RepID=A0A6P7GZE5_DIAVI
+Probab=58.63  E-value=48  Score=35.06  Aligned_cols=28  Identities=29%  Similarity=0.508  Sum_probs=23.3  Template_Neff=1.000
+
+Q 7398317         102 TRFFINPPEKKKESACMEGLALAANGECVL  131 (136)
+Q Consensus       102 TRfIIrPki~tk~~~CPsGyT~daNG~C~P  131 (136)
+                      .-.+|+.+++.  .+||+|+..|..|+|..
+T Consensus       300 aanfirnkiit--kkcpdglildlsgncea  327 (331)
+T UniRef100_A0A6  300 AANFIRNKIIT--KKCPDGLILDLSGNCEA  327 (331)
+Confidence            45678888775  68999999999999975
+
+
+No 140
+>UniRef100_UPI00191741E0 M23 family metallopeptidase n=1 Tax=Marivirga sp. S37H4 TaxID=2802615 RepID=UPI00191741E0
+Probab=58.59  E-value=48  Score=36.23  Aligned_cols=22  Identities=45%  Similarity=0.795  Sum_probs=19.1  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      ++..|.+||..|.||+|+|--+
+T Consensus       255 devicsegyvadengecvplcp  276 (459)
+T UniRef100_UPI0  255 DEVICSEGYVADENGECVPLCP  276 (459)
+Confidence            5778999999999999998643
+
+
+No 141
+>UniRef100_UPI000B381645 uncharacterized protein LOC110381328 n=1 Tax=Helicoverpa armigera TaxID=29058 RepID=UPI000B381645
+Probab=58.48  E-value=49  Score=32.63  Aligned_cols=34  Identities=24%  Similarity=0.370  Sum_probs=28.5  Template_Neff=1.000
+
+Q 7398317         102 TRFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       102 TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      ...|-.|.+++-+..||.|....+||-|...+.|
+T Consensus       146 aeriakpniitvppncppgqklgpngvcrevwnd  179 (179)
+T UniRef100_UPI0  146 AERIAKPNIITVPPNCPPGQKLGPNGVCREVWND  179 (179)
+Confidence            3457778888778899999999999999987765
+
+
+No 142
+>UniRef100_E1ZNX5 Uncharacterized protein n=1 Tax=Chlorella variabilis TaxID=554065 RepID=E1ZNX5_CHLVA
+Probab=57.96  E-value=50  Score=32.71  Aligned_cols=19  Identities=37%  Similarity=0.497  Sum_probs=16.8  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      --+|.+||..++||-|.|-
+T Consensus        92 clqckegykpnangvckpy  110 (186)
+T UniRef100_E1ZN   92 CLQCKEGYKPNANGVCKPY  110 (186)
+Confidence            3489999999999999984
+
+
+No 143
+>UniRef100_A0A6V7M3E3 Uncharacterized protein (Fragment) n=1 Tax=Bracon brevicornis TaxID=1563983 RepID=A0A6V7M3E3_9HYME
+Probab=57.74  E-value=51  Score=26.85  Aligned_cols=26  Identities=42%  Similarity=0.638  Sum_probs=22.4  Template_Neff=1.000
+
+Q 7398317         107 NPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus       107 rPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      -|+.++++.-||+|--..+.|+|...
+T Consensus         5 lpkfktdepvcpegklqcaggecidk   30 (49)
+T UniRef100_A0A6    5 LPKFKTDEPVCPEGKLQCAGGECIDK   30 (49)
+Confidence            37777789999999999999999754
+
+
+No 144
+>UniRef100_UPI000C1FDB8A uncharacterized protein LOC111418060 n=1 Tax=Onthophagus taurus TaxID=166361 RepID=UPI000C1FDB8A
+Probab=57.52  E-value=52  Score=30.92  Aligned_cols=21  Identities=19%  Similarity=0.529  Sum_probs=18.0  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF  133 (136)
+                      .-..|.+||-+|..|-|.+++
+T Consensus       103 nvntcadgyrrdrsgvcrqiy  123 (123)
+T UniRef100_UPI0  103 NVNTCADGYRRDRSGVCRQIY  123 (123)
+Confidence            345899999999999999864
+
+
+No 145
+>UniRef100_A0A5J4N5H1 Uncharacterized protein n=1 Tax=Paragonimus westermani TaxID=34504 RepID=A0A5J4N5H1_9TREM
+Probab=57.27  E-value=53  Score=31.27  Aligned_cols=19  Identities=26%  Similarity=0.590  Sum_probs=17.3  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      .+.||+|..+.+-|+|.|.
+T Consensus        94 dstcpsgqyrcpaggcipa  112 (135)
+T UniRef100_A0A5   94 DSTCPSGQYRCPAGGCIPA  112 (135)
+Confidence            5789999999999999984
+
+
+No 146
+>UniRef100_UPI0018A6FFE7 uncharacterized protein LOC119585863 n=1 Tax=Penaeus monodon TaxID=6687 RepID=UPI0018A6FFE7
+Probab=57.18  E-value=53  Score=32.58  Aligned_cols=54  Identities=39%  Similarity=0.578  Sum_probs=34.2  Template_Neff=1.000
+
+Q 7398317          81 TVTKKVVIADHQTT--TESDLLHTR----FFINPPE------------KKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus        81 TVTEnqvtstnqTT--tES~lL~TR----fIIrPki------------~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      |.-.|..++.|.++  +-|+.|.+-    .++.|+.            +.+.+-||+|...|-||.|..-|.
+T Consensus        89 tmkpnattsangttsetpsdilkttvaptvvlkppvggdadvpelilqfpkhsvcpeghapdmngkcrllfk  160 (186)
+T UniRef100_UPI0   89 TMKPNATTSANGTTSETPSDILKTTVAPTVVLKPPVGGDADVPELILQFPKHSVCPEGHAPDMNGKCRLLFK  160 (186)
+Confidence            44455556666666  334444432    2334432            125678999999999999998874
+
+
+No 147
+>UniRef100_A0A034VZW0 Uncharacterized protein (Fragment) n=1 Tax=Bactrocera dorsalis TaxID=27457 RepID=A0A034VZW0_BACDO
+Probab=57.12  E-value=42  Score=32.86  Aligned_cols=35  Identities=34%  Similarity=0.457  Sum_probs=30.8  Template_Neff=2.400
+
+Q 7398317          97 SDLLHTRFFINPPEKKKESACMEGLALAANGECVL  131 (136)
+Q Consensus        97 S~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~P  131 (136)
+                      -.++.--.||+|-+...+.+|--|+..|+=|+|+.
+T Consensus       128 k~fl~nVEiInpDiLK~eQqCGHGHILDALGNCsK  162 (171)
+T UniRef100_A0A0  128 KGFLANVEIINPDILKGEQQCGHGHILDALGNCSK  162 (171)
+Confidence            35667778999999999999999999999999974
+
+
+No 148
+>UniRef100_A0A7R8H8U8 (salmon louse) hypothetical protein n=1 Tax=Lepeophtheirus salmonis TaxID=72036 RepID=A0A7R8H8U8_LEPSM
+Probab=57.11  E-value=53  Score=37.33  Aligned_cols=29  Identities=24%  Similarity=0.639  Sum_probs=22.4  Template_Neff=1.000
+
+Q 7398317         106 INPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       106 IrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      ++.+.+...-+|.+||+-|.||.|...+-
+T Consensus       106 vnaksrngkcqckegytydsngqctkayi  134 (687)
+T UniRef100_A0A7  106 VNAKSRNGKCQCKEGYTYDSNGQCTKAYI  134 (687)
+Confidence            34455556779999999999999987653
+
+
+No 149
+>UniRef100_A0A2A6BFM0 Uncharacterized protein n=2 Tax=Pristionchus pacificus TaxID=54126 RepID=A0A2A6BFM0_PRIPA
+Probab=57.00  E-value=53  Score=30.94  Aligned_cols=19  Identities=42%  Similarity=0.789  Sum_probs=17.2  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~PiF~  134 (136)
+                      -|-.||.+.+|.+|.|+|.
+T Consensus        76 mcypgyvraanndcipkff   94 (126)
+T UniRef100_A0A2   76 MCYPGYVRAANNDCIPKFF   94 (126)
+Confidence            4778999999999999985
+
+
+No 150
+>UniRef100_A0A7J6EBL0 RNase H type-1 domain-containing protein n=1 Tax=Cannabis sativa TaxID=3483 RepID=A0A7J6EBL0_CANSA
+Probab=56.47  E-value=55  Score=34.22  Aligned_cols=52  Identities=31%  Similarity=0.380  Sum_probs=43.8  Template_Neff=1.000
+
+Q 7398317           8 TNKSPNYKHQNRINGTTKINITTSVIPVGRNFKQFPACDTTKKCRRSNSTTT   59 (136)
+Q Consensus         8 tn~~~~~khq~rin~t~k~n~t~~~~pvgrn~k~f~~~~~tk~~~~~~s~~~   59 (136)
+                      |..|+.+|||+-+-||--.-+-.+-.-+-...|.||..+-||-|..|.|-+-
+T Consensus        16 tensptfkhqiplmgtclallqatengiyhkfkpfpqatftklynpshsfah   67 (292)
+T UniRef100_A0A7   16 TENSPTFKHQIPLMGTCLALLQATENGIYHKFKPFPQATFTKLYNPSHSFAH   67 (292)
+Confidence            5678999999999999877666667777788999999999999988877653
+
+
+No 151
+>UniRef100_A0A4Y2VQ31 TIL domain-containing protein n=1 Tax=Araneus ventricosus TaxID=182803 RepID=A0A4Y2VQ31_ARAVE
+Probab=56.19  E-value=56  Score=30.12  Aligned_cols=20  Identities=30%  Similarity=0.685  Sum_probs=17.4  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      +.-.|.+||.++.+|.|.|.
+T Consensus        38 kgcdcqegyfrnsdgkcipa   57 (107)
+T UniRef100_A0A4   38 KGCDCQEGYFRNSDGKCIPA   57 (107)
+Confidence            44579999999999999985
+
+
+No 152
+>UniRef100_UPI001AE68DDF capping protein inhibiting regulator of actin dynamics-like n=1 Tax=Lepeophtheirus salmonis TaxID=72036 RepID=UPI001AE68DDF
+Probab=56.08  E-value=57  Score=34.29  Aligned_cols=31  Identities=16%  Similarity=0.486  Sum_probs=24.5  Template_Neff=1.000
+
+Q 7398317         105 FINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       105 IIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      +++--++.....||-||++|..|-|..+|..
+T Consensus       246 lvhlghrrednscpygwvmdiygycrsifke  276 (302)
+T UniRef100_UPI0  246 LVHLGHRREDNSCPYGWVMDIYGYCRSIFKE  276 (302)
+Confidence            3444444467789999999999999999964
+
+
+No 153
+>UniRef100_UPI001C99C3B9 hypothetical protein n=1 Tax=Ferrimonas balearica TaxID=44012 RepID=UPI001C99C3B9
+Probab=55.85  E-value=58  Score=37.39  Aligned_cols=25  Identities=40%  Similarity=0.764  Sum_probs=20.9  Template_Neff=1.000
+
+Q 7398317         108 PPEKK-KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       108 Pki~t-k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      |+.++ .+++|.+||-.|..|+|+|+
+T Consensus       171 ppmiplepsqcsegfekdeegncvpk  196 (751)
+T UniRef100_UPI0  171 PPMIPLEPSQCSEGFEKDEEGNCVPK  196 (751)
+Confidence            44444 78899999999999999986
+
+
+No 154
+>UniRef100_B3MZE8 Uncharacterized protein n=2 Tax=Drosophila ananassae TaxID=7217 RepID=B3MZE8_DROAN
+Probab=55.39  E-value=59  Score=32.83  Aligned_cols=36  Identities=33%  Similarity=0.467  Sum_probs=32.3  Template_Neff=1.000
+
+Q 7398317          96 ESDLLHTRFFINPPEKKKESACMEGLALAANGECVL  131 (136)
+Q Consensus        96 ES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~P  131 (136)
+                      ..++|-.-.||+|.+...+.+|-.|...|+-|+|+.
+T Consensus       175 drgflanveiinpdilkgeqqcghghildalgncsk  210 (213)
+T UniRef100_B3MZ  175 DRGFLANVEIINPDILKGEQQCGHGHILDALGNCSK  210 (213)
+Confidence            556788888999999999999999999999999974
+
+
+No 155
+>UniRef100_A0A0L7K3L9 Serine protease inhibitor 28 (Fragment) n=1 Tax=Operophtera brumata TaxID=104452 RepID=A0A0L7K3L9_9NEOP
+Probab=54.83  E-value=61  Score=34.12  Aligned_cols=28  Identities=32%  Similarity=0.498  Sum_probs=22.1  Template_Neff=1.000
+
+Q 7398317         106 INPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       106 IrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      +.|+.-.+.-.|.+||-+|.||-|+|..
+T Consensus       218 ldpkycikgclckdgylrdengvcvpke  245 (305)
+T UniRef100_A0A0  218 LDPKYCIKGCLCKDGYLRDENGVCVPKE  245 (305)
+Confidence            3455444677899999999999999864
+
+
+No 156
+>UniRef100_A0A1Q3FLV8 Putative conserved secreted protein (Fragment) n=1 Tax=Culex tarsalis TaxID=7177 RepID=A0A1Q3FLV8_CULTA
+Probab=54.22  E-value=62  Score=31.53  Aligned_cols=31  Identities=19%  Similarity=0.384  Sum_probs=23.3  Template_Neff=1.219
+
+Q 7398317         104 FFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       104 fIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      |.=+|..++...-||+||..|....|...|.
+T Consensus       122 fy~r~~~rparv~cpegykpdhrnrcrkvfd  152 (154)
+T UniRef100_A0A1  122 FYDRTRMRPARVVCPEGYKPDHRNRCRKVFD  152 (154)
+Confidence            3344555555558999999999999998874
+
+
+No 157
+>UniRef100_A0A016VC95 EGF-like domain-containing protein n=1 Tax=Ancylostoma ceylanicum TaxID=53326 RepID=A0A016VC95_9BILA
+Probab=53.83  E-value=62  Score=31.96  Aligned_cols=19  Identities=21%  Similarity=0.473  Sum_probs=16.9  Template_Neff=1.307
+
+Q 7398317         115 SACMEGLALAANGECVLKF  133 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~PiF  133 (136)
+                      -.||+||-..-+|+|.|+-
+T Consensus        34 clcpdgy~~~~dg~c~pie   52 (171)
+T UniRef100_A0A0   34 CLCPDGYRKHYDGSCIPIE   52 (171)
+Confidence            3699999999999999874
+
+
+No 158
+>UniRef100_UPI00191FCBBF hypothetical protein n=1 Tax=Marivirga atlantica TaxID=1548457 RepID=UPI00191FCBBF
+Probab=53.21  E-value=68  Score=33.41  Aligned_cols=19  Identities=42%  Similarity=0.749  Sum_probs=17.5  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ++-|-.||+.|.||+|+|+
+T Consensus        90 psvcepgmvsdrnggcvpk  108 (271)
+T UniRef100_UPI0   90 PSVCEPGMVSDRNGGCVPK  108 (271)
+Confidence            5789999999999999986
+
+
+No 159
+>UniRef100_L7MEF7 Putative similar to chymotrypsin-elastase inhibitor ixodidin (Fragment) n=1 Tax=Rhipicephalus pulchellus TaxID=72859 RepID=L7MEF7_RHIPC
+Probab=52.14  E-value=73  Score=28.45  Aligned_cols=19  Identities=37%  Similarity=0.793  Sum_probs=16.2  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVLKF  133 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~PiF  133 (136)
+                      --|.+||.++..|+|+..+
+T Consensus        50 cfckegyfrnrrgdcvlgy   68 (83)
+T UniRef100_L7ME   50 CFCKEGYFRNRRGDCVLGY   68 (83)
+Confidence            3589999999999998654
+
+
+No 160
+>UniRef100_A0A7R9BYE9 Hypothetical protein n=1 Tax=Notodromas monacha TaxID=399045 RepID=A0A7R9BYE9_9CRUS
+Probab=51.45  E-value=76  Score=36.99  Aligned_cols=23  Identities=30%  Similarity=0.624  Sum_probs=20.7  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKFPDD  136 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF~D~  136 (136)
+                      ..-||.-|+.|+|.+|.|.|+.+
+T Consensus       597 sggcpphftldpnnecrpvfsed  619 (844)
+T UniRef100_A0A7  597 SGGCPPHFTLDPNNECRPVFSED  619 (844)
+Confidence            36899999999999999999864
+
+
+No 161
+>UniRef100_A0A7R9BYE9 Hypothetical protein n=1 Tax=Notodromas monacha TaxID=399045 RepID=A0A7R9BYE9_9CRUS
+Probab=51.45  E-value=76  Score=36.99  Aligned_cols=23  Identities=30%  Similarity=0.624  Sum_probs=20.7  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKFPDD  136 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF~D~  136 (136)
+                      ..-||.-|+.|+|.+|.|.|+.+
+T Consensus       748 sggcpphftldpnnecrpvfsed  770 (844)
+T UniRef100_A0A7  748 SGGCPPHFTLDPNNECRPVFSED  770 (844)
+Confidence            46799999999999999999864
+
+
+No 162
+>UniRef100_A0A1E1W185 TIL domain-containing protein (Fragment) n=1 Tax=Pectinophora gossypiella TaxID=13191 RepID=A0A1E1W185_PECGO
+Probab=51.28  E-value=64  Score=31.57  Aligned_cols=20  Identities=35%  Similarity=0.595  Sum_probs=17.6  Template_Neff=2.078
+
+Q 7398317         113 KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ++-.|..||-+|.||.|+|.
+T Consensus        59 ~~c~ck~~y~~d~ng~cv~~   78 (158)
+T UniRef100_A0A1   59 KACDCKFGYLRDENGKCVPP   78 (158)
+Confidence            46679999999999999974
+
+
+No 163
+>UniRef100_A0A1E1W185 TIL domain-containing protein (Fragment) n=1 Tax=Pectinophora gossypiella TaxID=13191 RepID=A0A1E1W185_PECGO
+Probab=51.14  E-value=64  Score=31.55  Aligned_cols=20  Identities=40%  Similarity=0.659  Sum_probs=17.5  Template_Neff=2.078
+
+Q 7398317         113 KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      +.-.|.+||.+|.||-|+|-
+T Consensus       123 ~~cvcke~y~r~~~g~cv~~  142 (158)
+T UniRef100_A0A1  123 KGCVCKEGYFRDENGLCVPE  142 (158)
+Confidence            56679999999999999874
+
+
+No 164
+>UniRef100_UPI00071CBDA7 uncharacterized protein LOC106883840 n=1 Tax=Octopus bimaculoides TaxID=37653 RepID=UPI00071CBDA7
+Probab=50.84  E-value=79  Score=34.29  Aligned_cols=41  Identities=29%  Similarity=0.611  Sum_probs=36.7  Template_Neff=1.000
+
+Q 7398317          95 TESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus        95 tES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      -|...|..|.||.|+.++.++.|--......-.+|...|.|
+T Consensus        99 vettilekreiikppvkqnpprcdfeipvssteeciksfed  139 (383)
+T UniRef100_UPI0   99 VETTILEKREIIKPPVKQNPPRCDFEIPVSSTEECIKSFED  139 (383)
+Confidence            57788999999999999988999888888888899998876
+
+
+No 165
+>UniRef100_A0A7Z9MGI2 Uncharacterized protein (Fragment) n=1 Tax=Phycisphaerales bacterium TaxID=2052180 RepID=A0A7Z9MGI2_9BACT
+Probab=49.95  E-value=83  Score=34.82  Aligned_cols=22  Identities=27%  Similarity=0.637  Sum_probs=19.3  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      ++-.||.|.+.|-||+|.|++.
+T Consensus       131 qacscppgltadcngncfpiyy  152 (465)
+T UniRef100_A0A7  131 QACSCPPGLTADCNGNCFPIYY  152 (465)
+Confidence            4568999999999999999873
+
+
+No 166
+>UniRef100_A0A7Y5VEY5 Uncharacterized protein n=1 Tax=Saprospiraceae bacterium TaxID=2202734 RepID=A0A7Y5VEY5_9BACT
+Probab=49.83  E-value=84  Score=35.50  Aligned_cols=16  Identities=38%  Similarity=0.804  Sum_probs=9.2  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVL  131 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~P  131 (136)
+                      .||+||-.+..|+|+|
+T Consensus       380 pcpdgyhknergecvp  395 (574)
+T UniRef100_A0A7  380 PCPDGYHKNERGECVP  395 (574)
+Confidence            4555555555555555
+
+
+No 167
+>UniRef100_UPI001747084D adhesive plaque matrix protein 2 n=1 Tax=Monomorium pharaonis TaxID=307658 RepID=UPI001747084D
+Probab=49.43  E-value=86  Score=33.07  Aligned_cols=18  Identities=33%  Similarity=0.658  Sum_probs=16.5  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLKF  133 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~PiF  133 (136)
+                      -|-+.|.+|.||+|+|+-
+T Consensus        26 vcnddyardtngdcvpic   43 (290)
+T UniRef100_UPI0   26 VCNDDYARDTNGDCVPIC   43 (290)
+Confidence            689999999999999974
+
+
+No 168
+>UniRef100_A0A0L8I6A9 Uncharacterized protein (Fragment) n=1 Tax=Octopus bimaculoides TaxID=37653 RepID=A0A0L8I6A9_OCTBM
+Probab=49.30  E-value=86  Score=34.59  Aligned_cols=41  Identities=29%  Similarity=0.611  Sum_probs=37.0  Template_Neff=1.000
+
+Q 7398317          95 TESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus        95 tES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      -|...|..|.||.|+.++.++.|--......-.+|...|.|
+T Consensus       300 vettilekreiikppvkqnpprcdfeipvssteeciksfed  340 (449)
+T UniRef100_A0A0  300 VETTILEKREIIKPPVKQNPPRCDFEIPVSSTEECIKSFED  340 (449)
+Confidence            57788999999999999999999888888888999999877
+
+
+No 169
+>UniRef100_A0A8D8J449 (northern house mosquito) hypothetical protein (Fragment) n=1 Tax=Culex pipiens TaxID=7175 RepID=A0A8D8J449_CULPI
+Probab=49.18  E-value=87  Score=30.37  Aligned_cols=19  Identities=32%  Similarity=0.576  Sum_probs=17.2  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~PiF~  134 (136)
+                      .||..|-.|+||.|+|+..
+T Consensus         2 acptdmlvdangqckpivv   20 (145)
+T UniRef100_A0A8    2 ACPTDMLVDANGQCKPIVV   20 (145)
+Confidence            5999999999999999864
+
+
+No 170
+>UniRef100_UPI000F666D55 uncharacterized protein LOC113822815 isoform X1 n=1 Tax=Penaeus vannamei TaxID=6689 RepID=UPI000F666D55
+Probab=48.96  E-value=82  Score=34.16  Aligned_cols=20  Identities=30%  Similarity=0.685  Sum_probs=17.9  Template_Neff=1.427
+
+Q 7398317         113 KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ..+.|++||.+..||+|.|.
+T Consensus        68 r~snc~sgyhec~n~~cipn   87 (357)
+T UniRef100_UPI0   68 RASNCPSGYHECMNGNCIPN   87 (357)
+Confidence            46799999999999999985
+
+
+No 171
+>UniRef100_UPI001EB03DBB low-density lipoprotein receptor-like n=1 Tax=Haliotis rufescens TaxID=6454 RepID=UPI001EB03DBB
+Probab=48.43  E-value=91  Score=31.56  Aligned_cols=20  Identities=45%  Similarity=0.811  Sum_probs=17.1  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~PiF~D  135 (136)
+                      .|..|-...+||+|+|.|.|
+T Consensus       179 scqpgakqcpngecvpgffd  198 (202)
+T UniRef100_UPI0  179 SCQPGAKQCPNGECVPGFFD  198 (202)
+Confidence            46678888899999999987
+
+
+No 172
+>UniRef100_A0A7L4ZH26 Uncharacterized protein n=2 Tax=Kordia antarctica TaxID=1218801 RepID=A0A7L4ZH26_9FLAO
+Probab=48.33  E-value=92  Score=28.76  Aligned_cols=54  Identities=19%  Similarity=0.225  Sum_probs=34.6  Template_Neff=1.000
+
+Q 7398317          78 GTDTVTKKVVIADHQTTTESDLLHTRFFINPPEKKKESACMEGLALAAN-GECVL  131 (136)
+Q Consensus        78 sVETVTEnqvtstnqTTtES~lL~TRfIIrPki~tk~~~CPsGyT~daN-G~C~P  131 (136)
+                      .|+...+.|...-+|---.-.-+-...||+-+.--....||+||--+.| |.|-.
+T Consensus        31 tvdalsdkqiedldqvfggvvgipiddiihyptggggprcpdgyywnvnrgrcmk   85 (101)
+T UniRef100_A0A7   31 TVDALSDKQIEDLDQVFGGVVGIPIDDIIHYPTGGGGPRCPDGYYWNVNRGRCMK   85 (101)
+Confidence            4556666663333444333334556678877776678899999998876 66743
+
+
+No 173
+>UniRef100_A0A814RMZ2 Hypothetical protein n=1 Tax=Didymodactylos carnosus TaxID=1234261 RepID=A0A814RMZ2_9BILA
+Probab=48.24  E-value=92  Score=34.59  Aligned_cols=18  Identities=28%  Similarity=0.663  Sum_probs=16.3  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVL  131 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~P  131 (136)
+                      ++.||+||.+...|.|++
+T Consensus       262 rptcpdgyfrcqrgacvq  279 (472)
+T UniRef100_A0A8  262 RPTCPDGYFRCQRGACVQ  279 (472)
+Confidence            459999999999999986
+
+
+No 174
+>UniRef100_A0A1Y9GKD5 Uncharacterized protein n=1 Tax=Anopheles arabiensis TaxID=7173 RepID=A0A1Y9GKD5_ANOAR
+Probab=48.08  E-value=93  Score=42.06  Aligned_cols=18  Identities=28%  Similarity=0.739  Sum_probs=9.3  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLKF  133 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~PiF  133 (136)
+                      .||+||++|.||+|.|.-
+T Consensus      6876 ncpsgytmdgngncippa 6893 (8205)
+T UniRef100_A0A1 6876 NCPSGYTMDGNGNCIPPA 6893 (8205)
+Confidence            455555555555555443
+
+
+No 175
+>UniRef100_A0A0C9QV93 LRP2 protein (Fragment) n=2 Tax=Fopius arisanus TaxID=64838 RepID=A0A0C9QV93_9HYME
+Probab=47.85  E-value=87  Score=32.38  Aligned_cols=31  Identities=19%  Similarity=0.326  Sum_probs=26.1  Template_Neff=1.497
+
+Q 7398317         102 TRFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus       102 TRfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ...-..|.+.++++.||+||-...+|.|.+.
+T Consensus       101 ~~rk~~p~l~tdep~c~e~~l~c~~~~ci~~  131 (231)
+T UniRef100_A0A0  101 QERKAKPILATDEPICQENYLACADSVCIPR  131 (231)
+Confidence            3444568888899999999999999999875
+
+
+No 176
+>UniRef100_UPI0007ACA748 cartilage acidic protein 1-like isoform X3 n=1 Tax=Sinocyclocheilus grahami TaxID=75366 RepID=UPI0007ACA748
+Probab=46.86  E-value=1e+02  Score=29.13  Aligned_cols=19  Identities=37%  Similarity=0.828  Sum_probs=16.3  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVL  131 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~P  131 (136)
+                      +.-+|-+||+.+.||.|..
+T Consensus        11 dslqcgegftvntngrcid   29 (116)
+T UniRef100_UPI0   11 DHSQCGEGFTVNTNGRCID   29 (116)
+Confidence            3458999999999999974
+
+
+No 177
+>UniRef100_A0A2G8K5Y1 Putative mucin-2 n=1 Tax=Stichopus japonicus TaxID=307972 RepID=A0A2G8K5Y1_STIJA
+Probab=46.67  E-value=1e+02  Score=33.49  Aligned_cols=20  Identities=40%  Similarity=0.649  Sum_probs=18.1  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~PiF~  134 (136)
+                      --||.|--+|.||+|+|.|.
+T Consensus       301 cfcppgtredengecvpcft  320 (368)
+T UniRef100_A0A2  301 CFCPPGTREDENGECVPCFT  320 (368)
+Confidence            46999999999999999985
+
+
+No 178
+>UniRef100_T1FJL3 VWFA domain-containing protein n=1 Tax=Helobdella robusta TaxID=6412 RepID=T1FJL3_HELRO
+Probab=46.45  E-value=1e+02  Score=32.91  Aligned_cols=17  Identities=47%  Similarity=0.866  Sum_probs=8.1  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVL  131 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~P  131 (136)
+                      ++|-+||..|.||-|+|
+T Consensus       168 sqcnsgysldsnglcvp  184 (315)
+T UniRef100_T1FJ  168 SQCNSGYSLDSNGLCVP  184 (315)
+Confidence            34444444444444444
+
+
+No 179
+>UniRef100_UPI0015DE9827 zonadhesin-like n=1 Tax=Spodoptera frugiperda TaxID=7108 RepID=UPI0015DE9827
+Probab=46.21  E-value=1e+02  Score=34.27  Aligned_cols=21  Identities=33%  Similarity=0.596  Sum_probs=18.3  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF  133 (136)
+                      ++--|-+||.+|+||.|.|+-
+T Consensus       334 dacycndgyardangtcipia  354 (473)
+T UniRef100_UPI0  334 DACYCNDGYARDANGTCIPIA  354 (473)
+Confidence            566799999999999999873
+
+
+No 180
+>UniRef100_A0A5N6XTX5 Uncharacterized protein n=1 Tax=Aspergillus arachidicola TaxID=656916 RepID=A0A5N6XTX5_9EURO
+Probab=46.21  E-value=1e+02  Score=32.09  Aligned_cols=18  Identities=33%  Similarity=0.916  Sum_probs=15.9  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVL  131 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~P  131 (136)
+                      ..+||+|-++.+||+|..
+T Consensus        39 rpkcpdgstmtangdcit   56 (254)
+T UniRef100_A0A5   39 RPKCPDGSTMTANGDCIT   56 (254)
+Confidence            358999999999999974
+
+
+No 181
+>UniRef100_E1F3D6 Uncharacterized protein n=1 Tax=Giardia intestinalis (strain P15) TaxID=658858 RepID=E1F3D6_GIAIA
+Probab=46.15  E-value=1e+02  Score=33.15  Aligned_cols=19  Identities=26%  Similarity=0.693  Sum_probs=16.3  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      -.+||+||..|.+|+|+..
+T Consensus       279 ctkcpdgyavdrdggcsvp  297 (342)
+T UniRef100_E1F3  279 CTKCPDGYAVDRDGGCSVP  297 (342)
+Confidence            3589999999999999743
+
+
+No 182
+>UniRef100_A0A6J1RSN1 flocculation protein FLO11-like n=1 Tax=Frankliniella occidentalis TaxID=133901 RepID=A0A6J1RSN1_FRAOC
+Probab=45.50  E-value=1e+02  Score=35.38  Aligned_cols=32  Identities=28%  Similarity=0.524  Sum_probs=27.1  Template_Neff=1.387
+
+Q 7398317         102 TRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       102 TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      ...+|-|.+.-++.+|-+||..|.-|.|+...
+T Consensus        24 ksvfiap~~ng~rdqcaegyqqddmgrcvkvv   55 (598)
+T UniRef100_A0A6   24 KSVFIAPNINGDRDQCAEGYQQDDMGRCVKVV   55 (598)
+Confidence            34678888887899999999999999998653
+
+
+No 183
+>UniRef100_A0A7E4W3N8 Uncharacterized protein n=1 Tax=Panagrellus redivivus TaxID=6233 RepID=A0A7E4W3N8_PANRE
+Probab=45.21  E-value=1.1e+02  Score=30.87  Aligned_cols=17  Identities=41%  Similarity=0.757  Sum_probs=15.2  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLK  132 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~Pi  132 (136)
+                      -|-.||.+|+||+|+..
+T Consensus        78 ycgagfvrdangdcvsv   94 (191)
+T UniRef100_A0A7   78 YCGAGFVRDANGDCVSV   94 (191)
+Confidence            68999999999999864
+
+
+No 184
+>UniRef100_A0A0K6GD42 Uncharacterized protein n=1 Tax=Rhizoctonia solani TaxID=456999 RepID=A0A0K6GD42_9AGAM
+Probab=44.44  E-value=98  Score=29.28  Aligned_cols=36  Identities=22%  Similarity=0.504  Sum_probs=26.3  Template_Neff=1.956
+
+Q 7398317         100 LHTRFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       100 L~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      .....|..-+...+..+||+-|.--++|-|.|-|+.
+T Consensus        50 ~igg~l~~~~~~p~g~~cp~hy~y~~~g~c~pr~ps   85 (117)
+T UniRef100_A0A0   50 PIGGRLVNSPSPPKGTECPEHYQYRSDGSCAPRWPS   85 (117)
+Confidence            344445553333467799999999999999999873
+
+
+No 185
+>UniRef100_A0A0T6AZT5 Uncharacterized protein (Fragment) n=1 Tax=Oryctes borbonicus TaxID=1629725 RepID=A0A0T6AZT5_9SCAR
+Probab=44.32  E-value=1.1e+02  Score=33.56  Aligned_cols=20  Identities=30%  Similarity=0.615  Sum_probs=17.7  Template_Neff=1.436
+
+Q 7398317         114 ESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF  133 (136)
+                      ...|-.||.+++||+|.|.-
+T Consensus       195 ~~~c~~g~~~n~ngdc~p~c  214 (370)
+T UniRef100_A0A0  195 SQPCHEGYKPNINGDCRPSC  214 (370)
+Confidence            55899999999999999863
+
+
+No 186
+>UniRef100_A0A182J072 Uncharacterized protein n=1 Tax=Anopheles atroparvus TaxID=41427 RepID=A0A182J072_9DIPT
+Probab=43.77  E-value=1.2e+02  Score=40.90  Aligned_cols=21  Identities=38%  Similarity=0.762  Sum_probs=17.2  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      -.||.||++|+||+|+|.--|
+T Consensus      5420 cncpngftmdangncvppagd 5440 (6751)
+T UniRef100_A0A1 5420 CNCPNGFTMDANGNCVPPAGD 5440 (6751)
+Confidence            478999999999999887554
+
+
+No 187
+>UniRef100_A0A034WAQ1 von Willebrand factor D and EGF domain-containing protein (Fragment) n=1 Tax=Bactrocera dorsalis TaxID=27457 RepID=A0A034WAQ1_BACDO
+Probab=43.50  E-value=1.2e+02  Score=31.42  Aligned_cols=19  Identities=37%  Similarity=0.768  Sum_probs=15.9  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~PiF~  134 (136)
+                      .|-.||.++.||+|+|+-.
+T Consensus        54 ncfpgyqentngdcvpkce   72 (237)
+T UniRef100_A0A0   54 NCFPGYQENTNGDCVPKCE   72 (237)
+Confidence            6888999999999988754
+
+
+No 188
+>UniRef100_A0A8A4T569 Uncharacterized protein n=1 Tax=Ottowia sp. 27C TaxID=2816950 RepID=A0A8A4T569_9BURK
+Probab=42.54  E-value=1.3e+02  Score=33.88  Aligned_cols=19  Identities=42%  Similarity=0.644  Sum_probs=17.0  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      -+.||+|..+|+||.|+|.
+T Consensus       117 csicpsgqhedangqcvpn  135 (501)
+T UniRef100_A0A8  117 CSICPSGQHEDANGQCVPN  135 (501)
+Confidence            3589999999999999985
+
+
+No 189
+>UniRef100_A0A182K622 Chitin-binding type-2 domain-containing protein n=1 Tax=Anopheles christyi TaxID=43041 RepID=A0A182K622_9DIPT
+Probab=41.68  E-value=1.2e+02  Score=31.36  Aligned_cols=31  Identities=19%  Similarity=0.483  Sum_probs=26.1  Template_Neff=1.578
+
+Q 7398317         101 HTRFFINPPEKKKESACMEGLALAANGECVL  131 (136)
+Q Consensus       101 ~TRfIIrPki~tk~~~CPsGyT~daNG~C~P  131 (136)
+                      ....-+.|.++++++.|++||-....|+|..
+T Consensus       137 nkerkvkpll~tdeplcqdgflacgdgncie  167 (223)
+T UniRef100_A0A1  137 NKERKVKPLLITDEPLCQDGFLACGDGNCIE  167 (223)
+Confidence            3445678888889999999999999999974
+
+
+No 190
+>UniRef100_A0A7X5F8M1 DUF5011 domain-containing protein n=1 Tax=Candidatus Parcubacteria bacterium TaxID=2762014 RepID=A0A7X5F8M1_9BACT
+Probab=39.72  E-value=1.5e+02  Score=32.14  Aligned_cols=22  Identities=23%  Similarity=0.324  Sum_probs=19.3  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      -++.|-+||..|.||-|.|+.+
+T Consensus       316 caftcndgyqkddngvcqpies  337 (341)
+T UniRef100_A0A7  316 CAFTCNDGYQKDDNGVCQPIES  337 (341)
+Confidence            3678999999999999999854
+
+
+No 191
+>UniRef100_A0A7S2BZL7 Pyruvate kinase (Fragment) n=1 Tax=Alexandrium andersonii TaxID=327968 RepID=A0A7S2BZL7_9DINO
+Probab=39.53  E-value=1.5e+02  Score=29.20  Aligned_cols=23  Identities=30%  Similarity=0.699  Sum_probs=19.2  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      ....||+|-.--+.|+|+|.-+.
+T Consensus        11 rkdscpegavclpeggcvpsspe   33 (153)
+T UniRef100_A0A7   11 RKDSCPEGAVCLPEGGCVPSSPE   33 (153)
+Confidence            34689999999999999997653
+
+
+No 192
+>UniRef100_A0A137NPP6 Uncharacterized protein (Fragment) n=1 Tax=Conidiobolus coronatus (strain ATCC 28846 / CBS 209.66 / NRRL 28638) TaxID=796925 RepID=A0A137NPP6_CONC2
+Probab=39.22  E-value=1.6e+02  Score=33.07  Aligned_cols=17  Identities=24%  Similarity=0.761  Sum_probs=10.2  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLK  132 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~Pi  132 (136)
+                      .||+|.+...+|+|+|+
+T Consensus        23 tcpsgqtvgsdgncvpi   39 (460)
+T UniRef100_A0A1   23 TCPSGQTVGSDGNCIPI   39 (460)
+Confidence            46666666666666554
+
+
+No 193
+>UniRef100_A0A8J4YTZ0 Uncharacterized protein n=1 Tax=Nymphon striatum TaxID=424472 RepID=A0A8J4YTZ0_9CHEL
+Probab=39.21  E-value=1.6e+02  Score=31.18  Aligned_cols=22  Identities=27%  Similarity=0.524  Sum_probs=18.6  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      ..+||+|-.+|+-|+|....-|
+T Consensus        71 spqcpsgsvedaagdcrkpvad   92 (265)
+T UniRef100_A0A8   71 SPQCPSGSVEDAAGDCRKPVAD   92 (265)
+Confidence            3699999999999999876544
+
+
+No 194
+>UniRef100_A0A7R9BYE9 Hypothetical protein n=1 Tax=Notodromas monacha TaxID=399045 RepID=A0A7R9BYE9_9CRUS
+Probab=38.93  E-value=1.6e+02  Score=34.90  Aligned_cols=31  Identities=23%  Similarity=0.483  Sum_probs=25.5  Template_Neff=1.000
+
+Q 7398317         105 FINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       105 IIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      |-+|..-+..+.|-.||..|.-|.|.|.|+-
+T Consensus       801 ihrplaeqagsdcrrgfvkdvtgrcrpvfst  831 (844)
+T UniRef100_A0A7  801 IHRPLAEQAGSDCRRGFVKDVTGRCRPVFST  831 (844)
+Confidence            4455555578899999999999999999973
+
+
+No 195
+>UniRef100_A0A2D9FPR3 Peptidase_M23 domain-containing protein n=1 Tax=Balneola sp. TaxID=2024824 RepID=A0A2D9FPR3_9BACT
+Probab=38.74  E-value=1.6e+02  Score=32.89  Aligned_cols=19  Identities=26%  Similarity=0.611  Sum_probs=16.5  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVL  131 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~P  131 (136)
+                      ++..||.|.++|.||+|..
+T Consensus       253 dpescpvgqvedtngdcid  271 (447)
+T UniRef100_A0A2  253 DPESCPVGQVEDTNGDCID  271 (447)
+Confidence            3568999999999999974
+
+
+No 196
+>UniRef100_A0A3A4JVJ9 Uncharacterized protein n=1 Tax=Myxococcales bacterium TaxID=2026763 RepID=A0A3A4JVJ9_9DELT
+Probab=38.46  E-value=1.7e+02  Score=31.00  Aligned_cols=22  Identities=27%  Similarity=0.542  Sum_probs=19.7  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      .+.||.|.++..+|.|+|+.+.
+T Consensus        32 sftcppgqtrasdgacvpilsk   53 (260)
+T UniRef100_A0A3   32 SFTCPPGQTRASDGACVPILSK   53 (260)
+Confidence            5789999999999999998763
+
+
+No 197
+>UniRef100_A0A401RS44 Uncharacterized protein n=1 Tax=Chiloscyllium punctatum TaxID=137246 RepID=A0A401RS44_CHIPU
+Probab=38.39  E-value=1.7e+02  Score=30.56  Aligned_cols=20  Identities=25%  Similarity=0.529  Sum_probs=16.9  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ....||.||-+..||+|-+.
+T Consensus        90 ptglcpqgylecqngncyqp  109 (231)
+T UniRef100_A0A4   90 PTGLCPQGYLECQNGNCYQP  109 (231)
+Confidence            34579999999999999764
+
+
+No 198
+>UniRef100_A0A1Y1YQZ6 Uncharacterized protein n=1 Tax=Clohesyomyces aquaticus TaxID=1231657 RepID=A0A1Y1YQZ6_9PLEO
+Probab=37.75  E-value=1.7e+02  Score=30.09  Aligned_cols=22  Identities=32%  Similarity=0.824  Sum_probs=19.2  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      ....||+|++.+.+|.|+..++
+T Consensus        82 spttcpsgltknvdgacvtpyp  103 (208)
+T UniRef100_A0A1   82 SPTTCPSGLTKNVDGACVTPYP  103 (208)
+Confidence            4579999999999999997765
+
+
+No 199
+>UniRef100_A0A318YYP3 Uncharacterized protein n=1 Tax=Aspergillus saccharolyticus JOP 1030-1 TaxID=1450539 RepID=A0A318YYP3_9EURO
+Probab=37.55  E-value=1.6e+02  Score=30.30  Aligned_cols=24  Identities=38%  Similarity=0.600  Sum_probs=18.9  Template_Neff=1.402
+
+Q 7398317         113 KESACMEGLALAANGECVLKFPDD  136 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF~D~  136 (136)
+                      ....||.|++.-+||+|.|.-.|+
+T Consensus        99 gg~~cppg~~~g~~g~c~p~~~~d  122 (204)
+T UniRef100_A0A3   99 GGSGCPPGTKPGPNGGCIPKDSDD  122 (204)
+Confidence            466788999999999988876653
+
+
+No 200
+>UniRef100_A0A7J4V4Q1 Uncharacterized protein (Fragment) n=1 Tax=Candidatus Woesearchaeota archaeon TaxID=2026803 RepID=A0A7J4V4Q1_9ARCH
+Probab=37.08  E-value=1.8e+02  Score=32.53  Aligned_cols=20  Identities=30%  Similarity=0.481  Sum_probs=13.4  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~PiF~D  135 (136)
+                      .-|+||+.|.||+|+|+=.|
+T Consensus       278 hvpsgftidnngncvpignd  297 (434)
+T UniRef100_A0A7  278 HVPSGFTIDNNGNCVPIGND  297 (434)
+Confidence            45677777777777776443
+
+
+No 201
+>UniRef100_A0A7Z9JHC2 Uncharacterized protein n=2 Tax=Phycisphaerales bacterium TaxID=2052180 RepID=A0A7Z9JHC2_9BACT
+Probab=36.74  E-value=1.8e+02  Score=32.38  Aligned_cols=19  Identities=32%  Similarity=0.709  Sum_probs=17.3  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      +.-||.||..|-||+|.|.
+T Consensus        81 eggcpagfvpdcngncapa   99 (421)
+T UniRef100_A0A7   81 EGGCPAGFVPDCNGNCAPA   99 (421)
+Confidence            5689999999999999985
+
+
+No 202
+>UniRef100_A0A0K8UET9 von Willebrand factor D and EGF domain-containing protein (Fragment) n=1 Tax=Bactrocera latifrons TaxID=174628 RepID=A0A0K8UET9_BACLA
+Probab=36.57  E-value=1.8e+02  Score=32.34  Aligned_cols=19  Identities=42%  Similarity=0.791  Sum_probs=16.0  Template_Neff=1.000
+
+Q 7398317         116 ACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~PiF~  134 (136)
+                      .|-.||.+++||+|+|+-.
+T Consensus       132 hcfpgyqenangdcvpkce  150 (420)
+T UniRef100_A0A0  132 HCFPGYQENANGDCVPKCE  150 (420)
+Confidence            5888999999999998754
+
+
+No 203
+>UniRef100_A0A8B7PH25 low-density lipoprotein receptor 1-like isoform X1 n=1 Tax=Hyalella azteca TaxID=294128 RepID=A0A8B7PH25_HYAAZ
+Probab=35.70  E-value=1.8e+02  Score=28.89  Aligned_cols=21  Identities=33%  Similarity=0.782  Sum_probs=18.4  Template_Neff=1.616
+
+Q 7398317         113 KESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF  133 (136)
+                      +...|-.||...+||-|+|.+
+T Consensus        24 ~~~ec~~gyf~c~ng~cvpn~   44 (148)
+T UniRef100_A0A8   24 DNDECFQGYFQCANGVCVPNY   44 (148)
+Confidence            445899999999999999975
+
+
+No 204
+>UniRef100_A0A137NYN7 Uncharacterized protein n=1 Tax=Conidiobolus coronatus (strain ATCC 28846 / CBS 209.66 / NRRL 28638) TaxID=796925 RepID=A0A137NYN7_CONC2
+Probab=34.90  E-value=2e+02  Score=30.94  Aligned_cols=19  Identities=32%  Similarity=0.733  Sum_probs=13.3  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAAN-GECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daN-G~C~Pi  132 (136)
+                      ..+||+|..+|.| |.|+++
+T Consensus        28 pnkcpdgqvmdpntgkcvpi   47 (300)
+T UniRef100_A0A1   28 PNKCPDGQVMDPNTGKCVPI   47 (300)
+Confidence            4578888887776 667664
+
+
+No 205
+>UniRef100_UPI0015DE9827 zonadhesin-like n=1 Tax=Spodoptera frugiperda TaxID=7108 RepID=UPI0015DE9827
+Probab=34.37  E-value=2.1e+02  Score=32.37  Aligned_cols=21  Identities=33%  Similarity=0.588  Sum_probs=18.3  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF  133 (136)
+                      ++--|-+||.+++||.|.|+-
+T Consensus       251 dacycndgyarnangtcipis  271 (473)
+T UniRef100_UPI0  251 DACYCNDGYARNANGTCIPIS  271 (473)
+Confidence            556799999999999999873
+
+
+No 206
+>UniRef100_A0A8D8J449 (northern house mosquito) hypothetical protein (Fragment) n=1 Tax=Culex pipiens TaxID=7175 RepID=A0A8D8J449_CULPI
+Probab=34.23  E-value=2.1e+02  Score=28.22  Aligned_cols=16  Identities=31%  Similarity=0.621  Sum_probs=13.9  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGEC  129 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C  129 (136)
+                      --.||.||..|+|.+|
+T Consensus       130 vcncpagykkdannnc  145 (145)
+T UniRef100_A0A8  130 VCNCPAGYKKDANNNC  145 (145)
+Confidence            3479999999999987
+
+
+No 207
+>UniRef100_A0A8B6F5N4 Uncharacterized protein (Fragment) n=1 Tax=Mytilus galloprovincialis TaxID=29158 RepID=A0A8B6F5N4_MYTGA
+Probab=33.27  E-value=2.3e+02  Score=26.85  Aligned_cols=35  Identities=26%  Similarity=0.581  Sum_probs=28.4  Template_Neff=1.000
+
+Q 7398317          99 LLHTRFFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus        99 lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      .+..|-||+.++.+.+..|.+|-. .-||-|.-.|.
+T Consensus        20 viekrliinarlltaatnclsgai-hcngiceiafk   54 (105)
+T UniRef100_A0A8   20 VIEKRLIINARLLTAATNCLSGAI-HCNGICEIAFK   54 (105)
+Confidence            356788999999998999999965 45899987774
+
+
+No 208
+>UniRef100_A0A0R1E8U0 Uncharacterized protein, isoform B n=1 Tax=Drosophila yakuba TaxID=7245 RepID=A0A0R1E8U0_DROYA
+Probab=33.21  E-value=2.2e+02  Score=28.91  Aligned_cols=38  Identities=29%  Similarity=0.392  Sum_probs=30.8  Template_Neff=1.145
+
+Q 7398317          95 TESDLLHTRFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus        95 tES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      +|-..|...-+|+...-+++--|-+||.+++.|.|.|+
+T Consensus       129 tecatlg~pclirhircpdacycnegfarnaggtcipi  166 (176)
+T UniRef100_A0A0  129 TECATLGKPCLIRHIRCPDACYCNEGFARNAGGTCIPI  166 (176)
+Confidence            46666777777777666677789999999999999986
+
+
+No 209
+>UniRef100_A0A066W8H0 Uncharacterized protein (Fragment) n=1 Tax=Rhizoctonia solani AG-8 WAC10335 TaxID=1287689 RepID=A0A066W8H0_9AGAM
+Probab=32.07  E-value=2.4e+02  Score=26.60  Aligned_cols=27  Identities=37%  Similarity=0.556  Sum_probs=22.1  Template_Neff=1.000
+
+Q 7398317         106 INPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus       106 IrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      -+|+.-++.+.||..|.--.||.|+|-
+T Consensus        39 knppkppdgsacpvdwywhknghcvpl   65 (103)
+T UniRef100_A0A0   39 KNPPKPPDGSACPVDWYWHKNGHCVPL   65 (103)
+Confidence            355555578899999999999999984
+
+
+No 210
+>UniRef100_A0A482VFP4 C8, VWD, and/or TIL domain containing protein (Fragment) n=1 Tax=Asbolus verrucosus TaxID=1661398 RepID=A0A482VFP4_9CUCU
+Probab=31.97  E-value=2.5e+02  Score=31.67  Aligned_cols=37  Identities=32%  Similarity=0.492  Sum_probs=26.5  Template_Neff=1.000
+
+Q 7398317          96 ESDLLHTRFFINPP----EKK----------KESACMEGLALAANGECVLK  132 (136)
+Q Consensus        96 ES~lL~TRfIIrPk----i~t----------k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ...|...|-||+-.    ++.          ..-.||+|...|..|+|+|+
+T Consensus       219 gtvlhenrciirdqcpcklrsksfppgaecvegcncpegealdddgecvpi  269 (431)
+T UniRef100_A0A4  219 GTVLHENRCIIRDQCPCKLRSKSFPPGAECVEGCNCPEGEALDDDGECVPI  269 (431)
+Confidence            34566677777632    221          35579999999999999996
+
+
+No 211
+>UniRef100_A0A382NRW6 Uncharacterized protein (Fragment) n=1 Tax=marine metagenome TaxID=408172 RepID=A0A382NRW6_9ZZZZ
+Probab=31.92  E-value=2.5e+02  Score=26.34  Aligned_cols=22  Identities=32%  Similarity=0.520  Sum_probs=19.4  Template_Neff=1.000
+
+Q 7398317         107 NPPEKKKESACMEGLALAANGE  128 (136)
+Q Consensus       107 rPki~tk~~~CPsGyT~daNG~  128 (136)
+                      +|+.++.+++.|+|-+.|+.|+
+T Consensus        75 rppykpgefkapsgvtvdaegn   96 (97)
+T UniRef100_A0A3   75 RPPYKPGEFKAPSGVTVDAEGN   96 (97)
+Confidence            6777888889999999999986
+
+
+No 212
+>UniRef100_A0A0L7K3L9 Serine protease inhibitor 28 (Fragment) n=1 Tax=Operophtera brumata TaxID=104452 RepID=A0A0L7K3L9_9NEOP
+Probab=31.72  E-value=2.5e+02  Score=30.49  Aligned_cols=37  Identities=27%  Similarity=0.303  Sum_probs=27.3  Template_Neff=1.000
+
+Q 7398317          96 ESDLLHTRFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus        96 ES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      |-+-..----|.|+.-.+.-.|.+||..+..|-|.|+
+T Consensus        90 evgcpipcpridpkyckkgcickegyvknkkgvcipi  126 (305)
+T UniRef100_A0A0   90 EVGCPIPCPRIDPKYCKKGCICKEGYVKNKKGVCIPI  126 (305)
+Confidence            3333333344666666678899999999999999986
+
+
+No 213
+>UniRef100_D0LH81 Uncharacterized protein n=1 Tax=Haliangium ochraceum (strain DSM 14365 / JCM 11303 / SMP-2) TaxID=502025 RepID=D0LH81_HALO1
+Probab=31.72  E-value=2.5e+02  Score=31.63  Aligned_cols=20  Identities=35%  Similarity=0.871  Sum_probs=17.4  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      ...+||+|++-++.|+|+..
+T Consensus       100 tdtqcpdgltcnadgdcvap  119 (432)
+T UniRef100_D0LH  100 TDTQCPDGLTCNADGDCVAP  119 (432)
+Confidence            36799999999999999854
+
+
+No 214
+>UniRef100_A0A3M7QQ84 Fibrillin-1-like isoform X1 (Fragment) n=1 Tax=Brachionus plicatilis TaxID=10195 RepID=A0A3M7QQ84_BRAPC
+Probab=31.44  E-value=2.5e+02  Score=31.81  Aligned_cols=20  Identities=30%  Similarity=0.584  Sum_probs=16.9  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      -+..||.||..|.||.|...
+T Consensus       270 cegpcpvgyvqdengacidd  289 (463)
+T UniRef100_A0A3  270 CEGPCPVGYVQDENGACIDD  289 (463)
+Confidence            36689999999999999753
+
+
+No 215
+>UniRef100_B4PXK7 Uncharacterized protein, isoform A n=1 Tax=Drosophila yakuba TaxID=7245 RepID=B4PXK7_DROYA
+Probab=31.34  E-value=2.6e+02  Score=29.26  Aligned_cols=38  Identities=29%  Similarity=0.392  Sum_probs=31.2  Template_Neff=1.000
+
+Q 7398317          95 TESDLLHTRFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus        95 tES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      +|-..|...-+|+...-+++--|-+||.+++.|.|.|+
+T Consensus       171 tecatlgkpclirhircpdacycnegfarnaggtcipi  208 (218)
+T UniRef100_B4PX  171 TECATLGKPCLIRHIRCPDACYCNEGFARNAGGTCIPI  208 (218)
+Confidence            56666777778877666677789999999999999986
+
+
+No 216
+>UniRef100_A0A1F7VED1 Kazal-like domain-containing protein n=1 Tax=Candidatus Uhrbacteria bacterium RIFCSPLOWO2_02_FULL_51_9 TaxID=1802410 RepID=A0A1F7VED1_9BACT
+Probab=31.13  E-value=2.6e+02  Score=35.82  Aligned_cols=22  Identities=32%  Similarity=0.735  Sum_probs=19.2  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      ...||+||++|+-|.|+..+.|
+T Consensus       930 gnecpsgftrdatgacvanwtd  951 (1965)
+T UniRef100_A0A1  930 GNECPSGFTRDATGACVANWTD  951 (1965)
+Confidence            4689999999999999987765
+
+
+No 217
+>UniRef100_A0A2P8Z2T0 Uncharacterized protein n=1 Tax=Blattella germanica TaxID=6973 RepID=A0A2P8Z2T0_BLAGE
+Probab=30.51  E-value=2.7e+02  Score=30.84  Aligned_cols=31  Identities=29%  Similarity=0.536  Sum_probs=25.3  Template_Neff=1.000
+
+Q 7398317         102 TRFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       102 TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      -.-||+.+.+.+.++|..||- -.||.|..++
+T Consensus       330 lgtiirapfrkdsskckrgfr-ylngrckkiy  360 (360)
+T UniRef100_A0A2  330 LGTIIRAPFRKDSSKCKRGFR-YLNGRCKKIY  360 (360)
+Confidence            356899999989999999984 5789998654
+
+
+No 218
+>UniRef100_A0A1Y1Z8E2 Uncharacterized protein n=1 Tax=Clohesyomyces aquaticus TaxID=1231657 RepID=A0A1Y1Z8E2_9PLEO
+Probab=30.11  E-value=2.5e+02  Score=31.20  Aligned_cols=17  Identities=18%  Similarity=0.282  Sum_probs=10.7  Template_Neff=1.678
+
+Q 7398317         116 ACMEGLALAANGECVLK  132 (136)
+Q Consensus       116 ~CPsGyT~daNG~C~Pi  132 (136)
+                      .||+||++|-...|.++
+T Consensus        85 ~cpsgyt~dyr~~c~~~  101 (346)
+T UniRef100_A0A1   85 TCPSGYTRDYRNFCRPI  101 (346)
+Confidence            56666666666666654
+
+
+No 219
+>UniRef100_A0A6P7SVK0 von Willebrand factor A domain-containing protein 7 isoform X1 n=1 Tax=Octopus vulgaris TaxID=6645 RepID=A0A6P7SVK0_OCTVU
+Probab=29.86  E-value=2.8e+02  Score=33.28  Aligned_cols=41  Identities=29%  Similarity=0.611  Sum_probs=36.6  Template_Neff=1.000
+
+Q 7398317          95 TESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus        95 tES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      -|...|..|.||.|+.++.++.|--......--+|...|.|
+T Consensus       664 vettilekreiikppvkqnpprcdfeipvssteeciksfed  704 (829)
+T UniRef100_A0A6  664 VETTILEKREIIKPPVKQNPPRCDFEIPVSSTEECIKSFED  704 (829)
+Confidence            57778999999999999989999888888888999998876
+
+
+No 220
+>UniRef100_A0A084VMP0 Uncharacterized protein n=1 Tax=Anopheles sinensis TaxID=74873 RepID=A0A084VMP0_ANOSI
+Probab=29.77  E-value=2.4e+02  Score=36.28  Aligned_cols=38  Identities=24%  Similarity=0.487  Sum_probs=32.1  Template_Neff=2.100
+
+Q 7398317          95 TESDLLHTRFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus        95 tES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      +|.+.-..|-+|...+..+...||+||.+..+|+|+-.
+T Consensus       663 yeg~vCvrrt~veAsi~rr~~~Cp~GYer~~~~~CVr~  700 (1565)
+T UniRef100_A0A0  663 YEGDVCIRRTVVEASISRREAECPDGYERGRDGRCVRL  700 (1565)
+Confidence            67777777888888888888899999999999999753
+
+
+No 221
+>UniRef100_A0A4Y2J2J4 Uncharacterized protein n=1 Tax=Araneus ventricosus TaxID=182803 RepID=A0A4Y2J2J4_ARAVE
+Probab=29.37  E-value=2.9e+02  Score=32.37  Aligned_cols=31  Identities=13%  Similarity=0.255  Sum_probs=23.8  Template_Neff=1.000
+
+Q 7398317         103 RFFINPPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       103 RfIIrPki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      -.+++-+...++..||+.|.+..||-|.|-.
+T Consensus       108 vdllhvkssddpnecpstyfrcnngpcipmv  138 (626)
+T UniRef100_A0A4  108 VDLLHVKSSDDPNECPSTYFRCNNGPCIPMV  138 (626)
+Confidence            3444545555788999999999999999853
+
+
+No 222
+>UniRef100_UPI0018DED3D2 hypothetical protein n=1 Tax=Bacillus cereus TaxID=1396 RepID=UPI0018DED3D2
+Probab=27.73  E-value=3.2e+02  Score=28.25  Aligned_cols=20  Identities=25%  Similarity=0.669  Sum_probs=14.8  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      +...||.|.++.+.|.|.|.
+T Consensus        36 kdnecpagqvrspdgkclpg   55 (193)
+T UniRef100_UPI0   36 KDNECPAGQVRSPDGKCLPG   55 (193)
+Confidence            45678888888888888763
+
+
+No 223
+>UniRef100_UPI00145CF008 hypothetical protein n=1 Tax=Aromatoleum toluvorans TaxID=92002 RepID=UPI00145CF008
+Probab=27.51  E-value=3.3e+02  Score=31.42  Aligned_cols=26  Identities=31%  Similarity=0.466  Sum_probs=20.6  Template_Neff=1.000
+
+Q 7398317         108 PPEKKKESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       108 Pki~tk~~~CPsGyT~daNG~C~PiF  133 (136)
+                      |-+-+.++.||+|..+|+.|.|+..-
+T Consensus       110 pwicqnaplcpdgeardasgqcvsmc  135 (511)
+T UniRef100_UPI0  110 PWICQNAPLCPDGEARDASGQCVSMC  135 (511)
+Confidence            44444677999999999999998643
+
+
+No 224
+>UniRef100_A0A6B3R1G5 Uncharacterized protein n=1 Tax=Psychroflexus aurantiacus TaxID=2709310 RepID=A0A6B3R1G5_9FLAO
+Probab=27.13  E-value=3.4e+02  Score=30.81  Aligned_cols=31  Identities=29%  Similarity=0.604  Sum_probs=24.4  Template_Neff=1.000
+
+Q 7398317         104 FFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       104 fIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      .-++|.-.+....||+||-.+..|+|..+.+
+T Consensus       240 anlnpepepesencpegfyqnlegecieilp  270 (429)
+T UniRef100_A0A6  240 ANLNPEPEPESENCPEGFYQNLEGECIEILP  270 (429)
+Confidence            4456665556778999999999999987754
+
+
+No 225
+>UniRef100_UPI0007E2FEBB hypothetical protein n=1 Tax=Photobacterium sp. J15 TaxID=265901 RepID=UPI0007E2FEBB
+Probab=27.03  E-value=3.4e+02  Score=30.97  Aligned_cols=19  Identities=32%  Similarity=0.532  Sum_probs=16.9  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVL  131 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~P  131 (136)
+                      ....||+|...|+||.|..
+T Consensus        83 ggnncpsgeipdangqcrk  101 (455)
+T UniRef100_UPI0   83 GGNNCPSGEIPDANGQCRK  101 (455)
+Confidence            4678999999999999974
+
+
+No 226
+>UniRef100_A0A137NYN7 Uncharacterized protein n=1 Tax=Conidiobolus coronatus (strain ATCC 28846 / CBS 209.66 / NRRL 28638) TaxID=796925 RepID=A0A137NYN7_CONC2
+Probab=26.85  E-value=3.4e+02  Score=29.60  Aligned_cols=18  Identities=39%  Similarity=0.765  Sum_probs=9.6  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAAN-GECVLK  132 (136)
+Q Consensus       115 ~~CPsGyT~daN-G~C~Pi  132 (136)
+                      .+||+|..+|.| |.|+++
+T Consensus       137 vkcpegqvmdpntgkcvpi  155 (300)
+T UniRef100_A0A1  137 VKCPEGQVMDPNTGKCVPI  155 (300)
+Confidence            345666665554 455543
+
+
+No 227
+>UniRef100_A0A2A4IZ86 Uncharacterized protein n=1 Tax=Heliothis virescens TaxID=7102 RepID=A0A2A4IZ86_HELVI
+Probab=25.91  E-value=3.1e+02  Score=27.65  Aligned_cols=18  Identities=33%  Similarity=0.637  Sum_probs=15.8  Template_Neff=2.066
+
+Q 7398317         115 SACMEGLALAANGECVLK  132 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~Pi  132 (136)
+                      --|..||.+|.|++|++.
+T Consensus        62 CVCKpg~IRnd~~eCv~E   79 (154)
+T UniRef100_A0A2   62 CVCKPGYIRNDNNECVPE   79 (154)
+Confidence            468999999999999874
+
+
+No 228
+>UniRef100_A0A4C1WUG8 Zonadhesin n=1 Tax=Eumeta variegata TaxID=151549 RepID=A0A4C1WUG8_EUMVA
+Probab=25.48  E-value=3.8e+02  Score=31.04  Aligned_cols=29  Identities=34%  Similarity=0.551  Sum_probs=25.1  Template_Neff=1.000
+
+Q 7398317         104 FFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus       104 fIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      .-|.|+.-.+.-.|.+||-+|..|.|.|.
+T Consensus       257 rkidpkyckkgcicaegylrdehgkcipk  285 (511)
+T UniRef100_A0A4  257 RKIDPKYCKKGCICAEGYLRDEHGKCIPK  285 (511)
+Confidence            45778877788899999999999999985
+
+
+No 229
+>UniRef100_A0A545UQE3 Uncharacterized protein n=1 Tax=Cordyceps javanica TaxID=43265 RepID=A0A545UQE3_9HYPO
+Probab=25.31  E-value=3.8e+02  Score=26.10  Aligned_cols=21  Identities=33%  Similarity=0.632  Sum_probs=18.1  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF  133 (136)
+                      +.+-||.|-....||+|.+.-
+T Consensus        47 qpsgcpagtkpgpngecipts   67 (119)
+T UniRef100_A0A5   47 QPSGCPAGTKPGPNGECIPTS   67 (119)
+Confidence            456899999999999999754
+
+
+No 230
+>UniRef100_A0A8J5DHI5 SCO-spondin n=1 Tax=Nymphon striatum TaxID=424472 RepID=A0A8J5DHI5_9CHEL
+Probab=25.31  E-value=3.8e+02  Score=35.33  Aligned_cols=19  Identities=42%  Similarity=0.747  Sum_probs=17.0  Template_Neff=1.000
+
+Q 7398317         114 ESACMEGLALAANGECVLK  132 (136)
+Q Consensus       114 ~~~CPsGyT~daNG~C~Pi  132 (136)
+                      .-.||+|.+.|.||.|+|+
+T Consensus       713 gcscpegetldvngrcvpi  731 (2553)
+T UniRef100_A0A8  713 GCSCPEGETLDVNGRCVPI  731 (2553)
+Confidence            4579999999999999986
+
+
+No 231
+>UniRef100_UPI000DBED283 hepatitis A virus cellular receptor 1-like n=1 Tax=Harpegnathos saltator TaxID=610380 RepID=UPI000DBED283
+Probab=25.14  E-value=3.9e+02  Score=28.03  Aligned_cols=35  Identities=26%  Similarity=0.398  Sum_probs=28.1  Template_Neff=1.000
+
+Q 7398317          96 ESDLLHTRFFINPPEKKKESACMEGLALAANGECVL  131 (136)
+Q Consensus        96 ES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~P  131 (136)
+                      -.++++.|.||.-+.+. -..||.|.-.|.-|-|..
+T Consensus       170 yeslidirviidtpefn-ivtcppgqlkdscgmcrd  204 (206)
+T UniRef100_UPI0  170 YESLIDIRVIIDTPEFN-IVTCPPGQLKDSCGMCRD  204 (206)
+Confidence            34578899999877663 457999999999999964
+
+
+No 232
+>UniRef100_UPI0018956B11 uncharacterized protein LOC119385271 n=1 Tax=Rhipicephalus sanguineus TaxID=34632 RepID=UPI0018956B11
+Probab=24.72  E-value=4e+02  Score=30.58  Aligned_cols=23  Identities=30%  Similarity=0.790  Sum_probs=21.3  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKFPD  135 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF~D  135 (136)
+                      +++.||.|-.+++|..|...|+.
+T Consensus       427 dafrcprgtvmnpndscalrfpe  449 (460)
+T UniRef100_UPI0  427 DAFRCPRGTVMNPNDSCALRFPE  449 (460)
+Confidence            68899999999999999999975
+
+
+No 233
+>UniRef100_A0A4C1WRU3 Inducible metalloproteinase inhibitor protein n=1 Tax=Eumeta variegata TaxID=151549 RepID=A0A4C1WRU3_EUMVA
+Probab=24.04  E-value=4.2e+02  Score=31.37  Aligned_cols=27  Identities=37%  Similarity=0.672  Sum_probs=21.9  Template_Neff=1.000
+
+Q 7398317         106 INPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus       106 IrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      |.|+.-.+.-.|.+||-+|..|.|.|.
+T Consensus       595 idpkyckkgcicaegylrdehgkcipk  621 (626)
+T UniRef100_A0A4  595 IDPKYCKKGCICAEGYLRDEHGKCIPK  621 (626)
+Confidence            445544478889999999999999985
+
+
+No 234
+>UniRef100_A0A0F9DS41 Uncharacterized protein n=1 Tax=marine sediment metagenome TaxID=412755 RepID=A0A0F9DS41_9ZZZZ
+Probab=24.01  E-value=4.2e+02  Score=30.54  Aligned_cols=28  Identities=32%  Similarity=0.578  Sum_probs=19.7  Template_Neff=1.000
+
+Q 7398317         108 PPEKKKESACMEGLALAANGECVLKFPDD  136 (136)
+Q Consensus       108 Pki~tk~~~CPsGyT~daNG~C~PiF~D~  136 (136)
+                      |++-..++-||.|. +..||+|+|+-.|+
+T Consensus        83 ppidrppfgcppgq-rlvngncvpisede  110 (475)
+T UniRef100_A0A0   83 PPIDRPPFGCPPGQ-RLVNGNCVPISEDE  110 (475)
+Confidence            33333345699996 56899999987663
+
+
+No 235
+>UniRef100_A0A1J1HWF2 CLUMA_CG005339, isoform A n=1 Tax=Clunio marinus TaxID=568069 RepID=A0A1J1HWF2_9DIPT
+Probab=23.98  E-value=4.2e+02  Score=27.65  Aligned_cols=17  Identities=41%  Similarity=0.944  Sum_probs=14.8  Template_Neff=1.000
+
+Q 7398317         115 SACMEGLALAANGECVL  131 (136)
+Q Consensus       115 ~~CPsGyT~daNG~C~P  131 (136)
+                      --|-+||++|+.|+|..
+T Consensus       175 cycndgfvrdaegecil  191 (196)
+T UniRef100_A0A1  175 CYCNDGFVRDAEGECIL  191 (196)
+Confidence            35899999999999975
+
+
+No 236
+>UniRef100_A0A2G8JU69 Uncharacterized protein n=1 Tax=Stichopus japonicus TaxID=307972 RepID=A0A2G8JU69_STIJA
+Probab=23.82  E-value=4.3e+02  Score=27.36  Aligned_cols=40  Identities=23%  Similarity=0.344  Sum_probs=30.4  Template_Neff=1.000
+
+Q 7398317          95 TESDLLHTRFFINPPEKKKESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus        95 tES~lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      +.|+.+..-+-|.-.+-.+...|.+.......|+|...|-
+T Consensus        76 yrsyrikmafnislsivdkkdncsenqftcndgncidnfg  115 (182)
+T UniRef100_A0A2   76 YRSYRIKMAFNISLSIVDKKDNCSENQFTCNDGNCIDNFG  115 (182)
+Confidence            3455555556666666667889999999999999998774
+
+
+No 237
+>UniRef100_A0A2R7VTY0 Chitin-binding type-2 domain-containing protein (Fragment) n=1 Tax=Oncopeltus fasciatus TaxID=7536 RepID=A0A2R7VTY0_ONCFA
+Probab=23.32  E-value=4.2e+02  Score=26.92  Aligned_cols=28  Identities=18%  Similarity=0.379  Sum_probs=23.2  Template_Neff=1.323
+
+Q 7398317         104 FFINPPEKKKESACMEGLALAANGECVL  131 (136)
+Q Consensus       104 fIIrPki~tk~~~CPsGyT~daNG~C~P  131 (136)
+                      .-..|.+.+.++.|.+|+-...+|.|..
+T Consensus       107 rk~kpllyt~eplc~dg~~~~~~~~cie  134 (154)
+T UniRef100_A0A2  107 RKAKPLLYTEEPLCQDGFLACRDSACIE  134 (154)
+Confidence            3456777778999999999999999974
+
+
+No 238
+>UniRef100_A0A2E7A184 Uncharacterized protein (Fragment) n=1 Tax=Phycisphaerae bacterium TaxID=2026778 RepID=A0A2E7A184_9BACT
+Probab=23.14  E-value=4.5e+02  Score=28.24  Aligned_cols=22  Identities=18%  Similarity=0.502  Sum_probs=18.6  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKFP  134 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF~  134 (136)
+                      +...||.||++|-.|.|.|.+.
+T Consensus        73 dggdcpagwtedcqgtcfpdyv   94 (244)
+T UniRef100_A0A2   73 DGGDCPAGWTEDCQGTCFPDYV   94 (244)
+Confidence            3568999999999999988653
+
+
+No 239
+>UniRef100_A0A137NPP6 Uncharacterized protein (Fragment) n=1 Tax=Conidiobolus coronatus (strain ATCC 28846 / CBS 209.66 / NRRL 28638) TaxID=796925 RepID=A0A137NPP6_CONC2
+Probab=22.90  E-value=4.6e+02  Score=30.22  Aligned_cols=21  Identities=29%  Similarity=0.431  Sum_probs=17.2  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLKF  133 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~PiF  133 (136)
+                      ..++||...+.|.||+|+|+-
+T Consensus        98 tssqcppnqttdingncvpiq  118 (460)
+T UniRef100_A0A1   98 TSSQCPPNQTTDINGNCVPIQ  118 (460)
+Confidence            356899999999999998864
+
+
+No 240
+>UniRef100_A0A1B0D665 Uncharacterized protein n=1 Tax=Phlebotomus papatasi TaxID=29031 RepID=A0A1B0D665_PHLPP
+Probab=22.86  E-value=4e+02  Score=32.07  Aligned_cols=29  Identities=21%  Similarity=0.572  Sum_probs=23.4  Template_Neff=1.778
+
+Q 7398317         104 FFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus       104 fIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      .+..|+.+..--.|++||.++..|+|++.
+T Consensus       231 ~~~~p~~~~g~c~c~e~~~~n~~~~ci~~  259 (666)
+T UniRef100_A0A1  231 RVVQPNSRQGFCDCPEGFERNKQGHCIMA  259 (666)
+Confidence            45667666666789999999999999874
+
+
+No 241
+>UniRef100_A0A0K8TXM5 Chitin-binding type-2 domain-containing protein (Fragment) n=2 Tax=Bactrocera latifrons TaxID=174628 RepID=A0A0K8TXM5_BACLA
+Probab=22.80  E-value=4.4e+02  Score=29.64  Aligned_cols=34  Identities=32%  Similarity=0.439  Sum_probs=28.0  Template_Neff=1.288
+
+Q 7398317          99 LLHTRFFINPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus        99 lL~TRfIIrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      .+....-+-|.++++++.||+|--...||+|..+
+T Consensus       106 ~~ekprkv~pilktdepvcpegklscg~gec~~k  139 (351)
+T UniRef100_A0A0  106 ELEKPRKVLPILKTDEPICPEGKLSCGDGECIDK  139 (351)
+Confidence            3455556778888899999999999999999754
+
+
+No 242
+>UniRef100_A0A7V3XEI9 Uncharacterized protein n=1 Tax=bacterium TaxID=1869227 RepID=A0A7V3XEI9_9BACT
+Probab=22.23  E-value=4.8e+02  Score=30.38  Aligned_cols=36  Identities=33%  Similarity=0.398  Sum_probs=28.6  Template_Neff=1.000
+
+Q 7398317          76 LNGTDTVTKKVVIADHQTTTES----DLLHTRFFINPPEK  111 (136)
+Q Consensus        76 ~~sVETVTEnqvtstnqTTtES----~lL~TRfIIrPki~  111 (136)
+                      -..||-.|.-.|+.+||-+.||    ++|.-.+||+|+..
+T Consensus       208 eedvelttapvvtntnqltsesqthqgllnlgyiinprwt  247 (507)
+T UniRef100_A0A7  208 EEDVELTTAPVVTNTNQLTSESQTHQGLLNLGYIINPRWT  247 (507)
+Confidence            3467777778888888888665    78899999999875
+
+
+No 243
+>UniRef100_A0A7W0RXD4 Uncharacterized protein n=1 Tax=Solirubrobacterales bacterium TaxID=1909295 RepID=A0A7W0RXD4_9ACTN
+Probab=21.35  E-value=5.1e+02  Score=27.58  Aligned_cols=14  Identities=29%  Similarity=0.788  Sum_probs=5.8  Template_Neff=1.000
+
+Q 7398317         117 CMEGLALAANGECV  130 (136)
+Q Consensus       117 CPsGyT~daNG~C~  130 (136)
+                      ||+|.++|.-|+|.
+T Consensus       155 cpdgqvrddagdcq  168 (222)
+T UniRef100_A0A7  155 CPDGQVRDDAGDCQ  168 (222)
+Confidence            44444444444443
+
+
+No 244
+>UniRef100_A0A6J2KJR7 inducible metalloproteinase inhibitor protein-like n=1 Tax=Bombyx mandarina TaxID=7092 RepID=A0A6J2KJR7_BOMMA
+Probab=21.20  E-value=5.2e+02  Score=27.93  Aligned_cols=27  Identities=37%  Similarity=0.626  Sum_probs=22.7  Template_Neff=1.000
+
+Q 7398317         106 INPPEKKKESACMEGLALAANGECVLK  132 (136)
+Q Consensus       106 IrPki~tk~~~CPsGyT~daNG~C~Pi  132 (136)
+                      |.|+.-.+.-.|.+.|++..||.|.|+
+T Consensus        39 idpkkcikgclckenyvradngtcipk   65 (249)
+T UniRef100_A0A6   39 IDPKKCIKGCLCKENYVRADNGTCIPK   65 (249)
+Confidence            566665577889999999999999986
+
+
+No 245
+>UniRef100_A0A318YYP3 Uncharacterized protein n=1 Tax=Aspergillus saccharolyticus JOP 1030-1 TaxID=1450539 RepID=A0A318YYP3_9EURO
+Probab=20.83  E-value=5e+02  Score=27.50  Aligned_cols=19  Identities=32%  Similarity=0.637  Sum_probs=12.5  Template_Neff=1.402
+
+Q 7398317         113 KESACMEGLALAANGECVL  131 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~P  131 (136)
+                      +..-||.|++.-+||.|.|
+T Consensus       122 dg~gcppg~~~g~~g~c~p  140 (204)
+T UniRef100_A0A3  122 DGSGCPPGTKPGPNGGCIP  140 (204)
+Confidence            4555777777777777754
+
+
+No 246
+>UniRef100_A0A7Z9JHC2 Uncharacterized protein n=2 Tax=Phycisphaerales bacterium TaxID=2052180 RepID=A0A7Z9JHC2_9BACT
+Probab=20.24  E-value=5.6e+02  Score=29.40  Aligned_cols=20  Identities=40%  Similarity=0.644  Sum_probs=17.5  Template_Neff=1.000
+
+Q 7398317         113 KESACMEGLALAANGECVLK  132 (136)
+Q Consensus       113 k~~~CPsGyT~daNG~C~Pi  132 (136)
+                      .+..||+|...|-||-|+|.
+T Consensus        20 saqdcpeglindcngycvpm   39 (421)
+T UniRef100_A0A7   20 SAQDCPEGLINDCNGYCVPM   39 (421)
+Confidence            35589999999999999985
+
+

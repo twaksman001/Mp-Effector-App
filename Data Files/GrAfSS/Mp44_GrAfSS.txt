@@ -1,0 +1,43 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM   -0.4545 -0.8641  0.2162 -0.6936  0.4956  0.5227 -0.5589  0.0876 -0.8246    50.727    11.806   100.000  
+ 
+ Match found in 1b01_d00     GENE REGULATION/DNA                 
+   Pattern 1b01_d00               Query structure     RMSD=  1.30 A  No. of residues =   3
+   ------- -------                --------------- 
+    B   4    ARG       matches     A  60    ARG  
+    B   6    THR       matches     A  62    THR  
+    B   8    THR       matches     A  64    THR  
+  TRANSFORM   -0.0025  0.9951 -0.0993 -0.9958 -0.0115 -0.0906 -0.0913  0.0986  0.9909    25.276    22.774    74.014  
+ 
+ Match found in 1b01_d00     GENE REGULATION/DNA                 
+   Pattern 1b01_d00               Query structure     RMSD=  1.42 A  No. of residues =   3
+   ------- -------                --------------- 
+    B   4    ARG       matches     A  90    ARG  
+    B   6    THR       matches     A  92    THR  
+    B   8    THR       matches     A  94    THR  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM   -0.5154 -0.8548 -0.0598  0.2972 -0.1128 -0.9481 -0.8037  0.5065 -0.3122    50.857    15.489    95.992  
+ 
+ Match found in 1b01_d00     GENE REGULATION/DNA                 
+   Pattern 1b01_d00               Query structure     RMSD=  1.19 A  No. of residues =   3
+   ------- -------                --------------- 
+    B   4    ARG       matches     A  60    ARG  
+    B   6    THR       matches     A  62    THR  
+    B   8    THR       matches     A  81    THR  
+  TRANSFORM    0.6347 -0.6483  0.4206 -0.3237  0.2712  0.9065  0.7017  0.7115  0.0377    34.779     6.237    77.351  
+ 
+ Match found in 1b01_d00     GENE REGULATION/DNA                 
+   Pattern 1b01_d00               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    B   4    ARG       matches     A  79    ARG  
+    B   6    THR       matches     A  81    THR  
+    B   8    THR       matches     A  62    THR  
+
+************************************************* user.SUMS ********************************************************
+   1b01_d00     GENE REGULATION/DNA                     :        1.30  <
+   1b01_d00     GENE REGULATION/DNA                     :        1.42  <
+
+************************************************* user.SUML ********************************************************
+   1b01_d00     GENE REGULATION/DNA                     :        1.19  <
+   1b01_d00     GENE REGULATION/DNA                     :        1.48  <

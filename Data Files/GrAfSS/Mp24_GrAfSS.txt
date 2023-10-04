@@ -1,0 +1,223 @@
+******************************************************* user.XUMS **************************************************************
+  TRANSFORM   -0.7819 -0.4893 -0.3862  0.3054 -0.8408  0.4471 -0.5434  0.2316  0.8068    23.440    25.256    59.768  
+ 
+ Match found in 1lio_c01     ADENOSINE KINASE                    
+   Pattern 1lio_c01               Query structure     RMSD=  1.02 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A 136    ALA  
+    A 317    GLY       matches     A 139    GLY  
+    A 318    ASP       matches     A 138    ASP  
+  TRANSFORM   -0.7181 -0.1777 -0.6729 -0.4745 -0.5823  0.6601 -0.5092  0.7933  0.3339    13.638    55.671    57.454  
+ 
+ Match found in 1pnl_c00     PENICILLIN AMIDOHYDROLASE           
+   Pattern 1pnl_c00               Query structure     RMSD=  1.14 A  No. of residues =   3
+   ------- -------                --------------- 
+    B   1    SER       matches     A   7    SER  
+    B  69    ALA       matches     A  75    ALA  
+    B 241    ASN       matches     A  74    ASN  
+  TRANSFORM   -0.7167  0.6342  0.2900 -0.4847 -0.1541 -0.8610 -0.5014 -0.7576  0.4179    28.667   -34.888   -41.480  
+ 
+ Match found in 1tz3_c03     PUTATIVE SUGAR KINASE               
+   Pattern 1tz3_c03               Query structure     RMSD=  1.17 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 250    ALA       matches     A 136    ALA  
+    B 251    GLY       matches     A 139    GLY  
+    B 252    ASP       matches     A 138    ASP  
+  TRANSFORM    0.7994  0.4508 -0.3972 -0.1236 -0.5236 -0.8429 -0.5880  0.7229 -0.3629   134.457     2.231    -3.290  
+ 
+ Match found in 1lij_c01     ADENOSINE KINASE                    
+   Pattern 1lij_c01               Query structure     RMSD=  1.18 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A 136    ALA  
+    A 317    GLY       matches     A 139    GLY  
+    A 318    ASP       matches     A 138    ASP  
+  TRANSFORM    0.4575  0.5305  0.7136  0.8232 -0.5562 -0.1143  0.3362  0.6397 -0.6912    38.434   -25.935   -14.925  
+ 
+ Match found in 1tz3_c02     PUTATIVE SUGAR KINASE               
+   Pattern 1tz3_c02               Query structure     RMSD=  1.20 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 250    ALA       matches     A 136    ALA  
+    A 251    GLY       matches     A 139    GLY  
+    A 252    ASP       matches     A 138    ASP  
+  TRANSFORM   -0.7934  0.5721  0.2078  0.1689 -0.1211  0.9782  0.5848  0.8112 -0.0006    -6.124     3.911     3.650  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.34 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A 114    ASP  
+      166    GLY       matches     A  56    GLY  
+      169    GLU       matches     A  63    GLU  
+  TRANSFORM   -0.8652  0.4218 -0.2711 -0.3451 -0.8932 -0.2884 -0.3637 -0.1560  0.9184    20.970    54.681   100.654  
+ 
+ Match found in 2v3r_p00     EXOGLUCANASE 1                      
+   Pattern 2v3r_p00               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 270    ASN       matches     A  30    ASN  
+    A 384    ASN       matches     A  65    ASN  
+    A 385    GLU       matches     A  61    GLU  
+  TRANSFORM    0.7123 -0.5421  0.4458  0.4748 -0.0957 -0.8749  0.5170  0.8348  0.1892    51.845    92.292    32.769  
+ 
+ Match found in 1cdg_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE (E.
+   Pattern 1cdg_c00               Query structure     RMSD=  1.43 A  No. of residues =   3
+   ------- -------                --------------- 
+      229    ASP       matches     A 103    ASP  
+      264    GLU       matches     A  61    GLU  
+      328    ASP       matches     A  96    ASP  
+  TRANSFORM    0.0883 -0.1554 -0.9839 -0.2851 -0.9504  0.1245 -0.9544  0.2695 -0.1283    -7.475    72.804   146.679  
+ 
+ Match found in 1b57_c01     FRUCTOSE-BISPHOSPHATE ALDOLASE II   
+   Pattern 1b57_c01               Query structure     RMSD=  1.45 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 109    ASP       matches     A  76    ASP  
+    B 182    GLU       matches     A  81    GLU  
+    B 286    ASN       matches     A  74    ASN  
+  TRANSFORM   -0.4670 -0.4936 -0.7337 -0.8510  0.4763  0.2212  0.2403  0.7277 -0.6425    27.115    20.042    19.610  
+ 
+ Match found in 1cqt_d00     GENE REGULATION/DNA                 
+   Pattern 1cqt_d00               Query structure     RMSD=  1.48 A  No. of residues =   3
+   ------- -------                --------------- 
+    I 303    TYR       matches     A  36    TYR  
+    I 306    VAL       matches     A  32    VAL  
+    I 308    VAL       matches     A  46    VAL  
+  TRANSFORM   -0.4997  0.8004  0.3312 -0.5070 -0.5803  0.6374  0.7023  0.1506  0.6957    -7.163     7.138    -3.996  
+ 
+ Match found in 2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA
+   Pattern 2tdt_c00               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+      141    ASP       matches     A 103    ASP  
+      166    GLY       matches     A  56    GLY  
+      169    GLU       matches     A  63    GLU  
+
+******************************************************* user.XUML **************************************************************
+  TRANSFORM   -0.7662 -0.5215 -0.3754 -0.5184  0.8469 -0.1184 -0.3796 -0.1039  0.9193    23.367    29.072    59.009  
+ 
+ Match found in 1lio_c01     ADENOSINE KINASE                    
+   Pattern 1lio_c01               Query structure     RMSD=  0.92 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A 136    ALA  
+    A 317    GLY       matches     A 139    GLY  
+    A 318    ASP       matches     A 138    ASP  
+  TRANSFORM    0.9798 -0.1937  0.0488  0.1158  0.7500  0.6512  0.1628  0.6324 -0.7573   -42.416    46.965     3.655  
+ 
+ Match found in 1ir3_c02     INSULIN RECEPTOR                    
+   Pattern 1ir3_c02               Query structure     RMSD=  1.07 A  No. of residues =   3
+   ------- -------                --------------- 
+    A1132    ASP       matches     A  76    ASP  
+    A1134    ALA       matches     A  75    ALA  
+    A1137    ASN       matches     A  74    ASN  
+  TRANSFORM   -0.0788 -0.6755  0.7332 -0.2157 -0.7065 -0.6741 -0.9733  0.2113  0.0900    25.796   -36.099   -39.356  
+ 
+ Match found in 1tz3_c03     PUTATIVE SUGAR KINASE               
+   Pattern 1tz3_c03               Query structure     RMSD=  1.07 A  No. of residues =   3
+   ------- -------                --------------- 
+    B 250    ALA       matches     A 136    ALA  
+    B 251    GLY       matches     A 139    GLY  
+    B 252    ASP       matches     A 138    ASP  
+  TRANSFORM    0.9410  0.1595 -0.2985 -0.2515 -0.2606 -0.9321  0.2265 -0.9522  0.2051   133.823     2.803    -6.931  
+ 
+ Match found in 1lij_c01     ADENOSINE KINASE                    
+   Pattern 1lij_c01               Query structure     RMSD=  1.08 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 316    ALA       matches     A 136    ALA  
+    A 317    GLY       matches     A 139    GLY  
+    A 318    ASP       matches     A 138    ASP  
+  TRANSFORM    0.5050  0.4334  0.7465  0.1600  0.8028 -0.5743  0.8482 -0.4095 -0.3360    38.220   -22.952   -17.228  
+ 
+ Match found in 1tz3_c02     PUTATIVE SUGAR KINASE               
+   Pattern 1tz3_c02               Query structure     RMSD=  1.11 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 250    ALA       matches     A 136    ALA  
+    A 251    GLY       matches     A 139    GLY  
+    A 252    ASP       matches     A 138    ASP  
+  TRANSFORM    0.4294 -0.8675  0.2512 -0.8797 -0.3388  0.3338  0.2045  0.3643  0.9086     0.210    60.412    49.103  
+ 
+ Match found in 1pnl_c00     PENICILLIN AMIDOHYDROLASE           
+   Pattern 1pnl_c00               Query structure     RMSD=  1.25 A  No. of residues =   3
+   ------- -------                --------------- 
+    B   1    SER       matches     A   7    SER  
+    B  69    ALA       matches     A  75    ALA  
+    B 241    ASN       matches     A  74    ASN  
+  TRANSFORM    0.9250 -0.0256  0.3791  0.0621 -0.9741 -0.2173 -0.3749 -0.2245  0.8995    12.460    48.396    80.567  
+ 
+ Match found in 1m53_c06     ISOMALTULOSE SYNTHASE               
+   Pattern 1m53_c06               Query structure     RMSD=  1.38 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 241    ASP       matches     A  96    ASP  
+    A 279    GLU       matches     A  85    GLU  
+    A 369    ASP       matches     A 103    ASP  
+  TRANSFORM    0.2957  0.8961  0.3309  0.2912 -0.4145  0.8622 -0.9098  0.1586  0.3835    11.133   106.696    57.954  
+ 
+ Match found in 1dfo_c04     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c04               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  57    GLU       matches     A 120    GLU  
+    A 226    THR       matches     A 132    THR  
+    A 229    LYS       matches     A  82    LYS  
+  TRANSFORM    0.5248 -0.5645  0.6371  0.0245 -0.7382 -0.6741 -0.8509 -0.3694  0.3736    43.111    70.630   115.458  
+ 
+ Match found in 1pyi_d00     PROTEIN (PYRIMIDINE PATHWAY REGULATO
+   Pattern 1pyi_d00               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    A  40    LYS       matches     A 117    LYS  
+    A  41    LYS       matches     A 116    LYS  
+    A  42    ILE       matches     A 118    ILE  
+  TRANSFORM    0.9455  0.2819 -0.1632 -0.2762  0.4285 -0.8603  0.1726 -0.8584 -0.4830    16.842    36.641    66.103  
+ 
+ Match found in 1dfo_c06     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c06               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    C  57    GLU       matches     A 120    GLU  
+    C 226    THR       matches     A 132    THR  
+    C 229    LYS       matches     A  82    LYS  
+  TRANSFORM   -0.0838 -0.0752  0.9936 -0.7282 -0.6761 -0.1126 -0.6802  0.7330 -0.0019    24.405    48.297    55.944  
+ 
+ Match found in 1dfo_c07     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c07               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    D  57    GLU       matches     A 120    GLU  
+    D 226    THR       matches     A 132    THR  
+    D 229    LYS       matches     A  82    LYS  
+  TRANSFORM    0.5450 -0.6897  0.4767  0.7332  0.6678  0.1279  0.4066 -0.2798 -0.8697    23.931    95.266    56.035  
+ 
+ Match found in 1dfo_c05     SERINE HYDROXYMETHYLTRANSFERASE     
+   Pattern 1dfo_c05               Query structure     RMSD=  1.47 A  No. of residues =   3
+   ------- -------                --------------- 
+    B  57    GLU       matches     A 120    GLU  
+    B 226    THR       matches     A 132    THR  
+    B 229    LYS       matches     A  82    LYS  
+  TRANSFORM   -0.3571 -0.1462  0.9225 -0.3389 -0.9001 -0.2738 -0.8704  0.4104 -0.2719    12.066    54.572   109.533  
+ 
+ Match found in 2v3r_p00     EXOGLUCANASE 1                      
+   Pattern 2v3r_p00               Query structure     RMSD=  1.49 A  No. of residues =   3
+   ------- -------                --------------- 
+    A 270    ASN       matches     A  30    ASN  
+    A 384    ASN       matches     A  65    ASN  
+    A 385    GLU       matches     A  61    GLU  
+
+************************************************* user.SUMS ********************************************************
+   1lio_c01     ADENOSINE KINASE                        :        1.02  <
+   1pnl_c00     PENICILLIN AMIDOHYDROLASE               :        1.14  <
+   1tz3_c03     PUTATIVE SUGAR KINASE                   :        1.17  <
+   1lij_c01     ADENOSINE KINASE                        :        1.18  <
+   1tz3_c02     PUTATIVE SUGAR KINASE                   :        1.20  <
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.34  <
+   2v3r_p00     EXOGLUCANASE 1                          :        1.43  <
+   1cdg_c00     CYCLODEXTRIN GLYCOSYLTRANSFERASE (E.    :        1.43  <
+   1b57_c01     FRUCTOSE-BISPHOSPHATE ALDOLASE II       :        1.45  <
+   1cqt_d00     GENE REGULATION/DNA                     :        1.48  <
+   2tdt_c00     TETRAHYDRODIPICOLINATE N-SUCCINYLTRA    :        1.49  <
+
+************************************************* user.SUML ********************************************************
+   1lio_c01     ADENOSINE KINASE                        :        0.92  <
+   1ir3_c02     INSULIN RECEPTOR                        :        1.07  <
+   1tz3_c03     PUTATIVE SUGAR KINASE                   :        1.07  <
+   1lij_c01     ADENOSINE KINASE                        :        1.08  <
+   1tz3_c02     PUTATIVE SUGAR KINASE                   :        1.11  <
+   1pnl_c00     PENICILLIN AMIDOHYDROLASE               :        1.25  <
+   1m53_c06     ISOMALTULOSE SYNTHASE                   :        1.38  <
+   1dfo_c04     SERINE HYDROXYMETHYLTRANSFERASE         :        1.47  <
+   1pyi_d00     PROTEIN (PYRIMIDINE PATHWAY REGULATO    :        1.47  <
+   1dfo_c06     SERINE HYDROXYMETHYLTRANSFERASE         :        1.47  <
+   1dfo_c07     SERINE HYDROXYMETHYLTRANSFERASE         :        1.47  <
+   1dfo_c05     SERINE HYDROXYMETHYLTRANSFERASE         :        1.47  <
+   2v3r_p00     EXOGLUCANASE 1                          :        1.49  <
