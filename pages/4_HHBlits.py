@@ -1,7 +1,6 @@
-import streamlit as st  # pip install streamlit
-import pandas as pd  # pip install pandas openpyxl
+import streamlit as st
+import pandas as pd
 import math
-#import sys
 
 st.set_page_config(layout="wide")
 st.write('This page creates an interactive spreadsheet from HHBlits output file for any single effector.')
@@ -156,7 +155,7 @@ def HHBlits_df_present(protein):
         return df
 
 try:
-	df_HHBlits = HHBlits_df_present(protein)
+	df = HHBlits_df_present(protein)
 except Exception as e:
 	st.write('no information available for this protein')
 	
@@ -164,16 +163,39 @@ with st.sidebar:
 	st.header('filters')
 	reset_all = st.button(label='reset all filters', key='reset_all_button')#, on_click=widgets_initial())
 
+# def prepare_dataframe(df):
+
+# 	columns_string = {'targetID', 'targetname', 'qaln', 'taln', 'tseq', 'genus', 'species', 'db', 'extra', 'tca'}
+# 	columns_float = {'fident', 'evalue', 'prob'}
+# 	columns_int = {'gapopen', 'qstart', 'qend', 'tstart', 'tend', 'alnlen', 'mismatch', 'bits', 'genuscount', 'speciescount', 'qlen', 'tlen'}
+	
+# 	for column in df.columns:
+# 		if column in columns_string:
+# 			df[column] = df[column].astype(str)
+# 			df[column] = df[column].fillna(value = 'n/a')
+# 		elif column in columns_float:
+# 			df[column] = df[column].astype(float)
+# 		elif column in columns_int:
+# 			df[column] = df[column].astype(int)
+# 		elif column == 'taxid':
+# 			df[column] = df[column].astype(str)
+# 			df[column] = df[column].str.split('\.').str[0]
+# 			df[column] = df[column].fillna(value = 'n/a')
+	
+# 	return df
+
 def filter_dataframe(df):
 		
 	df_filter_dict = {}
 	
 	columns_stringsearch = {'targetID','targetname','qaln','taln','taxID','genus','species','extra'}
 	columns_checkbox = {'probability','evalue','pvalue'}
+	columns_multiselect = {}
 	columns_selectslider = {'qstart','qend','tstart','tend'}
 	columns_slider_int = {'alnlen','tlen','genuscount','speciescount'}
 	columns_slider_float = {'probability','evalue','pvalue','score','fident','similarity','sum_probs','template_Neff','ss'}
-	columns_all_filter = sorted(set.union(columns_stringsearch, columns_checkbox, columns_selectslider, columns_slider_int, columns_slider_float))
+	columns_all_filter = sorted(set.union(columns_stringsearch, columns_checkbox, columns_multiselect, 
+								columns_selectslider, columns_slider_int, columns_slider_float))
 
 	for column in columns_all_filter:
 		df_filter_dict[column] = None
@@ -196,13 +218,27 @@ def filter_dataframe(df):
 						set_ = st.checkbox(label=f'activate threshold for {column}', value=False, key=f'activate threshold for {column}')
 						df_filter_dict[f'{column}2'] = user_text_input
 
+				if column in columns_multiselect:
+					user_cat_input = st.multiselect(
+													label=f'values for {column}',
+													options=df[column].unique(),
+													default=list(df[column].unique()),
+													key=f'multiselect values for {column}'
+													)
+					if len(user_cat_input) != df[column].nunique():
+						select_all = st.checkbox(label=f'select all {column}', value=False, key=f'multiselect select all for {column}')
+						if select_all == True:				
+							st.write(f'all {column} values selected until this box is unchecked')
+							user_cat_input = df[column].unique()							
+					df_filter_dict[column] = user_cat_input
+
 				if column in columns_selectslider:	
 					if df[column].nunique() > 10:
 						_min = df[column].sort_values().min()
 						_max = df[column].sort_values().max()
 						user_num_cat_input = st.select_slider(
 															  label=f'values for {column}',
-															  options=df_HHBlits[column].sort_values(),
+															  options=df[column].sort_values(),
 															  value=(_min, _max),
 															  key=f'selectslider values for {column}'
 															  )
@@ -219,10 +255,10 @@ def filter_dataframe(df):
 														default=list(df[column].unique()),
 														key=f'selectslider multiselect values for {column}'
 														)
-						if len(user_num_cat_input) != df_HHBlits[column].nunique():
+						if len(user_num_cat_input) != df[column].nunique():
 							select_all = st.checkbox(label=f'select all {column}', value=False, key=f'selectslider multiselect select all for {column}')
 							if select_all == True:
-								user_num_cat_input = df_HHBlits[column].unique()
+								user_num_cat_input = df[column].unique()
 								st.write(f'all {column} values selected until this box is unchecked')				
 					df_filter_dict[column] = user_num_cat_input
 
@@ -280,6 +316,8 @@ def filter_dataframe(df):
 						loc_list.append(set(df[df[column] >= float(df_filter_dict[f'{column}2'])].index))
 					elif st.session_state[f'threshold type for {column}'] == f'{column} below':
 						loc_list.append(set(df[df[column] <= float(df_filter_dict[f'{column}2'])].index))
+		if column in columns_multiselect:
+			loc_list.append(set(df[df[column].isin(df_filter_dict[column])].index))
 		if column in columns_selectslider:
 			if 'tuple' in str(type(df_filter_dict[column])):
 				loc_list.append(set(df[df[column].between(*df_filter_dict[column])].index))
@@ -317,46 +355,59 @@ def widgets_initial():
 			with st.expander(column):
 				
 				if column in columns_stringsearch:
-					user_text_input = st.text_input(label=f'text string in {column} (case-sensitive ; if multiple, use only 1 comma to separate)', value='', key=f'text string in {column}')		
+					user_text_input = st.text_input(label=f'text string in {column} (case-sensitive ; if multiple, use only 1 comma to separate)', value='', key=f'text string in {column} -')		
 				
 				if column in columns_checkbox:
-					threshold_checkbox = st.checkbox(label=f'use threshold for {column}', value=False, key=f'use threshold for {column}')
+					threshold_checkbox = st.checkbox(label=f'use threshold for {column}', value=False, key=f'use threshold for {column} -')
 					if threshold_checkbox:
-						user_text_input = st.text_input(label=f'threshold for {column}', value='', key=f'threshold for {column}')
-						option = st.selectbox(label='select threshold type:', options=[f'{column} above', f'{column} below'], index=0, key=f'threshold type for {column}')
-						set_ = st.checkbox(label=f'activate threshold for {column}', value=False, key=f'activate threshold for {column}')
-						
+						user_text_input = st.text_input(label=f'threshold for {column}', value='', key=f'threshold for {column} -')
+						option = st.selectbox(label='select threshold type:', options=[f'{column} above', f'{column} below'], index=0, key=f'threshold type for {column} -')
+						set_ = st.checkbox(label=f'activate threshold for {column}', value=False, key=f'activate threshold for {column} -')
+
+				if column in columns_multiselect:
+					user_cat_input = st.multiselect(
+													label=f'values for {column}',
+													options=df[column].unique(),
+													default=list(df[column].unique()),
+													key=f'multiselect values for {column} -'
+													)
+					if len(user_cat_input) != df[column].nunique():
+						select_all = st.checkbox(label=f'select all {column}', value=False, key=f'multiselect select all for {column} -')
+						if select_all == True:				
+							st.write(f'all {column} values selected until this box is unchecked')
+							user_cat_input = df[column].unique()							
+
 				if column in columns_selectslider:	
-					if df_HHBlits[column].nunique() > 10:
-						_min = df_HHBlits[column].sort_values().min()
-						_max = df_HHBlits[column].sort_values().max()
+					if df[column].nunique() > 10:
+						_min = df[column].sort_values().min()
+						_max = df[column].sort_values().max()
 						user_num_cat_input = st.select_slider(
 															  label=f'values for {column}',
-															  options=df_HHBlits[column].sort_values(),
+															  options=df[column].sort_values(),
 															  value=(_min, _max),
-															  key=f'selectslider values for {column}'
+															  key=f'selectslider values for {column} -'
 															  )
 						if user_num_cat_input != (_min, _max):
-							reset = st.checkbox(label=f'reset {column}', value=False, key=f'reset selectslider values for {column}')
+							reset = st.checkbox(label=f'reset {column}', value=False, key=f'reset selectslider values for {column} -')
 							if reset == True:
 								user_num_cat_input = (_min, _max)
 								st.write(f'value range for {column} is maximal until this box is unchecked')
 					else:
 						user_num_cat_input = st.multiselect(
 														label=f'values for {column}',
-														options=df_HHBlits[column].unique(),
-														default=list(df_HHBlits[column].unique()),
-														key=f'selectslider multiselect values for {column}'
+														options=df[column].unique(),
+														default=list(df[column].unique()),
+														key=f'selectslider multiselect values for {column} -'
 														)
-						if len(user_num_cat_input) != df_HHBlits[column].nunique():
-							select_all = st.checkbox(label=f'select all {column}', value=False, key=f'selectslider multiselect select all for {column}')
+						if len(user_num_cat_input) != df[column].nunique():
+							select_all = st.checkbox(label=f'select all {column}', value=False, key=f'selectslider multiselect select all for {column} -')
 							if select_all == True:				
-								user_num_cat_input = df_HHBlits[column].unique()
+								user_num_cat_input = df[column].unique()
 								st.write(f'all {column} values selected until this box is unchecked')
 				
 				if column in columns_slider_int:
-					_min = int(df_HHBlits[column].min())
-					_max = int(df_HHBlits[column].max())
+					_min = int(df[column].min())
+					_max = int(df[column].max())
 					step = math.ceil((_max - _min)/100)
 					if step != 0:
 						user_num_input = st.slider(
@@ -365,17 +416,17 @@ def widgets_initial():
 												   max_value=_max,
 												   value=(_min, _max),
 												   step=step,
-												   key=f'slider int values for {column}'
+												   key=f'slider int values for {column} -'
 												   )
 						if user_num_input != (_min, _max):
-							reset = st.checkbox(label=f'reset {column}', value=False, key=f'reset slider int values for {column}')
+							reset = st.checkbox(label=f'reset {column}', value=False, key=f'reset slider int values for {column} -')
 							if reset == True:
 								user_num_input = (_min, _max)
 								st.write(f'value range for {column} is maximal until this box is unchecked')
 						
 				if column in columns_slider_float:
-					_min = float(df_HHBlits[column].min())
-					_max = float(df_HHBlits[column].max())
+					_min = float(df[column].min())
+					_max = float(df[column].max())
 					step = (_max - _min)/100
 					if step != 0:
 						user_num_input = st.slider(
@@ -384,18 +435,20 @@ def widgets_initial():
 												   max_value=_max,
 												   value=(_min, _max),
 												   step=step,
-												   key=f'slider float values for {column}'
+												   key=f'slider float values for {column} -'
 												   )
 						if user_num_input != (_min, _max):
-							reset = st.checkbox(label=f'reset {column}', value=False, key=f'reset slider float values for {column}')
+							reset = st.checkbox(label=f'reset {column}', value=False, key=f'reset slider float values for {column} -')
 							if reset == True:
 								user_num_input = (_min, _max)
 								st.write(f'value range for {column} is maximal until this box is unchecked')
-	
-	st.dataframe(df_HHBlits)	
+		
 
 if reset_all:
-	widgets_initial()	
+	widgets_initial()
+	# df = prepare_dataframe(df)
+	st.dataframe(df)
 else:
-	df = filter_dataframe(df_HHBlits)
+	# df = prepare_dataframe(df)
+	df = filter_dataframe(df)
 	st.dataframe(df)

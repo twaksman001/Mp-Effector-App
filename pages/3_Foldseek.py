@@ -1,7 +1,6 @@
-import streamlit as st  # pip install streamlit
-import pandas as pd  # pip install pandas openpyxl
+import streamlit as st
+import pandas as pd
 import math
-#import sys
 
 st.set_page_config(layout='wide')
 st.write('This page creates an interactive spreadsheet from Foldseek output file for any single effector.')
@@ -13,10 +12,10 @@ effectors_structural = ['Mp1', 'Mp2', 'Mp4', 'Mp5', 'Mp6', 'Mp7', 'Mp10', 'Mp11'
 						'Mp39', 'Mp40', 'Mp41', 'Mp42', 'Mp43', 'Mp44', 'Mp45', 'Mp46', 'Mp47', 'Mp49', 'Mp50', 'Mp51', 'Mp53', 'Mp54', 
 						'Mp55', 'Mp57', 'Mp58', 'Mp60', 'Mp64', 'Mp65', 'Mp66', 'Mp70', 'Mp71', 'Mp72', 'Mp73', 'Mp74', 'Mp76', 'Mp77', 
 						'Mp78', 'Mp79', 'Mp81', 'Mp82', 'Mp85', 'Mp90', 'Mp91', 'Mp93', 'Mp94', 'Mp95', 'Mp92a', 'Mp92b', 'MpC002', 'MIF1', 'Mp67']
-protein = st.selectbox(label='select Effector:', options=effectors_structural, index=0)
+protein = st.selectbox(label='select effector:', options=effectors_structural, index=0)
 
 try:
-	df_Foldseek = pd.read_csv(filepath_or_buffer='Data Files/Foldseek/'+protein+'_Foldseek.txt', sep='\t', index_col=0)
+	df = pd.read_csv(filepath_or_buffer='Data Files/Foldseek/'+protein+'_Foldseek.txt', sep='\t', index_col=0)
 except Exception as e:
 	st.write('no information available for this protein')
 
@@ -86,11 +85,11 @@ def filter_dataframe(df):
 													default=list(df[column].unique()),
 													key=f'multiselect values for {column}'
 													)
-					if len(user_cat_input) != df_Foldseek[column].nunique():
+					if len(user_cat_input) != df[column].nunique():
 						select_all = st.checkbox(label=f'select all {column}', value=False, key=f'multiselect select all for {column}')
 						if select_all == True:				
 							st.write(f'all {column} values selected until this box is unchecked')
-							user_cat_input = df_Foldseek[column].unique()							
+							user_cat_input = df[column].unique()							
 					df_filter_dict[column] = user_cat_input
 				
 				if column in columns_selectslider:	
@@ -99,7 +98,7 @@ def filter_dataframe(df):
 						_max = df[column].sort_values().max()
 						user_num_cat_input = st.select_slider(
 															  label=f'values for {column}',
-															  options=df_Foldseek[column].sort_values(),
+															  options=df[column].sort_values(),
 															  value=(_min, _max),
 															  key=f'selectslider values for {column}'
 															  )
@@ -116,10 +115,10 @@ def filter_dataframe(df):
 														default=list(df[column].unique()),
 														key=f'selectslider multiselect values for {column}'
 														)
-						if len(user_num_cat_input) != df_Foldseek[column].nunique():
+						if len(user_num_cat_input) != df[column].nunique():
 							select_all = st.checkbox(label=f'select all {column}', value=False, key=f'selectslider multiselect select all for {column}')
 							if select_all == True:
-								user_num_cat_input = df_Foldseek[column].unique()
+								user_num_cat_input = df[column].unique()
 								st.write(f'all {column} values selected until this box is unchecked')				
 					df_filter_dict[column] = user_num_cat_input
 
@@ -228,23 +227,23 @@ def widgets_initial():
 				if column in columns_multiselect:
 					user_cat_input = st.multiselect(
 													label=f'values for {column}',
-													options=df_Foldseek[column].unique(),
-													default=list(df_Foldseek[column].unique()),
+													options=df[column].unique(),
+													default=list(df[column].unique()),
 													key=f'multiselect values for {column} -'
 													)
-					if len(user_cat_input) != df_Foldseek[column].nunique():
+					if len(user_cat_input) != df[column].nunique():
 						select_all = st.checkbox(label=f'select all {column}', value=False, key=f'multiselect select all for {column} -')
 						if select_all == True:				
 							st.write(f'all {column} values selected until this box is unchecked')
-							user_cat_input = df_Foldseek[column].unique()
+							user_cat_input = df[column].unique()
 									
 				if column in columns_selectslider:	
-					if df_Foldseek[column].nunique() > 10:
-						_min = df_Foldseek[column].sort_values().min()
-						_max = df_Foldseek[column].sort_values().max()
+					if df[column].nunique() > 10:
+						_min = df[column].sort_values().min()
+						_max = df[column].sort_values().max()
 						user_num_cat_input = st.select_slider(
 															  label=f'values for {column}',
-															  options=df_Foldseek[column].sort_values(),
+															  options=df[column].sort_values(),
 															  value=(_min, _max),
 															  key=f'selectslider values for {column} -'
 															  )
@@ -256,19 +255,19 @@ def widgets_initial():
 					else:
 						user_num_cat_input = st.multiselect(
 														label=f'values for {column}',
-														options=df_Foldseek[column].unique(),
-														default=list(df_Foldseek[column].unique()),
+														options=df[column].unique(),
+														default=list(df[column].unique()),
 														key=f'selectslider multiselect values for {column} -'
 														)
-						if len(user_num_cat_input) != df_Foldseek[column].nunique():
+						if len(user_num_cat_input) != df[column].nunique():
 							select_all = st.checkbox(label=f'select all {column}', value=False, key=f'selectslider multiselect select all for {column} -')
 							if select_all == True:				
-								user_num_cat_input = df_Foldseek[column].unique()
+								user_num_cat_input = df[column].unique()
 								st.write(f'all {column} values selected until this box is unchecked')
 				
 				if column in columns_slider_int:
-					_min = int(df_Foldseek[column].min())
-					_max = int(df_Foldseek[column].max())
+					_min = int(df[column].min())
+					_max = int(df[column].max())
 					step = math.ceil((_max - _min)/100)
 					if step != 0:
 						user_num_input = st.slider(
@@ -286,8 +285,8 @@ def widgets_initial():
 								st.write(f'value range for {column} is maximal until this box is unchecked')
 						
 				if column in columns_slider_float:
-					_min = float(df_Foldseek[column].min())
-					_max = float(df_Foldseek[column].max())
+					_min = float(df[column].min())
+					_max = float(df[column].max())
 					step = (_max - _min)/100
 					if step != 0:
 						user_num_input = st.slider(
@@ -304,13 +303,12 @@ def widgets_initial():
 								user_num_input = (_min, _max)
 								st.write(f'value range for {column} is maximal until this box is unchecked')
 	
-	# st.dataframe(df_Foldseek)	
 
 if reset_all:
 	widgets_initial()
-	df = prepare_dataframe(df_Foldseek)
+	df = prepare_dataframe(df)
 	st.dataframe(df)
 else:
-	df = prepare_dataframe(df_Foldseek)
+	df = prepare_dataframe(df)
 	df = filter_dataframe(df)
 	st.dataframe(df)
