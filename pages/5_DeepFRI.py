@@ -1,6 +1,9 @@
+##################modules##################
+
 import streamlit as st
 import pandas as pd
-import math
+
+##################layout##################
 
 st.set_page_config(layout="wide")
 st.write('This page creates an interactive spreadsheet from DeepFRI output file for any single effector.')
@@ -8,12 +11,18 @@ st.write('If DeepFRI has not been tested for a selected protein, or column filte
 with st.expander('Column definitions'):
 	st.write('salience - list of scores for each consecutive amino acid in the protein primary sequence')
 
+##################load dataframe##################
+
 effectors_structural = ['Mp1', 'Mp2', 'Mp4', 'Mp5', 'Mp6', 'Mp7', 'Mp10', 'Mp11', 'Mp12', 'Mp14', 'Mp15', 'Mp16', 'Mp17', 'Mp19', 'Mp20', 
 						'Mp21', 'Mp22', 'Mp23', 'Mp24', 'Mp28', 'Mp29', 'Mp30', 'Mp31', 'Mp32', 'Mp33', 'Mp35', 'Mp36', 'Mp37', 'Mp38', 
 						'Mp39', 'Mp40', 'Mp41', 'Mp42', 'Mp43', 'Mp44', 'Mp45', 'Mp46', 'Mp47', 'Mp49', 'Mp50', 'Mp51', 'Mp53', 'Mp54', 
 						'Mp55', 'Mp57', 'Mp58', 'Mp60', 'Mp64', 'Mp65', 'Mp66', 'Mp70', 'Mp71', 'Mp72', 'Mp73', 'Mp74', 'Mp76', 'Mp77', 
 						'Mp78', 'Mp79', 'Mp81', 'Mp82', 'Mp85', 'Mp90', 'Mp91', 'Mp93', 'Mp94', 'Mp95', 'Mp92a', 'Mp92b', 'MpC002', 'MIF1', 'Mp67']
 protein = st.selectbox(label='select effector:', options=effectors_structural, index=0)
+
+def whoami():
+	import inspect
+	return inspect.stack()[1][3]
 
 def get_file_of_interest(protein, path='Data Files/DeepFRI/*', string='_'):
     
@@ -81,6 +90,8 @@ def DeepFRI_df(protein, path='Data Files/DeepFRI/*', string='_'):
         assert df['salience'].str.len().nunique() <= 2
 
         return df
+
+##################call functions##################	
 
 try:
 	df = DeepFRI_df(protein)

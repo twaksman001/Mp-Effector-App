@@ -1,11 +1,17 @@
+##################modules##################
+
 import streamlit as st
 import pandas as pd
 import math
+
+##################layout##################
 
 st.set_page_config(layout='wide')
 st.write('This page creates an interactive spreadsheet from Foldseek output file for any single effector.')
 with st.expander('Column definitions'):
 	st.write('https://github.com/steineggerlab/Foldseek')
+
+##################load dataframe##################
 
 effectors_structural = ['Mp1', 'Mp2', 'Mp4', 'Mp5', 'Mp6', 'Mp7', 'Mp10', 'Mp11', 'Mp12', 'Mp14', 'Mp15', 'Mp16', 'Mp17', 'Mp19', 'Mp20', 
 						'Mp21', 'Mp22', 'Mp23', 'Mp24', 'Mp28', 'Mp29', 'Mp30', 'Mp31', 'Mp32', 'Mp33', 'Mp35', 'Mp36', 'Mp37', 'Mp38', 
@@ -22,6 +28,8 @@ except Exception as e:
 with st.sidebar:
 	st.header('filters')
 	reset_all = st.button(label='reset all filters', key='reset_all_button')#, on_click=widgets_initial())
+
+##################dataframe functions##################
 
 def prepare_dataframe(df):
 
@@ -302,7 +310,8 @@ def widgets_initial():
 							if reset == True:
 								user_num_input = (_min, _max)
 								st.write(f'value range for {column} is maximal until this box is unchecked')
-	
+
+##################call functions##################	
 
 if reset_all:
 	widgets_initial()

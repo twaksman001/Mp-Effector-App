@@ -1,7 +1,5 @@
-streamlit
-pandas
 plotly.express
 seaborn
 matplotlib
-numpy
 scipy
+h5py

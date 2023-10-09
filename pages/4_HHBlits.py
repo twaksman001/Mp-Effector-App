@@ -1,6 +1,10 @@
+##################modules##################
+
 import streamlit as st
 import pandas as pd
 import math
+
+##################layout##################
 
 st.set_page_config(layout="wide")
 st.write('This page creates an interactive spreadsheet from HHBlits output file for any single effector.')
@@ -27,6 +31,8 @@ with st.expander('Column definitions'):
 	st.write('taxID - ')
 	st.write('extra - ')
 
+##################load dataframe##################
+
 effectors_structural = ['Mp1', 'Mp2', 'Mp4', 'Mp5', 'Mp6', 'Mp7', 'Mp10', 'Mp11', 'Mp12', 'Mp14', 'Mp15', 'Mp16', 'Mp17', 'Mp19', 'Mp20', 
 						'Mp21', 'Mp22', 'Mp23', 'Mp24', 'Mp28', 'Mp29', 'Mp30', 'Mp31', 'Mp32', 'Mp33', 'Mp35', 'Mp36', 'Mp37', 'Mp38', 
 						'Mp39', 'Mp40', 'Mp41', 'Mp42', 'Mp43', 'Mp44', 'Mp45', 'Mp46', 'Mp47', 'Mp49', 'Mp50', 'Mp51', 'Mp53', 'Mp54', 
@@ -34,7 +40,11 @@ effectors_structural = ['Mp1', 'Mp2', 'Mp4', 'Mp5', 'Mp6', 'Mp7', 'Mp10', 'Mp11'
 						'Mp78', 'Mp79', 'Mp81', 'Mp82', 'Mp85', 'Mp90', 'Mp91', 'Mp93', 'Mp94', 'Mp95', 'Mp92a', 'Mp92b', 'MpC002', 'MIF1', 'Mp67']
 protein = st.selectbox(label='select effector:', options=effectors_structural, index=0)
 
-def get_file_of_interest(protein, path='Data Files/HHBlits/*', string='_HHBlits.txt'):
+def whoami():
+	import inspect
+	return inspect.stack()[1][3]
+
+def get_file_of_interest(protein, path='Data Files/HHBlits/*', string='_'):
     
     import glob
     import re
@@ -80,7 +90,7 @@ def HHBlits_df(protein):
 
         for i in range(len(hits_list)):
 
-            """PROCESS HITS LIST"""
+            ##################PROCESS HITS LIST##################
 
             hit_info_start = re.search('\s\d{2,3}\.\d\s{1,}\d', hits_list[i]).span()[0]
             hit_info_end = hits_list[i].rfind('(')
@@ -91,7 +101,7 @@ def HHBlits_df(protein):
             for j in range(len(hits_list_titles)):
                 columns_dict[hits_list_titles[j]].append(hit_info_list[j])
 
-            """PROCESS ALIGNMENTS LIST"""
+            ##################PROCESS ALIGNMENTS LIST##################
 
             alignment_lines = alignments[i].split('\n')   
 
@@ -162,6 +172,8 @@ except Exception as e:
 with st.sidebar:
 	st.header('filters')
 	reset_all = st.button(label='reset all filters', key='reset_all_button')#, on_click=widgets_initial())
+
+##################dataframe functions##################
 
 # def prepare_dataframe(df):
 
@@ -442,7 +454,8 @@ def widgets_initial():
 							if reset == True:
 								user_num_input = (_min, _max)
 								st.write(f'value range for {column} is maximal until this box is unchecked')
-		
+
+##################call functions##################	
 
 if reset_all:
 	widgets_initial()

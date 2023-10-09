@@ -1,177 +1,322 @@
-# ---- PACKAGES ----
+####################modules####################
 
-import streamlit as st  # pip install streamlit
-import pandas as pd  # pip install pandas openpyxl
+import streamlit as st
+import pandas as pd
+import math
 
-# ---- LAYOUT ----
+####################layout####################
 
 st.set_page_config(layout="wide")
 
-st.write('This page loads an interactive spreadsheet of key information for all effectors. ')
-st.write('Information is from XTALPRED (columns to the left), '
-		 'ColabFold AlphaFold 2 (AF2), or ColabFold OmegaFold (OF). OF was only used in comparison to AF2 protein structures.')
+st.write('This page loads an interactive spreadsheet of key information for all effectors.')
 st.write('Please see specific column definitions below.')
 
 with st.expander('Column definitions'):
-	st.write('Longest_Disorder_Region_percent: longest contiguous region of primary sequence'
-			 'predicted to be disordered, as percentage of total sequence length')
-	st.write('MSA_Depth_Mean: approximate average (over all amino acids) depth of AlphaFold 2 sequence alignment')
-	st.write('pLDDT_mean: approximate average (over all amino acids) AlphaFold 2 pLDDT')
-	st.write('PDBeFold_Q: Q score of PDBeFold top match')
-	st.write('Beta_Sheet: protein contains beta-sheet secondary structure yes/no')
-	st.write('Foldedness_Rating: rating from 1-5 of how compact/folded the protein structure looks (1 - disordered, 5 - very compact)')
-	st.write('Multi_Module: protein contains multiple domains/modules yes/no')
-	st.write('AF2_OF_pLDDT_Pearson: Pearson correlation coefficient (r) between AlphaFold 2 '
+	st.write('sequence: primary sequence with predicted signal peptide removed')
+	st.write('MW: molecular weight (kDa)')
+	st.write('MSA_depth: approximate average (over all amino acids) depth of AlphaFold 2 sequence alignment')
+	st.write('pTM: AlphaFold predicted template modelling score')
+	st.write('SASA/length: solvent accessible surface area to length ratio of AlphaFold predicted structure')
+	st.write('Pearson: Pearson correlation coefficient (r) between AlphaFold 2 '
 			 'and OmegaFold per-residue confidence estimates')
-	st.write('AF2_OF_DALI_Z: DALI Z score comparing AlphaFold 2 and OmegaFold structures')
+	st.write('DALI_Z: DALI Z score comparing AlphaFold 2 and OmegaFold structures')
+	st.write('pI: predicted isoelectric point (predicted via XTALPRED)')
+	st.write('beta: protein contains beta-sheet secondary structure yes/no')
+	st.write('modular: protein contains multiple domains/modules yes/no')
+	
+####################load dataframe####################
 
-# ---- READ EXCEL ----
-
-df = pd.read_csv('Data Files/MpEffectorsBioinfo_Structural_KeyInfo.csv')
-
-# ---- SIDEBAR ----
+df = pd.read_csv(filepath_or_buffer='Data Files/MpEffectors_KeyInfo.txt', sep='\t')
 
 with st.sidebar:
+	st.header('filters')
+	reset_all = st.button(label='reset all filters', key='reset_all_button')#, on_click=widgets_initial())
+
+####################dataframe functions####################
+
+def prepare_dataframe(df):
+
+	columns_string = {'protein', 'sequence', 'beta', 'modular'}
+	columns_float = {'MSA_Depth_log10', 'pTM', 'SASA/length', 'pI', 'DALI_Z', 'Pearson', 'MW'}
+	columns_int = {'ID_Number', 'length', 'MSA_Depth'}
 	
-	st.header('Filters')
+	for column in df.columns:
+		if column in columns_string:
+			df[column] = df[column].astype(str)
+			df[column] = df[column].fillna(value = 'n/a')
+		elif column in columns_float:
+			df[column] = df[column].astype(float)
+		elif column in columns_int:
+			df[column] = df[column].astype(int)
 	
-	# Select Effectors
-	with st.expander('Effectors'):
-		all_Effectors = st.checkbox("Select all Effectors", value=True)
-		if all_Effectors:
-			ID_Number = st.multiselect("Effectors:",
-			df["ID_No"].unique(),df["ID_No"].unique())
-		else:
-			ID_Number = st.multiselect("Effectors:",
-			df["ID_No"].unique())
-
-	with st.expander('ID Number'):
-		reset_ID = st.checkbox("Reset ID Number", value=True)
-		if reset_ID:
-			minID, maxID = st.slider("ID Number", 0, 100, (0, 100), 1)
-		else:
-			minID, maxID = st.slider("ID Number", 0, 100, (25, 75), 1)
-
-	# Select Length
-	with st.expander('Length'):
-		reset_length = st.checkbox("Reset Length", value=True)
-		if reset_length:
-			min_len, max_len = st.slider("Length", int(df["Length"].min()), int(df["Length"].max()), (int(df["Length"].min()), int(df["Length"].max())), step=1)
-		else:
-			min_len, max_len = st.slider("Length", int(df["Length"].min()), int(df["Length"].max()), (50, 300), step=1)
-	
-	# Select MW
-	with st.expander('MW'):
-		reset_MW = st.checkbox("Reset MW", value=True)
-		if reset_MW:
-			min_MW, max_MW = st.slider("MW (kDa)", int(df["MW"].min()), int(df["MW"].max()), (int(df["MW"].min()), int(df["MW"].max())), step=1)
-		else:
-			min_MW, max_MW = st.slider("MW (kDa)", int(df["MW"].min()), int(df["MW"].max()), (10, 60), step=1)
-
-	# Select pI
-	with st.expander('pI'):
-		reset_pI = st.checkbox("Reset pI", value=True)
-		if reset_pI:
-			min_pI, max_pI = st.slider("pI", 0.0, 14.0, (0.0, 14.0), 0.1)
-		else:
-			min_pI, max_pI = st.slider("pI", 0.0, 14.0, (4.0, 10.0), 0.1)
-
-	# Select Longest Disorder Region %
-	with st.expander('Longest Disorder Region %'):
-		reset_disorder = st.checkbox("Reset Longest Disorder Region %", value=True)
-		if reset_disorder:
-			min_disorder, max_disorder = st.slider("Longest Disorder Region %", 0, 100, (0, 100), 1)
-		else:
-			min_disorder, max_disorder = st.slider("Longest Disorder Region %", 0, 100, (10, 50), 1)
-
-	# Select MSA Depth Mean
-	with st.expander('MSA Depth Mean'):
-		reset_MSA_Depth_Mean = st.checkbox("Reset MSA Depth Mean", value=True)
-		if reset_MSA_Depth_Mean:
-			min_MSA_Depth_Mean, max_MSA_Depth_Mean = st.select_slider("MSA Depth Mean", options=df["MSA_Depth_Mean"].sort_values(), value=(int(df["MSA_Depth_Mean"].min()), int(df["MSA_Depth_Mean"].max())))
-		else:
-			min_MSA_Depth_Mean, max_MSA_Depth_Mean = st.select_slider("MSA Depth Mean", options=df["MSA_Depth_Mean"].sort_values(), value=(30,100))
-
-	# Select pLDDT mean
-	with st.expander('pLDDT Mean'):
-		reset_pLDDT_mean = st.checkbox("Reset pLDDT mean", value=True)
-		if reset_pLDDT_mean:
-			min_pLDDT_mean, max_pLDDT_mean = st.slider("pLDDT mean", 0, 100, (0, 100), 1)
-		else:
-			min_pLDDT_mean, max_pLDDT_mean = st.slider("pLDDT mean", 0, 100, (50, 100), 1)
-
-	# Select PDBeFold Q
-	with st.expander('PDBeFold Q'):
-		reset_PDBeFold_Q = st.checkbox("Reset PDBeFold Q", value=True)
-		if reset_PDBeFold_Q:
-			min_PDBeFold_Q, max_PDBeFold_Q = st.slider("PDBeFold Q", 0.0, 1.0, (0.0, 1.0), 0.01)
-		else:
-			min_PDBeFold_Q, max_PDBeFold_Q = st.slider("PDBeFold Q", 0.0, 1.0, (0.1, 0.7), 0.01)
-
-	# Select Beta Sheet
-	with st.expander('Beta Sheet'):
-		all_Beta_Sheet = st.checkbox("Select all Beta Sheet", value=True)	
-		if all_Beta_Sheet:
-			Beta_Sheet = st.multiselect("Beta Sheet",
-										df["Beta_Sheet"].unique(),
-										df["Beta_Sheet"].unique())
-		else:
-			Beta_Sheet =  st.multiselect("Beta Sheet",
-										df["Beta_Sheet"].unique())
-
-	# Select Foldedness Rating
-	with st.expander('Foldedness Rating'):
-		all_Foldedness_Rating = st.checkbox("Select all Foldedness Rating", value=True)	
-		if all_Foldedness_Rating:
-			Foldedness_Rating = st.multiselect("Foldedness Rating",
-				 df["Foldedness_Rating"].unique(),df["Foldedness_Rating"].unique())
-		else:
-			Foldedness_Rating =  st.multiselect("Foldedness Rating",
-				df["Foldedness_Rating"].unique())
-
-	# Select Multi Module
-	with st.expander('Multi Module'):
-		all_Multi_Module = st.checkbox("Select all Multi Module", value=True)	 
-		if all_Multi_Module:
-			Multi_Module = st.multiselect("Multi Module",
-				 df["Multi_Module"].unique(),df["Multi_Module"].unique())
-		else:
-			Multi_Module =  st.multiselect("Multi Module",
-				df["Multi_Module"].unique())
-
-	# Select Correlation
-	with st.expander('AF2-OF pLDDT Pearson'):
-		reset_r = st.checkbox("Reset AF2-OF pLDDT Pearson", value=True)
-		if reset_r:
-			minr, maxr = st.slider("AF2-OF pLDDT Pearson", 0.0, 1.0, (0.0, 1.0), 0.01)
-		else:
-			minr, maxr = st.slider("AF2-OF pLDDT Pearson", 0.0, 1.0, (0.25, 0.75), 0.01)
+	return df
 			
-	# Select DALI Z
-	with st.expander('AF2-OF DALI Z'):
-		reset_DALI = st.checkbox("Reset AF2-OF DALI Z", value=True)
-		if reset_DALI:
-			min_DALI, max_DALI = st.slider("AF2-OF DALI Z", 0.0, 100.0, (0.0, 100.0), 0.1)
-		else:
-			min_DALI, max_DALI = st.slider("AF2-OF DALI Z", 0.0, 100.0, (2.0, 50.0), 0.1)
+def filter_dataframe(df):
+		
+	df_filter_dict = {}
+	
+	columns_stringsearch = {'sequence'}
+	columns_checkbox = {}
+	columns_multiselect = {'protein'}
+	columns_selectslider = {'MSA_Depth', 'DALI_Z'}
+	columns_slider_int = {'ID_Number', 'length'}
+	columns_slider_float = {'MSA_Depth_log10', 'pTM', 'SASA/length', 'pI', 'Pearson', 'MW'}
+	columns_all_filter = sorted(set.union(columns_stringsearch, columns_checkbox, columns_multiselect, 
+									 columns_selectslider, columns_slider_int, columns_slider_float))
 
-# ---- FILTER DATAFRAME ----
+	for column in columns_all_filter:
+		df_filter_dict[column] = None
+	
+	with st.sidebar:
+		for column in columns_all_filter:
+			with st.expander(column):	
+				
+				if column in columns_stringsearch:
+					user_text_input = st.text_input(label=f'text string in {column} (case-sensitive ; if multiple, use only 1 comma to separate)', value='', key=f'text string in {column}')
+					if user_text_input:
+						df_filter_dict[column] = user_text_input
+				
+				if column in columns_checkbox:
+					df_filter_dict[f'{column}2'] = None
+					threshold_checkbox = st.checkbox(label=f'use threshold for {column}', value=False, key=f'use threshold for {column}')
+					if threshold_checkbox:
+						user_text_input = st.text_input(label=f'threshold for {column}', value='', key=f'threshold for {column}')
+						option = st.selectbox(label='select threshold type:', options=[f'{column} above', f'{column} below'], index=0, key=f'threshold type for {column}')
+						set_ = st.checkbox(label=f'activate threshold for {column}', value=False, key=f'activate threshold for {column}')
+						df_filter_dict[f'{column}2'] = user_text_input
 
-df_selection = df.query(
-	"ID_No == @ID_Number"
-	"& @minID <= ID_No <= @maxID"
-	"& @min_len <= Length <= @max_len"
-	"& @min_MW <= MW <= @max_MW"
-	"& @min_pI <= pI <= @max_pI"
-	"& @min_disorder <= Longest_Disorder_Region_percent <= @max_disorder"
-	"& @min_MSA_Depth_Mean <= MSA_Depth_Mean <= @max_MSA_Depth_Mean"
-	"& @min_pLDDT_mean <= pLDDT_mean <= @max_pLDDT_mean"
-	"& @min_PDBeFold_Q <= PDBeFold_Q <= @max_PDBeFold_Q"
-	"& Beta_Sheet == @Beta_Sheet"
-	"& Foldedness_Rating == @Foldedness_Rating"
-	"& Multi_Module == @Multi_Module"
-	"& @minr <= AF2_OF_pLDDT_Pearson <= @maxr"
-	"& @min_DALI <= AF2_OF_DALI_Z <= @max_DALI"
-	)
+				if column in columns_multiselect:
+					user_cat_input = st.multiselect(
+													label=f'values for {column}',
+													options=df[column].unique(),
+													default=list(df[column].unique()),
+													key=f'multiselect values for {column}'
+													)
+					if len(user_cat_input) != df[column].nunique():
+						select_all = st.checkbox(label=f'select all {column}', value=False, key=f'multiselect select all for {column}')
+						if select_all == True:				
+							st.write(f'all {column} values selected until this box is unchecked')
+							user_cat_input = df[column].unique()							
+					df_filter_dict[column] = user_cat_input
+				
+				if column in columns_selectslider:	
+					if df[column].nunique() > 10:
+						_min = df[column].sort_values().min()
+						_max = df[column].sort_values().max()
+						user_num_cat_input = st.select_slider(
+															  label=f'values for {column}',
+															  options=df[column].sort_values(),
+															  value=(_min, _max),
+															  key=f'selectslider values for {column}'
+															  )
+						if user_num_cat_input != (_min, _max):
+							reset = st.checkbox(label=f'reset {column}', value=False, key=f'reset selectslider values for {column}')
+							if reset == True:
+								user_num_cat_input = (_min, _max)
+								st.write(f'value range for {column} is maximal until this box is unchecked')
+						df_filter_dict[column] = user_num_cat_input
+					else:
+						user_num_cat_input = st.multiselect(
+														label=f'values for {column}',
+														options=df[column].unique(),
+														default=list(df[column].unique()),
+														key=f'selectslider multiselect values for {column}'
+														)
+						if len(user_num_cat_input) != df[column].nunique():
+							select_all = st.checkbox(label=f'select all {column}', value=False, key=f'selectslider multiselect select all for {column}')
+							if select_all == True:
+								user_num_cat_input = df[column].unique()
+								st.write(f'all {column} values selected until this box is unchecked')				
+					df_filter_dict[column] = user_num_cat_input
 
-st.dataframe(df_selection)
+				if column in columns_slider_int:
+					_min = int(df[column].min())
+					_max = int(df[column].max())
+					step = math.ceil((_max - _min)/100)
+					if step != 0:
+						user_num_input = st.slider(
+												   label=f'values for {column}',
+												   min_value=_min,
+												   max_value=_max,
+												   value=(_min, _max),
+												   step=step,
+												   key=f'slider int values for {column}'
+												   )
+						if user_num_input != (_min, _max):
+							reset = st.checkbox(label=f'reset {column}', value=False, key=f'reset slider int values for {column}')
+							if reset == True:
+								user_num_input = (_min, _max)
+								st.write(f'value range for {column} is maximal until this box is unchecked')
+						df_filter_dict[column] = user_num_input
+						
+				if column in columns_slider_float:
+					_min = float(df[column].min())
+					_max = float(df[column].max())
+					step = (_max - _min)/100
+					if step != 0:
+						user_num_input = st.slider(
+												   label=f'values for {column}',
+												   min_value=_min,
+												   max_value=_max,
+												   value=(_min, _max),
+												   step=step,
+												   key=f'slider float values for {column}'
+												   )
+						if user_num_input != (_min, _max):
+							reset = st.checkbox(label=f'reset {column}', value=False, key=f'reset slider float values for {column}')
+							if reset == True:
+								user_num_input = (_min, _max)
+								st.write(f'value range for {column} is maximal until this box is unchecked')
+						df_filter_dict[column] = user_num_input
+		
+	loc_list = []
+	
+	for column in columns_all_filter:
+		if str(df_filter_dict[column]) == 'None':
+			continue
+		if column in columns_stringsearch:			
+			loc_list.append(set(df[df[column].str.contains(df_filter_dict[column])].index))
+		if column in columns_checkbox:
+			if st.session_state[f'use threshold for {column}']:
+				if st.session_state[f'activate threshold for {column}']:						
+					if st.session_state[f'threshold type for {column}'] == f'{column} above':
+						loc_list.append(set(df[df[column] >= float(df_filter_dict[f'{column}2'])].index))
+					elif st.session_state[f'threshold type for {column}'] == f'{column} below':
+						loc_list.append(set(df[df[column] <= float(df_filter_dict[f'{column}2'])].index))
+		if column in columns_multiselect:
+			loc_list.append(set(df[df[column].isin(df_filter_dict[column])].index))
+		if column in columns_selectslider:
+			if 'tuple' in str(type(df_filter_dict[column])):
+				loc_list.append(set(df[df[column].between(*df_filter_dict[column])].index))
+			if 'list' in str(type(df_filter_dict[column])):
+				loc_list.append(set(df[df[column].isin(df_filter_dict[column])].index))
+		if column in columns_slider_int:
+			loc_list.append(set(df[df[column].between(*df_filter_dict[column])].index))
+		if column in columns_slider_float:
+			loc_list.append(set(df[df[column].between(*df_filter_dict[column])].index))
+	
+	df = df.loc[list(set.intersection(*loc_list))]
+	
+	if len(df) == 0:
+		st.write('No rows match the given column filters')
+		# exit()
+		
+	return df
+	
+def widgets_initial():
+	
+	for key in st.session_state.keys():
+		del st.session_state[key]
+		
+	columns_stringsearch = {'sequence'}
+	columns_checkbox = {}
+	columns_multiselect = {'protein'}
+	columns_selectslider = {'MSA_Depth', 'DALI_Z'}
+	columns_slider_int = {'length'}
+	columns_slider_float = {'MSA_Depth_log10', 'pTM', 'SASA/length', 'pI', 'Pearson', 'MW'}
+	columns_all_filter = sorted(set.union(columns_stringsearch, columns_checkbox, columns_multiselect, 
+									 columns_selectslider, columns_slider_int, columns_slider_float))
+	
+	with st.sidebar:
+		for column in columns_all_filter:
+			with st.expander(column):
+				
+				if column in columns_stringsearch:
+					user_text_input = st.text_input(label=f'text string in {column} (case-sensitive ; if multiple, use only 1 comma to separate)', value='', key=f'text string in {column} -')		
+				
+				if column in columns_checkbox:
+					threshold_checkbox = st.checkbox(label=f'use threshold for {column}', value=False, key=f'use threshold for {column} -')
+					if threshold_checkbox:
+						user_text_input = st.text_input(label=f'threshold for {column}', value='', key=f'threshold for {column} -')
+						option = st.selectbox(label='select threshold type:', options=[f'{column} above', f'{column} below'], index=0, key=f'threshold type for {column} -')
+						set_ = st.checkbox(label=f'activate threshold for {column}', value=False, key=f'activate threshold for {column} -')
+
+				if column in columns_multiselect:
+					user_cat_input = st.multiselect(
+													label=f'values for {column}',
+													options=df[column].unique(),
+													default=list(df[column].unique()),
+													key=f'multiselect values for {column} -'
+													)
+					if len(user_cat_input) != df[column].nunique():
+						select_all = st.checkbox(label=f'select all {column}', value=False, key=f'multiselect select all for {column} -')
+						if select_all == True:				
+							st.write(f'all {column} values selected until this box is unchecked')
+							user_cat_input = df[column].unique()
+									
+				if column in columns_selectslider:	
+					if df[column].nunique() > 10:
+						_min = df[column].sort_values().min()
+						_max = df[column].sort_values().max()
+						user_num_cat_input = st.select_slider(
+															  label=f'values for {column}',
+															  options=df[column].sort_values(),
+															  value=(_min, _max),
+															  key=f'selectslider values for {column} -'
+															  )
+						if user_num_cat_input != (_min, _max):
+							reset = st.checkbox(label=f'reset {column}', value=False, key=f'reset selectslider values for {column} -')
+							if reset == True:
+								user_num_cat_input = (_min, _max)
+								st.write(f'value range for {column} is maximal until this box is unchecked')
+					else:
+						user_num_cat_input = st.multiselect(
+														label=f'values for {column}',
+														options=df[column].unique(),
+														default=list(df[column].unique()),
+														key=f'selectslider multiselect values for {column} -'
+														)
+						if len(user_num_cat_input) != df[column].nunique():
+							select_all = st.checkbox(label=f'select all {column}', value=False, key=f'selectslider multiselect select all for {column} -')
+							if select_all == True:				
+								user_num_cat_input = df[column].unique()
+								st.write(f'all {column} values selected until this box is unchecked')
+				
+				if column in columns_slider_int:
+					_min = int(df[column].min())
+					_max = int(df[column].max())
+					step = math.ceil((_max - _min)/100)
+					if step != 0:
+						user_num_input = st.slider(
+												   label=f'values for {column}',
+												   min_value=_min,
+												   max_value=_max,
+												   value=(_min, _max),
+												   step=step,
+												   key=f'slider int values for {column} -'
+												   )
+						if user_num_input != (_min, _max):
+							reset = st.checkbox(label=f'reset {column}', value=False, key=f'reset slider int values for {column} -')
+							if reset == True:
+								user_num_input = (_min, _max)
+								st.write(f'value range for {column} is maximal until this box is unchecked')
+						
+				if column in columns_slider_float:
+					_min = float(df[column].min())
+					_max = float(df[column].max())
+					step = (_max - _min)/100
+					if step != 0:
+						user_num_input = st.slider(
+												   label=f'values for {column}',
+												   min_value=_min,
+												   max_value=_max,
+												   value=(_min, _max),
+												   step=step,
+												   key=f'slider float values for {column} -'
+												   )
+						if user_num_input != (_min, _max):
+							reset = st.checkbox(label=f'reset {column}', value=False, key=f'reset slider float values for {column} -')
+							if reset == True:
+								user_num_input = (_min, _max)
+								st.write(f'value range for {column} is maximal until this box is unchecked')
+								
+####################call functions####################	
+
+if reset_all:
+	widgets_initial()
+	df = prepare_dataframe(df)
+	st.dataframe(df)
+else:
+	df = prepare_dataframe(df)
+	df = filter_dataframe(df)
+	st.dataframe(df)
