@@ -59,11 +59,18 @@ with st.form('select proteins for contact map', clear_on_submit=False):
                                     options=df['TAIR AGI'].unique(),
                                     key='target')
     show_contact_map = st.form_submit_button(label='show contact map')
-    
+
+def get_file_LFS(url, output_path):
+
+    import requests
+
+    r = requests.get(url=url)
+    open(output_path, mode='w+b').write(r.content)
+
 def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*positive*',
                     path2='Data Files/TT3D/*cmaps*'):
     
-    import pandas as pd, glob, h5py
+    import pandas as pd, os, glob, h5py
         
     found1, found2 = False, False
             
@@ -82,9 +89,13 @@ def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*positive*',
         break
     
     if found1:
-        for file in glob.glob(path2):
-            if file_name[:file_name.find('_TT')+1] in file:
-                file = h5py.File(file, 'r')
+        for file_path in glob.glob(path2):
+            if file_name[:file_name.find('_TT')+1] in file_path and 'real.h5' not in file_path:
+                file_name = file_path.replace('\\', '/')[file_path.replace('\\', '/').rfind('/')+1:]
+                if not os.path.exists(file_path[:-2]+'real.h5'):
+                    get_file_LFS(url='https://github.com/twaksman001/Mp-Effector-App/raw/master/Data%20Files/TT3D/'+file_name,
+                                 output_path=file_path[:-2]+'real.h5')
+                file = h5py.File(file_path[:-2]+'real.h5', 'r')
 
                 for key in list(file.keys()):
                     if [protein1, protein2] == key.split('x'):
@@ -106,24 +117,15 @@ def matrix_heatmap(data, cmap='Greys', vmax=1):#, square=True, cbar=False):
     
     fig = plt.figure(figsize=(25,25))
     plt.rcParams.update({'font.size': 15})
-
-    return sns.heatmap(data=data, cmap=cmap, vmax=vmax)#, square=square, cbar=cbar)
+    sns.heatmap(data=data, cmap=cmap, vmax=vmax, cbar_kws={'shrink':0.2, 'location':'top'})#, square=square, cbar=cbar)
+    st.pyplot(fig)
 
 ##################call functions##################	
 
 if show_contact_map:
     df1 = get_contact_map(protein1=effector_select, protein2=target_select)
-    # contact_map_heat = matrix_heatmap(data=df1)
     if type(df1) == list:
         st.write('fail to get contact map dataframe')
         st.write(df1)
     else:
-        st.dataframe(df1)
-    # st.pyplot(matrix_heatmap(data=df1))
-    # st.pyplot(contact_map_heat)
-
-# try:
-# 	df1 = get_contact_map(protein1=effector_select, protein2=target_select)
-# except Exception as e:
-# 	st.write('error getting dataframe')
-
+        matrix_heatmap(data=df1)
