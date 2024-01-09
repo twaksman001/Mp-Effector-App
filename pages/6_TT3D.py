@@ -67,7 +67,7 @@ def get_file_LFS(url, output_path):
     r = requests.get(url=url)
     open(output_path, mode='w+b').write(r.content)
 
-def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*positive*',
+def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*_[0-9]*positive*',
                     path2='Data Files/TT3D/*cmaps*'):
     
     import pandas as pd, os, glob, h5py
