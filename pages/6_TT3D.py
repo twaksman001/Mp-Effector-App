@@ -73,7 +73,7 @@ def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*_[0-9]*positive*
     import pandas as pd, os, glob, h5py
         
     found1, found2 = False, False
-    st.write(glob.glob(path1))
+
     for file_path in glob.glob(path1):
         file_name, file = file_path.replace('\\', '/')[file_path.replace('\\', '/').rfind('/')+1:], open(file_path).read()
 
@@ -86,13 +86,10 @@ def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*_[0-9]*positive*
         else:
             continue
         break
-    st.write(glob.glob(path2))
+
     if found1:
-        file_name
         for file_path in glob.glob(path2):
-            file_path
             if file_name[:file_name.find('_TT')+1] in file_path and 'real.h5' not in file_path:
-                file_path
                 file_name = file_path.replace('\\', '/')[file_path.replace('\\', '/').rfind('/')+1:]
                 if not os.path.exists(file_path[:-2]+'real.h5'):
                     get_file_LFS(url='https://github.com/twaksman001/Mp-Effector-App/raw/master/Data%20Files/TT3D/'+file_name,
@@ -107,10 +104,10 @@ def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*_[0-9]*positive*
                 continue
             break
     
-    # if found2:
-    return df
-    # else:
-        # return [protein1, protein2, 'score', found1, 'cmaps', found2]
+    if found2:
+        return df
+    else:
+        return [protein1, protein2, 'score', found1, 'cmaps', found2]
 
 def matrix_heatmap(data, cmap='Greys', vmax=1):#, square=True, cbar=False):
     
@@ -126,8 +123,8 @@ def matrix_heatmap(data, cmap='Greys', vmax=1):#, square=True, cbar=False):
 
 if show_contact_map:
     df1 = get_contact_map(protein1=effector_select, protein2=target_select)
-    # if type(df1) == list:
-    #     st.write('fail to get contact map dataframe')
-    #     st.write(df1)
-    # else:
-    #     matrix_heatmap(data=df1)
+    if type(df1) == list:
+        st.write('fail to get contact map dataframe')
+        st.write(df1)
+    else:
+        matrix_heatmap(data=df1)
