@@ -105,10 +105,10 @@ def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*positive*',
                 continue
             break
     
-    if found2:
-        return df
-    else:
-        return [protein1, protein2, 'score', found1, 'cmaps', found2]
+    # if found2:
+    return df
+    # else:
+        # return [protein1, protein2, 'score', found1, 'cmaps', found2]
 
 def matrix_heatmap(data, cmap='Greys', vmax=1):#, square=True, cbar=False):
     
