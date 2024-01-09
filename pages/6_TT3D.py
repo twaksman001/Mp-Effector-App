@@ -95,7 +95,6 @@ def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*_[0-9]*positive*
                     get_file_LFS(url='https://github.com/twaksman001/Mp-Effector-App/raw/master/Data%20Files/TT3D/'+file_name,
                                  output_path=file_path[:-2]+'real.h5')
                 file = h5py.File(file_path[:-2]+'real.h5', 'r')
-                list(file.keys())[:10]
                 for key in list(file.keys()):
                     if [protein1, protein2] == key.split('x'):
                         df, found2 = pd.DataFrame(data=file[key]), True
