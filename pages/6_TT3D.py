@@ -73,7 +73,7 @@ def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*positive*',
     import pandas as pd, os, glob, h5py
         
     found1, found2 = False, False
-    glob.glob(path1)
+    st.write(glob.glob(path1))
     for file_path in glob.glob(path1):
         file_name, file = file_path.replace('\\', '/')[file_path.replace('\\', '/').rfind('/')+1:], open(file_path).read()
 
@@ -87,7 +87,7 @@ def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*positive*',
         else:
             continue
         break
-    glob.glob(path2)
+    st.write(glob.glob(path2))
     if found1:
         for file_path in glob.glob(path2):
             file_path
