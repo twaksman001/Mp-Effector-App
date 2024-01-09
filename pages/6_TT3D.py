@@ -90,6 +90,7 @@ def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*positive*',
     
     if found1:
         for file_path in glob.glob(path2):
+            file_path
             if file_name[:file_name.find('_TT')+1] in file_path and 'real.h5' not in file_path:
                 file_path
                 file_name = file_path.replace('\\', '/')[file_path.replace('\\', '/').rfind('/')+1:]
