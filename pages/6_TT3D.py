@@ -124,8 +124,8 @@ def matrix_heatmap(data, cmap='Greys', vmax=1):#, square=True, cbar=False):
 
 if show_contact_map:
     df1 = get_contact_map(protein1=effector_select, protein2=target_select)
-    if type(df1) == list:
-        st.write('fail to get contact map dataframe')
-        st.write(df1)
-    else:
-        matrix_heatmap(data=df1)
+    # if type(df1) == list:
+    #     st.write('fail to get contact map dataframe')
+    #     st.write(df1)
+    # else:
+    #     matrix_heatmap(data=df1)
