@@ -11,18 +11,18 @@ st.set_page_config(layout="wide")
 st.write('This page loads an interactive spreadsheet of key information for all effectors.')
 st.write('Please see specific column definitions below.')
 
-with st.expander('Column definitions'):
+with st.expander('column definitions'):
 	st.write('sequence: primary sequence with predicted signal peptide removed')
-	st.write('MW: molecular weight (kDa)')
-	st.write('MSA_depth: approximate average (over all amino acids) depth of AlphaFold 2 sequence alignment')
 	st.write('pTM: AlphaFold predicted template modelling score')
 	st.write('SASA/length: solvent accessible surface area to length ratio of AlphaFold predicted structure')
-	st.write('Pearson: Pearson correlation coefficient (r) between AlphaFold 2 '
-			 'and OmegaFold per-residue confidence estimates')
-	st.write('DALI_Z: DALI Z score comparing AlphaFold 2 and OmegaFold structures')
-	st.write('pI: predicted isoelectric point (predicted via XTALPRED)')
+	st.write('flDPNN_AF: proportion of residues identically classified by flDPNN and AlphaFold as belonging to disordered '
+		  	 'region or ordered region. AlphaFold pLDDT<50 was considered to indicate disorder.')
+	st.write('Pearson: Pearson correlation coefficient (r) between AlphaFold and OmegaFold per-residue confidence estimates')
+	st.write('DALI_Z: DALI Z score comparing AlphaFold and OmegaFold structures')
+	st.write('RMSD: RMSD of DALI-superimposed AlphaFold and OmegaFold structures')
 	st.write('beta: protein contains beta-sheet secondary structure yes/no')
 	st.write('modular: protein contains multiple domains/modules yes/no')
+	st.write('function: main predicted function of protein (based on database search for annotated homologues)')
 	
 ####################load dataframe####################
 
@@ -56,16 +56,19 @@ def filter_dataframe(df):
 	df_filter_dict = {}
 	
 	columns_stringsearch = {'sequence'}
-	columns_checkbox = {}
-	columns_multiselect = {'protein'}
-	columns_selectslider = {'MSA_Depth', 'DALI_Z'}
-	columns_slider_int = {'ID_Number', 'length'}
-	columns_slider_float = {'MSA_Depth_log10', 'pTM', 'SASA/length', 'pI', 'Pearson', 'MW'}
+	columns_checkbox = {'DALI_Z', 'RMSD'}
+	columns_NA = {'DALI_Z', 'RMSD'}
+	columns_multiselect = {'protein', 'beta', 'modular', 'function'}
+	columns_selectslider = {'RMSD', 'DALI_Z'}
+	columns_slider_int = {'length'}
+	columns_slider_float = {'pTM', 'SASA/length', 'flDPNN_AF', 'Pearson'}
 	columns_all_filter = sorted(set.union(columns_stringsearch, columns_checkbox, columns_multiselect, 
 									 columns_selectslider, columns_slider_int, columns_slider_float))
 
 	for column in columns_all_filter:
 		df_filter_dict[column] = None
+		if column in columns_checkbox:
+			df_filter_dict[f'{column}2'] = None
 	
 	with st.sidebar:
 		for column in columns_all_filter:
@@ -77,13 +80,15 @@ def filter_dataframe(df):
 						df_filter_dict[column] = user_text_input
 				
 				if column in columns_checkbox:
-					df_filter_dict[f'{column}2'] = None
-					threshold_checkbox = st.checkbox(label=f'use threshold for {column}', value=False, key=f'use threshold for {column}')
-					if threshold_checkbox:
-						user_text_input = st.text_input(label=f'threshold for {column}', value='', key=f'threshold for {column}')
-						option = st.selectbox(label='select threshold type:', options=[f'{column} above', f'{column} below'], index=0, key=f'threshold type for {column}')
-						set_ = st.checkbox(label=f'activate threshold for {column}', value=False, key=f'activate threshold for {column}')
-						df_filter_dict[f'{column}2'] = user_text_input
+					if column in columns_NA:
+						NA_checkbox = st.checkbox(label=f'include blanks for {column}', value=True, key=f'include blanks for {column}')
+					else:
+						threshold_checkbox = st.checkbox(label=f'use threshold for {column}', value=False, key=f'use threshold for {column}')
+						if threshold_checkbox:
+							user_text_input = st.text_input(label=f'threshold for {column}', value='', key=f'threshold for {column}')
+							option = st.selectbox(label='select threshold type:', options=[f'{column} above', f'{column} below'], index=0, key=f'threshold type for {column}')
+							set_ = st.checkbox(label=f'activate threshold for {column}', value=False, key=f'activate threshold for {column}')
+							df_filter_dict[f'{column}2'] = user_text_input
 
 				if column in columns_multiselect:
 					user_cat_input = st.multiselect(
@@ -177,19 +182,26 @@ def filter_dataframe(df):
 		if column in columns_stringsearch:			
 			loc_list.append(set(df[df[column].str.contains(df_filter_dict[column])].index))
 		if column in columns_checkbox:
-			if st.session_state[f'use threshold for {column}']:
-				if st.session_state[f'activate threshold for {column}']:						
-					if st.session_state[f'threshold type for {column}'] == f'{column} above':
-						loc_list.append(set(df[df[column] >= float(df_filter_dict[f'{column}2'])].index))
-					elif st.session_state[f'threshold type for {column}'] == f'{column} below':
-						loc_list.append(set(df[df[column] <= float(df_filter_dict[f'{column}2'])].index))
+			if column not in columns_NA:
+				if st.session_state[f'use threshold for {column}']:
+					if st.session_state[f'activate threshold for {column}']:						
+						if st.session_state[f'threshold type for {column}'] == f'{column} above':
+							loc_list.append(set(df[df[column] >= float(df_filter_dict[f'{column}2'])].index))
+						elif st.session_state[f'threshold type for {column}'] == f'{column} below':
+								loc_list.append(set(df[df[column] <= float(df_filter_dict[f'{column}2'])].index))
 		if column in columns_multiselect:
 			loc_list.append(set(df[df[column].isin(df_filter_dict[column])].index))
 		if column in columns_selectslider:
-			if 'tuple' in str(type(df_filter_dict[column])):
-				loc_list.append(set(df[df[column].between(*df_filter_dict[column])].index))
-			if 'list' in str(type(df_filter_dict[column])):
-				loc_list.append(set(df[df[column].isin(df_filter_dict[column])].index))
+			if column in columns_NA:
+				if st.session_state[f'include blanks for {column}']:
+					loc_list.append((set(df[df[column].between(*df_filter_dict[column]) | (df[column].isna())].index)))
+				else:
+					loc_list.append(set(df[df[column].between(*df_filter_dict[column])].index))
+			else:		
+				if 'tuple' in str(type(df_filter_dict[column])):
+					loc_list.append(set(df[df[column].between(*df_filter_dict[column])].index))
+				if 'list' in str(type(df_filter_dict[column])):
+					loc_list.append(set(df[df[column].isin(df_filter_dict[column])].index))
 		if column in columns_slider_int:
 			loc_list.append(set(df[df[column].between(*df_filter_dict[column])].index))
 		if column in columns_slider_float:
@@ -209,11 +221,12 @@ def widgets_initial():
 		del st.session_state[key]
 		
 	columns_stringsearch = {'sequence'}
-	columns_checkbox = {}
-	columns_multiselect = {'protein'}
-	columns_selectslider = {'MSA_Depth', 'DALI_Z'}
+	columns_checkbox = {'DALI_Z', 'RMSD'}
+	columns_NA = {'DALI_Z', 'RMSD'}
+	columns_multiselect = {'protein', 'beta', 'modular', 'function'}
+	columns_selectslider = {'RMSD', 'DALI_Z'}
 	columns_slider_int = {'length'}
-	columns_slider_float = {'MSA_Depth_log10', 'pTM', 'SASA/length', 'pI', 'Pearson', 'MW'}
+	columns_slider_float = {'pTM', 'SASA/length', 'flDPNN_AF', 'Pearson'}
 	columns_all_filter = sorted(set.union(columns_stringsearch, columns_checkbox, columns_multiselect, 
 									 columns_selectslider, columns_slider_int, columns_slider_float))
 	
@@ -225,11 +238,14 @@ def widgets_initial():
 					user_text_input = st.text_input(label=f'text string in {column} (case-sensitive ; if multiple, use only 1 comma to separate)', value='', key=f'text string in {column} -')		
 				
 				if column in columns_checkbox:
-					threshold_checkbox = st.checkbox(label=f'use threshold for {column}', value=False, key=f'use threshold for {column} -')
-					if threshold_checkbox:
-						user_text_input = st.text_input(label=f'threshold for {column}', value='', key=f'threshold for {column} -')
-						option = st.selectbox(label='select threshold type:', options=[f'{column} above', f'{column} below'], index=0, key=f'threshold type for {column} -')
-						set_ = st.checkbox(label=f'activate threshold for {column}', value=False, key=f'activate threshold for {column} -')
+					if column in columns_NA:
+						NA_checkbox = st.checkbox(label=f'include blanks for {column}', value=True, key=f'include blanks for {column}')
+					else:
+						threshold_checkbox = st.checkbox(label=f'use threshold for {column}', value=False, key=f'use threshold for {column}')
+						if threshold_checkbox:
+							user_text_input = st.text_input(label=f'threshold for {column}', value='', key=f'threshold for {column}')
+							option = st.selectbox(label='select threshold type:', options=[f'{column} above', f'{column} below'], index=0, key=f'threshold type for {column}')
+							set_ = st.checkbox(label=f'activate threshold for {column}', value=False, key=f'activate threshold for {column}')
 
 				if column in columns_multiselect:
 					user_cat_input = st.multiselect(
