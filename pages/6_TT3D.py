@@ -91,6 +91,7 @@ def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*positive*',
     if found1:
         for file_path in glob.glob(path2):
             if file_name[:file_name.find('_TT')+1] in file_path and 'real.h5' not in file_path:
+                file_path
                 file_name = file_path.replace('\\', '/')[file_path.replace('\\', '/').rfind('/')+1:]
                 if not os.path.exists(file_path[:-2]+'real.h5'):
                     get_file_LFS(url='https://github.com/twaksman001/Mp-Effector-App/raw/master/Data%20Files/TT3D/'+file_name,
