@@ -79,7 +79,6 @@ def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*positive*',
 
         if all(j in file for j in [protein1, protein2]):
             df = pd.read_csv(filepath_or_buffer=file_path, sep='\t', header=None)
-
             for i in range(len(df)):
                 if set([protein1, protein2]).issubset(set(df.iloc[i, :])):
                     found1 = True
@@ -89,6 +88,7 @@ def get_contact_map(protein1, protein2, path1='Data Files/TT3D/*positive*',
         break
     st.write(glob.glob(path2))
     if found1:
+        file_name
         for file_path in glob.glob(path2):
             file_path
             if file_name[:file_name.find('_TT')+1] in file_path and 'real.h5' not in file_path:
