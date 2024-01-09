@@ -36,9 +36,9 @@ with st.sidebar:
 
 def prepare_dataframe(df):
 
-	columns_string = {'protein', 'sequence', 'beta', 'modular'}
-	columns_float = {'MSA_Depth_log10', 'pTM', 'SASA/length', 'pI', 'DALI_Z', 'Pearson', 'MW'}
-	columns_int = {'ID_Number', 'length', 'MSA_Depth'}
+	columns_string = {'protein', 'sequence', 'beta', 'modular', 'function'}
+	columns_float = {'pTM', 'SASA/length', 'flDPNN_AF', 'Pearson', 'DALI_Z', 'RMSD'}
+	columns_int = {'length'}
 	
 	for column in df.columns:
 		if column in columns_string:
