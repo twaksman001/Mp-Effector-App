@@ -95,7 +95,7 @@ def whoami():
 	import inspect
 	return inspect.stack()[1][3]
 
-def get_file_of_interest(protein, path, string):
+def get_file(protein, path, string):
 	
 	import glob
 	import re
@@ -111,15 +111,36 @@ def get_file_of_interest(protein, path, string):
 	else:
 		return desired_file
 
-def get_pLDDT(protein, path, string='_'):
+def get_AF2_scores(protein, path, string, type_='pTM'): # type = pTM, pLDDT, PAE
+	
+	file = get_file(protein=protein, path=path, string=string)
+	file = open(file).read()
+	
+	if type_ == 'pTM':
+		pTM = file[file.rfind(' ')+1:-1]
+		return pTM
+	if type_ == 'pLDDT':
+		pLDDT = file[file.rfind('[')+1:file.rfind(']')]
+		pLDDT = list(map(float, pLDDT.split(',')))
+		return pLDDT
+	if type_ == 'PAE':
+		import pandas as pd
+		PAE = file[file.find('"pae":')+9:file.find('plddt')-5]
+		PAE = PAE.split('], [')
+		PAE = [i.split(', ') for i in PAE]
+		df = pd.DataFrame(data=PAE).astype(float)
+		return df
 
-	import re
+def get_disorder_list(protein):
 	
-	scores_file = open(get_file_of_interest(protein=protein, path=path, string=string)).read()
-	pLDDT = scores_file[scores_file.rfind('[')+1:scores_file.rfind(']')]
-	pLDDT = list(map(float, pLDDT.split(',')))
+	import pandas as pd
 	
-	return pLDDT
+	df = pd.read_csv(filepath_or_buffer='Data Files/MpEffectors_fIDPnn_2.txt', sep='\t', index_col=0, header=0)
+	list_ = df.loc[protein, 'disorder_score']
+	list_ = list_.split(',')
+	list_ = [float(i)*100 for i in list_]
+	
+	return list_
 
 def df_PDBfile(protein, path, string):
 	
@@ -128,43 +149,20 @@ def df_PDBfile(protein, path, string):
 	positions = [(0, 6), (6, 11), (12, 16), (16, 17), (17, 20), (21, 22), (22, 26), (26, 27), (30, 38), (38, 46), (46, 54), (54, 60), (60, 66), (76, 78), (78, 80)]
 	columns = ['entity', 'serial', 'atom_aa', 'altloc', 'aa', 'chain', 'res_index', 'icode', 'x', 'y', 'z', 'occ', 'B', 'element', 'charge']
 	
-	try:
-		file = get_file_of_interest(protein=protein, path=path, string=string)
-	except Exception as e:
-		raise ValueError(whoami(), 'fail to get df', e)
-	else:
-		df = pd.read_fwf(filepath_or_buffer=file, names=columns, colspecs=positions)
-		df = df[df['entity']=='ATOM']
+	file = get_file(protein=protein, path=path, string=string)
+	df = pd.read_fwf(filepath_or_buffer=file, names=columns, colspecs=positions)
+	df = df[df['entity']=='ATOM']
 	
 	return df
 
 def PDB_bfactor_list(protein, path='Data Files/OmegaFold/*', string='_'):
 	
-	try:
-		df = df_PDBfile(protein=protein, path=path, string=string)
-	except Exception as e:
-		raise ValueError(whoami(), 'fail to get B factors', e)
-	else:
-		b_list = list(df[df['atom_aa'] == 'CA']['B'].astype(float))
+	df = df_PDBfile(protein=protein, path=path, string=string)
+	b_list = list(df[df['atom_aa'] == 'CA']['B'].astype(float))
 	
 	return b_list
 
-def get_PAE_df(protein, path='Data Files/AF2/*', string='_'):
-    
-    import re
-    import pandas as pd
-    
-    scores_file = open(get_file_of_interest(protein=protein, path=path, string=string)).read()
-    PAE = scores_file[scores_file.find('"pae":')+9:scores_file.find('plddt')-5]
-    PAE = PAE.split('], [')
-    PAE = [i.split(', ') for i in PAE]
-
-    df = pd.DataFrame(data=PAE)
-    df = df.astype(float)
-    
-    return df
-
-def figure_AF2andOF_confidence_proteins(proteins, tick_no=5):
+def figure_perresidue_plot_proteins(proteins, tick_no=5):
 
 	import numpy as np
 	import matplotlib.pyplot as plt
@@ -181,17 +179,20 @@ def figure_AF2andOF_confidence_proteins(proteins, tick_no=5):
 
 	for protein in proteins:
 		
-		bfactors = PDB_bfactor_list(protein=protein, path='Data Files/OmegaFold/*', string='_')
-		pLDDT = get_pLDDT(protein=protein, path='Data Files/AF2/*', string='_')
-		assert len(pLDDT) == len(bfactors)
+		OF_conf = PDB_bfactor_list(protein=protein, path='Data Files/OmegaFold/*', string='_')
+		pLDDT = get_AF2_scores(protein=protein, path='Data Files/AF2/*', string='_', type_='pLDDT')
+		flDPNN = get_disorder_list(protein=protein)
+		assert len({len(pLDDT), len(OF_conf), len(flDPNN)}) == 1
 		
 		plt.subplot(int(np.ceil(len(proteins)**0.5)), int(np.ceil(len(proteins)**0.5)), n)
 		plt.title(protein, fontdict={'size':fontsize*1.5, 'weight':'bold'})
 		if OF_check:
-			plt.plot(bfactors, color='blue', label='OmegaFold')
+			plt.plot(OF_conf, color='blue', label='OmegaFold')
 		if AF2_check:
 			plt.plot(pLDDT, color='orange', label='AlphaFold')
-		
+		if flDPNN_check:
+			plt.plot(flDPNN, color='green', label='flDPNN')
+
 		plt.margins(x=0)
 		plt.xlim(0, len(pLDDT))
 		plt.xticks(ticks=[int(i) for i in np.linspace(start=0, stop=len(pLDDT), num=tick_no, endpoint=True)], fontsize=fontsize)
@@ -199,7 +200,7 @@ def figure_AF2andOF_confidence_proteins(proteins, tick_no=5):
 
 		n += 1
 
-def figure_corr(proteins,tick_no=5):
+def figure_corr(proteins, tick_no=5):
 
 	import scipy
 	import numpy as np
@@ -216,15 +217,17 @@ def figure_corr(proteins,tick_no=5):
 	
 	for protein in proteins:
 		
-		pLDDT = get_pLDDT(protein=protein, path='Data Files/AF2/*', string='_')
-		bfactors = PDB_bfactor_list(protein=protein, path='Data Files/OmegaFold/*', string='_')
-		assert len(pLDDT) == len(bfactors)
-		corr1, p = scipy.stats.pearsonr(pLDDT, bfactors)
-		corr2, p = scipy.stats.spearmanr(pLDDT, bfactors)
+		pLDDT = get_AF2_scores(protein=protein, path='Data Files/AF2/*', string='_', type_='pLDDT')
+		OF_conf = PDB_bfactor_list(protein=protein, path='Data Files/OmegaFold/*', string='_')
+		flDPNN = get_disorder_list(protein=protein)
+		assert len({len(pLDDT), len(OF_conf), len(flDPNN)}) == 1
+
+		corr1, p = scipy.stats.pearsonr(pLDDT, OF_conf)
+		corr2, p = scipy.stats.spearmanr(pLDDT, OF_conf)
 
 		plt.subplot(int(np.ceil(len(proteins)**0.5)), int(np.ceil(len(proteins)**0.5)), n)
 		plt.title(protein, fontdict={'size':fontsize*1.5, 'weight':'bold'}) #+ str(round(corr1, 2)) + ' ' + str(round(corr2, 2)))
-		plt.scatter(pLDDT, bfactors, s=70/(len(proteins)))
+		plt.scatter(pLDDT, OF_conf, s=70/(len(proteins)))
 		plt.xlabel(xlabel='AlphaFold', fontdict={'size':fontsize})
 		plt.ylabel(ylabel='OmegaFold', fontdict={'size':fontsize})
 		plt.xticks(ticks=range(0, 101, 100//tick_no), fontsize=fontsize)
@@ -249,7 +252,7 @@ def figure_PAE_proteins(proteins, tick_no=5):
 
 	for protein in proteins:
 		
-		df = get_PAE_df(protein=protein, path='Data Files/AF2/*', string='_')
+		df = get_AF2_scores(protein=protein, path='Data Files/AF2/*', string='_', type_='PAE')
 		ticks = [int(i) for i in np.linspace(start=0, stop=len(df), num=tick_no, endpoint=True)]
 		plt.subplot(int(np.ceil(len(proteins)**0.5)), int(np.ceil(len(proteins)**0.5)), n)
 		plt.title(label=protein, fontdict={'size':fontsize*1.5, 'weight':'bold'})
@@ -352,7 +355,7 @@ with tab1:
 		col2.plotly_chart(figure_or_data=scatter2, use_container_width=True)
 
 with tab2:
-	tab2_1, tab2_2, tab2_3 = st.tabs(tabs=['PAE', 'Per-Residue Confidence', 'PairPlot'])
+	tab2_1, tab2_2, tab2_3 = st.tabs(tabs=['PAE', 'Per-Residue Scores', 'PairPlot'])
 	
 	with tab2_1:	
 		all_effectors_PAE = st.checkbox(label='Select all effectors PAE', key='Select all effectors PAE', value=True)
@@ -372,28 +375,32 @@ with tab2:
 			st.pyplot(fig=PAE_Figure, clear_figure=False, use_container_width=True)
 			
 	with tab2_2:	
-		all_effectors_pLDDT = st.checkbox(label='Select all effectors Per-Residue Confidence', 
-											key='Select all effectors Per-Residue Confidence', value=True)
+		st.write('This section is for comparison of per-residue data from different algorithms. '
+		   		 'The data available are AlphaFold pLDDT, OmegaFold confidence (the equivalent of pLDDT), '
+				 'and probability of residue occurring in disordered region (flDPNN).')
+		all_effectors_pLDDT = st.checkbox(label='Select all effectors', 
+											key='Select all effectors Per-Residue Scores', value=True)
 		
-		with st.form(key='Select Effectors Per-Residue Confidence', clear_on_submit=False):
+		with st.form(key='Select Effectors Per-Residue Scores', clear_on_submit=False):
+			st.write('Select algorithms:')
 			OF_check = st.checkbox(label='Omegafold', key='Omegafold', value=True)
 			AF2_check = st.checkbox(label='AlphaFold', key='AlphaFold', value=True)
+			flDPNN_check = st.checkbox(label='flDPNN', key='flDPNN', value=True)
 			
 			if all_effectors_pLDDT:
-				effectors_pLDDT = st.multiselect(label='Effectors Per-Residue Confidence:', 
+				effectors_pLDDT = st.multiselect(label='Select effectors:', 
 				options=df['protein'].unique(), default=df['protein'].unique())
 			else:
-				effectors_pLDDT = st.multiselect(label='Effectors Per-Residue Confidence:', 
+				effectors_pLDDT = st.multiselect(label='Effectors Per-Residue Scores:', 
 				options=df['protein'].unique())
 			
-			make_figure_pLDDT_plot = st.form_submit_button(label='Plot Per-Residue Confidence')
-			make_figure_pLDDT_corr = st.form_submit_button(label='Compare Per-Residue Confidence')
+			make_figure_pLDDT_plot = st.form_submit_button(label='Plot Per-Residue Scores')
+			make_figure_pLDDT_corr = st.form_submit_button(label='Compare Per-Residue Scores')
 					
 		if make_figure_pLDDT_plot:
-			figure_pLDDT_plot = figure_AF2andOF_confidence_proteins(proteins=effectors_pLDDT, tick_no=5)
+			figure_pLDDT_plot = figure_perresidue_plot_proteins(proteins=effectors_pLDDT, tick_no=5)
 			st.pyplot(fig=figure_pLDDT_plot, clear_figure=False, use_container_width=True)
 		if make_figure_pLDDT_corr:
-			
 			figure_pLDDT_corr = figure_corr(proteins=effectors_pLDDT, tick_no=5)
 			st.pyplot(fig=figure_pLDDT_corr, clear_figure=False, use_container_width=True)
 	
