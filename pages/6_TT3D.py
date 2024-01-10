@@ -8,9 +8,6 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 st.write('This page allows exploration of data from TT3D output files for any single effector.')
-# st.write('If TT3D has not been tested for a selected protein, or column filters result in no matching rows, error will occur.')
-# with st.expander('Column definitions'):
-# 	st.write('salience - list of scores for each consecutive amino acid in the protein primary sequence')
 
 ##################load dataframe (top hits)##################
 

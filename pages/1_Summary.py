@@ -43,7 +43,6 @@ def prepare_dataframe(df):
 	for column in df.columns:
 		if column in columns_string:
 			df[column] = df[column].astype(str)
-			df[column] = df[column].fillna(value = 'n/a')
 		elif column in columns_float:
 			df[column] = df[column].astype(float)
 		elif column in columns_int:
