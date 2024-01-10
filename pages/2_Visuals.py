@@ -24,27 +24,32 @@ df = pd.read_csv(filepath_or_buffer='Data Files/MpEffectors_KeyInfo.txt', sep='\
 ####################dataframe functions####################
 
 column_list_graphs = list((set(df.columns).union({None})).difference({'protein', 'sequence'}))
-variables_PairPlot_default = ['ID_Number', 'length', 'MSA_Depth_log10', 'pTM', 'Pearson']
+variables_PairPlot_default = ['length', 'pTM', 'Pearson']
 
 desired_file_path_AF2 = 'Data Files/AF2/*'
 desired_file_path_OF = 'Data Files/OmegaFold/*'
 
 def prepare_dataframe(df):
 
-	columns_string = {'protein', 'sequence', 'beta', 'modular'}
-	columns_float = {'MSA_Depth_log10', 'pTM', 'SASA/length', 'pI', 'DALI_Z', 'Pearson', 'MW'}
-	columns_int = {'ID_Number', 'length', 'MSA_Depth'}
+	import numpy as np
+	
+	columns_string = {'protein', 'sequence', 'beta', 'modular', 'function'}
+	columns_float = {'pTM', 'SASA/length', 'flDPNN_AF', 'Pearson', 'DALI_Z', 'RMSD'}
+	columns_int = {'length'}
 	
 	for column in df.columns:
 		if column in columns_string:
 			df[column] = df[column].astype(str)
-			df[column] = df[column].fillna(value = 'n/a')
 		elif column in columns_float:
 			df[column] = df[column].astype(float)
 		elif column in columns_int:
 			df[column] = df[column].astype(int)
 	
+	# df['RMSD'] = df['RMSD'].fillna('-')
+	
 	return df
+
+df = prepare_dataframe(df)
 
 ####################sidebar####################
 
@@ -53,9 +58,9 @@ with st.sidebar:
 	st.header(body='Control Visuals')
 			
 	with st.expander(label='Scatter 1', expanded=False):
-		x = st.selectbox(label='x', options=column_list_graphs, index=column_list_graphs.index('ID_Number'))
-		y = st.selectbox(label='y', options=column_list_graphs, index=column_list_graphs.index('pTM'))
-		color = st.selectbox(label='color', options=column_list_graphs, index=column_list_graphs.index('SASA/length'))
+		x = st.selectbox(label='x', options=column_list_graphs, index=column_list_graphs.index('pTM'))
+		y = st.selectbox(label='y', options=column_list_graphs, index=column_list_graphs.index('SASA/length'))
+		color = st.selectbox(label='color', options=column_list_graphs, index=column_list_graphs.index('RMSD'))
 		symbol = st.selectbox(label='symbol', options=column_list_graphs, index=column_list_graphs.index('beta'))
 		size = st.selectbox(label='size', options=column_list_graphs, index=column_list_graphs.index(None))
 		hover_info = st.multiselect(label='hover extra info', options=column_list_graphs, default=column_list_graphs)
@@ -63,9 +68,9 @@ with st.sidebar:
 		scatter1_display = st.checkbox(label='Display 1', key='Display 1', value=False)
 	
 	with st.expander(label='Scatter 2', expanded=False):
-		x_2 = st.selectbox(label='x 2', options=column_list_graphs, index=column_list_graphs.index('ID_Number'))
-		y_2 = st.selectbox(label='y 2', options=column_list_graphs, index=column_list_graphs.index('pTM'))
-		color_2 = st.selectbox(label='color 2', options=column_list_graphs, index=column_list_graphs.index('pI'))
+		x_2 = st.selectbox(label='x 2', options=column_list_graphs, index=column_list_graphs.index('pTM'))
+		y_2 = st.selectbox(label='y 2', options=column_list_graphs, index=column_list_graphs.index('SASA/length'))
+		color_2 = st.selectbox(label='color 2', options=column_list_graphs, index=column_list_graphs.index('RMSD'))
 		symbol_2 = st.selectbox(label='symbol 2', options=column_list_graphs, index=column_list_graphs.index('beta'))
 		size_2 = st.selectbox(label='size 2', options=column_list_graphs, index=column_list_graphs.index(None))
 		hover_info_2 = st.multiselect(label='hover extra info 2', options=column_list_graphs, default=column_list_graphs)		
@@ -275,7 +280,7 @@ def subplot_positions_list(number_of_variables):
 	
 	return positions_all
 
-def PairPlot(variables, hue, size, style):
+def PairPlot(df, variables, hue, size, style):
 	
 	import seaborn as sns
 	import matplotlib.pyplot as plt
@@ -289,7 +294,8 @@ def PairPlot(variables, hue, size, style):
 	l = len(variables)
 	subplot_positions_all = subplot_positions_list(l)
 	n = 1
-	
+	NA_mask = df[list({hue, size, style}.difference({None}))].isna().any(axis=1)
+
 	for variable1 in variables:
 		for variable2 in variables:
 			if n in subplot_positions_all:
@@ -299,24 +305,33 @@ def PairPlot(variables, hue, size, style):
 				if variable1 == variable2:   
 					plot = sns.kdeplot(data=df, x=variable1, legend=False,
 									   hue=hue, palette='viridis')
-					plot.set(ylabel=None, yticklabels=[])
+					if n != 1:
+						plot.set(ylabel=None, yticklabels=[])
+					else:
+						plot.set(ylabel=variable1, yticklabels=[])
 					if n != l**2:
 						plot.set(xlabel=None, xticklabels=[])
 				else:
 					if n == 1+l:
-						plot = sns.scatterplot(data=df, x=variable2, y=variable1, legend=True, 
+						plot = sns.scatterplot(data=df[~NA_mask], x=variable2, y=variable1, legend=True, 
 											  hue=hue, palette='viridis', size=size, style=style, s=100)
+						plot2 = plt.scatter(df[NA_mask][variable2], df[NA_mask][variable1], 
+											color='white', edgecolors='black', label='N/A', marker='s', s=20)
 						sns.move_legend(plot, bbox_to_anchor=(l, 2), loc='upper right', borderaxespad=0)
-					else: 
-						plot = sns.scatterplot(data=df, x=variable2, y=variable1, legend=False,
+					else:
+						plot = sns.scatterplot(data=df[~NA_mask], x=variable2, y=variable1, legend=False,
 											  hue=hue, palette='viridis', size=size, style=style, s=100)
+						plot2 = plt.scatter(df[NA_mask][variable2], df[NA_mask][variable1], 
+											color='white', edgecolors='black', label='N/A', marker='s', s=20)
 				if n not in list(range(l**2-l+1, l**2+1)):
 					plot.set(xlabel = None, xticklabels = [])
 				if n not in list(range(1, l**2, l)):
 					plot.set(ylabel = None, yticklabels = [])
 
 			n += 1
-
+	
+	# plt.figlegend()#[plot2], ['N/A'])
+	
 def update_plotly_hover_dict(variables):
 	
 	for variable in variables:
@@ -327,9 +342,7 @@ def update_plotly_hover_dict(variables):
 ####################display####################
 
 with tab1:
-	
 	st.write('Use sidebar to make graphs')
-	
 	col1, col2 = st.columns(spec=[0.5,0.5])
 								  
 	if scatter1_display:
@@ -339,15 +352,12 @@ with tab1:
 		col2.plotly_chart(figure_or_data=scatter2, use_container_width=True)
 
 with tab2:
-	
 	tab2_1, tab2_2, tab2_3 = st.tabs(tabs=['PAE', 'Per-Residue Confidence', 'PairPlot'])
 	
 	with tab2_1:	
-		
 		all_effectors_PAE = st.checkbox(label='Select all effectors PAE', key='Select all effectors PAE', value=True)
 		
 		with st.form(key='Select Effectors PAE', clear_on_submit=False):
-
 			if all_effectors_PAE:
 				effectors_PAE = st.multiselect(label='Effectors PAE:',
 				options=df['protein'].unique(), default=df['protein'].unique())
@@ -356,19 +366,16 @@ with tab2:
 				options=df['protein'].unique())
 			
 			make_figure_PAE = st.form_submit_button(label='Make Figure PAE')
-					
+	
 		if make_figure_PAE:
-			
 			PAE_Figure = figure_PAE_proteins(proteins=effectors_PAE, tick_no=5)
 			st.pyplot(fig=PAE_Figure, clear_figure=False, use_container_width=True)
 			
 	with tab2_2:	
-		
 		all_effectors_pLDDT = st.checkbox(label='Select all effectors Per-Residue Confidence', 
 											key='Select all effectors Per-Residue Confidence', value=True)
 		
 		with st.form(key='Select Effectors Per-Residue Confidence', clear_on_submit=False):
-			
 			OF_check = st.checkbox(label='Omegafold', key='Omegafold', value=True)
 			AF2_check = st.checkbox(label='AlphaFold', key='AlphaFold', value=True)
 			
@@ -383,28 +390,25 @@ with tab2:
 			make_figure_pLDDT_corr = st.form_submit_button(label='Compare Per-Residue Confidence')
 					
 		if make_figure_pLDDT_plot:
-			
 			figure_pLDDT_plot = figure_AF2andOF_confidence_proteins(proteins=effectors_pLDDT, tick_no=5)
 			st.pyplot(fig=figure_pLDDT_plot, clear_figure=False, use_container_width=True)
-			
 		if make_figure_pLDDT_corr:
 			
 			figure_pLDDT_corr = figure_corr(proteins=effectors_pLDDT, tick_no=5)
 			st.pyplot(fig=figure_pLDDT_corr, clear_figure=False, use_container_width=True)
 	
 	with tab2_3:	
-				
 		with st.form(key='Select Variables for PairPlot', clear_on_submit=False):
-			
 			variables_PairPlot = st.multiselect(label='Variables for PairPlot', options=column_list_graphs, default=variables_PairPlot_default)
 			variables_PairPlot_hue = st.selectbox(label='Select Color Variable', options=column_list_graphs, index=column_list_graphs.index('SASA/length'))
 			variables_PairPlot_size = st.selectbox(label='Select Size Variable', options=column_list_graphs, index=column_list_graphs.index(None))
 			variables_PairPlot_style = st.selectbox(label='Select Marker Variable', options=column_list_graphs, index=column_list_graphs.index('beta'))
 			
+			st.write('If any variables selected for color, size or marker contain missing values, the data points are plotted '
+					 'as small hollow squares')
 			make_PairPlot = st.form_submit_button(label='Make PairPlot')
 					
 		if make_PairPlot:
-			
-			PairPlot = PairPlot(variables=variables_PairPlot, hue=variables_PairPlot_hue, 
+			PairPlot = PairPlot(df=df, variables=variables_PairPlot, hue=variables_PairPlot_hue, 
 					   			size=variables_PairPlot_size, style=variables_PairPlot_style)
 			st.pyplot(fig=PairPlot, clear_figure=False, use_container_width=True)
