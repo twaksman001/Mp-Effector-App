@@ -19,7 +19,7 @@ tab1, tab2 = st.tabs(tabs=['plotly', 'other'])
 
 ####################load dataframe####################
 
-df = pd.read_csv(filepath_or_buffer='Data Files/Mpeffectors_KeyInfo.txt', sep='\t')
+df = pd.read_csv(filepath_or_buffer='Data Files/MpEffectors_KeyInfo.txt', sep='\t')
 
 ####################dataframe functions####################
 
@@ -135,7 +135,7 @@ def get_disorder_list(protein):
 	
 	import pandas as pd
 	
-	df = pd.read_csv(filepath_or_buffer='Data Files/Mpeffectors_fIDPnn_2.txt', sep='\t', index_col=0, header=0)
+	df = pd.read_csv(filepath_or_buffer='Data Files/MpEffectors_fIDPnn_2.txt', sep='\t', index_col=0, header=0)
 	list_ = df.loc[protein, 'disorder_score']
 	list_ = list_.split(',')
 	list_ = [float(i)*100 for i in list_]
