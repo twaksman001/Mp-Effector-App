@@ -12,19 +12,19 @@ st.set_option(key='deprecation.showPyplotGlobalUse', value=False)
 
 st.set_page_config(layout='wide')
 
-st.write('This page creates useful graphs or figures from the summary spreadsheet data. Interactive Plotly scatter charts, '
-		 'structure prediction per-residue confidence graphs, or all-against-all charts of multiple variables from summary spreadsheet')
+st.write('This page creates useful graphs or figures from the summary spreadsheet data. Interactive plotly scatter charts, '
+		 'structure prediction per-residue confidence graphs, or all-against-all charts of multiple variables from summary spreadsheet.')
 
-tab1, tab2 = st.tabs(tabs=['Plotly', 'Other'])
+tab1, tab2 = st.tabs(tabs=['plotly', 'other'])
 
 ####################load dataframe####################
 
-df = pd.read_csv(filepath_or_buffer='Data Files/MpEffectors_KeyInfo.txt', sep='\t')
+df = pd.read_csv(filepath_or_buffer='Data Files/Mpeffectors_KeyInfo.txt', sep='\t')
 
 ####################dataframe functions####################
 
 column_list_graphs = list((set(df.columns).union({None})).difference({'protein', 'sequence'}))
-variables_PairPlot_default = ['length', 'pTM', 'Pearson']
+variables_pairplot_default = ['length', 'pTM', 'Pearson']
 
 desired_file_path_AF2 = 'Data Files/AF2/*'
 desired_file_path_OF = 'Data Files/OmegaFold/*'
@@ -55,9 +55,9 @@ df = prepare_dataframe(df)
 
 with st.sidebar:
 	
-	st.header(body='Control Visuals')
+	st.header(body='control visuals')
 			
-	with st.expander(label='Scatter 1', expanded=False):
+	with st.expander(label='scatter 1', expanded=False):
 		x = st.selectbox(label='x', options=column_list_graphs, index=column_list_graphs.index('pTM'))
 		y = st.selectbox(label='y', options=column_list_graphs, index=column_list_graphs.index('SASA/length'))
 		color = st.selectbox(label='color', options=column_list_graphs, index=column_list_graphs.index('RMSD'))
@@ -65,9 +65,9 @@ with st.sidebar:
 		size = st.selectbox(label='size', options=column_list_graphs, index=column_list_graphs.index(None))
 		hover_info = st.multiselect(label='hover extra info', options=column_list_graphs, default=column_list_graphs)
 
-		scatter1_display = st.checkbox(label='Display 1', key='Display 1', value=False)
+		scatter1_display = st.checkbox(label='display 1', key='display 1', value=False)
 	
-	with st.expander(label='Scatter 2', expanded=False):
+	with st.expander(label='scatter 2', expanded=False):
 		x_2 = st.selectbox(label='x 2', options=column_list_graphs, index=column_list_graphs.index('pTM'))
 		y_2 = st.selectbox(label='y 2', options=column_list_graphs, index=column_list_graphs.index('SASA/length'))
 		color_2 = st.selectbox(label='color 2', options=column_list_graphs, index=column_list_graphs.index('RMSD'))
@@ -75,7 +75,7 @@ with st.sidebar:
 		size_2 = st.selectbox(label='size 2', options=column_list_graphs, index=column_list_graphs.index(None))
 		hover_info_2 = st.multiselect(label='hover extra info 2', options=column_list_graphs, default=column_list_graphs)		
 		
-		scatter2_display = st.checkbox(label='Display 2', key='Display 2', value=False)
+		scatter2_display = st.checkbox(label='display 2', key='display 2', value=False)
 
 ####################visuals definitions####################
 
@@ -135,7 +135,7 @@ def get_disorder_list(protein):
 	
 	import pandas as pd
 	
-	df = pd.read_csv(filepath_or_buffer='Data Files/MpEffectors_fIDPnn_2.txt', sep='\t', index_col=0, header=0)
+	df = pd.read_csv(filepath_or_buffer='Data Files/Mpeffectors_fIDPnn_2.txt', sep='\t', index_col=0, header=0)
 	list_ = df.loc[protein, 'disorder_score']
 	list_ = list_.split(',')
 	list_ = [float(i)*100 for i in list_]
@@ -162,7 +162,7 @@ def PDB_bfactor_list(protein, path='Data Files/OmegaFold/*', string='_'):
 	
 	return b_list
 
-def figure_perresidue_plot_proteins(proteins, tick_no=5):
+def figure_perresidue_plot_proteins(proteins, algorithms, tick_no=5):
 
 	import numpy as np
 	import matplotlib.pyplot as plt
@@ -178,19 +178,18 @@ def figure_perresidue_plot_proteins(proteins, tick_no=5):
 	n = 1
 
 	for protein in proteins:
-		
-		OF_conf = PDB_bfactor_list(protein=protein, path='Data Files/OmegaFold/*', string='_')
-		pLDDT = get_AF2_scores(protein=protein, path='Data Files/AF2/*', string='_', type_='pLDDT')
-		flDPNN = get_disorder_list(protein=protein)
-		assert len({len(pLDDT), len(OF_conf), len(flDPNN)}) == 1
-		
+
 		plt.subplot(int(np.ceil(len(proteins)**0.5)), int(np.ceil(len(proteins)**0.5)), n)
 		plt.title(protein, fontdict={'size':fontsize*1.5, 'weight':'bold'})
-		if OF_check:
+
+		if 'OmegaFold' in algorithms:
+			OF_conf = PDB_bfactor_list(protein=protein, path='Data Files/OmegaFold/*', string='_')
 			plt.plot(OF_conf, color='blue', label='OmegaFold')
-		if AF2_check:
+		if 'AlphaFold' in algorithms:
+			pLDDT = get_AF2_scores(protein=protein, path='Data Files/AF2/*', string='_', type_='pLDDT')
 			plt.plot(pLDDT, color='orange', label='AlphaFold')
-		if flDPNN_check:
+		if 'flDPNN' in algorithms:
+			flDPNN = get_disorder_list(protein=protein)
 			plt.plot(flDPNN, color='green', label='flDPNN')
 
 		plt.margins(x=0)
@@ -200,7 +199,7 @@ def figure_perresidue_plot_proteins(proteins, tick_no=5):
 
 		n += 1
 
-def figure_corr(proteins, tick_no=5):
+def figure_corr(proteins, algorithms, tick_no=5):
 
 	import scipy
 	import numpy as np
@@ -215,21 +214,32 @@ def figure_corr(proteins, tick_no=5):
 
 	n = 1
 	
+	if len(algorithms) > 2:
+		st.write('use maximum of two algorithms for scatter plot')
+		algorithms = algorithms[:2]
+
 	for protein in proteins:
 		
-		pLDDT = get_AF2_scores(protein=protein, path='Data Files/AF2/*', string='_', type_='pLDDT')
-		OF_conf = PDB_bfactor_list(protein=protein, path='Data Files/OmegaFold/*', string='_')
-		flDPNN = get_disorder_list(protein=protein)
-		assert len({len(pLDDT), len(OF_conf), len(flDPNN)}) == 1
+		plot_list = []
 
-		corr1, p = scipy.stats.pearsonr(pLDDT, OF_conf)
-		corr2, p = scipy.stats.spearmanr(pLDDT, OF_conf)
+		if 'OmegaFold' in algorithms:
+			OF_conf = PDB_bfactor_list(protein=protein, path='Data Files/OmegaFold/*', string='_')
+			plot_list.append(OF_conf)
+		if 'AlphaFold' in algorithms:
+			pLDDT = get_AF2_scores(protein=protein, path='Data Files/AF2/*', string='_', type_='pLDDT')
+			plot_list.append(pLDDT)
+		if 'flDPNN' in algorithms:
+			flDPNN = get_disorder_list(protein=protein)
+			plot_list.append(flDPNN)
+		
+		corr1, p = scipy.stats.pearsonr(plot_list[0], plot_list[1])
+		corr2, p = scipy.stats.spearmanr(plot_list[0], plot_list[1])
 
 		plt.subplot(int(np.ceil(len(proteins)**0.5)), int(np.ceil(len(proteins)**0.5)), n)
 		plt.title(protein, fontdict={'size':fontsize*1.5, 'weight':'bold'}) #+ str(round(corr1, 2)) + ' ' + str(round(corr2, 2)))
-		plt.scatter(pLDDT, OF_conf, s=70/(len(proteins)))
-		plt.xlabel(xlabel='AlphaFold', fontdict={'size':fontsize})
-		plt.ylabel(ylabel='OmegaFold', fontdict={'size':fontsize})
+		plt.scatter(plot_list[0], plot_list[1], s=70/(len(proteins)))
+		plt.xlabel(xlabel=algorithms[0], fontdict={'size':fontsize})
+		plt.ylabel(ylabel=algorithms[1], fontdict={'size':fontsize})
 		plt.xticks(ticks=range(0, 101, 100//tick_no), fontsize=fontsize)
 		plt.yticks(ticks=range(0, 101, 100//tick_no), fontsize=fontsize)
 
@@ -283,7 +293,7 @@ def subplot_positions_list(number_of_variables):
 	
 	return positions_all
 
-def PairPlot(df, variables, hue, size, style):
+def pairplot(df, variables, hue, size, style):
 	
 	import seaborn as sns
 	import matplotlib.pyplot as plt
@@ -345,7 +355,7 @@ def update_plotly_hover_dict(variables):
 ####################display####################
 
 with tab1:
-	st.write('Use sidebar to make graphs')
+	st.write('use sidebar to make graphs')
 	col1, col2 = st.columns(spec=[0.5,0.5])
 								  
 	if scatter1_display:
@@ -355,20 +365,20 @@ with tab1:
 		col2.plotly_chart(figure_or_data=scatter2, use_container_width=True)
 
 with tab2:
-	tab2_1, tab2_2, tab2_3 = st.tabs(tabs=['PAE', 'Per-Residue Scores', 'PairPlot'])
+	tab2_1, tab2_2, tab2_3 = st.tabs(tabs=['PAE', 'per-residue scores', 'pairplot'])
 	
 	with tab2_1:	
-		all_effectors_PAE = st.checkbox(label='Select all effectors PAE', key='Select all effectors PAE', value=True)
+		all_effectors_PAE = st.checkbox(label='select all effectors PAE', key='select all effectors PAE', value=True)
 		
-		with st.form(key='Select Effectors PAE', clear_on_submit=False):
+		with st.form(key='select effectors PAE', clear_on_submit=False):
 			if all_effectors_PAE:
-				effectors_PAE = st.multiselect(label='Effectors PAE:',
-				options=df['protein'].unique(), default=df['protein'].unique())
+				effectors_PAE = st.multiselect(label='effectors PAE:', key='effectors PAE:',
+											   options=df['protein'].unique(), default=df['protein'].unique())
 			else:
-				effectors_PAE = st.multiselect(label='Effectors PAE:',
-				options=df['protein'].unique())
+				effectors_PAE = st.multiselect(label='effectors PAE:', key='effectors PAE:',
+											   options=df['protein'].unique())
 			
-			make_figure_PAE = st.form_submit_button(label='Make Figure PAE')
+			make_figure_PAE = st.form_submit_button(label='make Figure PAE', )
 	
 		if make_figure_PAE:
 			PAE_Figure = figure_PAE_proteins(proteins=effectors_PAE, tick_no=5)
@@ -378,44 +388,46 @@ with tab2:
 		st.write('This section is for comparison of per-residue data from different algorithms. '
 		   		 'The data available are AlphaFold pLDDT, OmegaFold confidence (the equivalent of pLDDT), '
 				 'and probability of residue occurring in disordered region (flDPNN).')
-		all_effectors_pLDDT = st.checkbox(label='Select all effectors', 
-											key='Select all effectors Per-Residue Scores', value=True)
+		all_effectors_pLDDT = st.checkbox(label='select all effectors', 
+											key='select all effectors per-residue scores', value=True)
 		
-		with st.form(key='Select Effectors Per-Residue Scores', clear_on_submit=False):
-			st.write('Select algorithms:')
-			OF_check = st.checkbox(label='Omegafold', key='Omegafold', value=True)
-			AF2_check = st.checkbox(label='AlphaFold', key='AlphaFold', value=True)
-			flDPNN_check = st.checkbox(label='flDPNN', key='flDPNN', value=True)
-			
+		with st.form(key='select effectors per-residue scores', clear_on_submit=False):
+			algorithms_pLDDT = st.multiselect(label='select algorithms:', key='algorithms per-residue scores', 
+											  options=['AlphaFold','OmegaFold','flDPNN'], default=['AlphaFold','OmegaFold','flDPNN'])
+
 			if all_effectors_pLDDT:
-				effectors_pLDDT = st.multiselect(label='Select effectors:', 
-				options=df['protein'].unique(), default=df['protein'].unique())
+				effectors_pLDDT = st.multiselect(label='select effectors:', key='effectors per-residue scores',
+												 options=df['protein'].unique(), default=df['protein'].unique())
 			else:
-				effectors_pLDDT = st.multiselect(label='Effectors Per-Residue Scores:', 
-				options=df['protein'].unique())
+				effectors_pLDDT = st.multiselect(label='select effectors:', key='effectors per-residue scores',
+												 options=df['protein'].unique())
 			
-			make_figure_pLDDT_plot = st.form_submit_button(label='Plot Per-Residue Scores')
-			make_figure_pLDDT_corr = st.form_submit_button(label='Compare Per-Residue Scores')
+			make_figure_pLDDT_plot = st.form_submit_button(label='plot per-residue scores')
+			make_figure_pLDDT_corr = st.form_submit_button(label='compare per-residue scores')
 					
 		if make_figure_pLDDT_plot:
-			figure_pLDDT_plot = figure_perresidue_plot_proteins(proteins=effectors_pLDDT, tick_no=5)
+			figure_pLDDT_plot = figure_perresidue_plot_proteins(proteins=effectors_pLDDT, algorithms=algorithms_pLDDT, tick_no=5)
 			st.pyplot(fig=figure_pLDDT_plot, clear_figure=False, use_container_width=True)
 		if make_figure_pLDDT_corr:
-			figure_pLDDT_corr = figure_corr(proteins=effectors_pLDDT, tick_no=5)
+			figure_pLDDT_corr = figure_corr(proteins=effectors_pLDDT, algorithms=algorithms_pLDDT, tick_no=5)
 			st.pyplot(fig=figure_pLDDT_corr, clear_figure=False, use_container_width=True)
 	
 	with tab2_3:	
-		with st.form(key='Select Variables for PairPlot', clear_on_submit=False):
-			variables_PairPlot = st.multiselect(label='Variables for PairPlot', options=column_list_graphs, default=variables_PairPlot_default)
-			variables_PairPlot_hue = st.selectbox(label='Select Color Variable', options=column_list_graphs, index=column_list_graphs.index('SASA/length'))
-			variables_PairPlot_size = st.selectbox(label='Select Size Variable', options=column_list_graphs, index=column_list_graphs.index(None))
-			variables_PairPlot_style = st.selectbox(label='Select Marker Variable', options=column_list_graphs, index=column_list_graphs.index('beta'))
+		with st.form(key='form pairplot', clear_on_submit=False):
+			variables_pairplot = st.multiselect(label='select variables:', key='variables pairplot', 
+												options=column_list_graphs, default=variables_pairplot_default)
+			variables_pairplot_hue = st.selectbox(label='select color variable', key='color pairplot', 
+												options=column_list_graphs, index=column_list_graphs.index('SASA/length'))
+			variables_pairplot_size = st.selectbox(label='select size variable', key='size pairplot', 
+												options=column_list_graphs, index=column_list_graphs.index(None))
+			variables_pairplot_style = st.selectbox(label='select marker variable', key='marker pairplot', 
+												options=column_list_graphs, index=column_list_graphs.index('beta'))
 			
 			st.write('If any variables selected for color, size or marker contain missing values, the data points are plotted '
-					 'as small hollow squares')
-			make_PairPlot = st.form_submit_button(label='Make PairPlot')
+					 'as small hollow squares.')
+			make_pairplot = st.form_submit_button(label='make pairplot')
 					
-		if make_PairPlot:
-			PairPlot = PairPlot(df=df, variables=variables_PairPlot, hue=variables_PairPlot_hue, 
-					   			size=variables_PairPlot_size, style=variables_PairPlot_style)
-			st.pyplot(fig=PairPlot, clear_figure=False, use_container_width=True)
+		if make_pairplot:
+			pairplot = pairplot(df=df, variables=variables_pairplot, hue=variables_pairplot_hue, 
+					   			size=variables_pairplot_size, style=variables_pairplot_style)
+			st.pyplot(fig=pairplot, clear_figure=False, use_container_width=True)
