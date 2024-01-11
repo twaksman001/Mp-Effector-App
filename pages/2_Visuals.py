@@ -167,7 +167,7 @@ def figure_perresidue_plot_proteins(proteins, tick_no=5):
 	import numpy as np
 	import matplotlib.pyplot as plt
 	
-	st.markdown('**legend**: :orange[AlphaFold]  ;  :blue[OmegaFold]')
+	st.markdown('**legend**: :orange[AlphaFold]  ;  :blue[OmegaFold] ; :green[flDPNN]')
 
 	spacing = (len(proteins)/160 if len(proteins)>=50 else len(proteins)/120 if 30<=len(proteins)<50
 				else len(proteins)/80 if 15<=len(proteins)<30 else len(proteins)/40)
